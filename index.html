@@ -8,158 +8,183 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏛️</text></svg>">
 <style>
   :root{
-    --cream:#F6EFE2; --cream-2:#EFE5D2; --paper:#FBF7EC;
-    --ink:#241B12; --ink-soft:#5A4C3C;
-    --wood:#8B5E3C; --wood-2:#6E4A2F;
-    --green:#1F3D2B; --green-2:#2C5540;
-    --brass:#C9A227; --brass-2:#A8841C;
-    --line:rgba(120,96,60,.28);
-    --radius:14px;
+    --cream:#F5EEE0; --cream-2:#EDE3CF; --paper:#FBF7EC;
+    --ink:#241B12; --ink-soft:#6B5C48; --ink-faint:#9A8B74;
+    --wood:#7A5230; --wood-2:#5E3F24;
+    --green:#1E3A2A; --green-2:#2C5540;
+    --brass:#B99A2E; --brass-2:#9A7E1F;
+    --line:rgba(120,96,60,.25);
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html,body{height:100%}
   body{
-    font-family:"Avenir Next","PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,"Segoe UI",sans-serif;
+    font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,"Segoe UI",sans-serif;
     background:var(--cream); color:var(--ink); overflow:hidden;
   }
   canvas#stage{position:fixed;inset:0;display:block;touch-action:none;outline:none}
+  /* 颗粒 + 暗角 */
   #vig{position:fixed;inset:0;pointer-events:none;z-index:5;
-    background:radial-gradient(ellipse at 50% 42%, transparent 58%, rgba(58,42,20,.16) 100%)}
-  /* ── 顶部工具栏 ── */
+    background:radial-gradient(ellipse at 50% 40%, transparent 52%, rgba(48,34,14,.22) 100%)}
+  #grain{position:fixed;inset:0;pointer-events:none;z-index:6;opacity:.05;mix-blend-mode:multiply;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .5 0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E")}
+  /* ── 顶栏 ── */
   #topbar{
     position:fixed;top:0;left:0;right:0;z-index:20;
     display:flex;flex-wrap:wrap;align-items:center;gap:10px;
-    padding:10px 16px;
-    background:linear-gradient(to bottom, rgba(246,239,226,.94), rgba(246,239,226,.80));
-    backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px);
+    padding:10px 18px 9px;
+    background:linear-gradient(to bottom, rgba(245,238,224,.96) 70%, rgba(245,238,224,.82));
+    backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px);
     border-bottom:1px solid var(--line);
   }
-  #brand{display:flex;align-items:baseline;gap:8px;margin-right:4px;white-space:nowrap}
-  #brand b{font-size:17px;letter-spacing:.5px}
-  #brand span{font-size:12px;color:var(--ink-soft)}
+  #topbar::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:1px;
+    background:linear-gradient(90deg, transparent, rgba(185,154,46,.5) 18%, rgba(185,154,46,.5) 82%, transparent)}
+  #brand{display:flex;align-items:baseline;gap:10px;margin-right:6px;white-space:nowrap}
+  #brand b{
+    font-family:"Noto Serif SC","Songti SC","SimSun",Georgia,"Times New Roman",serif;
+    font-size:18px;font-weight:700;letter-spacing:2px;
+  }
+  #brand span{font-size:11.5px;color:var(--ink-faint);letter-spacing:.4px}
   #search{
-    flex:1 1 190px;max-width:340px;min-width:150px;
-    border:1px solid var(--line);border-radius:999px;
-    padding:8px 14px 8px 34px;font-size:14px;color:var(--ink);
-    background:var(--paper) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%235A4C3C' stroke-width='2.4'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cpath d='M20 20l-3.5-3.5'/%3E%3C/svg%3E") 12px center no-repeat;
+    flex:1 1 190px;max-width:330px;min-width:150px;
+    border:1px solid var(--line);border-radius:10px;
+    padding:8px 12px 8px 32px;font-size:13.5px;color:var(--ink);
+    background:var(--paper) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='13' viewBox='0 0 24 24' fill='none' stroke='%236B5C48' stroke-width='2.4'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cpath d='M20 20l-3.5-3.5'/%3E%3C/svg%3E") 11px center no-repeat;
     outline:none;transition:box-shadow .18s,border-color .18s;
   }
-  #search:focus{border-color:var(--brass-2);box-shadow:0 0 0 3px rgba(201,162,39,.25)}
+  #search:focus{border-color:var(--brass-2);box-shadow:0 0 0 3px rgba(185,154,46,.18)}
   #sort{
-    border:1px solid var(--line);border-radius:999px;padding:8px 12px;
-    font-size:13px;color:var(--ink);background:var(--paper);outline:none;cursor:pointer;
+    border:1px solid var(--line);border-radius:10px;padding:8px 10px;
+    font-size:12.5px;color:var(--ink);background:var(--paper);outline:none;cursor:pointer;font-family:inherit;
   }
-  #sort:focus{border-color:var(--brass-2);box-shadow:0 0 0 3px rgba(201,162,39,.25)}
-  #chips{display:flex;gap:6px;overflow-x:auto;flex:1 1 100%;padding-bottom:2px;scrollbar-width:thin}
+  #sort:focus{border-color:var(--brass-2);box-shadow:0 0 0 3px rgba(185,154,46,.18)}
+  #count{font-size:12px;color:var(--ink-faint);white-space:nowrap;font-variant-numeric:tabular-nums}
+  #chips{display:flex;gap:6px;overflow-x:auto;flex:1 1 100%;padding:2px 2px 3px;scrollbar-width:thin}
   .chip{
-    flex:0 0 auto;border:1px solid var(--line);border-radius:999px;
-    padding:5px 12px;font-size:12.5px;line-height:1.4;cursor:pointer;
-    background:var(--paper);color:var(--ink);white-space:nowrap;
-    display:inline-flex;align-items:center;gap:5px;
-    transition:all .16s ease;user-select:none;font-family:inherit;
+    flex:0 0 auto;border:1px solid var(--line);border-radius:8px;
+    padding:4px 11px;font-size:12px;line-height:1.5;cursor:pointer;
+    background:transparent;color:var(--ink-soft);white-space:nowrap;
+    display:inline-flex;align-items:center;gap:6px;
+    transition:all .15s ease;user-select:none;font-family:inherit;
   }
-  .chip .dot{width:9px;height:9px;border-radius:3px;display:inline-block}
-  .chip:hover{border-color:var(--brass-2);transform:translateY(-1px)}
+  .chip .dot{width:8px;height:8px;border-radius:2.5px;display:inline-block;opacity:.85}
+  .chip:hover{border-color:var(--brass-2);color:var(--ink);transform:translateY(-1px)}
   .chip:focus-visible,.chip.active:focus-visible{outline:2px solid var(--brass-2);outline-offset:2px}
-  .chip.active{background:var(--green);color:#F6EFE2;border-color:var(--green)}
-  .chip.active .dot{outline:1px solid rgba(246,239,226,.5)}
-  #count{font-size:12.5px;color:var(--ink-soft);white-space:nowrap}
+  .chip.active{background:var(--green);color:#F3EDDD;border-color:var(--green)}
   /* ── 悬浮提示 ── */
   #tip{
     position:fixed;z-index:30;pointer-events:none;display:none;
-    max-width:260px;padding:8px 12px;border-radius:10px;
-    background:rgba(36,27,18,.92);color:#F6EFE2;font-size:12.5px;line-height:1.5;
-    box-shadow:0 6px 18px rgba(0,0,0,.25);transform:translate(-50%,-130%);
+    max-width:250px;padding:9px 13px;border-radius:10px;
+    background:rgba(30,23,14,.94);color:#F3EDDD;font-size:12.5px;line-height:1.55;
+    box-shadow:0 10px 26px rgba(20,12,4,.35);transform:translate(-50%,-132%);
+    border:1px solid rgba(185,154,46,.35);
   }
-  #tip .t{font-weight:600}
-  #tip .c{opacity:.75;font-size:11.5px;margin-top:2px}
+  #tip .t{font-weight:600;letter-spacing:.3px}
+  #tip .c{opacity:.72;font-size:11px;margin-top:3px}
   /* ── 详情侧卡 ── */
   #panel{
     position:fixed;top:0;right:0;bottom:0;z-index:40;width:min(400px,92vw);
     background:var(--paper);border-left:1px solid var(--line);
-    box-shadow:-18px 0 50px rgba(60,44,20,.18);
-    transform:translateX(105%);transition:transform .34s cubic-bezier(.22,.9,.3,1);
+    box-shadow:-24px 0 60px rgba(40,28,10,.2);
+    transform:translateX(105%);transition:transform .36s cubic-bezier(.22,.9,.28,1);
     display:flex;flex-direction:column;
   }
   #panel.open{transform:translateX(0)}
-  #panel .spine-bar{height:6px;flex:none}
-  #panel header{display:flex;align-items:flex-start;gap:10px;padding:18px 18px 10px}
-  #panel h2{font-size:20px;line-height:1.35;flex:1;word-break:break-all}
-  #close{
-    flex:none;width:32px;height:32px;border-radius:50%;border:1px solid var(--line);
-    background:var(--cream);color:var(--ink);font-size:16px;cursor:pointer;line-height:1;
+  #panel .spine-bar{height:5px;flex:none}
+  #panel .spine-bar::after{content:"";display:block;height:1px;background:rgba(185,154,46,.6)}
+  #panel header{display:flex;align-items:flex-start;gap:10px;padding:20px 20px 12px}
+  #panel h2{
+    font-family:"Noto Serif SC","Songti SC","SimSun",Georgia,serif;
+    font-size:21px;font-weight:700;line-height:1.4;flex:1;word-break:break-all;letter-spacing:.5px;
   }
-  #close:hover{background:var(--cream-2)}
+  #close{
+    flex:none;width:30px;height:30px;border-radius:50%;border:1px solid var(--line);
+    background:var(--cream);color:var(--ink-soft);font-size:14px;cursor:pointer;line-height:1;
+  }
+  #close:hover{background:var(--cream-2);color:var(--ink)}
   #close:focus-visible{outline:2px solid var(--brass-2)}
-  #panel .meta{display:flex;flex-wrap:wrap;gap:6px;padding:0 18px 12px}
-  .tag{font-size:11.5px;border:1px solid var(--line);border-radius:999px;padding:3px 10px;color:var(--ink-soft);background:var(--cream)}
-  .tag.kind{background:var(--green);border-color:var(--green);color:#F6EFE2}
-  #panel .desc{flex:1;overflow:auto;padding:4px 18px 14px;font-size:14px;line-height:1.85;color:#3A2F22}
-  #panel footer{padding:14px 18px 18px;border-top:1px solid var(--line)}
+  #panel .meta{display:flex;flex-wrap:wrap;gap:6px;padding:0 20px 14px}
+  .tag{font-size:11px;border:1px solid var(--line);border-radius:7px;padding:3px 9px;color:var(--ink-soft);background:var(--cream)}
+  .tag.kind{background:var(--green);border-color:var(--green);color:#F3EDDD}
+  #panel .desc{
+    flex:1;overflow:auto;padding:6px 2px 16px;font-size:13.5px;line-height:1.95;color:#433626;
+    border-top:1px dashed var(--line);margin:0 20px;
+  }
+  #panel footer{padding:16px 20px 20px;border-top:1px solid var(--line)}
   #go{
     display:block;text-align:center;text-decoration:none;
-    background:var(--green);color:#F6EFE2;font-size:14.5px;font-weight:600;
-    padding:11px 0;border-radius:12px;letter-spacing:.5px;
-    transition:background .16s,transform .16s;
+    background:var(--green);color:#F3EDDD;font-size:14px;font-weight:600;
+    padding:12px 0;border-radius:11px;letter-spacing:1px;
+    transition:background .16s,transform .16s,box-shadow .16s;
   }
-  #go:hover{background:var(--green-2);transform:translateY(-1px)}
+  #go:hover{background:var(--green-2);transform:translateY(-1px);box-shadow:0 8px 20px rgba(30,58,42,.25)}
   #go:focus-visible{outline:2px solid var(--brass-2);outline-offset:3px}
-  /* ── 其他 UI ── */
+  /* ── 其他 ── */
   #hint{
-    position:fixed;left:16px;bottom:14px;z-index:15;font-size:12px;color:var(--ink-soft);
-    background:rgba(246,239,226,.85);border:1px solid var(--line);border-radius:999px;
-    padding:6px 13px;backdrop-filter:blur(6px);user-select:none;
+    position:fixed;left:18px;bottom:16px;z-index:15;font-size:11.5px;color:var(--ink-soft);
+    background:rgba(245,238,224,.88);border:1px solid var(--line);border-radius:999px;
+    padding:6px 14px;backdrop-filter:blur(6px);user-select:none;letter-spacing:.3px;
   }
   #overlay{
     position:fixed;inset:0;z-index:60;display:flex;align-items:center;justify-content:center;
-    background:var(--cream);transition:opacity .5s;
+    background:var(--cream);transition:opacity .6s;
   }
   #overlay.hide{opacity:0;pointer-events:none}
-  #overlay .card{max-width:400px;text-align:center;padding:20px}
-  #overlay .logo{font-size:44px;margin-bottom:14px}
-  #overlay h1{font-size:18px;margin-bottom:10px;letter-spacing:1px}
-  #overlay p{font-size:13px;color:var(--ink-soft);line-height:1.8}
+  #overlay .card{max-width:420px;text-align:center;padding:24px}
+  #overlay .ring{
+    width:46px;height:46px;margin:0 auto 22px;border-radius:50%;
+    border:2px solid var(--cream-2);border-top-color:var(--brass);
+    animation:spin 1.1s linear infinite;
+  }
+  @keyframes spin{to{transform:rotate(360deg)}}
+  #overlay h1{
+    font-family:"Noto Serif SC","Songti SC","SimSun",Georgia,serif;
+    font-size:20px;margin-bottom:8px;letter-spacing:3px;
+  }
+  #overlay .sub{font-size:12px;color:var(--ink-faint);letter-spacing:2px;margin-bottom:20px}
+  #overlay p{font-size:13px;color:var(--ink-soft);line-height:1.9}
   #overlay code{background:var(--cream-2);padding:1px 6px;border-radius:6px;font-size:12px}
-  #overlay .bar{width:220px;height:4px;border-radius:99px;background:var(--cream-2);margin:16px auto 8px;overflow:hidden}
+  #overlay .bar{width:230px;height:3px;border-radius:99px;background:var(--cream-2);margin:18px auto 10px;overflow:hidden}
   #overlay .bar i{display:block;height:100%;width:0%;border-radius:99px;background:var(--brass);transition:width .3s}
   #overlay button{
-    margin-top:14px;padding:9px 22px;border-radius:10px;border:none;cursor:pointer;
-    background:var(--green);color:#F6EFE2;font-size:14px;font-family:inherit;
+    margin-top:16px;padding:9px 24px;border-radius:10px;border:none;cursor:pointer;
+    background:var(--green);color:#F3EDDD;font-size:14px;font-family:inherit;
   }
   #toast{
-    position:fixed;left:50%;bottom:26px;transform:translate(-50%,20px);z-index:50;
-    background:rgba(36,27,18,.92);color:#F6EFE2;font-size:13px;padding:9px 18px;
+    position:fixed;left:50%;bottom:30px;transform:translate(-50%,18px);z-index:50;
+    background:rgba(30,23,14,.94);color:#F3EDDD;font-size:12.5px;padding:10px 20px;
     border-radius:999px;opacity:0;transition:all .3s;pointer-events:none;
+    border:1px solid rgba(185,154,46,.35);letter-spacing:.5px;
   }
   #toast.show{opacity:1;transform:translate(-50%,0)}
-  /* 夜读模式 */
-  body.night{--cream:#141824;--cream-2:#1B2130;--paper:#1A1F2E;--ink:#E9E0CC;--ink-soft:#9C937D;--line:rgba(180,160,110,.22)}
-  body.night #topbar{background:linear-gradient(to bottom, rgba(20,24,36,.94), rgba(20,24,36,.82))}
-  body.night #panel{background:#1A1F2E;box-shadow:-18px 0 50px rgba(0,0,0,.5)}
-  body.night #panel .desc{color:#CDBFA4}
-  body.night #hint,body.night .tag{background:rgba(26,31,46,.85)}
-  body.night #overlay{background:#141824}
-  body.night #vig{background:radial-gradient(ellipse at 50% 42%, transparent 55%, rgba(0,0,5,.5) 100%)}
+  /* 夜读 */
+  body.night{--cream:#12161F;--cream-2:#1A2130;--paper:#171D2A;--ink:#E7DEC9;--ink-soft:#A99F88;--ink-faint:#77704F;--line:rgba(190,165,105,.2)}
+  body.night #topbar{background:linear-gradient(to bottom, rgba(18,22,31,.96) 70%, rgba(18,22,31,.84))}
+  body.night #panel{background:#171D2A;box-shadow:-24px 0 60px rgba(0,0,0,.55)}
+  body.night #panel .desc{color:#C6B795;border-top-color:rgba(190,165,105,.2)}
+  body.night #hint,body.night .tag{background:rgba(26,33,48,.9)}
+  body.night #overlay{background:#12161F}
+  body.night #vig{background:radial-gradient(ellipse at 50% 40%, transparent 50%, rgba(0,0,6,.55) 100%)}
   @media (max-width:760px){
     #brand span{display:none}
-    #topbar{padding:8px 10px;gap:8px}
+    #topbar{padding:8px 12px;gap:8px}
     #panel{width:100vw;border-left:none}
     #hint{display:none}
   }
   @media (prefers-reduced-motion: reduce){
     #panel,#toast,#overlay{transition:none}
+    #overlay .ring{animation:none;border-top-color:var(--brass-2)}
   }
 </style>
 </head>
 <body>
 <canvas id="stage" aria-label="3D 图书馆场景"></canvas>
-<div id="vig"></div>
+<div id="vig"></div><div id="grain"></div>
 
 <div id="topbar">
-  <div id="brand"><b>🏛️ 数字图书馆</b><span>bear20252026 · 220 仓库 + 347 馆藏</span></div>
+  <div id="brand"><b>数字图书馆</b><span>bear20252026 · 220 仓库 + 347 馆藏</span></div>
   <input id="search" type="search" placeholder="搜索书名 / 简介…" aria-label="搜索书籍">
   <select id="sort" aria-label="排序方式">
-    <option value="shelf">排序：馆内排架</option>
+    <option value="shelf">馆内排架</option>
     <option value="name">书名 A→Z</option>
     <option value="updated">最近更新</option>
     <option value="stars">星数最多</option>
@@ -181,21 +206,22 @@
   <footer><a id="go" href="#" target="_blank" rel="noopener">📖 去仓库看原文 ↗</a></footer>
 </aside>
 
-<div id="hint">🖱️ 拖拽转视角 · 滚轮推近 · 点击书脊看详情 · Esc 关闭</div>
+<div id="hint">拖拽转视角 · 滚轮推近 · 点击书脊看详情 · Esc 关闭</div>
 <div id="toast"></div>
 
 <div id="overlay">
   <div class="card" id="ov-card">
-    <div class="logo">🏛️</div>
-    <h1>bear20252026 的数字图书馆</h1>
+    <div class="ring"></div>
+    <h1>数字图书馆</h1>
+    <div class="sub">THE DIGITAL LIBRARY · BEAR20252026</div>
     <p id="ov-msg">正在布置书架…</p>
     <div class="bar"><i id="ov-bar"></i></div>
   </div>
 </div>
 
-<noscript><div style="position:fixed;inset:0;background:#F6EFE2;color:#241B12;display:flex;align-items:center;justify-content:center;z-index:99">需要启用 JavaScript 才能参观这座 3D 图书馆。</div></noscript>
+<noscript><div style="position:fixed;inset:0;background:#F5EEE0;color:#241B12;display:flex;align-items:center;justify-content:center;z-index:99">需要启用 JavaScript 才能参观这座 3D 图书馆。</div></noscript>
 
-<script>window.__errs = [];addEventListener('error', e => window.__errs.push(e.message + ' @' + (e.filename||'') + ':' + e.lineno));addEventListener('unhandledrejection', e => window.__errs.push('rejection: ' + e.reason));</script>
+<script>window.__errs=[];addEventListener('error',e=>__errs.push(e.message+' @'+(e.filename||'')+':'+e.lineno));addEventListener('unhandledrejection',e=>__errs.push('rejection: '+e.reason));</script>
 <script type="importmap">
 {
   "imports": {
@@ -208,6 +234,8 @@
 <script type="module">
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
+import { RoundedBoxGeometry } from 'three/addons/geometries/RoundedBoxGeometry.js';
 
 /* ══════════ 环境 ══════════ */
 const REDUCED = matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -227,110 +255,174 @@ renderer.setPixelRatio(Math.min(devicePixelRatio, MOBILE ? 1.6 : 2));
 renderer.setSize(innerWidth, innerHeight);
 renderer.outputColorSpace = THREE.SRGBColorSpace;
 renderer.toneMapping = THREE.ACESFilmicToneMapping;
-renderer.toneMappingExposure = 1.06;
+renderer.toneMappingExposure = .95;
 renderer.shadowMap.enabled = !MOBILE;
 renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 
+/* 环境反射：给漆木 / 黄铜真实的柔和高光 */
 const scene = new THREE.Scene();
-const DAY_BG = new THREE.Color('#EFE3CC'), NIGHT_BG = new THREE.Color('#10141E');
-scene.background = DAY_BG.clone();
-scene.fog = new THREE.Fog(DAY_BG.clone(), 17, 38);
+const pmrem = new THREE.PMREMGenerator(renderer);
+scene.environment = pmrem.fromScene(new RoomEnvironment(), .04).texture;
 
-const camera = new THREE.PerspectiveCamera(46, innerWidth / innerHeight, .1, 90);
-camera.position.set(5.9, 3.3, 4.7);
+const DAY_BG = new THREE.Color('#E9DFC8'), NIGHT_BG = new THREE.Color('#0E121B');
+scene.background = DAY_BG.clone();
+scene.fog = new THREE.Fog(DAY_BG.clone(), 18, 42);
+
+const camera = new THREE.PerspectiveCamera(44, innerWidth / innerHeight, .1, 90);
+camera.position.set(6.3, 3.0, 5.7);
 
 const controls = new OrbitControls(camera, renderer.domElement);
 controls.target.set(0, 1.3, 0);
-controls.enableDamping = true; controls.dampingFactor = .07;
-controls.minDistance = 1.8; controls.maxDistance = 6.8;
-controls.maxPolarAngle = Math.PI / 2 - .04;
+controls.enableDamping = true; controls.dampingFactor = .06;
+controls.minDistance = 1.6; controls.maxDistance = 7.6;
+controls.maxPolarAngle = Math.PI / 2 - .05;
 controls.enablePan = true; controls.screenSpacePanning = true;
-controls.autoRotateSpeed = .35;
-
-/* 调试 / 导览钩子：window.__lib.flyTo(相机位置, 目标点) */
-window.__lib = { camera, controls, renderer, THREE, scene, get labels(){ return labelMeshes; }, get books(){ return BOOKS_ALL; }, get pages(){ return pages; },
-  flyTo(px, py, pz, tx = 0, ty = 1.3, tz = 0) {
-    camera.position.set(px, py, pz);
-    controls.target.set(tx, ty, tz);
-    controls.update();
-  } };
+controls.autoRotateSpeed = .3;
 
 addEventListener('resize', () => {
   camera.aspect = innerWidth / innerHeight; camera.updateProjectionMatrix();
   renderer.setSize(innerWidth, innerHeight);
 });
 
+/* 调试 / 导览钩子 */
+window.__lib = { camera, controls, renderer, THREE, scene,
+  get labels(){ return labelMeshes; }, get books(){ return BOOKS_ALL; }, get pages(){ return pages; },
+  flyTo(px, py, pz, tx = 0, ty = 1.3, tz = 0) {
+    camera.position.set(px, py, pz);
+    controls.target.set(tx, ty, tz);
+    controls.update();
+  } };
+
 /* ══════════ 灯光 ══════════ */
-const hemi = new THREE.HemisphereLight('#FFF6E0', '#8A7350', .8);
+const hemi = new THREE.HemisphereLight('#FFF4DC', '#7E6A4C', .32);
 scene.add(hemi);
-const sun = new THREE.DirectionalLight('#FFE9BE', 2.2);
-sun.position.set(-10.5, 7.8, 2.4);
+const sun = new THREE.DirectionalLight('#FFDFAC', 1.9);
+sun.position.set(-9.5, 6.8, 3.4);
 sun.castShadow = !MOBILE;
 if (!MOBILE) {
   sun.shadow.mapSize.set(2048, 2048);
-  sun.shadow.camera.left = -10; sun.shadow.camera.right = 10;
-  sun.shadow.camera.top = 10;  sun.shadow.camera.bottom = -10;
-  sun.shadow.camera.far = 40; sun.shadow.bias = -.0004; sun.shadow.normalBias = .02;
+  sun.shadow.camera.left = -11; sun.shadow.camera.right = 11;
+  sun.shadow.camera.top = 11;  sun.shadow.camera.bottom = -11;
+  sun.shadow.camera.far = 40; sun.shadow.bias = -.00035; sun.shadow.normalBias = .03;
 }
 scene.add(sun, sun.target);
-const fill = new THREE.DirectionalLight('#DCE6F2', .3);
-fill.position.set(8, 6, 9); scene.add(fill);
+const fill = new THREE.DirectionalLight('#C9D8EE', .22);
+fill.position.set(8, 7, 9); scene.add(fill);
+const glow = new THREE.PointLight('#FFE7BD', .32, 22, 2);   // 房间中央柔和补光
+glow.position.set(0, 3.1, 0); scene.add(glow);
+const lampLight = new THREE.PointLight('#FFC978', 0, 7, 2);
+lampLight.position.set(-.25, 1.34, .05);
 
-/* ══════════ 程序化材质 ══════════ */
-function canvasTex(size, draw, repeat = [1, 1]) {
-  const c = document.createElement('canvas'); c.width = c.height = size;
-  draw(c.getContext('2d'), size);
+/* ══════════ 程序化贴图 ══════════ */
+function canvasTex(w, h, draw, repeat = [1, 1]) {
+  const c = document.createElement('canvas'); c.width = w; c.height = h;
+  draw(c.getContext('2d'), w, h);
   const t = new THREE.CanvasTexture(c);
   t.colorSpace = THREE.SRGBColorSpace;
   t.wrapS = t.wrapT = THREE.RepeatWrapping; t.repeat.set(...repeat);
   t.anisotropy = 8;
   return t;
 }
-const floorTex = canvasTex(512, (g, s) => {
-  g.fillStyle = '#9A6B44'; g.fillRect(0, 0, s, s);
-  for (let y = 0; y < 8; y++) {
-    const h = s / 8, off = (y % 2) * 60;
-    g.fillStyle = ['#9A6B44', '#93653F', '#A07048', '#8E5F3B'][y % 4];
-    g.fillRect(0, y * h, s, h - 2);
-    g.strokeStyle = 'rgba(74,50,30,.5)'; g.lineWidth = 2;
-    g.strokeRect(-2, y * h, s + 4, h - 2);
-    for (let i = 0; i < 22; i++) {
-      g.strokeStyle = `rgba(${70 + Math.random() * 30 | 0},${46 + Math.random() * 20 | 0},26,.16)`;
+function noise(g, w, h, n, alpha) {
+  for (let i = 0; i < n; i++) {
+    g.fillStyle = `rgba(${40 + Math.random()*40|0},${28 + Math.random()*30|0},14,${alpha * Math.random()})`;
+    g.fillRect(Math.random() * w, Math.random() * h, 1 + Math.random() * 2, 1 + Math.random() * 2);
+  }
+}
+const floorTex = canvasTex(512, 512, (g, w, h) => {
+  const rows = 10, rh = h / rows;
+  for (let y = 0; y < rows; y++) {
+    g.fillStyle = ['#96795B', '#8E7154', '#9C7F60', '#8A6C4E'][y % 4];
+    g.fillRect(0, y * rh, w, rh - 1);
+    g.fillStyle = 'rgba(58,42,26,.35)'; g.fillRect(0, y * rh + rh - 1.5, w, 1.5);
+    g.fillStyle = 'rgba(255,240,210,.12)'; g.fillRect(0, y * rh, w, 1);
+    for (let i = 0; i < 30; i++) {
+      g.strokeStyle = `rgba(70,52,32,${.05 + Math.random() * .08})`;
       g.lineWidth = 1; g.beginPath();
-      const x = (Math.random() * s + off) % s;
-      g.moveTo(x, y * h + 3); g.bezierCurveTo(x + 8, y * h + h * .4, x - 8, y * h + h * .7, x + 4, y * h + h - 3);
+      const x = Math.random() * w, yy = y * rh + 2;
+      g.moveTo(x, yy); g.bezierCurveTo(x + 6, yy + rh * .4, x - 6, yy + rh * .7, x + 3, yy + rh - 2);
       g.stroke();
     }
   }
-}, [7, 7]);
-const grainTex = canvasTex(256, (g, s) => {
-  g.fillStyle = '#7A5230'; g.fillRect(0, 0, s, s);
-  for (let i = 0; i < 40; i++) {
-    g.strokeStyle = `rgba(58,38,20,${.12 + Math.random() * .12})`;
-    g.lineWidth = 1 + Math.random() * 2; g.beginPath();
-    const y = Math.random() * s;
-    g.moveTo(0, y); g.bezierCurveTo(s * .3, y + 6, s * .6, y - 6, s, y + 2); g.stroke();
+  noise(g, w, h, 500, .1);
+}, [8, 8]);
+const plasterTex = canvasTex(256, 256, (g, w, h) => {
+  g.fillStyle = '#EFE5CF'; g.fillRect(0, 0, w, h);
+  noise(g, w, h, 900, .06);
+}, [3, 1.4]);
+const walnutTex = canvasTex(256, 256, (g, w, h) => {
+  g.fillStyle = '#5E4226'; g.fillRect(0, 0, w, h);
+  for (let i = 0; i < 46; i++) {
+    g.strokeStyle = `rgba(38,25,12,${.1 + Math.random() * .14})`;
+    g.lineWidth = 1 + Math.random() * 2.2; g.beginPath();
+    const y = Math.random() * h;
+    g.moveTo(0, y); g.bezierCurveTo(w * .3, y + 5, w * .62, y - 5, w, y + 2); g.stroke();
   }
-}, [2, 1]);
-const rugTex = canvasTex(256, (g, s) => {
-  const r = g.createRadialGradient(s/2, s/2, 10, s/2, s/2, s/2);
-  r.addColorStop(0, '#EFE5CF'); r.addColorStop(.8, '#E3D5B8'); r.addColorStop(1, '#2C5540');
-  g.fillStyle = r; g.beginPath(); g.arc(s/2, s/2, s/2, 0, 7); g.fill();
+  for (let i = 0; i < 14; i++) {
+    g.strokeStyle = 'rgba(160,120,70,.1)'; g.lineWidth = 1; g.beginPath();
+    const y = Math.random() * h;
+    g.moveTo(0, y); g.bezierCurveTo(w * .3, y + 4, w * .62, y - 4, w, y + 1); g.stroke();
+  }
+  noise(g, w, h, 260, .08);
+}, [1.6, 1]);
+const wainsTex = canvasTex(256, 256, (g, w, h) => {
+  g.fillStyle = '#20402E'; g.fillRect(0, 0, w, h);
+  for (const [px, pw] of [[10, 108], [138, 108]]) {
+    g.strokeStyle = 'rgba(10,22,15,.9)'; g.lineWidth = 3;
+    g.strokeRect(px, 26, pw, h - 52);
+    g.strokeStyle = 'rgba(90,130,100,.25)'; g.lineWidth = 1;
+    g.strokeRect(px + 3, 29, pw - 6, h - 58);
+  }
+  noise(g, w, h, 300, .07);
+}, [4.2, 1]);
+const rugTex = canvasTex(512, 512, (g, w, h) => {
+  g.fillStyle = '#E9DFC6'; g.beginPath(); g.arc(w/2, h/2, w/2, 0, 7); g.fill();
+  g.strokeStyle = '#2C5540'; g.lineWidth = 14; g.beginPath(); g.arc(w/2, h/2, w/2 - 12, 0, 7); g.stroke();
+  g.strokeStyle = '#B99A2E'; g.lineWidth = 4; g.beginPath(); g.arc(w/2, h/2, w/2 - 26, 0, 7); g.stroke();
+  g.strokeStyle = 'rgba(120,96,60,.25)'; g.lineWidth = 2;
+  for (let r = 60; r < 190; r += 34) {
+    g.beginPath();
+    g.moveTo(w/2, h/2 - r); g.lineTo(w/2 + r, h/2); g.lineTo(w/2, h/2 + r); g.lineTo(w/2 - r, h/2);
+    g.closePath(); g.stroke();
+  }
+  noise(g, w, h, 700, .1);
+});
+const dustTex = canvasTex(64, 64, (g, w, h) => {
+  const r = g.createRadialGradient(32, 32, 2, 32, 32, 30);
+  r.addColorStop(0, 'rgba(255,240,210,.9)'); r.addColorStop(1, 'rgba(255,240,210,0)');
+  g.fillStyle = r; g.fillRect(0, 0, w, h);
+});
+const skyTex = canvasTex(256, 512, (g, w, h) => {
+  const gr = g.createLinearGradient(0, 0, 0, h);
+  gr.addColorStop(0, '#FBE7BC'); gr.addColorStop(.45, '#F6D9A0'); gr.addColorStop(.8, '#EFC98F'); gr.addColorStop(1, '#E2B87E');
+  g.fillStyle = gr; g.fillRect(0, 0, w, h);
+  g.fillStyle = 'rgba(140,108,62,.16)';
+  for (const [x, y, rw, rh] of [[30, 400, 70, 130], [120, 380, 90, 150], [210, 405, 65, 120]]) {
+    g.beginPath(); g.ellipse(x, y, rw, rh, 0, 0, 7); g.fill();
+  }
+  g.fillStyle = 'rgba(255,246,222,.5)';
+  for (const [x, y, rw, rh] of [[70, 110, 60, 16], [160, 70, 80, 20], [110, 180, 50, 13]]) {
+    g.beginPath(); g.ellipse(x, y, rw, rh, 0, 0, 7); g.fill();
+  }
 });
 
 const M = {
-  floor:  new THREE.MeshStandardMaterial({ map: floorTex, color: '#FFFFFF', roughness: .82, metalness: .04 }),
-  wood:   new THREE.MeshStandardMaterial({ map: grainTex, color: '#B08A5F', roughness: .74 }),
-  woodDk: new THREE.MeshStandardMaterial({ color: '#5F4026', roughness: .8 }),
-  wall:   new THREE.MeshStandardMaterial({ color: '#F1E7D2', roughness: .96 }),
-  wains:  new THREE.MeshStandardMaterial({ color: '#1F3D2B', roughness: .85 }),
-  beam:   new THREE.MeshStandardMaterial({ color: '#6E4A2F', roughness: .8 }),
-  brass:  new THREE.MeshStandardMaterial({ color: '#C9A227', roughness: .3, metalness: .85 }),
-  pane:   new THREE.MeshStandardMaterial({ color: '#FFF3D8', emissive: '#FFD98A', emissiveIntensity: .9, roughness: .4, transparent: true, opacity: .55 }),
-  rug:    new THREE.MeshStandardMaterial({ map: rugTex, roughness: .95, transparent: true }),
+  floor: new THREE.MeshStandardMaterial({ map: floorTex, color: '#FFFFFF', roughness: .68, metalness: .06, envMapIntensity: .5 }),
+  wood:  new THREE.MeshPhysicalMaterial({ map: walnutTex, color: '#A98A64', roughness: .5, metalness: .05, envMapIntensity: .7, clearcoat: .35, clearcoatRoughness: .5 }),
+  woodDk:new THREE.MeshPhysicalMaterial({ color: '#4A3116', roughness: .62, metalness: .04, envMapIntensity: .5 }),
+  wall:  new THREE.MeshStandardMaterial({ map: plasterTex, color: '#FFFFFF', roughness: .97, envMapIntensity: .12 }),
+  wains: new THREE.MeshStandardMaterial({ map: wainsTex, color: '#FFFFFF', roughness: .8, envMapIntensity: .2 }),
+  beam:  new THREE.MeshPhysicalMaterial({ color: '#54391F', roughness: .6, envMapIntensity: .4 }),
+  brass: new THREE.MeshPhysicalMaterial({ color: '#C9A227', roughness: .24, metalness: 1, envMapIntensity: 1.4 }),
+  pane:  new THREE.MeshStandardMaterial({ color: '#FFF3D8', emissive: '#FFD98A', emissiveIntensity: .75, roughness: .3, transparent: true, opacity: .4 }),
+  curtain:new THREE.MeshPhysicalMaterial({ color: '#2C4A38', roughness: .85, envMapIntensity: .15 }),
+  rug:   new THREE.MeshStandardMaterial({ map: rugTex, roughness: .96, envMapIntensity: .05, transparent: true }),
+  leaf:  new THREE.MeshStandardMaterial({ color: '#3A5C40', roughness: .8 }),
+  pot:   new THREE.MeshPhysicalMaterial({ color: '#9E5B3C', roughness: .55, envMapIntensity: .4 }),
+  paper: new THREE.MeshStandardMaterial({ color: '#EFE6CF', roughness: .9 }),
 };
-const WALL_DAY = new THREE.Color('#F1E7D2'), WALL_NIGHT = new THREE.Color('#2A3142');
-const FLOOR_DAY = new THREE.Color('#FFFFFF'), FLOOR_NIGHT = new THREE.Color('#3A3F55');
+const WALL_DAY = new THREE.Color('#FFFFFF'), WALL_NIGHT = new THREE.Color('#262C3C');
+const FLOOR_DAY = new THREE.Color('#FFFFFF'), FLOOR_NIGHT = new THREE.Color('#333A50');
 
 /* ══════════ 房间 ══════════ */
 const room = new THREE.Group(); scene.add(room);
@@ -344,65 +436,124 @@ box(15.2, .12, 13.2, M.floor, 0, 0, 0).receiveShadow = true;
 box(15.2, 3.7, .18, M.wall, 0, 1.85, -6.9);
 box(15.2, 3.7, .18, M.wall, 0, 1.85, 6.9);
 box(.18, 3.7, 13.2, M.wall, 6.9, 1.85, 0);
-/* 西墙 = 带真实窗洞的拼块（光会从窗口照进来） */
 for (const [z0, z1] of [[-6.6, -5.1], [-2.7, -1.2], [1.2, 2.7], [5.1, 6.6]]) {
   const len = z1 - z0, zc = (z0 + z1) / 2;
-  box(.18, 3.7, len, M.wall, -6.9, 1.85, zc, 0, true);
+  box(.18, 3.7, len, M.wall, -6.9, 1.85, zc, 0, true, false);
 }
 for (const zc of [-3.9, 0, 3.9]) {
-  box(.18, .75, 2.4, M.wall, -6.9, .375, zc, 0, true);     // 窗下墙
-  box(.18, .65, 2.4, M.wall, -6.9, 3.375, zc, 0, true);    // 窗上墙
+  box(.18, .75, 2.4, M.wall, -6.9, .375, zc, 0, true, false);
+  box(.18, .65, 2.4, M.wall, -6.9, 3.375, zc, 0, true, false);
 }
 box(15.2, .1, 13.2, M.wall, 0, 3.72, 0);
-for (const z of [-3.4, -1.1, 1.1, 3.4]) box(15.2, .18, .5, M.beam, 0, 3.5, z);
-for (const w of [-6.81, 6.81]) box(.1, 1.0, 13.2, M.wains, w, .5, 0);
-for (const z of [-6.81, 6.81]) box(15.2, 1.0, .1, M.wains, 0, .5, z);
-for (const w of [-6.85, 6.85]) box(.08, .06, 13.2, M.brass, w, 1.02, 0, 0, false, false);
-for (const z of [-6.85, 6.85]) box(15.2, .06, .08, M.brass, 0, 1.02, z, 0, false, false);
+for (const z of [-5.9, -1.95, 1.95, 5.9]) { box(15.2, .2, .42, M.beam, 0, 3.48, z); }
+for (const w of [-6.78, 6.78]) box(.1, .12, 13.2, M.wall, w, 3.6, 0, 0, false, false);
+for (const z of [-6.78, 6.78]) box(15.2, .12, .1, M.wall, 0, 3.6, z, 0, false, false);
+for (const w of [-6.81, 6.81]) box(.1, 1.05, 13.2, M.wains, w, .56, 0);
+for (const z of [-6.81, 6.81]) box(15.2, 1.05, .1, M.wains, 0, .56, z);
+for (const w of [-6.84, 6.84]) box(.07, .05, 13.2, M.brass, w, 1.12, 0, 0, false, false);
+for (const z of [-6.84, 6.84]) box(15.2, .05, .07, M.brass, 0, 1.12, z, 0, false, false);
+for (const w of [-6.83, 6.83]) box(.09, .14, 13.2, M.woodDk, w, .07, 0, 0, false, false);
+for (const z of [-6.83, 6.83]) box(15.2, .14, .09, M.woodDk, 0, .07, z, 0, false, false);
 
-/* 西墙三扇暖窗 */
+/* 西墙三扇暖窗（窗景 + 窗框 + 垂帘） */
 for (const z of [-3.9, 0, 3.9]) {
-  box(.06, 2.3, 2.4, M.pane, -6.9, 1.9, z, 0, false, false);
-  box(.16, 2.5, .12, M.woodDk, -6.88, 1.9, z - 1.28, 0, false, false);
-  box(.16, 2.5, .12, M.woodDk, -6.88, 1.9, z + 1.28, 0, false, false);
-  box(.16, .12, 2.72, M.woodDk, -6.88, .72, z, 0, false, false);
-  box(.16, .12, 2.72, M.woodDk, -6.88, 3.1, z, 0, false, false);
-  box(.12, 2.3, .1,  M.woodDk, -6.88, 1.9, z, 0, false, false);
+  const sky = new THREE.Mesh(new THREE.PlaneGeometry(2.3, 2.3),
+    new THREE.MeshBasicMaterial({ map: skyTex }));
+  sky.rotation.y = Math.PI / 2; sky.position.set(-8.3, 1.9, z); room.add(sky);
+  box(.05, 2.3, 2.4, M.pane, -6.9, 1.9, z, 0, false, false);
+  box(.14, 2.5, .14, M.woodDk, -6.88, 1.9, z - 1.27, 0, false, false);
+  box(.14, 2.5, .14, M.woodDk, -6.88, 1.9, z + 1.27, 0, false, false);
+  box(.14, .14, 2.68, M.woodDk, -6.88, .72, z, 0, false, false);
+  box(.14, .14, 2.68, M.woodDk, -6.88, 3.08, z, 0, false, false);
+  box(.1, 2.3, .09, M.woodDk, -6.88, 1.9, z, 0, false, false);
 }
-if (!REDUCED) {
-  const shaftMat = new THREE.MeshBasicMaterial({ color: '#FFE9C4', transparent: true, opacity: .045, blending: THREE.AdditiveBlending, depthWrite: false, side: THREE.DoubleSide });
-  for (const z of [-3.9, 0, 3.9]) {
-    const p = new THREE.Mesh(new THREE.PlaneGeometry(2.2, 7.4), shaftMat);
-    p.position.set(-3.7, 2.0, z); p.rotation.z = -1.12; p.rotation.y = Math.PI / 2;
-    room.add(p);
-  }
+if (!MOBILE) for (const z of [-3.9, 0, 3.9]) {
+  const pool = new THREE.Mesh(new THREE.PlaneGeometry(2.0, 5.2),
+    new THREE.MeshBasicMaterial({ color: '#FFE2A6', transparent: true, opacity: .13, blending: THREE.AdditiveBlending, depthWrite: false }));
+  pool.rotation.x = -Math.PI / 2; pool.rotation.z = .18;
+  pool.position.set(-4.4, .065, z + .8); room.add(pool);
+}
+/* 墙角 AO 渐变条 */
+const aoTexV = canvasTex(64, 64, (g, w, h) => {
+  const gr = g.createLinearGradient(0, 0, 0, h);
+  gr.addColorStop(0, 'rgba(30,20,8,.32)'); gr.addColorStop(1, 'rgba(30,20,8,0)');
+  g.fillStyle = gr; g.fillRect(0, 0, w, h);
+});
+if (!MOBILE) for (const [x, z, w, d, ry] of [[0, -6.78, 15.2, .5, 0], [0, 6.78, 15.2, .5, 0], [6.78, 0, 13.2, .5, Math.PI/2], [-6.78, 0, 13.2, .5, Math.PI/2]]) {
+  const geo = new THREE.PlaneGeometry(w, d); geo.rotateX(-Math.PI / 2);
+  const m = new THREE.Mesh(geo, new THREE.MeshBasicMaterial({ map: aoTexV, transparent: true, depthWrite: false }));
+  m.rotation.y = ry;
+  m.position.set(x, .064, z); room.add(m);
 }
 
-/* 中央书桌 + 台灯 + 铜铃 + 地毯 */
-box(1.9, .09, 1.0, M.wood, .2, .86, .2, .12, true);
-for (const [dx, dz] of [[-.8, -.36], [.8, -.36], [-.8, .36], [.8, .36]])
-  box(.1, .84, .1, M.woodDk, .2 + dx, .42, .2 + dz, .12);
-const lampShade = new THREE.Mesh(new THREE.ConeGeometry(.22, .3, 24, 1, true),
-  new THREE.MeshStandardMaterial({ color: '#2C5540', roughness: .5, side: THREE.DoubleSide }));
+/* 中央书桌 + 书堆 + 摊开的书 + 台灯 + 铜铃 */
+const deskTop = new THREE.Mesh(new RoundedBoxGeometry(1.95, .08, 1.02, 2, .03), M.wood);
+deskTop.position.set(.15, .88, .2); deskTop.rotation.y = .12; deskTop.castShadow = !MOBILE; room.add(deskTop);
+for (const [dx, dz] of [[-.82, -.34], [.82, -.34], [-.82, .34], [.82, .34]]) {
+  const leg = box(.07, .86, .07, M.woodDk, .15 + dx, .43, .2 + dz, .12, true);
+  leg.rotation.y = .12;
+}
+box(1.5, .05, .06, M.woodDk, .15, .3, .2, .12, false, false);
+const stackColors = ['#8A4B42', '#3F6284', '#4E7D5F'];
+stackColors.forEach((col, si) => {
+  const sw = [.34, .3, .26][si], st = [.05, .045, .04][si], rot = [0, .18, -.12][si];
+  const bk = new THREE.Mesh(new RoundedBoxGeometry(sw, st, .24, 2, .012),
+    new THREE.MeshStandardMaterial({ color: col, roughness: .6 }));
+  bk.position.set(.62, .94 + [0, .05, .095][si] + st / 2, .08);
+  bk.rotation.y = .12 + rot; bk.castShadow = !MOBILE;
+  room.add(bk);
+});
+const openBkL = new THREE.Mesh(new THREE.PlaneGeometry(.3, .21), new THREE.MeshStandardMaterial({ color: '#EFE6CF', roughness: .9, side: THREE.DoubleSide }));
+openBkL.position.set(-.4, .945, .3); openBkL.rotation.set(-.42, .3, 0); openBkL.castShadow = !MOBILE; room.add(openBkL);
+const openBkR = openBkL.clone(); openBkR.rotation.set(-.42, -.3, 0); openBkR.position.x = -.24; room.add(openBkR);
+/* 台灯 */
+const lampShade = new THREE.Mesh(new THREE.ConeGeometry(.2, .28, 28, 1, true),
+  new THREE.MeshPhysicalMaterial({ color: '#2C5540', roughness: .45, side: THREE.DoubleSide, clearcoat: .3 }));
 lampShade.position.set(-.25, 1.42, .05); lampShade.castShadow = !MOBILE; room.add(lampShade);
-box(.04, .5, .04, M.brass, -.25, 1.1, .05, 0, false, false);
-box(.2, .03, .2, M.brass, -.25, .92, .05, 0, false, false);
-const lampLight = new THREE.PointLight('#FFC978', 0, 6, 2);
-lampLight.position.set(-.25, 1.32, .05); room.add(lampLight);
-const bell = new THREE.Mesh(new THREE.SphereGeometry(.075, 20, 14), M.brass);
-bell.position.set(.75, .96, .35); bell.scale.y = .8; bell.castShadow = !MOBILE; room.add(bell);
-box(.16, .04, .16, M.brass, .75, .9, .35, 0, false, false);
-const rug = new THREE.Mesh(new THREE.CircleGeometry(2.5, 48), M.rug);
-rug.rotation.x = -Math.PI / 2; rug.position.y = .075; rug.receiveShadow = !MOBILE; room.add(rug);
+box(.035, .48, .035, M.brass, -.25, 1.12, .05, 0, false, false);
+const lampBase = new THREE.Mesh(new RoundedBoxGeometry(.2, .04, .2, 2, .015), M.brass);
+lampBase.position.set(-.25, .945, .05); room.add(lampBase);
+room.add(lampLight);
+/* 铜铃 */
+const bell = new THREE.Mesh(new THREE.SphereGeometry(.07, 24, 16), M.brass);
+bell.position.set(.72, .975, .34); bell.scale.y = .82; bell.castShadow = !MOBILE; room.add(bell);
+box(.15, .035, .15, M.brass, .72, .945, .34, 0, false, false);
+box(.02, .05, .02, M.brass, .72, 1.02, .34, 0, false, false);
+/* 地毯 */
+const rug = new THREE.Mesh(new THREE.CircleGeometry(2.3, 48), M.rug);
+rug.rotation.x = -Math.PI / 2; rug.position.y = .072; rug.receiveShadow = !MOBILE; room.add(rug);
+/* 盆栽 */
+const pot = new THREE.Mesh(new THREE.CylinderGeometry(.16, .12, .26, 20), M.pot);
+pot.position.set(-5.6, .25, 4.9); pot.castShadow = !MOBILE; room.add(pot);
+box(.3, .04, .3, M.woodDk, -5.6, .1, 4.9, 0, false, false);
+for (let i = 0; i < 7; i++) {
+  const leaf = new THREE.Mesh(new THREE.SphereGeometry(.09 + Math.random() * .07, 8, 6), M.leaf);
+  leaf.position.set(-5.6 + (Math.random() - .5) * .3, .52 + Math.random() * .3, 4.9 + (Math.random() - .5) * .3);
+  leaf.scale.y = .75; leaf.castShadow = !MOBILE; room.add(leaf);
+}
+/* 靠在东墙书架上的木梯 */
+const ladder = new THREE.Group();
+for (const dx of [-.22, .22]) {
+  const rail = new THREE.Mesh(new THREE.BoxGeometry(.05, 3.1, .05), M.woodDk);
+  rail.position.x = dx; rail.castShadow = !MOBILE; ladder.add(rail);
+}
+for (let i = 0; i < 6; i++) {
+  const rung = new THREE.Mesh(new THREE.BoxGeometry(.44, .04, .04), M.wood);
+  rung.position.y = -1.3 + i * .52; ladder.add(rung);
+}
+ladder.position.set(5.55, 1.45, 3.35);
+ladder.rotation.set(.32, -.5, 0);
+room.add(ladder);
 
+/* 灰尘微光（圆形精灵） */
 let dust = null;
 if (!REDUCED) {
-  const n = MOBILE ? 150 : 360, pos = new Float32Array(n * 3);
+  const n = MOBILE ? 140 : 340, pos = new Float32Array(n * 3);
   for (let i = 0; i < n; i++) {
-    pos[i*3] = -6 + Math.random() * 12; pos[i*3+1] = .4 + Math.random() * 2.8; pos[i*3+2] = -5 + Math.random() * 10;
+    pos[i*3] = -6 + Math.random() * 12; pos[i*3+1] = .4 + Math.random() * 2.7; pos[i*3+2] = -5 + Math.random() * 10;
   }
   const g = new THREE.BufferGeometry(); g.setAttribute('position', new THREE.BufferAttribute(pos, 3));
-  dust = new THREE.Points(g, new THREE.PointsMaterial({ color: '#E8D5A8', size: .022, transparent: true, opacity: .5, blending: THREE.AdditiveBlending, depthWrite: false }));
+  dust = new THREE.Points(g, new THREE.PointsMaterial({ map: dustTex, color: '#FFEFC8', size: .05, transparent: true, opacity: .4, blending: THREE.AdditiveBlending, depthWrite: false, sizeAttenuation: true }));
   scene.add(dust);
 }
 
@@ -414,32 +565,42 @@ const UNITS = [
   { x: -4.3, z: 4.7, ry: Math.PI },       { x: 0, z: 4.7, ry: Math.PI },       { x: 4.3, z: 4.7, ry: Math.PI },
   { x: 6.3, z: -2.3, ry: -Math.PI / 2 },  { x: 6.3, z: 2.3, ry: -Math.PI / 2 },
 ];
+const shelfInteriorAO = canvasTex(64, 64, (g, w, h) => {
+  const gr = g.createLinearGradient(0, 0, 0, h);
+  gr.addColorStop(0, 'rgba(20,12,4,.42)'); gr.addColorStop(.5, 'rgba(20,12,4,.16)'); gr.addColorStop(1, 'rgba(20,12,4,.4)');
+  g.fillStyle = gr; g.fillRect(0, 0, w, h);
+});
 for (const u of UNITS) {
   const ry = u.ry, c = Math.cos(ry), s = Math.sin(ry);
   const local = (lx, ly, lz) => ({ x: u.x + lx * c + lz * s, y: ly, z: u.z - lx * s + lz * c });
   for (const [lx, ly, lz, w, h, d] of [
-      [-UW/2 + .06, UH/2, 0, .12, UH, UD], [UW/2 - .06, UH/2, 0, .12, UH, UD],
+      [-UW/2 + .06, UH/2, 0, .13, UH, UD], [UW/2 - .06, UH/2, 0, .13, UH, UD],
       [0, UH/2, UD/2 - .1, UW, UH, .08],
-      [0, UH - .06, 0, UW + .12, .1, UD + .1],
-      [0, .06, 0, UW, .12, UD + .08],
+      [0, UH - .05, 0, UW + .18, .1, UD + .12],
+      [0, .07, 0, UW + .1, .14, UD + .1],
   ]) { const p = local(lx, ly, lz); box(w, h, d, M.wood, p.x, p.y, p.z, ry, true); }
   for (let b = 0; b < BOARDS; b++) {
     const p = local(0, boardY(b), 0);
-    box(UW - .1, .05, UD - .04, M.woodDk, p.x, p.y, p.z, ry);
+    box(UW - .12, .05, UD - .04, M.woodDk, p.x, p.y, p.z, ry);
+    const lip = local(0, boardY(b) + .032, UD/2 - .05);
+    box(UW - .12, .012, .015, M.brass, lip.x, lip.y, lip.z, ry, false, false);
   }
-  const pl = local(0, UH - .01, UD/2 + .012);
-  box(.5, .045, .02, M.brass, pl.x, pl.y, pl.z, ry, false, false);
+  const ao = new THREE.Mesh(new THREE.PlaneGeometry(UW - .16, UH - .3),
+    new THREE.MeshBasicMaterial({ map: shelfInteriorAO, transparent: true, depthWrite: false }));
+  const ap = local(0, UH/2, UD/2 - .115);
+  ao.position.set(ap.x, ap.y, ap.z); ao.rotation.y = ry;
+  ao.renderOrder = 1; room.add(ao);
+  const pl = local(0, UH - .012, UD/2 + .012);
+  box(.46, .04, .02, M.brass, pl.x, pl.y, pl.z, ry, false, false);
 }
 
-/* ══════════ 书 + 书脊烫字 ══════════ */
-const BOOK_DEPTH = .22;
+/* ══════════ 书 + 纸页切口 + 书脊烫字 ══════════ */
+const BOOK_DEPTH = .2;
 const AT = { CW: 96, CH: 256, AW: 1024, AH: 4096, COLS: 10, ROWS: 16, PER: 160 };
-let BOOKS_ALL = [], visible = [], bookMesh = null;
+let BOOKS_ALL = [], visible = [], bookMesh = null, pageMesh = null;
 let labelMeshes = [], pages = [];
 const dummy = new THREE.Object3D();
-
-function faceVec(ry) { return new THREE.Vector3(Math.sin(ry), 0, Math.cos(ry)); }
-function tangentVec(ry) { return new THREE.Vector3(Math.cos(ry), 0, -Math.sin(ry)); }
+const _qy = new THREE.Quaternion(), _qz = new THREE.Quaternion(), _v = new THREE.Vector3();
 
 function buildAtlases(list) {
   const { CW, CH, AW, AH, COLS, ROWS, PER } = AT;
@@ -452,25 +613,30 @@ function buildAtlases(list) {
       const bk = list[p * PER + k];
       const col = k % COLS, row = (k / COLS) | 0;
       const x0 = col * CW, y0 = row * CH;
-      g.strokeStyle = 'rgba(201,162,39,.9)'; g.lineWidth = 2;
-      g.beginPath(); g.moveTo(x0+10, y0+13); g.lineTo(x0+CW-10, y0+13); g.stroke();
-      g.beginPath(); g.moveTo(x0+10, y0+CH-15); g.lineTo(x0+CW-10, y0+CH-15); g.stroke();
+      const gr = g.createLinearGradient(x0, 0, x0 + CW, 0);
+      gr.addColorStop(0, 'rgba(255,246,220,.10)'); gr.addColorStop(.5, 'rgba(255,246,220,.16)'); gr.addColorStop(1, 'rgba(255,246,220,.10)');
+      g.fillStyle = gr; g.fillRect(x0, y0, CW, CH);
+      g.strokeStyle = 'rgba(201,162,39,.95)'; g.lineWidth = 2;
+      g.beginPath(); g.moveTo(x0+10, y0+14); g.lineTo(x0+CW-10, y0+14); g.stroke();
+      g.beginPath(); g.moveTo(x0+10, y0+CH-16); g.lineTo(x0+CW-10, y0+CH-16); g.stroke();
+      g.fillStyle = 'rgba(201,162,39,.95)';
+      g.save(); g.translate(x0 + CW/2, y0 + 26); g.rotate(Math.PI/4); g.fillRect(-3, -3, 6, 6); g.restore();
       const title = bk.title;
       const hasCJK = /[\u4e00-\u9fff\u3400-\u4dbf]/.test(title);
-      g.fillStyle = 'rgba(36,27,18,.94)';
+      g.fillStyle = 'rgba(28,20,12,.95)';
       g.textAlign = 'center'; g.textBaseline = 'middle';
       if (hasCJK) {
-        const chars = [...title], usable = CH - 58;
+        const chars = [...title], usable = CH - 66;
         const fs = Math.max(9, Math.min(23, usable / chars.length / 1.12));
         g.font = `600 ${fs}px "PingFang SC","Microsoft YaHei",serif`;
         const total = chars.length * fs * 1.12;
-        let y = y0 + 20 + Math.max(0, (usable - total) / 2) + fs * .58;
+        let y = y0 + 34 + Math.max(0, (usable - total) / 2) + fs * .58;
         for (const ch of chars) { g.fillText(ch, x0 + CW/2, y); y += fs * 1.12; }
       } else {
-        const usable = CH - 58, est = title.length * 9.4;
+        const usable = CH - 66, est = title.length * 9.4;
         const fs = Math.max(9.5, Math.min(19, usable / Math.max(est, 1) * 19));
         g.font = `600 ${fs}px Georgia,"Times New Roman",serif`;
-        g.save(); g.translate(x0 + CW/2, y0 + CH/2); g.rotate(-Math.PI/2);
+        g.save(); g.translate(x0 + CW/2, y0 + CH/2 + 6); g.rotate(-Math.PI/2);
         if (g.measureText(title).width > usable) {
           let t = title;
           while (t.length > 2 && g.measureText(t + '…').width > usable) t = t.slice(0, -1);
@@ -496,12 +662,9 @@ function makeLabelMeshes() {
     g.setAttribute('position', new THREE.BufferAttribute(new Float32Array(maxQ * 4 * 3), 3));
     g.setAttribute('uv', new THREE.BufferAttribute(new Float32Array(maxQ * 4 * 2), 2));
     const idx = new Uint32Array(maxQ * 6);
-    for (let q = 0; q < maxQ; q++) {
-      /* 顶点顺序 TL(0) TR(1) BR(2) BL(3)；面向 f 时 (TL,BL,BR) 与 (TL,BR,TR) 为正面 */
-      idx.set([q*4, q*4+3, q*4+2,  q*4, q*4+2, q*4+1], q * 6);
-    }
+    for (let q = 0; q < maxQ; q++) idx.set([q*4, q*4+3, q*4+2,  q*4, q*4+2, q*4+1], q * 6);
     g.setIndex(new THREE.BufferAttribute(idx, 1));
-    const mat = new THREE.MeshBasicMaterial({ map: pages[p], transparent: true, alphaTest: .08, side: THREE.FrontSide });
+    const mat = new THREE.MeshBasicMaterial({ map: pages[p], transparent: true, alphaTest: .06, side: THREE.FrontSide });
     const mesh = new THREE.Mesh(g, mat);
     mesh.frustumCulled = false;
     scene.add(mesh);
@@ -515,7 +678,7 @@ function assignUVs(list) {
   list.forEach(bk => {
     const { page, col, row } = bk._cell;
     const u0 = (col * CW + 4) / AW, u1 = (col * CW + CW - 4) / AW;
-    const vT = (row * CH + 4) / AH, vB = ((row + 1) * CH - 4) / AH;   /* flipY=false：vT=格顶 */
+    const vT = (row * CH + 4) / AH, vB = ((row + 1) * CH - 4) / AH;
     const uv = labelMeshes[page].uvAttr.array, o = bk._quad * 8;
     uv[o]=u0; uv[o+1]=vT;  uv[o+2]=u1; uv[o+3]=vT;
     uv[o+4]=u1; uv[o+5]=vB; uv[o+6]=u0; uv[o+7]=vB;
@@ -525,7 +688,7 @@ function assignUVs(list) {
 
 function slotWorld(sl) {
   const u = UNITS[sl.u], c = Math.cos(u.ry), s = Math.sin(u.ry);
-  const lx = sl.x, lz = UD/2 - BOOK_DEPTH/2 - .02;
+  const lx = sl.x, lz = UD/2 - BOOK_DEPTH/2 - .03;
   return { x: u.x + lx * c + lz * s, y: boardY(sl.b) + .025, z: u.z - lx * s + lz * c };
 }
 
@@ -537,24 +700,25 @@ function shelfLayoutFor(list) {
     if (cursor + th > 1.62) { cursor = -1.52; b++; }
     if (b >= BOARDS) { b = 0; u++; cursor = -1.52; }
     if (u >= UNITS.length) { u = UNITS.length - 1; b = Math.min(b, BOARDS - 1); }
-    out[i] = { u, b, x: cursor + th / 2 };
-    cursor += th + .022;
-    if (Math.random() < .05) cursor += .04;
+    out[i] = { u, b, x: cursor + th / 2, tilt: 0 };
+    cursor += th + .02;
+    if (Math.random() < .06) { cursor += .05; if (i > 0) out[i - 1].tilt = (Math.random() < .5 ? -1 : 1) * (.05 + Math.random() * .05); }
   }
   return out;
 }
 
 function writeLabel(i) {
   const bk = BOOKS_ALL[i], L = labelMeshes[bk._cell.page], cur = bk.cur;
-  const f = faceVec(cur.ry), t = tangentVec(cur.ry);
-  const hw = (cur.s * bk.th) / 2 + .008, hh = (cur.s * bk.h * .8) / 2;
-  const off = cur.s * BOOK_DEPTH / 2 + .006;   /* 书脊面在深度方向上，标签贴在其外 */
-  const cx = cur.p.x + f.x * off, cz = cur.p.z + f.z * off, cy = cur.p.y;
+  const hw = (cur.s * bk.th) / 2 + .007, hh = (cur.s * bk.h * .8) / 2;
+  const off = cur.s * BOOK_DEPTH / 2 + .006;
+  const q = bk._q;
   const P = L.pos.array, o = bk._quad * 12;
-  P[o]   = cx - t.x*hw; P[o+1]  = cy + hh; P[o+2]  = cz - t.z*hw;
-  P[o+3] = cx + t.x*hw; P[o+4]  = cy + hh; P[o+5]  = cz + t.z*hw;
-  P[o+6] = cx + t.x*hw; P[o+7]  = cy - hh; P[o+8]  = cz + t.z*hw;
-  P[o+9] = cx - t.x*hw; P[o+10] = cy - hh; P[o+11] = cz - t.z*hw;
+  for (let k = 0; k < 4; k++) {
+    const lx = (k === 0 || k === 3) ? -hw : hw;
+    const ly = (k < 2) ? hh : -hh;
+    _v.set(lx, ly, off).applyQuaternion(q).add(cur.p);
+    P[o + k*3] = _v.x; P[o + k*3 + 1] = _v.y; P[o + k*3 + 2] = _v.z;
+  }
   L.pos.needsUpdate = true;
 }
 
@@ -570,11 +734,18 @@ function writeBook(i) {
     if (t < 2.4) wob = Math.sin(i * .35 - t * 9) * Math.exp(-t * 1.9) * .085;
     else waveT = 0;
   }
+  _qy.setFromAxisAngle(_v.set(0, 1, 0), cur.ry);
+  _qz.setFromAxisAngle(_v.set(0, 0, 1), bk._tilt || 0);
+  bk._q.copy(_qy).multiply(_qz);
   dummy.position.set(cur.p.x, cur.p.y + Math.max(0, wob), cur.p.z);
-  dummy.rotation.set(0, cur.ry, 0);
-  dummy.scale.set(Math.max(.0001, cur.s * bk.th), Math.max(.0001, cur.s * bk.h), Math.max(.0001, cur.s * BOOK_DEPTH));
+  dummy.quaternion.copy(bk._q);
+  dummy.scale.set(cur.s * bk.th, cur.s * bk.h, cur.s * BOOK_DEPTH);
   dummy.updateMatrix();
   bookMesh.setMatrixAt(i, dummy.matrix);
+  /* 纸页切口：略窄的奶油色块，顶部露出一线纸页 */
+  dummy.scale.set(cur.s * bk.th * .86, cur.s * bk.h * 1.012, cur.s * BOOK_DEPTH * .9);
+  dummy.updateMatrix();
+  pageMesh.setMatrixAt(i, dummy.matrix);
   writeLabel(i);
 }
 
@@ -583,7 +754,7 @@ async function buildLibrary(data) {
   const list = data.books;
   list.forEach((b, i) => {
     const st = Math.max(0, b.stars || 0);
-    b.th = .062 + .075 * Math.min(1, Math.log10(st + 1) / 4.3);
+    b.th = (.05 + .1 * Math.min(1, Math.pow(Math.log10(st + 1) / 4.3, .8))) * (.9 + ((i * 71) % 10) / 10 * .22);
     b.h  = .5 + ((i * 97) % 13) / 13 * .1;
   });
 
@@ -598,21 +769,27 @@ async function buildLibrary(data) {
   BOOKS_ALL = sorted;
 
   const geo = new THREE.BoxGeometry(1, 1, 1);
-  const mat = new THREE.MeshStandardMaterial({ roughness: .62, metalness: .05 });
+  const mat = new THREE.MeshStandardMaterial({ roughness: .58, metalness: .04, envMapIntensity: .07 });
   bookMesh = new THREE.InstancedMesh(geo, mat, sorted.length);
   bookMesh.instanceMatrix.setUsage(THREE.DynamicDrawUsage);
   bookMesh.castShadow = !MOBILE; bookMesh.receiveShadow = !MOBILE;
   bookMesh.frustumCulled = false;
   scene.add(bookMesh);
+  pageMesh = new THREE.InstancedMesh(geo, M.paper, sorted.length);
+  pageMesh.instanceMatrix.setUsage(THREE.DynamicDrawUsage);
+  pageMesh.castShadow = false; pageMesh.receiveShadow = false;
+  pageMesh.frustumCulled = false;
+  scene.add(pageMesh);
 
   sorted.forEach((b, i) => {
     b.idx = i;
     const c = new THREE.Color(b.color);
-    c.offsetHSL(((i * 37) % 7 - 3) * .004, -.16, ((i * 53) % 9 - 4) * .012 + .02);
+    c.offsetHSL(((i * 37) % 7 - 3) * .006, 0, ((i * 53) % 9 - 4) * .014 - .02);
     b.base = c;
     bookMesh.setColorAt(i, c);
     b.cur = { p: new THREE.Vector3(0, -3.2, 0), s: 1, ry: 0 };
     b.tgt = { p: new THREE.Vector3(), s: 1, ry: 0 };
+    b._tilt = 0; b._q = new THREE.Quaternion();
   });
   bookMesh.instanceColor.needsUpdate = true;
 
@@ -622,10 +799,9 @@ async function buildLibrary(data) {
   sorted.forEach(b => { b._quad = qc[b._cell.page]++; });
   assignUVs(sorted);
 
-  applyFilters();          /* 排架 + 计数 */
+  applyFilters();
 }
 
-/* 排架：visible 依次入槽，其余收走 */
 let state = { cat: null, kind: null, q: '', sort: 'shelf' };
 function reShelve() {
   const slots = shelfLayoutFor(visible);
@@ -634,6 +810,7 @@ function reShelve() {
     b.tgt.p.set(w.x, w.y + b.h / 2, w.z);
     b.tgt.ry = UNITS[slots[i].u].ry;
     b.tgt.s = 1;
+    b._tilt = slots[i].tilt || 0;
   });
   const visSet = new Set(visible);
   BOOKS_ALL.forEach(b => { if (!visSet.has(b)) b.tgt.s = .0001; });
@@ -735,7 +912,7 @@ function doRaycast() {
   hoverIdx = idx;
   if (idx >= 0) {
     const b = BOOKS_ALL[idx];
-    if (selectIdx !== idx) setColor(idx, b.base.clone().offsetHSL(0, .04, .13));
+    if (selectIdx !== idx) setColor(idx, b.base.clone().offsetHSL(0, .05, .12));
     tip.style.display = 'block';
     tip.innerHTML = `<div class="t">${b.title}</div><div class="c">${b.emoji} ${b.category}${b.subcategory ? ' · ' + b.subcategory : ''}</div>`;
     renderer.domElement.style.cursor = 'pointer';
@@ -805,44 +982,46 @@ function animate() {
   if (bookMesh) {
     for (let i = 0; i < BOOKS_ALL.length; i++) writeBook(i);
     bookMesh.instanceMatrix.needsUpdate = true;
+    pageMesh.instanceMatrix.needsUpdate = true;
   }
 
-  lerpLight += ((night ? 1 : 0) - lerpLight) * (REDUCED ? 1 : .045);
+  lerpLight += ((night ? 1 : 0) - lerpLight) * (REDUCED ? 1 : .04);
   const L = lerpLight;
   scene.background.lerpColors(DAY_BG, NIGHT_BG, L);
   scene.fog.color.copy(scene.background);
-  sun.intensity = 2.2 * (1 - L) + .1;
-  hemi.intensity = .8 * (1 - L) + .12;
-  lampLight.intensity = 2.8 * L;
-  M.pane.emissiveIntensity = .9 * (1 - L) + .06;
+  sun.intensity = 1.9 * (1 - L) + .06;
+  hemi.intensity = .32 * (1 - L) + .08;
+  glow.intensity = .32 * (1 - L) + .05;
+  lampLight.intensity = 3.2 * L;
+  M.pane.emissiveIntensity = .75 * (1 - L) + .1;
   M.wall.color.lerpColors(WALL_DAY, WALL_NIGHT, L);
   M.floor.color.lerpColors(FLOOR_DAY, FLOOR_NIGHT, L);
 
   if (dust) {
     const pos = dust.geometry.attributes.position;
-    const t = performance.now() * .00022;
+    const t = performance.now() * .0002;
     for (let i = 0; i < pos.count; i++) {
-      pos.array[i*3+1] += Math.sin(t + i) * .0006;
-      pos.array[i*3]   += Math.cos(t * .7 + i * 1.3) * .0004;
+      pos.array[i*3+1] += Math.sin(t + i * 1.7) * .0007;
+      pos.array[i*3]   += Math.cos(t * .6 + i) * .0005;
     }
     pos.needsUpdate = true;
   }
 
-  if (!REDUCED) {
-    controls.autoRotate = performance.now() - lastAct > 12000 && !panel.classList.contains('open');
-  }
+  if (!REDUCED) controls.autoRotate = performance.now() - lastAct > 14000 && !panel.classList.contains('open');
   controls.update();
   doRaycast();
   renderer.render(scene, camera);
 }
 
 function entrance() {
-  if (REDUCED) { camera.position.set(4.5, 2.5, 3.6); return; }
-  const from = camera.position.clone(), to = new THREE.Vector3(4.5, 2.5, 3.6);
-  const t0 = performance.now(), D = 2100;
+  if (REDUCED) { camera.position.set(4.6, 2.4, 3.8); return; }
+  const from = camera.position.clone(), to = new THREE.Vector3(4.6, 2.4, 3.8);
+  const t0 = performance.now(), D = 2200;
   (function step() {
     const k = Math.min(1, (performance.now() - t0) / D);
-    camera.position.lerpVectors(from, to, 1 - Math.pow(1 - k, 3));
+    const e = 1 - Math.pow(1 - k, 3);
+    camera.position.lerpVectors(from, to, e);
+    camera.position.y += Math.sin(e * Math.PI) * .12;
     if (k < 1) requestAnimationFrame(step);
   })();
 }

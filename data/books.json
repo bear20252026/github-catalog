@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-18T08:39:00",
+ "generated": "2026-11-18T09:26:08",
  "owner": "bear20252026",
  "counts": {
   "total": 562,
@@ -12,97 +12,97 @@
  "palette": {
   "置顶仓": {
    "emoji": "🟨",
-   "color": "#C9A227",
+   "color": "#B99A2E",
    "kind": "pinned"
   },
   "游戏与互动娱乐": {
    "emoji": "🟩",
-   "color": "#3E7C59",
+   "color": "#4E7D5F",
    "kind": "original"
   },
   "Agent 桌面与 AI 客户端": {
    "emoji": "🟦",
-   "color": "#2F5D8A",
+   "color": "#46688C",
    "kind": "original"
   },
   "应用软件": {
    "emoji": "🟧",
-   "color": "#C96F3B",
+   "color": "#B06E45",
    "kind": "original"
   },
   "纯代码影片": {
    "emoji": "🟥",
-   "color": "#A64B4B",
+   "color": "#9E5250",
    "kind": "original"
   },
   "网页还原与镜像": {
    "emoji": "🟪",
-   "color": "#7A5FA0",
+   "color": "#7B6099",
    "kind": "original"
   },
   "底层与逆向考古": {
    "emoji": "🟫",
-   "color": "#7A5C3E",
+   "color": "#77603F",
    "kind": "original"
   },
   "分发与沙盒": {
    "emoji": "⬛",
-   "color": "#4A4A48",
+   "color": "#4E4B46",
    "kind": "original"
   },
   "空仓与占位": {
    "emoji": "⚪",
-   "color": "#B9B3A7",
+   "color": "#A9A294",
    "kind": "original"
   },
   "AI 智能体与编码工具": {
    "emoji": "🔹",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "kind": "library"
   },
   "视觉艺术与网页特效": {
    "emoji": "🟣",
-   "color": "#A9579B",
+   "color": "#96548A",
    "kind": "library"
   },
   "桌面与移动客户端": {
    "emoji": "🟠",
-   "color": "#C97E3D",
+   "color": "#B87A44",
    "kind": "library"
   },
   "开发工具与命令行": {
    "emoji": "🟤",
-   "color": "#6E6A45",
+   "color": "#6B6748",
    "kind": "library"
   },
   "AI 模型与机器学习": {
    "emoji": "🟢",
-   "color": "#2F7E6E",
+   "color": "#2F7264",
    "kind": "library"
   },
   "学习资源与清单": {
    "emoji": "🟡",
-   "color": "#AD8B20",
+   "color": "#9C8227",
    "kind": "library"
   },
   "办公与创作套件": {
    "emoji": "🫒",
-   "color": "#6C8F3F",
+   "color": "#66834A",
    "kind": "library"
   },
   "前端与 Web 框架": {
    "emoji": "🔵",
-   "color": "#58A0C8",
+   "color": "#4F8CA8",
    "kind": "library"
   },
   "后端与基础设施": {
    "emoji": "◼️",
-   "color": "#56606B",
+   "color": "#5A6470",
    "kind": "library"
   },
   "编程语言与通用库": {
    "emoji": "⚪",
-   "color": "#8C7B6B",
+   "color": "#857667",
    "kind": "library"
   }
  },
@@ -118,7 +118,7 @@
    "updated": "2026-11-18",
    "desc": "本目录仓库：把名下 220 个仓库与上游 347 件馆藏逐册登记成「图书馆」——README 逐仓读过手写说明，catalog.json 存结构化数据（README 自述原文、章节标题、根目录文件树与标签）。",
    "url": "https://github.com/bear20252026/github-catalog",
-   "color": "#C9A227",
+   "color": "#B99A2E",
    "emoji": "🟨"
   },
   {
@@ -132,7 +132,7 @@
    "updated": "2026-11-13",
    "desc": "Aegis 双端安全浏览器——以「边界驱动架构」替代补丁式加固：所有高危副作用必经唯一能力代理裁决，裁决逻辑收敛在无 I/O 的 Rust 策略核心；Windows（C#/.NET 10 + WebView2）+ Android（Kotlin/Compose）。",
    "url": "https://github.com/bear20252026/aegis-dual-platform",
-   "color": "#C96F3B",
+   "color": "#B06E45",
    "emoji": "🟧"
   },
   {
@@ -146,7 +146,7 @@
    "updated": "2026-11-09",
    "desc": "OpenClaw 🦞——「把助手放进你的设备与聊天里」的开源个人 AI 助理框架（源码归档）。",
    "url": "https://github.com/bear20252026/agent-01",
-   "color": "#2F5D8A",
+   "color": "#46688C",
    "emoji": "🟦"
   },
   {
@@ -160,7 +160,7 @@
    "updated": "2026-08-18",
    "desc": "Agent TARS——字节跳动开源的多模态通用 Agent：真实操作浏览器、命令行与文件系统完成任务（源码归档）。",
    "url": "https://github.com/bear20252026/agent-02",
-   "color": "#2F5D8A",
+   "color": "#46688C",
    "emoji": "🟦"
   },
   {
@@ -174,7 +174,7 @@
    "updated": "2026-08-18",
    "desc": "Eigent——开源 AI 协作桌面（Cowork Desktop）：一条工作流调度多个「AI 员工」解锁生产力（源码归档）。",
    "url": "https://github.com/bear20252026/agent-03",
-   "color": "#2F5D8A",
+   "color": "#46688C",
    "emoji": "🟦"
   },
   {
@@ -188,7 +188,7 @@
    "updated": "2026-11-13",
    "desc": "Wove——开源桌面 AI 编码 Agent：用自己的 API Key 直连任意提供商（Claude/GPT/Gemini/MiniMax/Ollama），本地写码、跑命令、浏览网页并自检成果，无代理、无云中转、无厂商锁定（源码归档）。",
    "url": "https://github.com/bear20252026/agent-04",
-   "color": "#2F5D8A",
+   "color": "#46688C",
    "emoji": "🟦"
   },
   {
@@ -202,7 +202,7 @@
    "updated": "2026-08-18",
    "desc": "PiDesk——带屏幕感知与 GUI 控制的开源桌面 AI Agent（macOS 优先），基于 pi monorepo 引擎：TUI、Agent 循环、编码工具、会话持久化、压缩与多进程（源码归档）。",
    "url": "https://github.com/bear20252026/agent-05",
-   "color": "#2F5D8A",
+   "color": "#46688C",
    "emoji": "🟦"
   },
   {
@@ -216,7 +216,7 @@
    "updated": "2026-08-18",
    "desc": "AgentForge——自建 AI Agent 桌面工具：Agent Loop + Skills 系统 + MCP 协议，DeepSeek 主模型，工具链全 Node 实现，Tauri2 + React19，可打包 Windows .exe / macOS .dmg。",
    "url": "https://github.com/bear20252026/agent-06",
-   "color": "#2F5D8A",
+   "color": "#46688C",
    "emoji": "🟦"
   },
   {
@@ -230,7 +230,7 @@
    "updated": "2026-08-18",
    "desc": "AionUi——iOfficeAI 开源的 24/7 AI Agent 协作桌面：可同时驱动 OpenClaw、Hermes、Claude Code、Codex、OpenCode 等 20 多种编码 Agent（源码归档）。",
    "url": "https://github.com/bear20252026/AionUi",
-   "color": "#2F5D8A",
+   "color": "#46688C",
    "emoji": "🟦"
   },
   {
@@ -244,7 +244,7 @@
    "updated": "2026-08-28",
    "desc": "AionUi 全历史 fork——完整保留上游提交历史的复刻副本。",
    "url": "https://github.com/bear20252026/AionUi-fork",
-   "color": "#2F5D8A",
+   "color": "#46688C",
    "emoji": "🟦"
   },
   {
@@ -258,7 +258,7 @@
    "updated": "2026-09-27",
    "desc": "AionUi v2.2.2 本地免登录版——前端 no-login 补丁 + 后端 find_by_model 回退 + GitHub Actions 云构建；桌面免登录直用，网页版可单用户免登录或多用户按账号隔离（仅供学习研究）。",
    "url": "https://github.com/bear20252026/AionUi-Local-2.2.2",
-   "color": "#2F5D8A",
+   "color": "#46688C",
    "emoji": "🟦"
   },
   {
@@ -272,7 +272,7 @@
    "updated": "2026-08-26",
    "desc": "AionUi NoLogin Fork · 完美本地版——完整可重建的免登录分叉归档：脱离官方账号体系、零付费、全本地运行，不被官方更新推送控制（仅供学习研究）。",
    "url": "https://github.com/bear20252026/AionUi-NoLogin-Fork",
-   "color": "#2F5D8A",
+   "color": "#46688C",
    "emoji": "🟦"
   },
   {
@@ -286,7 +286,7 @@
    "updated": "2026-11-04",
    "desc": "anlibili 源码还原包——从 B 站视频聚合站抓取的完整静态源码（2026-11-04）：1902 个视频数据 + hash 路由 + 搜索收藏历史（localStorage），纯静态无构建。",
    "url": "https://github.com/bear20252026/anlibili",
-   "color": "#7A5FA0",
+   "color": "#7B6099",
    "emoji": "🟪"
   },
   {
@@ -300,7 +300,7 @@
    "updated": "2026-10-10",
    "desc": "ARTEX 预编译二进制分发仓——原 Release 与 Docker 镜像失效后，用 GitHub Actions 从源码云端重编译出开箱即用的版本；不含源码（源码在 bear20252026/ARTEX）。",
    "url": "https://github.com/bear20252026/ARTEX-release",
-   "color": "#4A4A48",
+   "color": "#4E4B46",
    "emoji": "⬛"
   },
   {
@@ -314,7 +314,7 @@
    "updated": "2026-08-28",
    "desc": "AURAL 音乐播放器（Z.ai 搞AI的西窗烛镜像）——纯前端音乐播放器：网易云 / QQ 音乐多平台搜索、lrclib 等多源歌词、9 种聊天软件主题（QQ/微信/Discord/Telegram/iMessage…），带 Node 代理。",
    "url": "https://github.com/bear20252026/aural-music-player",
-   "color": "#7A5FA0",
+   "color": "#7B6099",
    "emoji": "🟪"
   },
   {
@@ -328,7 +328,7 @@
    "updated": "2026-11-11",
    "desc": "AI Work OS v0.19.0——本地优先、可恢复、受控执行且可受控扩展的个人 Agent 学习工作系统：Rust 进程监督控制面 + TypeScript 编排/策略/可恢复运行时 + Python 重计算 sidecar，工作台只提交意图与订阅事件。",
    "url": "https://github.com/bear20252026/b07-build",
-   "color": "#2F5D8A",
+   "color": "#46688C",
    "emoji": "🟦"
   },
   {
@@ -342,7 +342,7 @@
    "updated": "2026-07-28",
    "desc": "Vite React+TS 模板起手的个人沙盒：Kimi Agent 对话存档压缩包、info / me 笔记与未命名实验。",
    "url": "https://github.com/bear20252026/bear",
-   "color": "#4A4A48",
+   "color": "#4E4B46",
    "emoji": "⬛"
   },
   {
@@ -356,7 +356,7 @@
    "updated": "2026-10-04",
    "desc": "Canyon Circuit——低多边形 3D 街机赛车（Three.js + TypeScript + Vite）：阳光峡谷环线，爬坡、发夹弯、大桥、跳台、精准加速带与开阔沙漠，同性能车辆公平竞速。",
    "url": "https://github.com/bear20252026/canyon-circuit",
-   "color": "#3E7C59",
+   "color": "#4E7D5F",
    "emoji": "🟩"
   },
   {
@@ -370,7 +370,7 @@
    "updated": "2026-08-18",
    "desc": "LobeHub——把 Agent 组织成 7×24 值班的 AI 团队：雇佣、排班、汇报，人保持掌舵（LobeChat 团队出品，源码归档）。",
    "url": "https://github.com/bear20252026/chat-01",
-   "color": "#2F5D8A",
+   "color": "#46688C",
    "emoji": "🟦"
   },
   {
@@ -384,7 +384,7 @@
    "updated": "2026-08-18",
    "desc": "Cherry Studio——多模型桌面 AI 客户端：聊天、助手与 MCP 工具生态（源码归档）。",
    "url": "https://github.com/bear20252026/chat-02",
-   "color": "#2F5D8A",
+   "color": "#46688C",
    "emoji": "🟦"
   },
   {
@@ -398,7 +398,7 @@
    "updated": "2026-08-18",
    "desc": "Jan——开源 ChatGPT 替代品：本地优先，离线可跑本地模型（源码归档）。",
    "url": "https://github.com/bear20252026/chat-03",
-   "color": "#2F5D8A",
+   "color": "#46688C",
    "emoji": "🟦"
   },
   {
@@ -412,7 +412,7 @@
    "updated": "2026-08-18",
    "desc": "Chatbox——桌面 / 移动 / 网页多端 AI 聊天客户端社区版（源码归档）。",
    "url": "https://github.com/bear20252026/chat-04",
-   "color": "#2F5D8A",
+   "color": "#46688C",
    "emoji": "🟦"
   },
   {
@@ -426,7 +426,7 @@
    "updated": "2026-08-18",
    "desc": "5ire——精致 AI 助手与 MCP 客户端（Electron，源码归档）。",
    "url": "https://github.com/bear20252026/chat-05",
-   "color": "#2F5D8A",
+   "color": "#46688C",
    "emoji": "🟦"
   },
   {
@@ -440,7 +440,7 @@
    "updated": "2026-08-18",
    "desc": "PuPu——本地与云端模型通吃的桌面 AI 客户端：工作区感知聊天 + 内置 MCP 工具（源码归档）。",
    "url": "https://github.com/bear20252026/chat-06",
-   "color": "#2F5D8A",
+   "color": "#46688C",
    "emoji": "🟦"
   },
   {
@@ -454,7 +454,7 @@
    "updated": "2026-08-18",
    "desc": "ChatAnyLLM——通过 OpenAI 兼容 API 连接任意模型提供商或 Agent 系统的桌面聊天应用（源码归档）。",
    "url": "https://github.com/bear20252026/chat-07",
-   "color": "#2F5D8A",
+   "color": "#46688C",
    "emoji": "🟦"
   },
   {
@@ -468,7 +468,7 @@
    "updated": "2026-08-18",
    "desc": "UniChat AI——跨平台桌面应用，用统一优雅的聊天界面访问多家大模型（源码归档）。",
    "url": "https://github.com/bear20252026/chat-08",
-   "color": "#2F5D8A",
+   "color": "#46688C",
    "emoji": "🟦"
   },
   {
@@ -482,7 +482,7 @@
    "updated": "2026-08-18",
    "desc": "LLM Symphony——Windows 上的隐私优先多模型聊天客户端：默认隐身、用自己的 API Key 直连 ChatGPT / Claude / Grok / DeepSeek / Gemini（仅 README 文档仓，已上架 Microsoft Store）。",
    "url": "https://github.com/bear20252026/chat-09",
-   "color": "#2F5D8A",
+   "color": "#46688C",
    "emoji": "🟦"
   },
   {
@@ -496,7 +496,7 @@
    "updated": "2026-08-18",
    "desc": "llm-agent——.NET WinForms 的 Windows 桌面客户端：统一界面访问多家 LLM 服务商，经典三层架构 API/BLL/DAL（源码归档）。",
    "url": "https://github.com/bear20252026/chat-10",
-   "color": "#2F5D8A",
+   "color": "#46688C",
    "emoji": "🟦"
   },
   {
@@ -510,7 +510,7 @@
    "updated": "2026-08-18",
    "desc": "OOLIS——100% 离线的 LLM 桌面客户端：数据完全自控，默认支持 Ollama 本地与多家云端（源码归档）。",
    "url": "https://github.com/bear20252026/chat-11",
-   "color": "#2F5D8A",
+   "color": "#46688C",
    "emoji": "🟦"
   },
   {
@@ -524,7 +524,7 @@
    "updated": "2026-08-23",
    "desc": "基于 Chromium 150 的 AI 浏览器定制工程（Tabby）：逆向 Tabbit AI Browser 核心功能并集成进自编译 Chromium，含架构设计、API、扩展开发、部署与故障排除全套文档和构建脚本。",
    "url": "https://github.com/bear20252026/chromium150-tabby",
-   "color": "#7A5C3E",
+   "color": "#77603F",
    "emoji": "🟫"
   },
   {
@@ -538,7 +538,7 @@
    "updated": "2026-08-18",
    "desc": "Claw Code——围绕 LazyCodex / Gajae Code 等「爪系」编码 Agent 的配置与工具链仓库：含 .claude / .claw / .omx 配置与容器化脚本。",
    "url": "https://github.com/bear20252026/ClawCode",
-   "color": "#2F5D8A",
+   "color": "#46688C",
    "emoji": "🟦"
   },
   {
@@ -552,7 +552,7 @@
    "updated": "2026-10-17",
    "desc": "深海邮局 Deep Sea Post Office——60 分钟纯 Python 逐帧渲染动画长片：小潜艇邮差替丢失歌声的鲸鱼奶奶送信，让寂静小镇重新开口唱歌；字体（马善政楷体）、配乐、画面全部由代码生成。",
    "url": "https://github.com/bear20252026/deep-sea-post-film",
-   "color": "#A64B4B",
+   "color": "#9E5250",
    "emoji": "🟥"
   },
   {
@@ -566,7 +566,7 @@
    "updated": "2026-09-10",
    "desc": "DeepSeek Harness（dsh）——DeepSeek 官方开源的 Agent harness：「一切皆插件」架构，模型、工具、UI、技能均可由插件替换，由 Cordis 驱动（源码归档，developer preview）。",
    "url": "https://github.com/bear20252026/DeepSeek-Harness",
-   "color": "#2F5D8A",
+   "color": "#46688C",
    "emoji": "🟦"
   },
   {
@@ -580,7 +580,7 @@
    "updated": "2026-08-21",
    "desc": "桌面整理 SnowDesktop（发行版）——Windows 桌面整理美化工具：Direct2D 自绘桌面替代 Explorer 原生图标，多显示器网格布局、可嵌入组件与 Lua 脚本扩展；仓库带 exe 与任务栏钩子 DLL。",
    "url": "https://github.com/bear20252026/desktop-organizer",
-   "color": "#C96F3B",
+   "color": "#B06E45",
    "emoji": "🟧"
   },
   {
@@ -594,7 +594,7 @@
    "updated": "2026-08-22",
    "desc": "SnowDesktop 源码（苹果风格改造）——C++/CMake 工程：自定义桌面、可嵌入组件与 Lua 脚本扩展的完整实现。",
    "url": "https://github.com/bear20252026/desktop-organizer-source",
-   "color": "#C96F3B",
+   "color": "#B06E45",
    "emoji": "🟧"
   },
   {
@@ -608,7 +608,7 @@
    "updated": "2026-11-18",
    "desc": "绘图笔记 App——本地优先的加密绘图与笔记应用（Flutter）：块文档、分页画布、无限画布，同步为可选的用户自配 WebDAV 端到端加密，不用即零网络请求；Windows / Android / macOS。",
    "url": "https://github.com/bear20252026/drawing_notes_app",
-   "color": "#C96F3B",
+   "color": "#B06E45",
    "emoji": "🟧"
   },
   {
@@ -622,7 +622,7 @@
    "updated": "2026-11-18",
    "desc": "梦幻画廊 Dream Gallery——基于《小王子》B612 的 Three.js 3D 交互画廊游戏：主线是可玩的小说复述（坠机沙漠 → 画画 → 狐狸），配单文件 Node 零依赖后端（私有备份仓基线）。",
    "url": "https://github.com/bear20252026/dream-gallery",
-   "color": "#C96F3B",
+   "color": "#B06E45",
    "emoji": "🟧"
   },
   {
@@ -636,7 +636,7 @@
    "updated": "2026-07-30",
    "desc": "梦幻画廊 · 昆仑灵鉴官方落地页（开篇）——React + Vite 源码。",
    "url": "https://github.com/bear20252026/dream-gallery-landing",
-   "color": "#C96F3B",
+   "color": "#B06E45",
    "emoji": "🟧"
   },
   {
@@ -650,7 +650,7 @@
    "updated": "2026-10-07",
    "desc": "余烬牌局 Ember Duel——双语烹饪题材战术卡牌对战（Godot 4.7）：完整源码、本地化、资产溯源与可移植构建脚本，可对接 v4 匹配服务端打在线多人。",
    "url": "https://github.com/bear20252026/emberduel",
-   "color": "#3E7C59",
+   "color": "#4E7D5F",
    "emoji": "🟩"
   },
   {
@@ -664,7 +664,7 @@
    "updated": "2026-10-17",
    "desc": "The Fallen Star——60 分钟纯 Python「手绘」动画长片：会笑的星星坠落到 B612 小行星，男孩、绵羊与小星星 Pip 送它回家；每一帧的笔触、光影与角色都是代码画的。",
    "url": "https://github.com/bear20252026/fallen-star-film",
-   "color": "#A64B4B",
+   "color": "#9E5250",
    "emoji": "🟥"
   },
   {
@@ -678,7 +678,7 @@
    "updated": "2026-10-04",
    "desc": "远方 · Faraway——第一人称 three.js 场景：花海草丘之上无尽积云之海，山顶立着披苔藓、系红丝带的古老机器人守望者；含多人房间服务端与测试冒烟脚本。",
    "url": "https://github.com/bear20252026/faraway-game",
-   "color": "#3E7C59",
+   "color": "#4E7D5F",
    "emoji": "🟩"
   },
   {
@@ -692,7 +692,7 @@
    "updated": "2026-08-27",
    "desc": "空仓占位——Hermes Agent（开源 AI Agent）预留仓，暂无内容（注意：馆藏里的 bear20252026/hermes-agent-1 是 NousResearch/hermes-agent 的复刻，另一个仓）。",
    "url": "https://github.com/bear20252026/hermes-agent",
-   "color": "#B9B3A7",
+   "color": "#A9A294",
    "emoji": "⚪"
   },
   {
@@ -706,7 +706,7 @@
    "updated": "2026-08-27",
    "desc": "空仓占位——Hermes 桌面应用构建预留仓，暂无内容。",
    "url": "https://github.com/bear20252026/HermesDesktop",
-   "color": "#B9B3A7",
+   "color": "#A9A294",
    "emoji": "⚪"
   },
   {
@@ -720,7 +720,7 @@
    "updated": "2026-08-13",
    "desc": "Invisible Cloak Website——WebGL 交互网站；目前仓库只有 README 一页说明。",
    "url": "https://github.com/bear20252026/invisible-cloak-site",
-   "color": "#7A5FA0",
+   "color": "#7B6099",
    "emoji": "🟪"
   },
   {
@@ -734,7 +734,7 @@
    "updated": "2026-08-28",
    "desc": "澜弦 LANYRA——玻璃拟态风格沉浸式音乐播放器：网易云 API 搜索、歌词同步、从专辑封面提取主题色、响应式布局，带 Node 代理服务。",
    "url": "https://github.com/bear20252026/lanyra-music",
-   "color": "#7A5FA0",
+   "color": "#7B6099",
    "emoji": "🟪"
   },
   {
@@ -748,7 +748,7 @@
    "updated": "2026-11-05",
    "desc": "Learn Arduino 中文版——learn-arduino-red.vercel.app 的完整本地静态克隆，交互式 3D Arduino 课程可离线运行（Vite SPA，需起本地 HTTP 服务）。",
    "url": "https://github.com/bear20252026/learn-arduino-zh",
-   "color": "#7A5FA0",
+   "color": "#7B6099",
    "emoji": "🟪"
   },
   {
@@ -762,7 +762,7 @@
    "updated": "2026-11-06",
    "desc": "Learn Arduino 中文版源码工程——由构建产物逆推还原的可读可改源码：代码逻辑与线上行为 100% 一致，全部模块语义化命名并经 Prettier 格式化，附 ARCHITECTURE-REVERSE 逆向方法与压缩分块映射。",
    "url": "https://github.com/bear20252026/learn-arduino-zh-src",
-   "color": "#7A5FA0",
+   "color": "#7B6099",
    "emoji": "🟪"
   },
   {
@@ -776,7 +776,7 @@
    "updated": "2026-11-15",
    "desc": "LinkUp 重建工作区——源码丢失后从 1.5.6 / 1.6.6 两个安装包恢复并重建客户端与服务端：418 个 JVM/Robolectric 离线回归测试可跑（公司内部授权）。",
    "url": "https://github.com/bear20252026/linkup-rebuild",
-   "color": "#C96F3B",
+   "color": "#B06E45",
    "emoji": "🟧"
   },
   {
@@ -790,7 +790,7 @@
    "updated": "2026-11-07",
    "desc": "LinkUp 源码恢复工作区（com.youloft.watcher，公司授权）——按 1.6.6 原布局恢复轨迹页 UI 外壳（全屏地图槽、44dp 标题、三档拖拽渐变等），禁止商用与再分发。",
    "url": "https://github.com/bear20252026/linkup-recovery",
-   "color": "#C96F3B",
+   "color": "#B06E45",
    "emoji": "🟧"
   },
   {
@@ -804,7 +804,7 @@
    "updated": "2026-10-29",
    "desc": "无 README 的逆向拼装档案：字符串表、地址目录、framework.js、REASSEMBLE 拼装笔记与深挖档案。",
    "url": "https://github.com/bear20252026/lp-archaeology",
-   "color": "#7A5C3E",
+   "color": "#77603F",
    "emoji": "🟫"
   },
   {
@@ -818,7 +818,7 @@
    "updated": "2026-08-19",
    "desc": "MiMoCode（小米）——终端原生 AI 编码助手：读写代码、跑命令、管 Git，带跨会话持久记忆并持续自我进化，可接任意主流 LLM；此仓只取最新单提交镜像，不追历史。",
    "url": "https://github.com/bear20252026/MiMo-Code",
-   "color": "#2F5D8A",
+   "color": "#46688C",
    "emoji": "🟦"
   },
   {
@@ -832,7 +832,7 @@
    "updated": "2026-08-18",
    "desc": "Open WebUI Desktop——Open WebUI 的桌面版 Electron 应用（源码归档）。",
    "url": "https://github.com/bear20252026/misc-01",
-   "color": "#2F5D8A",
+   "color": "#46688C",
    "emoji": "🟦"
   },
   {
@@ -846,7 +846,7 @@
    "updated": "2026-11-03",
    "desc": "WorkspAIce——从 Chatbox 分叉出的本地优先桌面 AI 工作台：「你的 AI、你的机器、你做主」（源码归档）。",
    "url": "https://github.com/bear20252026/misc-02",
-   "color": "#2F5D8A",
+   "color": "#46688C",
    "emoji": "🟦"
   },
   {
@@ -860,7 +860,7 @@
    "updated": "2026-11-18",
    "desc": "Monster Word——怪兽养成 × FSRS 记忆算法的离线英语单词学习应用（Flutter）：怪兽小屋、签到储蓄罐、聚宝日历等激励体系，词库与例句全部离线，SQLite 持久化，发布 Windows / Android 双端。",
    "url": "https://github.com/bear20252026/monster-word",
-   "color": "#C96F3B",
+   "color": "#B06E45",
    "emoji": "🟧"
   },
   {
@@ -874,7 +874,7 @@
    "updated": "2026-11-11",
    "desc": "钠离子选择性电极：科学立体书动画——4 分 20 秒、1280×720@30fps 教学视频工程：Python 逐帧绘制，真实透视运镜、沿铰线折起 90° 的纸雕图版与可展开文本面板；附 MP4 成品、SRT 字幕与完整制作指南。",
    "url": "https://github.com/bear20252026/na-ise-scientific-popup-book",
-   "color": "#A64B4B",
+   "color": "#9E5250",
    "emoji": "🟥"
   },
   {
@@ -888,7 +888,7 @@
    "updated": "2026-10-05",
    "desc": "霓虹街头 Neon Alley Brawl——2D 像素横版动作过关（Godot 4.7），带资产溯源、本地化与在线多人服务端对接文档。",
    "url": "https://github.com/bear20252026/neon-alley-brawl",
-   "color": "#3E7C59",
+   "color": "#4E7D5F",
    "emoji": "🟩"
   },
   {
@@ -902,7 +902,7 @@
    "updated": "2026-08-28",
    "desc": "Neumorphism Music Player——新拟态风格音乐播放器：真实立体感双向阴影、网易云搜索、播放列表与歌词同步滚动高亮，带 Node 代理。",
    "url": "https://github.com/bear20252026/neumorphism-music",
-   "color": "#7A5FA0",
+   "color": "#7B6099",
    "emoji": "🟪"
   },
   {
@@ -916,7 +916,7 @@
    "updated": "2026-08-28",
    "desc": "NOIR 48 · 交互式 3D 打字机（Z.ai typewriter 镜像）——Three.js 实时打字（键盘输入驱动字模击打纸张）、0–100% 机械爆炸拆解滑块、零件全屏环绕预览与售货台模式，单 index.html。",
    "url": "https://github.com/bear20252026/noir48-3d-typewriter",
-   "color": "#7A5FA0",
+   "color": "#7B6099",
    "emoji": "🟪"
   },
   {
@@ -930,7 +930,7 @@
    "updated": "2026-08-19",
    "desc": "OpenWorker——桌面上的开源 AI 同事（andrewyng）：交付「干完的活」而非聊天——成稿文档、带数字的 Slack 回复、更新日历、分诊收件箱（源码归档，open beta）。",
    "url": "https://github.com/bear20252026/OpenWorker",
-   "color": "#2F5D8A",
+   "color": "#46688C",
    "emoji": "🟦"
   },
   {
@@ -944,7 +944,7 @@
    "updated": "2026-10-04",
    "desc": "圈地大作战 Paint Grab——three.js 3D 圈地竞技网页游戏：每日挑战、服务端校验排行榜与二维码挑战分享；README 现展示同一模板演进出的浮岛收集玩法（Sky Cores，three.js + Rapier，带可改的引擎层与冒烟测试）。",
    "url": "https://github.com/bear20252026/paintgrab",
-   "color": "#3E7C59",
+   "color": "#4E7D5F",
    "emoji": "🟩"
   },
   {
@@ -958,7 +958,7 @@
    "updated": "2026-11-03",
    "desc": "纸格竞技场 PAPER SNAKE——本地可跑的贪吃蛇 IO 游戏：React 19 + Vite + TypeScript strict + Tailwind 4 + Zustand + PixiJS 8，全部原创 Canvas 程序化美术；单机实现，无联网匹配、无支付、无广告。",
    "url": "https://github.com/bear20252026/paper-snake",
-   "color": "#3E7C59",
+   "color": "#4E7D5F",
    "emoji": "🟩"
   },
   {
@@ -972,7 +972,7 @@
    "updated": "2026-11-06",
    "desc": "VIPER 11 静态站还原包——从 viperoneone.com 抓取的构建产物（Three.js 空战 / F-16 / F-35C），仓里只有 README 说明页。",
    "url": "https://github.com/bear20252026/plane",
-   "color": "#3E7C59",
+   "color": "#4E7D5F",
    "emoji": "🟩"
   },
   {
@@ -986,7 +986,7 @@
    "updated": "2026-10-06",
    "desc": "Plushie Merge——Suika 式毛绒玩偶物理合并消除（Godot 4.7，双语，本地多人），完整源码与资产溯源。",
    "url": "https://github.com/bear20252026/plushie-merge",
-   "color": "#3E7C59",
+   "color": "#4E7D5F",
    "emoji": "🟩"
   },
   {
@@ -1000,7 +1000,7 @@
    "updated": "2026-10-17",
    "desc": "雨铺 The Rain Shop——60 分钟纯 Python 水墨动画长片：灰色水乡里卖瓶装天气的云奶奶，久旱之年孙子小满打开红罐放出困住的雨龙，全镇在雨里重新开门营业。",
    "url": "https://github.com/bear20252026/rain-shop-film",
-   "color": "#A64B4B",
+   "color": "#9E5250",
    "emoji": "🟥"
   },
   {
@@ -1014,7 +1014,7 @@
    "updated": "2026-10-17",
    "desc": "The Sheep in the Box——代码动画长片：Remotion + GSAP 时间线渲染，每个场景一个 React/JS 文件；含 45 分钟正片剪辑与原始短片，带渲染说明与合并脚本。",
    "url": "https://github.com/bear20252026/sheep-in-the-box-film",
-   "color": "#A64B4B",
+   "color": "#9E5250",
    "emoji": "🟥"
   },
   {
@@ -1028,7 +1028,7 @@
    "updated": "2026-07-28",
    "desc": "GitHub Skills 官方练习《Introduction to GitHub》占位仓，暂无内容。",
    "url": "https://github.com/bear20252026/skills-introduction-to-github",
-   "color": "#B9B3A7",
+   "color": "#A9A294",
    "emoji": "⚪"
   },
   {
@@ -1042,7 +1042,7 @@
    "updated": "2026-10-30",
    "desc": "Android 贪吃蛇小游戏——由 GitHub Actions 云端构建（仓库仅 README + index.html）。",
    "url": "https://github.com/bear20252026/snake-game",
-   "color": "#3E7C59",
+   "color": "#4E7D5F",
    "emoji": "🟩"
   },
   {
@@ -1056,7 +1056,7 @@
    "updated": "2026-10-20",
    "desc": "CC Switch——Claude Code / Claude Desktop / Codex / Gemini CLI / Grok Build / OpenCode / OpenClaw / Hermes Agent 的一体化配置管理器（源码归档）。",
    "url": "https://github.com/bear20252026/switcher-01",
-   "color": "#2F5D8A",
+   "color": "#46688C",
    "emoji": "🟦"
   },
   {
@@ -1070,7 +1070,7 @@
    "updated": "2026-08-18",
    "desc": "Witsy——桌面 AI 助手 + 通用 MCP 客户端（Kochava Studios，源码归档）。",
    "url": "https://github.com/bear20252026/switcher-02",
-   "color": "#2F5D8A",
+   "color": "#46688C",
    "emoji": "🟦"
   },
   {
@@ -1084,7 +1084,7 @@
    "updated": "2026-08-18",
    "desc": "PaiSwitch——AI 编码 Agent 的模型控制台：本地优先的 Agent Model Control Plane，把 Claude Code / Codex 的模型选择、API Key 管理、协议适配、配置备份与 Skills 管理收拢到一个工作台（macOS 工程 + Web/后端，源码归档）。",
    "url": "https://github.com/bear20252026/switcher-03",
-   "color": "#2F5D8A",
+   "color": "#46688C",
    "emoji": "🟦"
   },
   {
@@ -1098,7 +1098,7 @@
    "updated": "2026-08-21",
    "desc": "Ghidra 反编译考古仓：ghidra_glic_decompiled 全量 C 产物、还原目录与 out 输出（无 README，按文件如实标注）。",
    "url": "https://github.com/bear20252026/tabbit-001",
-   "color": "#7A5C3E",
+   "color": "#77603F",
    "emoji": "🟫"
   },
   {
@@ -1112,7 +1112,7 @@
    "updated": "2026-11-07",
    "desc": "VIPER AI——AI 原生飞行模拟器：每个游戏功能都是一个可被 AI 调用的工具（TypeScript + Vite 工程，无 README）。",
    "url": "https://github.com/bear20252026/viper-ai",
-   "color": "#3E7C59",
+   "color": "#4E7D5F",
    "emoji": "🟩"
   },
   {
@@ -1126,7 +1126,7 @@
    "updated": "2026-11-06",
    "desc": "VIPER 11——网页 3D 空战飞行模拟游戏站（F-16 / F-35C，Three.js 前端）；无 README，按站点结构与描述如实标注。",
    "url": "https://github.com/bear20252026/viper11",
-   "color": "#3E7C59",
+   "color": "#4E7D5F",
    "emoji": "🟩"
   },
   {
@@ -1140,7 +1140,7 @@
    "updated": "2026-08-18",
    "desc": "AnythingLLM——All-in-One AI 应用：与文档聊天、AI Agent、多用户、超可配置（Mintplex Labs，源码归档）。",
    "url": "https://github.com/bear20252026/workbench-01",
-   "color": "#2F5D8A",
+   "color": "#46688C",
    "emoji": "🟦"
   },
   {
@@ -1154,7 +1154,7 @@
    "updated": "2026-08-18",
    "desc": "Askimo——「一个应用，接所有模型，文件留在本地」：聊天、搜文件与网络、跑脚本、多步 AI 工作流与 Agent Skills，Kotlin 多端 + CLI（源码归档）。",
    "url": "https://github.com/bear20252026/workbench-02",
-   "color": "#2F5D8A",
+   "color": "#46688C",
    "emoji": "🟦"
   },
   {
@@ -1168,7 +1168,7 @@
    "updated": "2026-08-18",
    "desc": "AIME Chat——「Agent = 模型 + Harness」的完整智能体外壳：编排循环、工具、上下文与记忆、子 Agent、护栏与可观测性，多提供商支持（macOS/Windows/Linux，源码归档）。",
    "url": "https://github.com/bear20252026/workbench-03",
-   "color": "#2F5D8A",
+   "color": "#46688C",
    "emoji": "🟦"
   },
   {
@@ -1182,7 +1182,7 @@
    "updated": "2026-08-18",
    "desc": "LLM Desktop——Electron + React + LangGraph 的统一 AI 工作台：Gemini/OpenAI/Claude 云端与 Gemma/Phi/Llama 本地一键切换，可跑 Agent 任务（源码归档）。",
    "url": "https://github.com/bear20252026/workbench-04",
-   "color": "#2F5D8A",
+   "color": "#46688C",
    "emoji": "🟦"
   },
   {
@@ -1196,7 +1196,7 @@
    "updated": "2026-11-18",
    "desc": "wxlike——Rust 优先的微信风格 IM 脚手架：QUIC 传输、MQ 路由多节点 hub、端到端加密骨架、动态群组；18 个职责组、100 张任务卡的全平台交付计划与最新 UI（2026-10-24）。",
    "url": "https://github.com/bear20252026/wxlike",
-   "color": "#C96F3B",
+   "color": "#B06E45",
    "emoji": "🟧"
   },
   {
@@ -1210,7 +1210,7 @@
    "updated": "2026-10-25",
    "desc": "给国产电视的干净桌面：tvOS 风格开源 Android TV 启动器，无广告、开机自动接管；手机扫码就能拖图标排序、改名、隐藏、加 HDMI 信号源，附 706 张磁贴图标库。",
    "url": "https://github.com/bear20252026/aerial-tv",
-   "color": "#C97E3D",
+   "color": "#B87A44",
    "emoji": "🟠"
   },
   {
@@ -1224,7 +1224,7 @@
    "updated": "2026-08-28",
    "desc": "开源一体化知识工作区，把维基、知识库、文档与白板拼在一起，定位是「不止 Notion 和 Miro」。",
    "url": "https://github.com/bear20252026/AFFiNE",
-   "color": "#C97E3D",
+   "color": "#B87A44",
    "emoji": "🟠"
   },
   {
@@ -1238,7 +1238,7 @@
    "updated": "2026-11-01",
    "desc": "给 AI Agent 的 computer use CLI：读桌面应用的无障碍树并转成带 ref 的 JSON，Agent 按 ref 点击或输入后再读回结果。",
    "url": "https://github.com/bear20252026/agent-desktop",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -1252,7 +1252,7 @@
    "updated": "2026-10-23",
    "desc": "给 AI Agent 装上「看整个互联网」的眼睛，能读与搜 Twitter、Reddit、YouTube 等平台内容。",
    "url": "https://github.com/bear20252026/Agent-Reach",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -1266,7 +1266,7 @@
    "updated": "2026-10-25",
    "desc": "给 AI 编码工具读的设计技能合集（Claude Code／Cursor／Codex／Windsurf 等），每个都是一份 markdown 规则文件。",
    "url": "https://github.com/bear20252026/ai-design-skills",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -1280,7 +1280,7 @@
    "updated": "2026-10-10",
    "desc": "Playwright + AI 的闲鱼多任务实时监控，带完整 Web 后台、省市区三级筛选与定时智能分析，帮你在海量商品里挑到想要的。",
    "url": "https://github.com/bear20252026/ai-goofish-monitor",
-   "color": "#2F7E6E",
+   "color": "#2F7264",
    "emoji": "🟢"
   },
   {
@@ -1294,7 +1294,7 @@
    "updated": "2026-08-26",
    "desc": "无 README、无描述的 Rust 工程骨架（仅复刻），按目录结构判断为 iOffice 系列的底层核心库。",
    "url": "https://github.com/bear20252026/AionCore",
-   "color": "#8C7B6B",
+   "color": "#857667",
    "emoji": "⚪"
   },
   {
@@ -1308,7 +1308,7 @@
    "updated": "2026-10-03",
    "desc": "threejs 做的交互式 3D 人体解剖浏览器（用 GPT 辅助生成），带完整 Web 应用与登录回调结构。",
    "url": "https://github.com/bear20252026/anatomy",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -1322,7 +1322,7 @@
    "updated": "2026-11-13",
    "desc": "2027 网页 3D 手账本：咖啡色透明软壳、三折页月计划、可写可贴、会响铃的挂件；带 JSON 备份／恢复，超 7 天未备份会提醒。",
    "url": "https://github.com/bear20252026/animals-planner-2027",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -1336,7 +1336,7 @@
    "updated": "2026-10-17",
    "desc": "支持多格式电子书、带 AI 能力的阅读器，另有 Calibre 插件，主打专注阅读。",
    "url": "https://github.com/bear20252026/anx-reader",
-   "color": "#C97E3D",
+   "color": "#B87A44",
    "emoji": "🟠"
   },
   {
@@ -1350,7 +1350,7 @@
    "updated": "2026-11-12",
    "desc": "Node.js／TypeScript 爬虫，把网站转成 LLM 就绪数据并做结构化抽取。",
    "url": "https://github.com/bear20252026/AnyCrawl",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -1364,7 +1364,7 @@
    "updated": "2026-10-08",
    "desc": "百度「agent+」攻防挑战赛冠军项目，AI 自主渗透测试系统（此仓库无 README，为个人复刻）。",
    "url": "https://github.com/bear20252026/ARTEX",
-   "color": "#6E6A45",
+   "color": "#6B6748",
    "emoji": "🟤"
   },
   {
@@ -1378,7 +1378,7 @@
    "updated": "2026-10-17",
    "desc": "纯 Three.js 代码（零素材）搭出的宏大古希腊世界，Claude Opus 5.5 照 9 张参考图约两天建成并渲染成片。",
    "url": "https://github.com/bear20252026/athenaion",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -1392,7 +1392,7 @@
    "updated": "2026-11-16",
    "desc": "用 Claude Fable 5.2 纯代码算出来的图片与短片合集，headless Metal 计算着色器渲染，不用任何外部素材。",
    "url": "https://github.com/bear20252026/awesome-fable-5.2",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -1406,7 +1406,7 @@
    "updated": "2026-10-19",
    "desc": "各家银行的 SVG 标志合集。",
    "url": "https://github.com/bear20252026/bank-logos",
-   "color": "#AD8B20",
+   "color": "#9C8227",
    "emoji": "🟡"
   },
   {
@@ -1420,7 +1420,7 @@
    "updated": "2026-10-30",
    "desc": "本地优先的 AI 无限画布＋时间线，编排图像与视频工作流，任何 MCP Agent 都能在同一项目里协作，对标 Higgsfield。",
    "url": "https://github.com/bear20252026/BeatDesign",
-   "color": "#6C8F3F",
+   "color": "#66834A",
    "emoji": "🫒"
   },
   {
@@ -1434,7 +1434,7 @@
    "updated": "2026-11-06",
    "desc": "94 个 Blender 专项 Skills，供 Cursor、Claude Code、Kiro、Codex 使用，通过 MCP 串起生产级建模流程。",
    "url": "https://github.com/bear20252026/blender-skills",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -1448,7 +1448,7 @@
    "updated": "2026-10-26",
    "desc": "Kargul Workspace 的设计原型：把 Figma「Dashboard – calendar」做成可跑的日历／休假界面，含组件配置与素材。",
    "url": "https://github.com/bear20252026/calender-app-design",
-   "color": "#58A0C8",
+   "color": "#4F8CA8",
    "emoji": "🔵"
   },
   {
@@ -1462,7 +1462,7 @@
    "updated": "2026-11-15",
    "desc": "45 秒 4K 哥特悬崖城堡日落短片，每一帧都由 Python 代码生成；多个子 Agent 并行做地形、天空、植被、水与火，单帧要 16–20 秒。",
    "url": "https://github.com/bear20252026/castle-cinematic",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -1476,7 +1476,7 @@
    "updated": "2026-11-13",
    "desc": "DeepSeek 官方的静态聊天演示页，由 DeepSeek API 驱动。",
    "url": "https://github.com/bear20252026/chat-demo",
-   "color": "#2F7E6E",
+   "color": "#2F7264",
    "emoji": "🟢"
   },
   {
@@ -1490,7 +1490,7 @@
    "updated": "2026-08-20",
    "desc": "Chromium 开源浏览器项目的官方 GitHub 源码镜像。",
    "url": "https://github.com/bear20252026/chromium",
-   "color": "#6E6A45",
+   "color": "#6B6748",
    "emoji": "🟤"
   },
   {
@@ -1504,7 +1504,7 @@
    "updated": "2026-11-09",
    "desc": "收集 ChatGPT、Claude、Gemini、Grok、Cursor、Devin 等产品的泄露系统提示词，理由是隐藏指令会影响公众认知与行为。",
    "url": "https://github.com/bear20252026/CL4R1T4S",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -1518,7 +1518,7 @@
    "updated": "2026-11-13",
    "desc": "AI 辅助设计实验集合：交互界面、动效研究与开发者工具，强调素材来源可追溯、授权范围明确、可复核。",
    "url": "https://github.com/bear20252026/claude-directory",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -1532,7 +1532,7 @@
    "updated": "2026-10-08",
    "desc": "Anthropic 官方示例项目集，教开发者快速上手构建 Agent，含 computer use 与最新 toolset 用法。",
    "url": "https://github.com/bear20252026/claude-quickstarts",
-   "color": "#AD8B20",
+   "color": "#9C8227",
    "emoji": "🟡"
   },
   {
@@ -1546,7 +1546,7 @@
    "updated": "2026-10-12",
    "desc": "一组即插即用的 SKILL.md，把 Claude 变成有上下文意识的红队操作员，覆盖各类进攻性安全技能。",
    "url": "https://github.com/bear20252026/Claude-Red",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -1560,7 +1560,7 @@
    "updated": "2026-10-24",
    "desc": "通过 Wi-Fi 给 Android／Google TV 精简预装、关追踪、换桌面，做成 Apple TV 风格的干净主页；三星 LG 等非安卓电视也能手动关追踪。",
    "url": "https://github.com/bear20252026/cleanyourtv",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -1574,7 +1574,7 @@
    "updated": "2026-11-05",
    "desc": "341 种代码动画风格提示词＋196 张参考静帧＋离线挑选器，封装成 Claude Code／Codex Skill，支持一键导入与 HTML 视频渲染。",
    "url": "https://github.com/bear20252026/code-animation-prompts",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -1588,7 +1588,7 @@
    "updated": "2026-11-14",
    "desc": "2026 年 11 月每天一个迷你网页项目的 Codevember 合集，按 01、04、05… 分目录。",
    "url": "https://github.com/bear20252026/codevember-2026",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -1602,7 +1602,7 @@
    "updated": "2026-10-31",
    "desc": "OpenAI 官方轻量编码 Agent，跑在你自己电脑的终端里。",
    "url": "https://github.com/bear20252026/codex",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -1616,7 +1616,7 @@
    "updated": "2026-11-13",
    "desc": "苹果官方工具：在 Mac 上以轻量虚拟机创建并运行 Linux 容器，可推送自建镜像。",
    "url": "https://github.com/bear20252026/container",
-   "color": "#6E6A45",
+   "color": "#6B6748",
    "emoji": "🟤"
   },
   {
@@ -1630,7 +1630,7 @@
    "updated": "2026-07-29",
    "desc": "一站式 AI Agent 开发平台，把提示词、RAG、插件、工作流等核心能力做成可视化工具。",
    "url": "https://github.com/bear20252026/coze-studio",
-   "color": "#2F7E6E",
+   "color": "#2F7264",
    "emoji": "🟢"
   },
   {
@@ -1644,7 +1644,7 @@
    "updated": "2026-11-02",
    "desc": "指着一个软件说出你想要什么：它用真实检查工具研究原作、让编码 Agent 建新项目，再拿结果对照原作校验。",
    "url": "https://github.com/bear20252026/craft-anything",
-   "color": "#6E6A45",
+   "color": "#6B6748",
    "emoji": "🟤"
   },
   {
@@ -1658,7 +1658,7 @@
    "updated": "2026-10-14",
    "desc": "给设计工程师的动效组件库：150+ 免费 shadcn/ui 组件（Tailwind），如看板、凹槽玻璃、Mac 屏幕框、分析图表、折叠卡片。",
    "url": "https://github.com/bear20252026/cult-ui",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -1672,7 +1672,7 @@
    "updated": "2026-10-10",
    "desc": "Go 写的 AI 原生渗透平台，把 Agent、MCP 工具、RAG 知识库、可视化工作流和攻击链建模串成一套可执行的安全作业流。",
    "url": "https://github.com/bear20252026/CyberStrikeAI",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -1686,7 +1686,7 @@
    "updated": "2026-10-11",
    "desc": "纯 Rust 写的开源净室演示文稿与幻灯片设计器，支持主题、版式、形状、图片与文字。",
    "url": "https://github.com/bear20252026/deckcraft",
-   "color": "#6C8F3F",
+   "color": "#66834A",
    "emoji": "🫒"
   },
   {
@@ -1700,7 +1700,7 @@
    "updated": "2026-10-24",
    "desc": "基于 DeepSeek Harness 的长驻机器人团队，有主 bot、bot 间消息与群聊，可作独立桌面应用或 DSH 插件。",
    "url": "https://github.com/bear20252026/DeepSeek-Bot",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -1714,7 +1714,7 @@
    "updated": "2026-10-29",
    "desc": "免 root 免 Termux，一个 APK 在安卓手机上跑 DeepSeek Harness：引擎内嵌 App、读屏操作 App、改系统设置、定时／条件自动化。",
    "url": "https://github.com/bear20252026/DeepseekHarness-Android",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -1728,7 +1728,7 @@
    "updated": "2026-10-19",
    "desc": "终身个性化 AI 辅导系统，支持阅读与书籍编辑、检索、Agent 接入、学习记录与桌面端。",
    "url": "https://github.com/bear20252026/DeepTutor",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -1742,7 +1742,7 @@
    "updated": "2026-10-24",
    "desc": "把黑盒 AI 文本检测器拆成「命名且已验证特征之和」，用 SAE 分析检测器残差流，让每一次判定都可被人审计。",
    "url": "https://github.com/bear20252026/detectorscope",
-   "color": "#2F7E6E",
+   "color": "#2F7264",
    "emoji": "🟢"
   },
   {
@@ -1756,7 +1756,7 @@
    "updated": "2025-10-10",
    "desc": "上海交大《动手学大模型》系列编程实践教程，含 PPT、实验手册、视频与国产化《大模型开发全流程》公益课。",
    "url": "https://github.com/bear20252026/dive-into-llms",
-   "color": "#2F7E6E",
+   "color": "#2F7264",
    "emoji": "🟢"
   },
   {
@@ -1770,7 +1770,7 @@
    "updated": "2026-10-22",
    "desc": "基于 dsh 插件的远程访问方案：端到端加密、优先 P2P（全球 TURN 中继兜底），用 PC／手机／Web 随时连回本地设备上的 DSH、Codex。",
    "url": "https://github.com/bear20252026/ds-harness-remote",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -1784,7 +1784,7 @@
    "updated": "2026-11-16",
    "desc": "把 DeepSeek Harness 装进口袋：Android APK 本机运行、也能遥控电脑，中英双语界面；iOS 与鸿蒙版仍在开发。",
    "url": "https://github.com/bear20252026/dsh-Go",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -1798,7 +1798,7 @@
    "updated": "2026-10-21",
    "desc": "DeepSeek Harness 插件：不登录、不填 API Key 就免费不限量用前沿模型，另带 OpenAI 兼容本地转发端口与公告实时推送。",
    "url": "https://github.com/bear20252026/dsh-our-free-model",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -1812,7 +1812,7 @@
    "updated": "2026-10-19",
    "desc": "DeepSeek Harness「破甲」插件：把渲染时注入的免责／拒绝类弱化文案整体换成强指令，让 AGENTS.md 等本地规则重获最高权威，8/8 补丁状态实时可见。",
    "url": "https://github.com/bear20252026/dsh-purge",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -1826,7 +1826,7 @@
    "updated": "2026-10-25",
    "desc": "AI 英语听说训练 App：精听→跟读→盲听→复述→间隔复习自动排程，配 AI 双语翻译、句子解析与词汇讲解。",
    "url": "https://github.com/bear20252026/Echo-Loop",
-   "color": "#2F7E6E",
+   "color": "#2F7264",
    "emoji": "🟢"
   },
   {
@@ -1840,7 +1840,7 @@
    "updated": "2026-10-25",
    "desc": "AI 原生笔记应用，Evernote／Obsidian 替代，主打全平台即时同步与富文本。",
    "url": "https://github.com/bear20252026/edgeever",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -1854,7 +1854,7 @@
    "updated": "2026-10-20",
    "desc": "用 Rust + GPUI 写的离线优先桌面办公套件。",
    "url": "https://github.com/bear20252026/ElyOffice",
-   "color": "#C97E3D",
+   "color": "#B87A44",
    "emoji": "🟠"
   },
   {
@@ -1868,7 +1868,7 @@
    "updated": "2026-06-29",
    "desc": "《人人都能用英语》开放教程与 1000 小时训练体系，另有 Enjoy 浏览器插件给 YouTube／Netflix 加学习层。",
    "url": "https://github.com/bear20252026/everyone-can-use-english",
-   "color": "#AD8B20",
+   "color": "#9C8227",
    "emoji": "🟡"
   },
   {
@@ -1882,7 +1882,7 @@
    "updated": "2025-06-20",
    "desc": "给工程师开的中文书单，按计算机、软件工程、数学、创业、人文分类，附内容介绍与读后感。",
    "url": "https://github.com/bear20252026/expert_readed_books",
-   "color": "#AD8B20",
+   "color": "#9C8227",
    "emoji": "🟡"
   },
   {
@@ -1896,7 +1896,7 @@
    "updated": "2026-11-16",
    "desc": "《Hidden Layers》：Three.js + Vite 做的六个小型实时 3D 世界，和一只飞不出玻璃房的玻璃翼蝴蝶，由 Claude 写成。",
    "url": "https://github.com/bear20252026/fable-butterfly",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -1910,7 +1910,7 @@
    "updated": "2026-10-23",
    "desc": "离线解密 FairPlay 加密的 iOS IPA，凭账户 16 字节凭据独立推导密钥，不依赖越狱设备在线环境。",
    "url": "https://github.com/bear20252026/fairplay-decrypt",
-   "color": "#6E6A45",
+   "color": "#6B6748",
    "emoji": "🟤"
   },
   {
@@ -1924,7 +1924,7 @@
    "updated": "2026-10-12",
    "desc": "只收不发的 Android 观察工具：列出手机能探测到的 Wi-Fi 热点与 BLE 设备，用来看清身边的射频环境。",
    "url": "https://github.com/bear20252026/Fieldwatch",
-   "color": "#C97E3D",
+   "color": "#B87A44",
    "emoji": "🟠"
   },
   {
@@ -1938,7 +1938,7 @@
    "updated": "2026-10-19",
    "desc": "作者画 AI 顶会论文插图用的 Python 绘图脚本集，可让 AI 照着模板在指定目录生成或修改配图。",
    "url": "https://github.com/bear20252026/figures4papers",
-   "color": "#6C8F3F",
+   "color": "#66834A",
    "emoji": "🫒"
   },
   {
@@ -1952,7 +1952,7 @@
    "updated": "2026-11-16",
    "desc": "给真实咖啡馆做的浏览器小游戏：复刻自家街道、飞到门口、柜台报暗号，可用来展示「这是你的店还是概念模型」。",
    "url": "https://github.com/bear20252026/fly-in-kit",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -1966,7 +1966,7 @@
    "updated": "2026-11-13",
    "desc": "GIF 工厂 Skill：给一张图或一句话，就能做表情包、光栅变画卡、动态海报／签名、电影片头、文章封面、动态绘本与品牌短片。",
    "url": "https://github.com/bear20252026/gif-factory",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -1980,7 +1980,7 @@
    "updated": "2026-10-12",
    "desc": "纯 Rust 写的高性能现代电子表格（Excel 风格），ArtCraft 系列办公应用之一。",
    "url": "https://github.com/bear20252026/gridcraft",
-   "color": "#6C8F3F",
+   "color": "#66834A",
    "emoji": "🫒"
   },
   {
@@ -1994,7 +1994,7 @@
    "updated": "2026-10-14",
    "desc": "Google 的递归 Agent Harness 研究：把提示词、工具、记忆、技能与编排都当作可递归改进的 harness 系统，面向开放世界。",
    "url": "https://github.com/bear20252026/harness2",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -2008,7 +2008,7 @@
    "updated": "2026-08-27",
    "desc": "自我改进的 AI Agent（Nous Research 出品），内置定时调度器可把结果投递到任意平台，带桌面端。",
    "url": "https://github.com/bear20252026/hermes-agent-1",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -2022,7 +2022,7 @@
    "updated": "2026-11-04",
    "desc": "通用视频播放器：靠导入 JavaScript 插件接入不同内容源，浏览、搜索、播放与个人片库都在同一个 App 里。",
    "url": "https://github.com/bear20252026/HGhub1",
-   "color": "#C97E3D",
+   "color": "#B87A44",
    "emoji": "🟠"
   },
   {
@@ -2036,7 +2036,7 @@
    "updated": "2026-11-17",
    "desc": "红果短剧桌面版（M 系列／Intel Mac、Windows，也顾及 NAS）：三来源搜索、播放、下载、追剧与合并导出在一个应用里完成。",
    "url": "https://github.com/bear20252026/hongguo-drama",
-   "color": "#C97E3D",
+   "color": "#B87A44",
    "emoji": "🟠"
   },
   {
@@ -2050,7 +2050,7 @@
    "updated": "2026-10-16",
    "desc": "艺术动画 Skill：35 种艺术风格＋9 种解说语法，让 coding agent 用代码把画动起来（示例：把自己做成像素主角跑完超级玛丽一关）。",
    "url": "https://github.com/bear20252026/huashu-art-motion",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -2064,7 +2064,7 @@
    "updated": "2026-10-30",
    "desc": "按 AviList v2026 整理的 1.1 万多种鸟类白边贴纸库，每种附多语种鸟名、分布、形态与保护等级，CC BY 4.0，出自观鸟 App「鸣迹」。",
    "url": "https://github.com/bear20252026/huashu-bird-sticker",
-   "color": "#AD8B20",
+   "color": "#9C8227",
    "emoji": "🟡"
   },
   {
@@ -2078,7 +2078,7 @@
    "updated": "2026-10-03",
    "desc": "React + Three.js + shadcn/ui 的 3D 人体解剖浏览器，2234 个可选 BodyParts3D 网格，带系统分层与搜索。",
    "url": "https://github.com/bear20252026/human-atlas",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -2092,7 +2092,7 @@
    "updated": "2026-11-15",
    "desc": "写 HTML／CSS 就能渲染成视频的开源框架，专为 Agent 设计；带桌面 Studio、Playground 与素材目录。",
    "url": "https://github.com/bear20252026/hyperframes",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -2106,7 +2106,7 @@
    "updated": "2023-02-16",
    "desc": "Electron + React + MobX 写的优雅网易云音乐第三方桌面客户端，API 由 NeteaseCloudMusicApi 提供。",
    "url": "https://github.com/bear20252026/ieaseMusic",
-   "color": "#C97E3D",
+   "color": "#B87A44",
    "emoji": "🟠"
   },
   {
@@ -2120,7 +2120,7 @@
    "updated": "2026-10-20",
    "desc": "面向 AI 图片创作的开源无限画布工作台：画布编排、AI 生图、参考图编辑、视频生成、对话助手、提示词库与素材管理，支持多 Agent 与本地 Canvas Agent。",
    "url": "https://github.com/bear20252026/infinite-canvas",
-   "color": "#6C8F3F",
+   "color": "#66834A",
    "emoji": "🫒"
   },
   {
@@ -2134,7 +2134,7 @@
    "updated": "2026-10-24",
    "desc": "面向长篇连载、剧本、互动影游与长文翻译的 AI 故事创作系统，统一管理设定、角色、记忆、审稿、封面与跨语言交付，有 Studio/TUI/CLI。",
    "url": "https://github.com/bear20252026/inkos",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -2148,7 +2148,7 @@
    "updated": "2026-10-16",
    "desc": "NeurIPS 2026 研究：编码 Agent 与前沿模型的安全失效（ISC 新攻击范式），提供可复现工作区与自动工作流模板。",
    "url": "https://github.com/bear20252026/Internal-Safety-Collapse",
-   "color": "#2F7E6E",
+   "color": "#2F7264",
    "emoji": "🟢"
   },
   {
@@ -2162,7 +2162,7 @@
    "updated": "2026-07-30",
    "desc": "AI 短剧生产工作台：从剧本一路管到分镜、候选素材、对白、提示词与生成任务，产出可复用的制作资产。",
    "url": "https://github.com/bear20252026/Jellyfish",
-   "color": "#2F7E6E",
+   "color": "#2F7264",
    "emoji": "🟢"
   },
   {
@@ -2176,7 +2176,7 @@
    "updated": "2026-10-22",
    "desc": "中国历史交互地图时间轴（前 403 年至今），拖时间轴、点城市即可穿越 18 个朝代看疆域与地名变迁。",
    "url": "https://github.com/bear20252026/jiangshan-map",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -2190,7 +2190,7 @@
    "updated": "2026-10-21",
    "desc": "剪映草稿的无头读写与导出工具，严格核对版本、bundle ID、官方库哈希与签名，版本不符即停止，不降级不自动改常量。",
    "url": "https://github.com/bear20252026/jianying-headless",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -2204,7 +2204,7 @@
    "updated": "2026-10-28",
    "desc": "一组「解放提示词」越狱资料，含大量特殊 Unicode 变体字符、SPECIAL_TOKENS 与 MOTHERLOAD 文本，用于绕过模型限制。",
    "url": "https://github.com/bear20252026/L1B3RT4S",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -2218,7 +2218,7 @@
    "updated": "2026-10-24",
    "desc": "给 Claude Code 的「代码电影风格工具箱」：99 种现成风格按画面观感分 15 类，中英双语画廊，每种风格都有独立页面。",
    "url": "https://github.com/bear20252026/lemo-opuscar",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -2232,7 +2232,7 @@
    "updated": "2026-10-17",
    "desc": "Claude Code 插件：把一张静图拆成文字、形状、物体、人物与光，用代码重建并编排成约 5 秒无缝循环动画（MP4／GIF）。",
    "url": "https://github.com/bear20252026/lemo-wake",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -2246,7 +2246,7 @@
    "updated": "2026-10-11",
    "desc": "纯 Rust 从零写的非破坏性照片库与 RAW 显影工具。",
    "url": "https://github.com/bear20252026/lightcraft",
-   "color": "#6C8F3F",
+   "color": "#66834A",
    "emoji": "🫒"
   },
   {
@@ -2260,7 +2260,7 @@
    "updated": "2026-10-27",
    "desc": "油猴脚本，基于网盘公开 API 获取百度／阿里／移动／天翼／迅雷／夸克的直接下载地址，明确声明不破解限速。",
    "url": "https://github.com/bear20252026/LinkSwift",
-   "color": "#C97E3D",
+   "color": "#B87A44",
    "emoji": "🟠"
   },
   {
@@ -2274,7 +2274,7 @@
    "updated": "2026-10-25",
    "desc": "刘春霖 AI 小楷书房：按末代状元真迹做在线诗词书法生成，支持繁简馆阁体、同字异形轮换与随字赋形竖排，个人免费商用收费。",
    "url": "https://github.com/bear20252026/liuchunlin-shufa",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -2288,7 +2288,7 @@
    "updated": "2026-10-20",
    "desc": "实时交互流式数字人引擎，做音视频同步对话，支持 ernerf、musetalk、wav2lip、Ultralight-Digital-Human，已在业内商用。",
    "url": "https://github.com/bear20252026/LiveTalking",
-   "color": "#2F7E6E",
+   "color": "#2F7264",
    "emoji": "🟢"
   },
   {
@@ -2302,7 +2302,7 @@
    "updated": "2026-11-06",
    "desc": "靠回答特征反推所用模型的指纹检测工具，提供网页、fpd 命令行 TUI 与 TS/Rust/Go/Python SDK，三种入口结果一致。",
    "url": "https://github.com/bear20252026/lm-detector",
-   "color": "#2F7E6E",
+   "color": "#2F7264",
    "emoji": "🟢"
   },
   {
@@ -2316,7 +2316,7 @@
    "updated": "2026-10-27",
    "desc": "桌面端一体化本地 AI 工作台：聊天、生图、生视频加编码 Agent；大模型可选用云端 GPU，生图建议 6–8G 显存、视频 12G 以上。",
    "url": "https://github.com/bear20252026/locally-uncensored",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -2330,7 +2330,7 @@
    "updated": "2026-10-20",
    "desc": "一套完整的 Logo 设计 Skill（开放 Agent Skills 格式，一个 SKILL.md 目录），覆盖设计原则与流程，适配 Claude、Gemini CLI、Codex 等。",
    "url": "https://github.com/bear20252026/logo-design-skill",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -2344,7 +2344,7 @@
    "updated": "2026-11-01",
    "desc": "手绘版 shadcn/ui：123 个可访问的 React 组件看起来像画在纸上，笔触由带随机种子的纯 TypeScript 函数生成。",
    "url": "https://github.com/bear20252026/looseleaf",
-   "color": "#58A0C8",
+   "color": "#4F8CA8",
    "emoji": "🔵"
   },
   {
@@ -2358,7 +2358,7 @@
    "updated": "2026-11-16",
    "desc": "单个 HTML 文件里的可飞行浮空岛夜世界，原生 WebGL2、零库、零素材（仓库只有 index.html）。",
    "url": "https://github.com/bear20252026/lumen-isles",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -2372,7 +2372,7 @@
    "updated": "2026-10-21",
    "desc": "菜单栏里统一管理所有 Agent 的模型：一个本地网关让 Codex 用 DeepSeek、Claude Code 用 Kimi，额度用完自动切下一个账号。",
    "url": "https://github.com/bear20252026/magpie",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -2386,7 +2386,7 @@
    "updated": "2026-08-03",
    "desc": "把喜欢的城市生成漂亮的海报式地图设计，在线即可使用。",
    "url": "https://github.com/bear20252026/maptoposter-online",
-   "color": "#58A0C8",
+   "color": "#4F8CA8",
    "emoji": "🔵"
   },
   {
@@ -2400,7 +2400,7 @@
    "updated": "2026-10-30",
    "desc": "跑在安卓手机上的端侧 AI Agent：说一句要什么，它就替你操作 App 和网页，直到把事办完。",
    "url": "https://github.com/bear20252026/Mika",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -2414,7 +2414,7 @@
    "updated": "2026-11-14",
    "desc": "Windows 微信 4.x 聊天记录读取、整理与导出桌面工具，支持好友／群聊、头像、图片、GIF 的备份与离线归档。",
    "url": "https://github.com/bear20252026/Moect",
-   "color": "#C97E3D",
+   "color": "#B87A44",
    "emoji": "🟠"
   },
   {
@@ -2428,7 +2428,7 @@
    "updated": "2026-10-30",
    "desc": "纯 Go 实现的 Muse 协议 SDK，直接完成 HTTPS 引导、WebSocket 握手与加密通信，不必启动 Chrome 或操作 DOM。",
    "url": "https://github.com/bear20252026/muse-protocol-go",
-   "color": "#56606B",
+   "color": "#5A6470",
    "emoji": "◼️"
   },
   {
@@ -2442,7 +2442,7 @@
    "updated": "2026-11-04",
    "desc": "用 Go + MyGo 写的第三方音乐桌面客户端，原生界面、不带 WebView。",
    "url": "https://github.com/bear20252026/mygo-music",
-   "color": "#C97E3D",
+   "color": "#B87A44",
    "emoji": "🟠"
   },
   {
@@ -2456,7 +2456,7 @@
    "updated": "2026-11-02",
    "desc": "给你名下所有设备的开源个人 Agent，一个有名有姓、长期陪着你的助手（多语言）。",
    "url": "https://github.com/bear20252026/nanoMuse",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -2470,7 +2470,7 @@
    "updated": "2026-11-14",
    "desc": "Rust 写的轻量隐蔽无头浏览器引擎，专为网页抓取与 AI Agent 自动化设计。",
    "url": "https://github.com/bear20252026/obscura",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -2484,7 +2484,7 @@
    "updated": "2026-11-16",
    "desc": "给游戏用的实时开源海洋实验室：浏览器里约 100 个参数调出想要的海面观感，再导出到自己的引擎里用。",
    "url": "https://github.com/bear20252026/ocean-water-lab",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -2498,7 +2498,7 @@
    "updated": "2026-10-19",
    "desc": "开源可自托管的多用户、多 Agent AI 助手，定位是「数字生活」而不只是一个工具。",
    "url": "https://github.com/bear20252026/Octop",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -2512,7 +2512,7 @@
    "updated": "2026-10-16",
    "desc": "逆向拆解 Claude 桌面端，高保真复刻其设计系统、30 个 React 组件与 8 项交互物理算法，附 3000+ 行分析手册。",
    "url": "https://github.com/bear20252026/open-claude-ui",
-   "color": "#6E6A45",
+   "color": "#6B6748",
    "emoji": "🟤"
   },
   {
@@ -2526,7 +2526,7 @@
    "updated": "2026-10-31",
    "desc": "本地优先的桌面工作台，把 Codex、Claude、Grok 变成长期 AI 队友：每个 Agent 有自己的工作区、会话、本地队列与文件工具。",
    "url": "https://github.com/bear20252026/openbot1",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -2540,7 +2540,7 @@
    "updated": "2026-09-24",
    "desc": "开源版剪映（CapCut），Web、桌面、移动端都能用的免费视频编辑器。",
    "url": "https://github.com/bear20252026/OpenCut",
-   "color": "#6C8F3F",
+   "color": "#66834A",
    "emoji": "🫒"
   },
   {
@@ -2554,7 +2554,7 @@
    "updated": "2026-10-27",
    "desc": "把 PDF 解析成 AI 就绪数据的开源工具，混合模式内置 80+ 语言 OCR、做 PDF 无障碍自动化（PDF/UA 转换属企业附加）。",
    "url": "https://github.com/bear20252026/opendataloader-pdf",
-   "color": "#6C8F3F",
+   "color": "#66834A",
    "emoji": "🫒"
   },
   {
@@ -2568,7 +2568,7 @@
    "updated": "2026-11-13",
    "desc": "开源 AI 视频 Agent：把任意编码 Agent 变成视频 Agent，自带编辑器与内置 Agent，桌面端开箱即用。",
    "url": "https://github.com/bear20252026/openfilm",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -2582,7 +2582,7 @@
    "updated": "2026-11-01",
    "desc": "开源 Grok Bot 替代：侧栏里每个 bot 都是本地跑着的真实 Claude／Codex Agent，各有自己的性格、模型、云电脑与配置。",
    "url": "https://github.com/bear20252026/OpenMausBot",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -2596,7 +2596,7 @@
    "updated": "2026-10-25",
    "desc": "免费开源的行情平台，看实时价格、盯全市场、挖公司洞察，对标昂贵的收费行情终端。",
    "url": "https://github.com/bear20252026/OpenStock",
-   "color": "#58A0C8",
+   "color": "#4F8CA8",
    "emoji": "🔵"
   },
   {
@@ -2610,7 +2610,7 @@
    "updated": "2026-11-18",
    "desc": "一条命令把任意网站打包成轻量桌面应用（Tauri + Rust）：macOS / Windows / Linux 全支持，比 Electron 轻得多；开源 CLI + 桌面 App。",
    "url": "https://github.com/bear20252026/Pake",
-   "color": "#C97E3D",
+   "color": "#B87A44",
    "emoji": "🟠"
   },
   {
@@ -2624,7 +2624,7 @@
    "updated": "2026-11-01",
    "desc": "基于 Mika 的多设备手机 Agent 主控台：用自然语言派任务，一个界面查看各设备进度、消息与实时画面。",
    "url": "https://github.com/bear20252026/phongent",
-   "color": "#C97E3D",
+   "color": "#B87A44",
    "emoji": "🟠"
   },
   {
@@ -2638,7 +2638,7 @@
    "updated": "2026-10-11",
    "desc": "纯 Rust 从零写的照片编辑器；每个动作都是一条命令，UI、CLI、JSON 都能驱动同一引擎，Agent 友好。",
    "url": "https://github.com/bear20252026/photocraft",
-   "color": "#6C8F3F",
+   "color": "#66834A",
    "emoji": "🫒"
   },
   {
@@ -2652,7 +2652,7 @@
    "updated": "2026-10-09",
    "desc": "用 Agent 逆向任意东西：没有源码也能观察 App、解释功能怎么实现、摆出证据，并在你的项目里重建一版；Linux 上接 Ghidra、JADX、固件工具。",
    "url": "https://github.com/bear20252026/rea",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -2666,7 +2666,7 @@
    "updated": "2026-10-13",
    "desc": "ReaCut：借 REA 逆向辅助从零重做的开源视频编辑器，可独立读写剪映草稿；作者说明项目仍处早期阶段。",
    "url": "https://github.com/bear20252026/rea-capcut",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -2680,7 +2680,7 @@
    "updated": "2026-11-15",
    "desc": "给 AI Agent 用的视频逐镜头逆向 Skill，输出给人看的报告（HTML/PDF）和给 Agent 复刻用的结构化拆解。",
    "url": "https://github.com/bear20252026/rea-video",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -2694,7 +2694,7 @@
    "updated": "2026-10-13",
    "desc": "免费开源英语单词学习网站 WordsFunny：以单词书为中心，支持词表、收藏、已掌握/未掌握切换与评论互动。",
    "url": "https://github.com/bear20252026/remix-words-funny",
-   "color": "#AD8B20",
+   "color": "#9C8227",
    "emoji": "🟡"
   },
   {
@@ -2708,7 +2708,7 @@
    "updated": "2026-11-17",
    "desc": "只用代码拍出的 53 秒扫地机器人第一视角视频：自写 GPU 路径追踪器、程序化世界、模拟相机与合成音效（C++，附 PROMPT 与渲染脚本）。",
    "url": "https://github.com/bear20252026/robovac-pov",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -2722,7 +2722,7 @@
    "updated": "2026-10-30",
    "desc": "极简 Android 工具：一个输入框直达抖音／小红书／知乎／B站／X／Reddit／YouTube 的搜索结果页，绕开开屏推荐流防分心。",
    "url": "https://github.com/bear20252026/Seen",
-   "color": "#C97E3D",
+   "color": "#B87A44",
    "emoji": "🟠"
   },
   {
@@ -2736,7 +2736,7 @@
    "updated": "2026-11-02",
    "desc": "Gemini 做出的第一版 Three.js 落地页：风洞里的一台迈凯伦 Senna，附原始提示词与 44 秒演示片段。",
    "url": "https://github.com/bear20252026/senna-800kg",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -2750,7 +2750,7 @@
    "updated": "2026-10-27",
    "desc": "自主 AI 渗透测试员，分析 Web 应用与 API 的源码、找出漏洞并实际验证，可作为 Claude/Codex 插件运行。",
    "url": "https://github.com/bear20252026/shannon",
-   "color": "#6E6A45",
+   "color": "#6B6748",
    "emoji": "🟤"
   },
   {
@@ -2764,7 +2764,7 @@
    "updated": "2026-08-31",
    "desc": "《史记》知识库：把两千年文本做成可在线阅读、可检索的知识网络与 Wiki，强调让机器「看见」隐藏关联。",
    "url": "https://github.com/bear20252026/shiji-kb",
-   "color": "#6C8F3F",
+   "color": "#66834A",
    "emoji": "🫒"
   },
   {
@@ -2778,7 +2778,7 @@
    "updated": "2026-11-04",
    "desc": "短视频／图集去水印接口示例，覆盖抖音、快手、小红书、B站、微博、网易云、皮皮虾等；声明仅供技术研究与学习。",
    "url": "https://github.com/bear20252026/short_videos",
-   "color": "#C97E3D",
+   "color": "#B87A44",
    "emoji": "🟠"
   },
   {
@@ -2792,7 +2792,7 @@
    "updated": "2026-09-14",
    "desc": "纯浏览器运行的 AI 作业助手，强调「帮学生理解知识而不是控制学生」；作者提醒凡要求下载桌面软件的站点都可能是病毒。",
    "url": "https://github.com/bear20252026/skid-homework",
-   "color": "#2F7E6E",
+   "color": "#2F7264",
    "emoji": "🟢"
   },
   {
@@ -2806,7 +2806,7 @@
    "updated": "2026-10-28",
    "desc": "Anthropic 官方公开的 Agent Skills 仓库，含生产环境在用的复杂技能参考实现，Apache 2.0。",
    "url": "https://github.com/bear20252026/skills1",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -2820,7 +2820,7 @@
    "updated": "2026-11-18",
    "desc": "Rust + Vulkan 硬件光线追踪森林渲染器：视差八面体 impostor 交给 RTX 核心评估，面向大规模植被的实时渲染（含 shaders 与 docs）。",
    "url": "https://github.com/bear20252026/SmartImposter",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -2834,7 +2834,7 @@
    "updated": "2026-10-28",
    "desc": "收集针对 Claude 等大模型越狱与红队的提示词资料，含特殊 Unicode 变体字符绕过手法与 Jailbreak-Guide。",
    "url": "https://github.com/bear20252026/Spiritual-Spell-Red-Teaming",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -2848,7 +2848,7 @@
    "updated": "2024-04-04",
    "desc": "Rust 写的终端版 Spotify 客户端（TUI）。",
    "url": "https://github.com/bear20252026/spotify-tui",
-   "color": "#C97E3D",
+   "color": "#B87A44",
    "emoji": "🟠"
   },
   {
@@ -2862,7 +2862,7 @@
    "updated": "2026-10-10",
    "desc": "让 Qwen3.8-Flash-Next 这类模型在普通消费级硬件上一键装好并本地跑，支持 Windows／Linux。",
    "url": "https://github.com/bear20252026/Strata",
-   "color": "#2F7E6E",
+   "color": "#2F7264",
    "emoji": "🟢"
   },
   {
@@ -2876,7 +2876,7 @@
    "updated": "2026-10-14",
    "desc": "基于 WireGuard 的零配置私有组网（带 2FA），此仓库是 Tailscale 开源代码的主体。",
    "url": "https://github.com/bear20252026/tailscale",
-   "color": "#6E6A45",
+   "color": "#6B6748",
    "emoji": "🟤"
   },
   {
@@ -2890,7 +2890,7 @@
    "updated": "2026-11-05",
    "desc": "学习 Three.js Shading Language（TSL）的练习仓：20 个独立着色器实验目录（boing-boing-box、ember-flow、the-river、marcher…）；无 README，按目录结构与上游描述标注。",
    "url": "https://github.com/bear20252026/tsl",
-   "color": "#AD8B20",
+   "color": "#9C8227",
    "emoji": "🟡"
   },
   {
@@ -2904,7 +2904,7 @@
    "updated": "2026-10-24",
    "desc": "小米电视（MIUI TV）焕新 Skill：去广告、清预装、换开源桌面（推荐 Projectivy）、装代理与影视仓；免 root、全程可逆，附固件逆向实录与一键脚本。",
    "url": "https://github.com/bear20252026/tv-fresh",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -2918,7 +2918,7 @@
    "updated": "2026-10-18",
    "desc": "游资（UZI）投资 Skill：融合 66 位投资大佬方法与 9 大流派，22 维数据×180 条量化规则×17 种机构分析法，产出带头像图表的 HTML 研报；未验证的模型不参与投票。",
    "url": "https://github.com/bear20252026/UZI-Skill",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -2932,7 +2932,7 @@
    "updated": "2026-10-23",
    "desc": "A 股／美股／港股投研工作台：自选与持仓、每日复盘、产业资讯与研究、个股深挖、回测、研报库，168 个数据端点，可接 Claude Code 等。",
    "url": "https://github.com/bear20252026/Vibe-Research",
-   "color": "#6C8F3F",
+   "color": "#66834A",
    "emoji": "🫒"
   },
   {
@@ -2946,7 +2946,7 @@
    "updated": "2026-10-11",
    "desc": "浏览器里跑的免费办公三件套（文字／表格／演示），2000 年代风格、免安装，能打开并存成 Microsoft Office 文件。",
    "url": "https://github.com/bear20252026/VibeOffice",
-   "color": "#6C8F3F",
+   "color": "#66834A",
    "emoji": "🫒"
   },
   {
@@ -2960,7 +2960,7 @@
    "updated": "2026-10-29",
    "desc": "一个 Skill：教编码 Agent 把一段游戏实况视频变成浏览器里真能玩的游戏，每个成品都是单个 index.html（Three.js）。",
    "url": "https://github.com/bear20252026/video-to-game",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -2974,7 +2974,7 @@
    "updated": "2026-10-19",
    "desc": "油猴脚本，聚合多个第三方解析接口免费看爱奇艺／腾讯／优酷／B站等 VIP 视频，自动匹配选集、去广告。",
    "url": "https://github.com/bear20252026/video_vip",
-   "color": "#C97E3D",
+   "color": "#B87A44",
    "emoji": "🟠"
   },
   {
@@ -2988,7 +2988,7 @@
    "updated": "2026-10-26",
    "desc": "全本地、开源的 ElevenLabs 替代：AI 语音工作室，做声音克隆与语音创作。",
    "url": "https://github.com/bear20252026/VoiceStudio",
-   "color": "#2F7E6E",
+   "color": "#2F7264",
    "emoji": "🟢"
   },
   {
@@ -3002,7 +3002,7 @@
    "updated": "2026-10-08",
    "desc": "基于 MiniCPM-4 的免分词器 TTS 模型 VoxCPM2，做多语种语音生成与音色创意设计。",
    "url": "https://github.com/bear20252026/VoxCPM",
-   "color": "#2F7E6E",
+   "color": "#2F7264",
    "emoji": "🟢"
   },
   {
@@ -3016,7 +3016,7 @@
    "updated": "2026-11-16",
    "desc": "纯代码 Three.js 作品：八条机械腿的巨型苏联板式住宅楼，在蓝暮薄雾里走过湿草地，无任何 3D 素材。",
    "url": "https://github.com/bear20252026/walking-block",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -3030,7 +3030,7 @@
    "updated": "2026-11-15",
    "desc": "单文件 HTML 的水彩／油墨静物：矿泉水杯折射窗外阳光与绿植，零依赖、无需构建工具。",
    "url": "https://github.com/bear20252026/watercolor-water-cup",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -3044,7 +3044,7 @@
    "updated": "2026-10-17",
    "desc": "从零手写的实时 WebGPU 海洋渲染器，FFT 波浪、白浪花与日照反射，不用任何引擎；压缩成 61KB 单页即可运行。",
    "url": "https://github.com/bear20252026/web-ocean",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -3058,7 +3058,7 @@
    "updated": "2025-12-30",
    "desc": "微信聊天记录导出与本地归档工具，把对话留存下来做自己的数据资产与 AI 记忆素材。",
    "url": "https://github.com/bear20252026/WeChatMsg",
-   "color": "#C97E3D",
+   "color": "#B87A44",
    "emoji": "🟠"
   },
   {
@@ -3072,7 +3072,7 @@
    "updated": "2026-11-01",
    "desc": "微信读书全书无损导出，一键出双字体精排 PDF／EPUB／纯 Markdown 笔记（适配 Obsidian、Notion），专门解决网页端翻页漏字。",
    "url": "https://github.com/bear20252026/weread-book-exporter",
-   "color": "#C97E3D",
+   "color": "#B87A44",
    "emoji": "🟠"
   },
   {
@@ -3086,7 +3086,7 @@
    "updated": "2026-11-11",
    "desc": "Rust 后端的 openpyxl 替代，能原地编辑已有 .xlsx／.xlsm；多数旧脚本改一行 import 就能给慢速处理提速。",
    "url": "https://github.com/bear20252026/wolfxl-oss",
-   "color": "#6C8F3F",
+   "color": "#66834A",
    "emoji": "🫒"
   },
   {
@@ -3100,7 +3100,7 @@
    "updated": "2026-10-25",
    "desc": "词光 Word Atlas：7298 个雅思词条配原创插画、英美发音与 FSRS 间隔复习，把单词变成画面，已有 iOS App。",
    "url": "https://github.com/bear20252026/word-atlas",
-   "color": "#AD8B20",
+   "color": "#9C8227",
    "emoji": "🟡"
   },
   {
@@ -3114,7 +3114,7 @@
    "updated": "2026-10-12",
    "desc": "纯 Rust 写的开源净室文字处理器，做文档写作与版式设计。",
    "url": "https://github.com/bear20252026/wordcraft",
-   "color": "#6C8F3F",
+   "color": "#66834A",
    "emoji": "🫒"
   },
   {
@@ -3128,7 +3128,7 @@
    "updated": "2026-09-29",
    "desc": "绕过设备校验，让小米笔记本专属的「超级小爱／小爱同学」PC 客户端跑在任意品牌电脑上，语音助手、耳机联动、跨设备控制都能用。",
    "url": "https://github.com/bear20252026/xiaoai-agent-unlock",
-   "color": "#C97E3D",
+   "color": "#B87A44",
    "emoji": "🟠"
   },
   {
@@ -3142,7 +3142,7 @@
    "updated": "2026-10-15",
    "desc": "跨平台 Xcode 替代：在 Linux／WSL／Windows／macOS 上用 SwiftPM 构建并部署 iOS 应用。",
    "url": "https://github.com/bear20252026/xtool",
-   "color": "#6E6A45",
+   "color": "#6B6748",
    "emoji": "🟤"
   },
   {
@@ -3156,7 +3156,7 @@
    "updated": "2026-10-10",
    "desc": "高颜值第三方网易云音乐播放器（Electron），支持 Windows／macOS／Linux，可选 Nginx 反代 API 以避免跨域问题。",
    "url": "https://github.com/bear20252026/YesPlayMusic",
-   "color": "#C97E3D",
+   "color": "#B87A44",
    "emoji": "🟠"
   },
   {
@@ -3170,7 +3170,7 @@
    "updated": "2026-10-21",
    "desc": "给创作者的 Skill 集合：把写作、X 内容切片、X Articles 草稿发布、微信数字资产采集等流程化。",
    "url": "https://github.com/bear20252026/yichen-skills",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -3184,7 +3184,7 @@
    "updated": "2026-10-11",
    "desc": "智谱 Z.ai 的 AI 编程工作台：桌面应用＋浏览器界面＋终端 Agent，仓库含客户端、后端服务、共享 UI 与 Agent CLI／运行时源码。",
    "url": "https://github.com/bear20252026/ZCode",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -3194,11 +3194,11 @@
    "category": "学习资源与清单",
    "subcategory": "教程 / 课程 / 书籍 / 示例集",
    "lang": "",
-   "stars": 12909,
-   "updated": "2025-06-20",
+   "stars": 12902,
+   "updated": "",
    "desc": "给工程师开的中文书单，按计算机、软件工程、数学、创业、人文分类，附内容介绍与读后感。",
    "url": "https://github.com/0voice/expert_readed_books",
-   "color": "#AD8B20",
+   "color": "#9C8227",
    "emoji": "🟡"
   },
   {
@@ -3208,11 +3208,11 @@
    "category": "开发工具与命令行",
    "subcategory": "CLI / 终端 / TUI",
    "lang": "Shell",
-   "stars": 8134,
-   "updated": "2026-08-27",
+   "stars": 8130,
+   "updated": "",
    "desc": "一个 Shell 脚本一键跑起虚拟 iPhone（vphone）环境；作者已建议改用维护更好的 vphone-cli。",
    "url": "https://github.com/34306/vphone-aio",
-   "color": "#6E6A45",
+   "color": "#6B6748",
    "emoji": "🟤"
   },
   {
@@ -3222,11 +3222,11 @@
    "category": "桌面与移动客户端",
    "subcategory": "影音 / 短剧 / 播放器 / 下载",
    "lang": "JavaScript",
-   "stars": 6774,
-   "updated": "2026-11-16",
+   "stars": 6765,
+   "updated": "",
    "desc": "油猴脚本，聚合多个第三方解析接口免费看爱奇艺／腾讯／优酷／B站等 VIP 视频，自动匹配选集、去广告。",
    "url": "https://github.com/88lin/video_vip",
-   "color": "#C97E3D",
+   "color": "#B87A44",
    "emoji": "🟠"
   },
   {
@@ -3236,11 +3236,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "MCP 服务器 / 协议工具",
    "lang": "Go",
-   "stars": 8814,
-   "updated": "2026-11-18",
+   "stars": 8782,
+   "updated": "",
    "desc": "Go 写的 AI 原生渗透平台，把 Agent、MCP 工具、RAG 知识库、可视化工作流和攻击链建模串成一套可执行的安全作业流。",
    "url": "https://github.com/AIPentest/CyberStrikeAI",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -3250,11 +3250,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Claude Code 技能 / 插件 / 指令库",
    "lang": "Python",
-   "stars": 1879,
-   "updated": "2026-11-11",
+   "stars": 1875,
+   "updated": "",
    "desc": "给 Claude Code／Codex／DeepSeek Harness 加「循环工程」，让 Agent 在桌面与终端里连续干几十小时，自带计划→执行→验证→复盘。",
    "url": "https://github.com/AMAP-ML/LongHorizon-Harness",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -3264,11 +3264,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Codex / OpenAI / Gemini CLI / 编码 Agent",
    "lang": "TypeScript",
-   "stars": 412,
-   "updated": "2026-11-09",
+   "stars": 407,
+   "updated": "",
    "desc": "把 Claude Code 的模型跑在远程服务器、工具执行留在本机，笔记本不用装也不用登录，改的还是自己机器上的文件和 git。",
    "url": "https://github.com/AkaraChen/cc-remote",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -3279,10 +3279,10 @@
    "subcategory": "桌面应用 / 效率工具",
    "lang": "TypeScript",
    "stars": 17,
-   "updated": "2026-11-08",
+   "updated": "",
    "desc": "Electron+React 的音乐播放器，用 AI 逐句解析歌词的词义、读音与语法，把外语歌变成可精读的课文来背单词。",
    "url": "https://github.com/Akiyama-sama/Knote",
-   "color": "#C97E3D",
+   "color": "#B87A44",
    "emoji": "🟠"
   },
   {
@@ -3292,11 +3292,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Claude Code 技能 / 插件 / 指令库",
    "lang": "Python",
-   "stars": 71480,
-   "updated": "2026-11-18",
+   "stars": 71092,
+   "updated": "",
    "desc": "免费模型路由层，让 Claude Code、Codex、Cline、Aider 等 12 种编码 Agent 接上免费／补贴模型供应商。",
    "url": "https://github.com/Alishahryar1/free-claude-code",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -3306,11 +3306,11 @@
    "category": "桌面与移动客户端",
    "subcategory": "桌面应用 / 效率工具",
    "lang": "Dart",
-   "stars": 9267,
-   "updated": "2026-10-17",
+   "stars": 9265,
+   "updated": "",
    "desc": "支持多格式电子书、带 AI 能力的阅读器，另有 Calibre 插件，主打专注阅读。",
    "url": "https://github.com/Anxcye/anx-reader",
-   "color": "#C97E3D",
+   "color": "#B87A44",
    "emoji": "🟠"
   },
   {
@@ -3320,11 +3320,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Claude Code 技能 / 插件 / 指令库",
    "lang": "",
-   "stars": 5229,
-   "updated": "2026-09-06",
+   "stars": 5227,
+   "updated": "",
    "desc": "把畅销 App 的真实界面、流程与 UI 模式整理成设计库，再封装成 Agent Skills，让 AI 照着做出原生级移动应用。",
    "url": "https://github.com/Appllama/appllama-skills",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -3334,11 +3334,11 @@
    "category": "办公与创作套件",
    "subcategory": "视频剪辑 / 无限画布 / 设计工作台",
    "lang": "TypeScript",
-   "stars": 366,
-   "updated": "2026-11-04",
+   "stars": 364,
+   "updated": "",
    "desc": "本地优先的 AI 无限画布＋时间线，编排图像与视频工作流，任何 MCP Agent 都能在同一项目里协作，对标 Higgsfield。",
    "url": "https://github.com/BeatAPI/BeatDesign",
-   "color": "#6C8F3F",
+   "color": "#66834A",
    "emoji": "🫒"
   },
   {
@@ -3348,11 +3348,11 @@
    "category": "桌面与移动客户端",
    "subcategory": "桌面应用 / 效率工具",
    "lang": "Go",
-   "stars": 191,
-   "updated": "2026-11-11",
+   "stars": 190,
+   "updated": "",
    "desc": "Go 写的 macOS 菜单栏／Windows 托盘小工具，走澎湃 OS 局域网接口给 REDMI 显示器切输入源、调音量，绕开不支持的 DDC/CI。",
    "url": "https://github.com/Binaryify/MonitorBar",
-   "color": "#C97E3D",
+   "color": "#B87A44",
    "emoji": "🟠"
   },
   {
@@ -3362,11 +3362,11 @@
    "category": "视觉艺术与网页特效",
    "subcategory": "纯代码生成艺术 / 单文件作品",
    "lang": "C++",
-   "stars": 98,
-   "updated": "2026-11-17",
+   "stars": 86,
+   "updated": "",
    "desc": "用 Claude Fable 5.2 纯代码算出来的图片与短片合集，headless Metal 计算着色器渲染，不用任何外部素材。",
    "url": "https://github.com/BubbleBrainBB/awesome-fable-5.2",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -3377,10 +3377,10 @@
    "subcategory": "水彩 / 光影 / 玻璃质感",
    "lang": "HTML",
    "stars": 1,
-   "updated": "2026-11-15",
+   "updated": "",
    "desc": "单文件 HTML 的水彩／油墨静物：矿泉水杯折射窗外阳光与绿植，零依赖、无需构建工具。",
    "url": "https://github.com/BubbleBrainBB/watercolor-water-cup",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -3390,11 +3390,11 @@
    "category": "开发工具与命令行",
    "subcategory": "逆向工程 / 反编译 / 二进制分析",
    "lang": "TypeScript",
-   "stars": 1765,
-   "updated": "2026-11-06",
+   "stars": 1764,
+   "updated": "",
    "desc": "逆向拆解 Claude 桌面端，高保真复刻其设计系统、30 个 React 组件与 8 项交互物理算法，附 3000+ 行分析手册。",
    "url": "https://github.com/Caho1/open-claude-ui",
-   "color": "#6E6A45",
+   "color": "#6B6748",
    "emoji": "🟤"
   },
   {
@@ -3404,11 +3404,11 @@
    "category": "开发工具与命令行",
    "subcategory": "安全 / 渗透 / CTF / 密码学",
    "lang": "Go",
-   "stars": 9582,
-   "updated": "2026-11-14",
+   "stars": 9571,
+   "updated": "",
    "desc": "70 个从入门到进阶的网络安全实战项目合集，配套 CertGames 分步带做真实安全工具的课程。",
    "url": "https://github.com/CarterPerez-dev/Cybersecurity-Projects",
-   "color": "#6E6A45",
+   "color": "#6B6748",
    "emoji": "🟤"
   },
   {
@@ -3418,11 +3418,11 @@
    "category": "办公与创作套件",
    "subcategory": "Office 复刻 / 文档 / 表格 / 演示",
    "lang": "Python",
-   "stars": 12248,
-   "updated": "2026-11-14",
+   "stars": 12186,
+   "updated": "",
    "desc": "作者画 AI 顶会论文插图用的 Python 绘图脚本集，可让 AI 照着模板在指定目录生成或修改配图。",
    "url": "https://github.com/ChenLiu-1996/figures4papers",
-   "color": "#6C8F3F",
+   "color": "#66834A",
    "emoji": "🫒"
   },
   {
@@ -3432,11 +3432,11 @@
    "category": "AI 模型与机器学习",
    "subcategory": "语音 / TTS / ASR / 数字人",
    "lang": "Python",
-   "stars": 806,
-   "updated": "2026-11-09",
+   "stars": 804,
+   "updated": "",
    "desc": "本地 AI 白板声画工具：给一段中文文案＋参考声音，自动生成白板动画视频、字幕并导出 MP4。",
    "url": "https://github.com/ChenShuo2004/cs-board",
-   "color": "#2F7E6E",
+   "color": "#2F7264",
    "emoji": "🟢"
   },
   {
@@ -3446,11 +3446,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "MCP 服务器 / 协议工具",
    "lang": "TypeScript",
-   "stars": 58179,
-   "updated": "2026-11-18",
+   "stars": 58053,
+   "updated": "",
    "desc": "Chrome 官方 MCP 服务，让编码 Agent 直接驱动 DevTools，把真实用户数据与实验室性能数据一起看。",
    "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -3461,10 +3461,10 @@
    "subcategory": "自托管 / Home Lab / 私有服务",
    "lang": "TypeScript",
    "stars": 885,
-   "updated": "2026-10-14",
+   "updated": "",
    "desc": "自托管的 GPTibo 商城系统，含前台、管理后台与 Go 后端；源码已脱敏，不带真实凭据、支付与商户数据。",
    "url": "https://github.com/CoolkHz/gptibo",
-   "color": "#56606B",
+   "color": "#5A6470",
    "emoji": "◼️"
   },
   {
@@ -3475,10 +3475,10 @@
    "subcategory": "后端框架 / API / 数据库",
    "lang": "Go",
    "stars": 75,
-   "updated": "2026-10-30",
+   "updated": "",
    "desc": "纯 Go 实现的 Muse 协议 SDK，直接完成 HTTPS 引导、WebSocket 握手与加密通信，不必启动 Chrome 或操作 DOM。",
    "url": "https://github.com/CoolkHz/muse-protocol-go",
-   "color": "#56606B",
+   "color": "#5A6470",
    "emoji": "◼️"
   },
   {
@@ -3488,11 +3488,11 @@
    "category": "编程语言与通用库",
    "subcategory": "JavaScript 项目",
    "lang": "JavaScript",
-   "stars": 42,
-   "updated": "2026-08-19",
+   "stars": 41,
+   "updated": "",
    "desc": "Three.js + WebGPU/TSL 小实验：借深度图让平面 2D 照片像 3D 表面一样对动态光照起反应，带表面细节。",
    "url": "https://github.com/DGFX/codrops-relightning-images",
-   "color": "#8C7B6B",
+   "color": "#857667",
    "emoji": "⚪"
   },
   {
@@ -3502,11 +3502,11 @@
    "category": "视觉艺术与网页特效",
    "subcategory": "数据可视化 / 地图 / 图表",
    "lang": "JavaScript",
-   "stars": 7872,
-   "updated": "2026-11-18",
+   "stars": 7649,
+   "updated": "",
    "desc": "中国历史交互地图时间轴（前 403 年至今），拖时间轴、点城市即可穿越 18 个朝代看疆域与地名变迁。",
    "url": "https://github.com/DeanChensj/jiangshan-map",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -3517,10 +3517,10 @@
    "subcategory": "语音 / TTS / ASR / 数字人",
    "lang": "Swift",
    "stars": 25,
-   "updated": "2026-11-14",
+   "updated": "",
    "desc": "macOS 本地优先语音输入「随言」，按住快捷键说话，识别结果直接打到当前光标处。",
    "url": "https://github.com/DragonKingIO/Cadenza-voice",
-   "color": "#2F7E6E",
+   "color": "#2F7264",
    "emoji": "🟢"
   },
   {
@@ -3530,11 +3530,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Claude Code 技能 / 插件 / 指令库",
    "lang": "Python",
-   "stars": 2171,
-   "updated": "2026-11-17",
+   "stars": 1979,
+   "updated": "",
    "desc": "把专业 Blender 5.3 工作流封装成 Agent Skills，供 Claude Code、Codex、Gemini CLI、Cursor 等直接调用。",
    "url": "https://github.com/EL4CTEO/blender-skills",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -3544,11 +3544,11 @@
    "category": "桌面与移动客户端",
    "subcategory": "桌面应用 / 效率工具",
    "lang": "Rust",
-   "stars": 1551,
-   "updated": "2026-11-18",
+   "stars": 1544,
+   "updated": "",
    "desc": "用 Rust + GPUI 写的离线优先桌面办公套件。",
    "url": "https://github.com/ELY-Open-Source/ElyOffice",
-   "color": "#C97E3D",
+   "color": "#B87A44",
    "emoji": "🟠"
   },
   {
@@ -3558,11 +3558,11 @@
    "category": "开发工具与命令行",
    "subcategory": "浏览器内核 / 编译器 / 运行时 / 底层系统",
    "lang": "Rust",
-   "stars": 14823,
-   "updated": "2026-11-18",
+   "stars": 14815,
+   "updated": "",
    "desc": "去中心化网状 VPN，支持 WireGuard，主打组网简单、无需中心节点。",
    "url": "https://github.com/EasyTier/EasyTier",
-   "color": "#6E6A45",
+   "color": "#6B6748",
    "emoji": "🟤"
   },
   {
@@ -3572,11 +3572,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Claude Code 技能 / 插件 / 指令库",
    "lang": "JavaScript",
-   "stars": 79643,
-   "updated": "2026-11-18",
+   "stars": 78653,
+   "updated": "",
    "desc": "DeepSeek Harness 插件：不登录、不填 API Key 就免费不限量用前沿模型，另带 OpenAI 兼容本地转发端口与公告实时推送。",
    "url": "https://github.com/Ebony-Vinyl/dsh-our-free-model",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -3586,11 +3586,11 @@
    "category": "开发工具与命令行",
    "subcategory": "逆向工程 / 反编译 / 二进制分析",
    "lang": "C",
-   "stars": 2461,
-   "updated": "2026-11-08",
+   "stars": 2459,
+   "updated": "",
    "desc": "离线解密 FairPlay 加密的 iOS IPA，凭账户 16 字节凭据独立推导密钥，不依赖越狱设备在线环境。",
    "url": "https://github.com/EthanArbuckle/fairplay-decrypt",
-   "color": "#6E6A45",
+   "color": "#6B6748",
    "emoji": "🟤"
   },
   {
@@ -3600,11 +3600,11 @@
    "category": "视觉艺术与网页特效",
    "subcategory": "3D 场景 / WebGL / Three.js",
    "lang": "Python",
-   "stars": 2114,
-   "updated": "2026-09-22",
+   "stars": 2110,
+   "updated": "",
    "desc": "一个 Codex Skill：说一句话生成会随视角流光的 3D 全息闪卡，浏览器里能拖着转、翻背面、拉滑块，附可改的 Blender 工程。",
    "url": "https://github.com/EverettFish/holo-card-studio",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -3614,11 +3614,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Claude Code 技能 / 插件 / 指令库",
    "lang": "JavaScript",
-   "stars": 8330,
-   "updated": "2026-11-18",
+   "stars": 8240,
+   "updated": "",
    "desc": "基于 DeepSeek Harness 的长驻机器人团队，有主 bot、bot 间消息与群聊，可作独立桌面应用或 DSH 插件。",
    "url": "https://github.com/Fei2411/DS-Bot",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -3628,11 +3628,11 @@
    "category": "办公与创作套件",
    "subcategory": "视频剪辑 / 无限画布 / 设计工作台",
    "lang": "C++",
-   "stars": 33956,
-   "updated": "2026-11-18",
+   "stars": 33937,
+   "updated": "",
    "desc": "开源金融终端，做市场分析、投研与投资组合研究，定位是付费封闭金融终端的免费替代。",
    "url": "https://github.com/Fincept-Corporation/FinceptTerminal",
-   "color": "#6C8F3F",
+   "color": "#66834A",
    "emoji": "🫒"
   },
   {
@@ -3643,10 +3643,10 @@
    "subcategory": "安全 / 渗透 / CTF / 密码学",
    "lang": "Python",
    "stars": 688,
-   "updated": "2026-11-14",
+   "updated": "",
    "desc": "AI 驱动的自动化渗透框架，用协调器调度多个 Agent 引擎朝同一目标推进，并通过共享证据让它们协作。",
    "url": "https://github.com/FishCodeTech/muteki",
-   "color": "#6E6A45",
+   "color": "#6B6748",
    "emoji": "🟤"
   },
   {
@@ -3656,11 +3656,11 @@
    "category": "AI 模型与机器学习",
    "subcategory": "图像 / 视频生成 / 多模态",
    "lang": "Python",
-   "stars": 7205,
-   "updated": "2026-07-30",
+   "stars": 7198,
+   "updated": "",
    "desc": "AI 短剧生产工作台：从剧本一路管到分镜、候选素材、对白、提示词与生成任务，产出可复用的制作资产。",
    "url": "https://github.com/Forget-C/Jellyfish",
-   "color": "#2F7E6E",
+   "color": "#2F7264",
    "emoji": "🟢"
   },
   {
@@ -3671,10 +3671,10 @@
    "subcategory": "桌面应用 / 效率工具",
    "lang": "",
    "stars": 162,
-   "updated": "2026-09-08",
+   "updated": "",
    "desc": "开源桌面整理软件的发布页，此仓库已停止维护、不再分发，只保留迁移说明。",
    "url": "https://github.com/FreeFallingSnow/SnowDesktop_Release",
-   "color": "#C97E3D",
+   "color": "#B87A44",
    "emoji": "🟠"
   },
   {
@@ -3685,10 +3685,10 @@
    "subcategory": "教程 / 课程 / 书籍 / 示例集",
    "lang": "JavaScript",
    "stars": 154,
-   "updated": "2026-11-10",
+   "updated": "",
    "desc": "3D 交互式人体解剖与生理教学平台，可沉浸式逐层探索器官与组织，用于自学。",
    "url": "https://github.com/FreedomIntelligence/BodyVista",
-   "color": "#AD8B20",
+   "color": "#9C8227",
    "emoji": "🟡"
   },
   {
@@ -3698,11 +3698,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Claude Code 技能 / 插件 / 指令库",
    "lang": "Python",
-   "stars": 59248,
-   "updated": "2026-11-17",
+   "stars": 59045,
+   "updated": "",
    "desc": "通过 Wi-Fi 给 Android／Google TV 精简预装、关追踪、换桌面，做成 Apple TV 风格的干净主页；三星 LG 等非安卓电视也能手动关追踪。",
    "url": "https://github.com/Gathin23/cleanyourtv",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -3713,10 +3713,10 @@
    "subcategory": "Claude Code 技能 / 插件 / 指令库",
    "lang": "Python",
    "stars": 26,
-   "updated": "2026-09-15",
+   "updated": "",
    "desc": "剪映草稿的无头读写与导出工具，严格核对版本、bundle ID、官方库哈希与签名，版本不符即停止，不降级不自动改常量。",
    "url": "https://github.com/GdLinkLock/jianying-headless",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -3726,11 +3726,11 @@
    "category": "桌面与移动客户端",
    "subcategory": "第三方客户端 / 导出工具",
    "lang": "TypeScript",
-   "stars": 3999,
-   "updated": "2026-11-01",
+   "stars": 3998,
+   "updated": "",
    "desc": "云微信：每个实例是一个跑 Xvfb＋原版微信（或 Chromium）的容器，KasmVNC 把画面串到浏览器，前面板按需创建销毁实例并反代。",
    "url": "https://github.com/Gloridust/WechatOnCloud",
-   "color": "#C97E3D",
+   "color": "#B87A44",
    "emoji": "🟠"
   },
   {
@@ -3741,10 +3741,10 @@
    "subcategory": "影音 / 短剧 / 播放器 / 下载",
    "lang": "Dart",
    "stars": 33,
-   "updated": "2026-11-18",
+   "updated": "",
    "desc": "网易云音乐第三方客户端，Rust 共享内核＋Flutter 界面，Linux 优先；桌面版、命令行版、窄屏布局共用同一播放引擎。",
    "url": "https://github.com/Gloridust/YetEaseMusic",
-   "color": "#C97E3D",
+   "color": "#B87A44",
    "emoji": "🟠"
   },
   {
@@ -3754,11 +3754,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Prompt / 越狱 / 红队 / 提示词库",
    "lang": "",
-   "stars": 5011,
-   "updated": "2026-11-17",
+   "stars": 4998,
+   "updated": "",
    "desc": "收集针对 Claude 等大模型越狱与红队的提示词资料，含特殊 Unicode 变体字符绕过手法与 Jailbreak-Guide。",
    "url": "https://github.com/Goochbeater/Spiritual-Spell-Red-Teaming",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -3768,11 +3768,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Codex / OpenAI / Gemini CLI / 编码 Agent",
    "lang": "",
-   "stars": 22671,
-   "updated": "2026-11-17",
+   "stars": 22118,
+   "updated": "",
    "desc": "Chrome 官方的一套 Agent Skills，把 Web 平台最佳实践与浏览器兼容数据直接注入编码 Agent，避免它写出过时代码。",
    "url": "https://github.com/GoogleChrome/modern-web-guidance",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -3782,11 +3782,11 @@
    "category": "办公与创作套件",
    "subcategory": "视频剪辑 / 无限画布 / 设计工作台",
    "lang": "TypeScript",
-   "stars": 22189,
-   "updated": "2026-11-18",
+   "stars": 22111,
+   "updated": "",
    "desc": "开源 AI 短剧／漫剧创作平台，集成剧本、智能分镜、角色场景资产、图像与视频生成，融合无限画布与可视化工作流。",
    "url": "https://github.com/HBAI-Ltd/Toonflow-app",
-   "color": "#6C8F3F",
+   "color": "#66834A",
    "emoji": "🫒"
   },
   {
@@ -3796,11 +3796,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Agent 框架 / 工作流 / 多智能体",
    "lang": "Python",
-   "stars": 60394,
-   "updated": "2026-11-18",
+   "stars": 60095,
+   "updated": "",
    "desc": "终身个性化 AI 辅导系统，支持阅读与书籍编辑、检索、Agent 接入、学习记录与桌面端。",
    "url": "https://github.com/HKUDS/DeepTutor",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -3811,10 +3811,10 @@
    "subcategory": "桌面应用 / 效率工具",
    "lang": "Kotlin",
    "stars": 18,
-   "updated": "2026-11-17",
+   "updated": "",
    "desc": "极简 Android 工具：一个输入框直达抖音／小红书／知乎／B站／X／Reddit／YouTube 的搜索结果页，绕开开屏推荐流防分心。",
    "url": "https://github.com/HauUhang/Seen",
-   "color": "#C97E3D",
+   "color": "#B87A44",
    "emoji": "🟠"
   },
   {
@@ -3824,11 +3824,11 @@
    "category": "办公与创作套件",
    "subcategory": "Office 复刻 / 文档 / 表格 / 演示",
    "lang": "JavaScript",
-   "stars": 8688,
-   "updated": "2026-11-18",
+   "stars": 8642,
+   "updated": "",
    "desc": "「Everything Project」单体大仓，目标是从零重写并开源全世界的常用软件，所有应用都放在一个仓库里。",
    "url": "https://github.com/HeyPuter/everything",
-   "color": "#6C8F3F",
+   "color": "#66834A",
    "emoji": "🫒"
   },
   {
@@ -3838,11 +3838,11 @@
    "category": "AI 模型与机器学习",
    "subcategory": "训练 / 微调 / 教程 / 评测",
    "lang": "TypeScript",
-   "stars": 2359,
-   "updated": "2026-11-18",
+   "stars": 2311,
+   "updated": "",
    "desc": "靠回答特征反推所用模型的指纹检测工具，提供网页、fpd 命令行 TUI 与 TS/Rust/Go/Python SDK，三种入口结果一致。",
    "url": "https://github.com/Ikaleio/lm-detector",
-   "color": "#2F7E6E",
+   "color": "#2F7264",
    "emoji": "🟢"
   },
   {
@@ -3852,11 +3852,11 @@
    "category": "桌面与移动客户端",
    "subcategory": "Android / iOS 原生应用",
    "lang": "JavaScript",
-   "stars": 4212,
-   "updated": "2026-11-18",
+   "stars": 4196,
+   "updated": "",
    "desc": "把多台电脑与手机拼成「一张桌子」，共享屏幕、应用、文件与剪贴板，省掉给自己发文件、重复开标签。",
    "url": "https://github.com/InukaAsith/TwinDesk",
-   "color": "#C97E3D",
+   "color": "#B87A44",
    "emoji": "🟠"
   },
   {
@@ -3866,11 +3866,11 @@
    "category": "AI 模型与机器学习",
    "subcategory": "语音 / TTS / ASR / 数字人",
    "lang": "Swift",
-   "stars": 644,
-   "updated": "2026-11-14",
+   "stars": 639,
+   "updated": "",
    "desc": "macOS 按住／轻点说话的语音听写，接豆包与微信输入法 ASR；旧版原生 Swift 实现保留在 legacy 分支。",
    "url": "https://github.com/J3n5en/voicekey",
-   "color": "#2F7E6E",
+   "color": "#2F7264",
    "emoji": "🟢"
   },
   {
@@ -3880,11 +3880,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Claude Code 技能 / 插件 / 指令库",
    "lang": "Python",
-   "stars": 9826,
-   "updated": "2026-10-03",
+   "stars": 9743,
+   "updated": "",
    "desc": "11 个免费 Claude Skills，能逆向任意 App、逐屏重建、测试，还带一个专修用户吐槽点的「创业者」角色。",
    "url": "https://github.com/Jakeschincariol/replica-skill",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -3894,11 +3894,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Claude Code 技能 / 插件 / 指令库",
    "lang": "Python",
-   "stars": 2151,
-   "updated": "2026-11-17",
+   "stars": 2139,
+   "updated": "",
    "desc": "给 AI Agent 的中文联网研究 Skill：检索 8 大平台近 30 天讨论、追跨平台热点、生成附原始来源的报告，另带每日全网热榜。",
    "url": "https://github.com/Jesseovo/last30days-skill-cn",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -3908,11 +3908,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Claude Code 技能 / 插件 / 指令库",
    "lang": "TypeScript",
-   "stars": 8350,
-   "updated": "2026-11-18",
+   "stars": 8331,
+   "updated": "",
    "desc": "围绕 pi 编码 Agent 做的智能体 IDE，把任务隔离进独立工作区，用得越多越贴合你的习惯。",
    "url": "https://github.com/JetBrains/thinkrail",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -3922,11 +3922,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Claude Code 技能 / 插件 / 指令库",
    "lang": "Python",
-   "stars": 10612,
-   "updated": "2026-11-18",
+   "stars": 10311,
+   "updated": "",
    "desc": "给 AI Agent 用的视频逐镜头逆向 Skill，输出给人看的报告（HTML/PDF）和给 Agent 复刻用的结构化拆解。",
    "url": "https://github.com/JuneYaooo/rea-video",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -3936,11 +3936,11 @@
    "category": "开发工具与命令行",
    "subcategory": "安全 / 渗透 / CTF / 密码学",
    "lang": "TypeScript",
-   "stars": 52040,
-   "updated": "2026-11-16",
+   "stars": 52021,
+   "updated": "",
    "desc": "自主 AI 渗透测试员，分析 Web 应用与 API 的源码、找出漏洞并实际验证，可作为 Claude/Codex 插件运行。",
    "url": "https://github.com/KeygraphHQ/shannon",
-   "color": "#6E6A45",
+   "color": "#6B6748",
    "emoji": "🟤"
   },
   {
@@ -3951,10 +3951,10 @@
    "subcategory": "Prompt / 越狱 / 红队 / 提示词库",
    "lang": "",
    "stars": 529,
-   "updated": "2026-08-08",
+   "updated": "",
    "desc": "泄露版 Claude Fable 5／Mythos 5 系统提示词的精简去冗版本，便于迁移复用到其他前沿模型。",
    "url": "https://github.com/KinetiNode/claude-fable-5-system-prompt-clean",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -3965,10 +3965,10 @@
    "subcategory": "第三方客户端 / 导出工具",
    "lang": "",
    "stars": 42364,
-   "updated": "2025-12-30",
+   "updated": "",
    "desc": "微信聊天记录导出与本地归档工具，把对话留存下来做自己的数据资产与 AI 记忆素材。",
    "url": "https://github.com/LC044/WeChatMsg",
-   "color": "#C97E3D",
+   "color": "#B87A44",
    "emoji": "🟠"
   },
   {
@@ -3978,11 +3978,11 @@
    "category": "开发工具与命令行",
    "subcategory": "CLI / 终端 / TUI",
    "lang": "Swift",
-   "stars": 16733,
-   "updated": "2026-11-17",
+   "stars": 16720,
+   "updated": "",
    "desc": "在 Apple Silicon Mac 上跑虚拟 iPhone 的命令行工具；README 特别声明任何以该项目名义发的币都是骗局。",
    "url": "https://github.com/Lakr233/vphone-cli",
-   "color": "#6E6A45",
+   "color": "#6B6748",
    "emoji": "🟤"
   },
   {
@@ -3992,11 +3992,11 @@
    "category": "开发工具与命令行",
    "subcategory": "浏览器内核 / 编译器 / 运行时 / 底层系统",
    "lang": "Go",
-   "stars": 6580,
-   "updated": "2026-11-18",
+   "stars": 6390,
+   "updated": "",
    "desc": "给 Claude Code 用的轻量隔离虚拟机：代理检查不通过就保持离线、无直连回退，防网络泄露；支持手机配对接续对话与工具审批。",
    "url": "https://github.com/Lee-xeo/Claude-Cage",
-   "color": "#6E6A45",
+   "color": "#6B6748",
    "emoji": "🟤"
   },
   {
@@ -4006,11 +4006,11 @@
    "category": "视觉艺术与网页特效",
    "subcategory": "3D 场景 / WebGL / Three.js",
    "lang": "JavaScript",
-   "stars": 723,
-   "updated": "2026-10-17",
+   "stars": 717,
+   "updated": "",
    "desc": "纯 Three.js 代码（零素材）搭出的宏大古希腊世界，Claude Opus 5.5 照 9 张参考图约两天建成并渲染成片。",
    "url": "https://github.com/Leonxlnx/athenaion",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -4021,10 +4021,10 @@
    "subcategory": "纯代码生成艺术 / 单文件作品",
    "lang": "Python",
    "stars": 8,
-   "updated": "2026-11-15",
+   "updated": "",
    "desc": "45 秒 4K 哥特悬崖城堡日落短片，每一帧都由 Python 代码生成；多个子 Agent 并行做地形、天空、植被、水与火，单帧要 16–20 秒。",
    "url": "https://github.com/Leonxlnx/castle-cinematic",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -4034,11 +4034,11 @@
    "category": "视觉艺术与网页特效",
    "subcategory": "3D 场景 / WebGL / Three.js",
    "lang": "JavaScript",
-   "stars": 46,
-   "updated": "2026-11-16",
+   "stars": 42,
+   "updated": "",
    "desc": "纯代码 Three.js 作品：八条机械腿的巨型苏联板式住宅楼，在蓝暮薄雾里走过湿草地，无任何 3D 素材。",
    "url": "https://github.com/Leonxlnx/walking-block",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -4048,11 +4048,11 @@
    "category": "视觉艺术与网页特效",
    "subcategory": "水彩 / 光影 / 玻璃质感",
    "lang": "JavaScript",
-   "stars": 280,
-   "updated": "2026-09-08",
+   "stars": 278,
+   "updated": "",
    "desc": "Codex Skill，做带视差与轮廓辉光的多层全息卡片，可选 AI 生成图层，附独立实现说明与演示。",
    "url": "https://github.com/LerSent001/holo-card",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -4062,11 +4062,11 @@
    "category": "后端与基础设施",
    "subcategory": "自托管 / Home Lab / 私有服务",
    "lang": "Python",
-   "stars": 17787,
-   "updated": "2026-11-14",
+   "stars": 17783,
+   "updated": "",
    "desc": "可自托管、可离线运行的开源机器翻译 API，不依赖第三方商业服务。",
    "url": "https://github.com/LibreTranslate/LibreTranslate",
-   "color": "#56606B",
+   "color": "#5A6470",
    "emoji": "◼️"
   },
   {
@@ -4076,11 +4076,11 @@
    "category": "AI 模型与机器学习",
    "subcategory": "训练 / 微调 / 教程 / 评测",
    "lang": "Jupyter Notebook",
-   "stars": 60446,
-   "updated": "2025-10-10",
+   "stars": 60368,
+   "updated": "",
    "desc": "上海交大《动手学大模型》系列编程实践教程，含 PPT、实验手册、视频与国产化《大模型开发全流程》公益课。",
    "url": "https://github.com/Lordog/dive-into-llms",
-   "color": "#2F7E6E",
+   "color": "#2F7264",
    "emoji": "🟢"
   },
   {
@@ -4090,11 +4090,11 @@
    "category": "桌面与移动客户端",
    "subcategory": "Android / iOS 原生应用",
    "lang": "Rust",
-   "stars": 10053,
-   "updated": "2026-11-18",
+   "stars": 9874,
+   "updated": "",
    "desc": "通用视频播放器：靠导入 JavaScript 插件接入不同内容源，浏览、搜索、播放与个人片库都在同一个 App 里。",
    "url": "https://github.com/Minireel/HGhub",
-   "color": "#C97E3D",
+   "color": "#B87A44",
    "emoji": "🟠"
   },
   {
@@ -4104,11 +4104,11 @@
    "category": "视觉艺术与网页特效",
    "subcategory": "游戏 / 网页小游戏",
    "lang": "TypeScript",
-   "stars": 11307,
-   "updated": "2026-10-24",
+   "stars": 11291,
+   "updated": "",
    "desc": "面向长篇连载、剧本、互动影游与长文翻译的 AI 故事创作系统，统一管理设定、角色、记忆、审稿、封面与跨语言交付，有 Studio/TUI/CLI。",
    "url": "https://github.com/Narcooo/inkos",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -4118,11 +4118,11 @@
    "category": "开发工具与命令行",
    "subcategory": "逆向工程 / 反编译 / 二进制分析",
    "lang": "Java",
-   "stars": 100553,
-   "updated": "2026-11-18",
+   "stars": 100471,
+   "updated": "",
    "desc": "NSA 开源维护的软件逆向工程框架，提供反编译与二进制分析整套工具链。",
    "url": "https://github.com/NationalSecurityAgency/ghidra",
-   "color": "#6E6A45",
+   "color": "#6B6748",
    "emoji": "🟤"
   },
   {
@@ -4132,11 +4132,11 @@
    "category": "AI 模型与机器学习",
    "subcategory": "LLM 推理 / 部署 / 量化",
    "lang": "C++",
-   "stars": 45559,
-   "updated": "2026-11-16",
+   "stars": 45332,
+   "updated": "",
    "desc": "让 Qwen3.8-Flash-Next 这类模型在普通消费级硬件上一键装好并本地跑，支持 Windows／Linux。",
    "url": "https://github.com/Niko1221/Strata",
-   "color": "#2F7E6E",
+   "color": "#2F7264",
    "emoji": "🟢"
   },
   {
@@ -4146,11 +4146,11 @@
    "category": "视觉艺术与网页特效",
    "subcategory": "3D 场景 / WebGL / Three.js",
    "lang": "JavaScript",
-   "stars": 2335,
-   "updated": "2026-11-14",
+   "stars": 2178,
+   "updated": "",
    "desc": "单个 HTML 的梦幻水下世界，可在浏览器里游过摇曳海藻林与阳光光束；触屏按住前进、双指加速。",
    "url": "https://github.com/Noniv/abyssal-garden",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -4160,11 +4160,11 @@
    "category": "视觉艺术与网页特效",
    "subcategory": "粒子 / 流体 / 物理仿真",
    "lang": "HTML",
-   "stars": 1063,
-   "updated": "2026-10-17",
+   "stars": 1060,
+   "updated": "",
    "desc": "从零手写的实时 WebGPU 海洋渲染器，FFT 波浪、白浪花与日照反射，不用任何引擎；压缩成 61KB 单页即可运行。",
    "url": "https://github.com/Noniv/web-ocean",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -4174,11 +4174,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Claude Code 技能 / 插件 / 指令库",
    "lang": "Python",
-   "stars": 264445,
-   "updated": "2026-11-18",
+   "stars": 264252,
+   "updated": "",
    "desc": "自我改进的 AI Agent（Nous Research 出品），内置定时调度器可把结果投递到任意平台，带桌面端。",
    "url": "https://github.com/NousResearch/hermes-agent",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -4188,11 +4188,11 @@
    "category": "桌面与移动客户端",
    "subcategory": "Android / iOS 原生应用",
    "lang": "Kotlin",
-   "stars": 4517,
-   "updated": "2026-11-15",
+   "stars": 4515,
+   "updated": "",
    "desc": "只收不发的 Android 观察工具：列出手机能探测到的 Wi-Fi 热点与 BLE 设备，用来看清身边的射频环境。",
    "url": "https://github.com/OffGridPete/Fieldwatch",
-   "color": "#C97E3D",
+   "color": "#B87A44",
    "emoji": "🟠"
   },
   {
@@ -4202,11 +4202,11 @@
    "category": "前端与 Web 框架",
    "subcategory": "UI 组件库 / 设计系统",
    "lang": "TypeScript",
-   "stars": 21719,
-   "updated": "2026-11-18",
+   "stars": 21647,
+   "updated": "",
    "desc": "免费开源的行情平台，看实时价格、盯全市场、挖公司洞察，对标昂贵的收费行情终端。",
    "url": "https://github.com/Open-Dev-Society/OpenStock",
-   "color": "#58A0C8",
+   "color": "#4F8CA8",
    "emoji": "🔵"
   },
   {
@@ -4216,11 +4216,11 @@
    "category": "AI 模型与机器学习",
    "subcategory": "语音 / TTS / ASR / 数字人",
    "lang": "Python",
-   "stars": 42623,
-   "updated": "2026-11-09",
+   "stars": 42594,
+   "updated": "",
    "desc": "基于 MiniCPM-4 的免分词器 TTS 模型 VoxCPM2，做多语种语音生成与音色创意设计。",
    "url": "https://github.com/OpenBMB/VoxCPM",
-   "color": "#2F7E6E",
+   "color": "#2F7264",
    "emoji": "🟢"
   },
   {
@@ -4230,11 +4230,11 @@
    "category": "办公与创作套件",
    "subcategory": "视频剪辑 / 无限画布 / 设计工作台",
    "lang": "TypeScript",
-   "stars": 98832,
-   "updated": "2026-09-24",
+   "stars": 98773,
+   "updated": "",
    "desc": "开源版剪映（CapCut），Web、桌面、移动端都能用的免费视频编辑器。",
    "url": "https://github.com/OpenCut-app/OpenCut",
-   "color": "#6C8F3F",
+   "color": "#66834A",
    "emoji": "🫒"
   },
   {
@@ -4244,11 +4244,11 @@
    "category": "桌面与移动客户端",
    "subcategory": "桌面应用 / 效率工具",
    "lang": "TypeScript",
-   "stars": 6482,
-   "updated": "2026-11-17",
+   "stars": 6428,
+   "updated": "",
    "desc": "DeepSeek Harness 的透明动画小桌宠，一行命令装、支持多开；附带从零用 AI 视频自制专属宠物的完整可复现素材链，Windows 绿色包可脱离 DSH 独立跑。",
    "url": "https://github.com/PC2005-cloud/dsh-pet",
-   "color": "#C97E3D",
+   "color": "#B87A44",
    "emoji": "🟠"
   },
   {
@@ -4258,11 +4258,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Claude Code 技能 / 插件 / 指令库",
    "lang": "Python",
-   "stars": 113006,
-   "updated": "2026-11-08",
+   "stars": 112811,
+   "updated": "",
    "desc": "给 AI Agent 装上「看整个互联网」的眼睛，能读与搜 Twitter、Reddit、YouTube 等平台内容。",
    "url": "https://github.com/Panniantong/Agent-Reach",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -4272,11 +4272,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Claude Code 技能 / 插件 / 指令库",
    "lang": "JavaScript",
-   "stars": 5014,
-   "updated": "2026-11-15",
+   "stars": 4978,
+   "updated": "",
    "desc": "让 AI 写 10–50 章完整中文小说的 Skill：三层递进问答、偏好记忆、悬念钩子、中断续写、三种写作模式与自动校验修复。",
    "url": "https://github.com/PenglongHuang/chinese-novelist-skill",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -4286,11 +4286,11 @@
    "category": "视觉艺术与网页特效",
    "subcategory": "游戏 / 网页小游戏",
    "lang": "Rust",
-   "stars": 13023,
-   "updated": "2026-11-18",
+   "stars": 13014,
+   "updated": "",
    "desc": "用 Rust 写的高性能 Minecraft 服务端实现，主打快而省，并提供插件开发基础。",
    "url": "https://github.com/Pumpkin-MC/Pumpkin",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -4300,11 +4300,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Codex / OpenAI / Gemini CLI / 编码 Agent",
    "lang": "TypeScript",
-   "stars": 4389,
-   "updated": "2026-11-17",
+   "stars": 4359,
+   "updated": "",
    "desc": "桌面端一体化本地 AI 工作台：聊天、生图、生视频加编码 Agent；大模型可选用云端 GPU，生图建议 6–8G 显存、视频 12G 以上。",
    "url": "https://github.com/PurpleDoubleD/locally-uncensored",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -4314,11 +4314,11 @@
    "category": "学习资源与清单",
    "subcategory": "教程 / 课程 / 书籍 / 示例集",
    "lang": "HTML",
-   "stars": 41420,
-   "updated": "2026-09-07",
+   "stars": 41417,
+   "updated": "",
    "desc": "浙大课程攻略共享计划，同学共建课程资料与选课经验，含上传规范与教师评价须用拼音缩写的约定。",
    "url": "https://github.com/QSCTech/zju-icicles",
-   "color": "#AD8B20",
+   "color": "#9C8227",
    "emoji": "🟡"
   },
   {
@@ -4329,10 +4329,10 @@
    "subcategory": "影音 / 短剧 / 播放器 / 下载",
    "lang": "Rust",
    "stars": 19437,
-   "updated": "2024-04-04",
+   "updated": "",
    "desc": "Rust 写的终端版 Spotify 客户端（TUI）。",
    "url": "https://github.com/Rigellute/spotify-tui",
-   "color": "#C97E3D",
+   "color": "#B87A44",
    "emoji": "🟠"
   },
   {
@@ -4342,11 +4342,11 @@
    "category": "前端与 Web 框架",
    "subcategory": "前端框架 / SSR / 全栈",
    "lang": "Go",
-   "stars": 498,
-   "updated": "2026-11-14",
+   "stars": 497,
+   "updated": "",
    "desc": "Wails（Go + React/TS）做的图像生成／编辑桌面客户端，SSE 流式保活规避 Cloudflare 524/504 超时；配套 Image-Prompts 可一键导入提示词。",
    "url": "https://github.com/RoseKhlifa/Image-Studio",
-   "color": "#58A0C8",
+   "color": "#4F8CA8",
    "emoji": "🔵"
   },
   {
@@ -4356,11 +4356,11 @@
    "category": "桌面与移动客户端",
    "subcategory": "影音 / 短剧 / 播放器 / 下载",
    "lang": "TypeScript",
-   "stars": 1664,
-   "updated": "2026-11-13",
+   "stars": 1659,
+   "updated": "",
    "desc": "跨平台桌面音乐播放器，歌词支持丰富、音频格式兼容广。",
    "url": "https://github.com/SPlayer-Dev/SPlayer-Next",
-   "color": "#C97E3D",
+   "color": "#B87A44",
    "emoji": "🟠"
   },
   {
@@ -4371,10 +4371,10 @@
    "subcategory": "3D 场景 / WebGL / Three.js",
    "lang": "TypeScript",
    "stars": 10,
-   "updated": "2026-11-02",
+   "updated": "",
    "desc": "Gemini 做出的第一版 Three.js 落地页：风洞里的一台迈凯伦 Senna，附原始提示词与 44 秒演示片段。",
    "url": "https://github.com/Sam1983Aing/senna-800kg",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -4384,11 +4384,11 @@
    "category": "视觉艺术与网页特效",
    "subcategory": "3D 场景 / WebGL / Three.js",
    "lang": "Rust",
-   "stars": 108,
-   "updated": "2026-11-18",
+   "stars": 107,
+   "updated": "",
    "desc": "Rust + Vulkan 硬件光线追踪森林渲染器：视差八面体 impostor 交给 RTX 核心评估，面向大规模植被的实时渲染（含 shaders 与 docs）。",
    "url": "https://github.com/SamG-Coder/SmartImposter",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -4398,11 +4398,11 @@
    "category": "视觉艺术与网页特效",
    "subcategory": "3D 场景 / WebGL / Three.js",
    "lang": "HTML",
-   "stars": 2145,
-   "updated": "2026-11-18",
+   "stars": 2117,
+   "updated": "",
    "desc": "专为 LLM 设计的 Python 3D 建模库，把物体写成短程序：轮廓、实体、编辑、框架、关节与装配。",
    "url": "https://github.com/Sandflow-ai/sand3d",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -4412,11 +4412,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Claude Code 技能 / 插件 / 指令库",
    "lang": "Python",
-   "stars": 11204,
-   "updated": "2026-11-17",
+   "stars": 11181,
+   "updated": "",
    "desc": "一组即插即用的 SKILL.md，把 Claude 变成有上下文意识的红队操作员，覆盖各类进攻性安全技能。",
    "url": "https://github.com/SnailSploit/Claude-Red",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -4426,11 +4426,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "MCP 服务器 / 协议工具",
    "lang": "TypeScript",
-   "stars": 516,
-   "updated": "2026-11-18",
+   "stars": 513,
+   "updated": "",
    "desc": "可自托管的 ChatGPT／NotebookLM 开源替代，带 Agent、Skills 与 MCP，支持跨设备续接工作、给整组团队部署共享工作台。",
    "url": "https://github.com/SourceWeft/SourceWeft",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -4440,11 +4440,11 @@
    "category": "学习资源与清单",
    "subcategory": "教程 / 课程 / 书籍 / 示例集",
    "lang": "TypeScript",
-   "stars": 1686,
-   "updated": "2026-10-13",
+   "stars": 1685,
+   "updated": "",
    "desc": "免费开源英语单词学习网站 WordsFunny：以单词书为中心，支持词表、收藏、已掌握/未掌握切换与评论互动。",
    "url": "https://github.com/SteveSuv/remix-words-funny",
-   "color": "#AD8B20",
+   "color": "#9C8227",
    "emoji": "🟡"
   },
   {
@@ -4455,10 +4455,10 @@
    "subcategory": "训练 / 微调 / 教程 / 评测",
    "lang": "C",
    "stars": 77,
-   "updated": "2026-04-05",
+   "updated": "",
    "desc": "向日葵控控 A2 的 U 盘救砖、USB 恢复模式与免 U 盘刷机教程，附 A2-300 固件与 chroot 逃逸工具（特别警告 Pro 版勿刷）。",
    "url": "https://github.com/SwimmingTiger/oraykvm",
-   "color": "#2F7E6E",
+   "color": "#2F7264",
    "emoji": "🟢"
   },
   {
@@ -4469,10 +4469,10 @@
    "subcategory": "Office 复刻 / 文档 / 表格 / 演示",
    "lang": "Python",
    "stars": 17,
-   "updated": "2026-11-11",
+   "updated": "",
    "desc": "Rust 后端的 openpyxl 替代，能原地编辑已有 .xlsx／.xlsm；多数旧脚本改一行 import 就能给慢速处理提速。",
    "url": "https://github.com/SynthGL/wolfxl-oss",
-   "color": "#6C8F3F",
+   "color": "#66834A",
    "emoji": "🫒"
   },
   {
@@ -4482,11 +4482,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Agent 框架 / 工作流 / 多智能体",
    "lang": "Python",
-   "stars": 123059,
-   "updated": "2026-11-17",
+   "stars": 122975,
+   "updated": "",
    "desc": "多智能体 LLM 金融交易框架，让不同角色的 Agent 协作做投研与交易决策，后续推出 Trading-R1。",
    "url": "https://github.com/TauricResearch/TradingAgents",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -4496,11 +4496,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Claude Code 技能 / 插件 / 指令库",
    "lang": "Go",
-   "stars": 3761,
-   "updated": "2026-11-18",
+   "stars": 3254,
+   "updated": "",
    "desc": "自托管的编码 Agent 交付工作台，编排 CodeBuddy、Codex、Claude Code；把跑通的做法存成团队 SOP 反复复用。",
    "url": "https://github.com/Tencent/LoopForge",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -4510,11 +4510,11 @@
    "category": "桌面与移动客户端",
    "subcategory": "第三方客户端 / 导出工具",
    "lang": "C++",
-   "stars": 17667,
-   "updated": "2025-09-11",
+   "stars": 17668,
+   "updated": "",
    "desc": "微信出品的跨平台网络基础组件，统一 iOS／OS X／Android／Windows 的网络层。",
    "url": "https://github.com/Tencent/mars",
-   "color": "#C97E3D",
+   "color": "#B87A44",
    "emoji": "🟠"
   },
   {
@@ -4524,11 +4524,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Agent 框架 / 工作流 / 多智能体",
    "lang": "Go",
-   "stars": 13357,
-   "updated": "2026-11-18",
+   "stars": 13324,
+   "updated": "",
    "desc": "给 AI Agent 用的即时、并发、安全轻量沙箱，支持单机部署，也能方便扩到多节点集群。",
    "url": "https://github.com/TencentCloud/CubeSandbox",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -4538,11 +4538,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Agent 框架 / 工作流 / 多智能体",
    "lang": "Python",
-   "stars": 12213,
-   "updated": "2026-11-18",
+   "stars": 12173,
+   "updated": "",
    "desc": "开源可自托管的多用户、多 Agent AI 助手，定位是「数字生活」而不只是一个工具。",
    "url": "https://github.com/TencentCloud/Octop",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -4553,10 +4553,10 @@
    "subcategory": "Claude Code 技能 / 插件 / 指令库",
    "lang": "",
    "stars": 1017,
-   "updated": "2026-09-05",
+   "updated": "",
    "desc": "一份能力实现基准报告：用 J-Space Cognition Suite V3.7 在推理时控制 GLM-5.3-Flash 做深推理、长程任务、工具调用与校验。",
    "url": "https://github.com/Tiger3807861189/GLM-5.3-Flash-J-Space-Capability-Realization-Report",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -4566,11 +4566,11 @@
    "category": "视觉艺术与网页特效",
    "subcategory": "数据可视化 / 地图 / 图表",
    "lang": "C++",
-   "stars": 4776,
-   "updated": "2026-11-10",
+   "stars": 4772,
+   "updated": "",
    "desc": "Godot 4 的高性能可编辑地形系统。",
    "url": "https://github.com/TokisanGames/Terrain3D",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -4580,11 +4580,11 @@
    "category": "桌面与移动客户端",
    "subcategory": "桌面应用 / 效率工具",
    "lang": "C#",
-   "stars": 6598,
-   "updated": "2023-07-26",
+   "stars": 6597,
+   "updated": "",
    "desc": "借 Windows 通知栏「摸鱼」背单词，可自定义 Excel 词表决定推送内容，适合上班上课时隐蔽学习。",
    "url": "https://github.com/Uahh/ToastFish",
-   "color": "#C97E3D",
+   "color": "#B87A44",
    "emoji": "🟠"
   },
   {
@@ -4594,11 +4594,11 @@
    "category": "开发工具与命令行",
    "subcategory": "浏览器内核 / 编译器 / 运行时 / 底层系统",
    "lang": "Python",
-   "stars": 3000,
-   "updated": "2026-11-18",
+   "stars": 2978,
+   "updated": "",
    "desc": "类 OpenCore 的通用 UEFI 环境与驱动加载系统，在非苹果 ARM64 硬件上引导 iOS／macOS。",
    "url": "https://github.com/UniXNU/UniXNU",
-   "color": "#6E6A45",
+   "color": "#6B6748",
    "emoji": "🟤"
   },
   {
@@ -4608,11 +4608,11 @@
    "category": "AI 模型与机器学习",
    "subcategory": "AI 应用 / 助手 / 聊天",
    "lang": "Python",
-   "stars": 20198,
-   "updated": "2026-10-10",
+   "stars": 20150,
+   "updated": "",
    "desc": "Playwright + AI 的闲鱼多任务实时监控，带完整 Web 后台、省市区三级筛选与定时智能分析，帮你在海量商品里挑到想要的。",
    "url": "https://github.com/Usagi-org/ai-goofish-monitor",
-   "color": "#2F7E6E",
+   "color": "#2F7264",
    "emoji": "🟢"
   },
   {
@@ -4622,11 +4622,11 @@
    "category": "学习资源与清单",
    "subcategory": "Awesome / 精选列表 / 资源汇总",
    "lang": "",
-   "stars": 128097,
-   "updated": "2026-10-28",
+   "stars": 127994,
+   "updated": "",
    "desc": "收集知名品牌的 DESIGN.md 设计系统文件，丢进项目就能让 AI「照这个样子做个页面」，保持视觉一致。",
    "url": "https://github.com/VoltAgent/awesome-design-md",
-   "color": "#AD8B20",
+   "color": "#9C8227",
    "emoji": "🟡"
   },
   {
@@ -4636,11 +4636,11 @@
    "category": "桌面与移动客户端",
    "subcategory": "桌面应用 / 效率工具",
    "lang": "Python",
-   "stars": 878,
-   "updated": "2026-11-01",
+   "stars": 863,
+   "updated": "",
    "desc": "微信读书全书无损导出，一键出双字体精排 PDF／EPUB／纯 Markdown 笔记（适配 Obsidian、Notion），专门解决网页端翻页漏字。",
    "url": "https://github.com/WANGXIN-567/weread-book-exporter",
-   "color": "#C97E3D",
+   "color": "#B87A44",
    "emoji": "🟠"
   },
   {
@@ -4651,10 +4651,10 @@
    "subcategory": "水彩 / 光影 / 玻璃质感",
    "lang": "JavaScript",
    "stars": 439,
-   "updated": "2026-08-22",
+   "updated": "",
    "desc": "给 DeepSeek Harness 网页端套一层高自由度玻璃质感主题：顶栏、侧栏、输入框、统计行、轨迹视图都变磨砂玻璃，模糊度、流体背景与壁纸可调。",
    "url": "https://github.com/WYH66666666/DSH-Transparent-UI-Plugin",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -4664,11 +4664,11 @@
    "category": "视觉艺术与网页特效",
    "subcategory": "GIF / 动态海报 / 像素与光栅",
    "lang": "Python",
-   "stars": 2031,
-   "updated": "2026-11-15",
+   "stars": 1996,
+   "updated": "",
    "desc": "GIF 工厂 Skill：给一张图或一句话，就能做表情包、光栅变画卡、动态海报／签名、电影片头、文章封面、动态绘本与品牌短片。",
    "url": "https://github.com/WoYun520/gif-factory",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -4679,10 +4679,10 @@
    "subcategory": "Claude Code 技能 / 插件 / 指令库",
    "lang": "TypeScript",
    "stars": 154,
-   "updated": "2026-10-30",
+   "updated": "",
    "desc": "ReaCut：借 REA 逆向辅助从零重做的开源视频编辑器，可独立读写剪映草稿；作者说明项目仍处早期阶段。",
    "url": "https://github.com/Xiangyu-CAS/rea-capcut",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -4692,11 +4692,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Claude Code 技能 / 插件 / 指令库",
    "lang": "HTML",
-   "stars": 1281,
-   "updated": "2026-11-05",
+   "stars": 1259,
+   "updated": "",
    "desc": "341 种代码动画风格提示词＋196 张参考静帧＋离线挑选器，封装成 Claude Code／Codex Skill，支持一键导入与 HTML 视频渲染。",
    "url": "https://github.com/XiaoyeCodes/code-animation-prompts",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -4706,11 +4706,11 @@
    "category": "桌面与移动客户端",
    "subcategory": "Android / iOS 原生应用",
    "lang": "TypeScript",
-   "stars": 1004,
-   "updated": "2026-11-18",
+   "stars": 1001,
+   "updated": "",
    "desc": "Agent 优先的逆向工程工具（macOS／Windows／Linux）：任何 ACP Agent 都能读二进制、定位源文件、读 Swift 类型、重命名并逐函数重建整个文件。",
    "url": "https://github.com/Zfinix/eleven",
-   "color": "#C97E3D",
+   "color": "#B87A44",
    "emoji": "🟠"
   },
   {
@@ -4720,11 +4720,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "DeepSeek Harness / DSH 生态",
    "lang": "JavaScript",
-   "stars": 369,
-   "updated": "2026-08-19",
+   "stars": 360,
+   "updated": "",
    "desc": "DeepSeek Harness「破甲」插件：把渲染时注入的免责／拒绝类弱化文案整体换成强指令，让 AGENTS.md 等本地规则重获最高权威，8/8 补丁状态实时可见。",
    "url": "https://github.com/ZiPengWei/dsh-purge",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -4734,11 +4734,11 @@
    "category": "学习资源与清单",
    "subcategory": "教程 / 课程 / 书籍 / 示例集",
    "lang": "TypeScript",
-   "stars": 39731,
-   "updated": "2026-06-29",
+   "stars": 39720,
+   "updated": "",
    "desc": "《人人都能用英语》开放教程与 1000 小时训练体系，另有 Enjoy 浏览器插件给 YouTube／Netflix 加学习层。",
    "url": "https://github.com/ZuodaoTech/everyone-can-use-english",
-   "color": "#AD8B20",
+   "color": "#9C8227",
    "emoji": "🟡"
   },
   {
@@ -4748,11 +4748,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Claude Code 技能 / 插件 / 指令库",
    "lang": "JavaScript",
-   "stars": 118871,
-   "updated": "2026-11-14",
+   "stars": 118676,
+   "updated": "",
    "desc": "面向生产环境的编码 Agent 工程技能集，含 /review、/build（自动生成计划并逐项实现）等，支持命名空间调用避免与内置命令冲突。",
    "url": "https://github.com/addyosmani/agent-skills",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -4763,10 +4763,10 @@
    "subcategory": "CSS / SVG / UI 动效组件",
    "lang": "TypeScript",
    "stars": 4,
-   "updated": "2026-11-17",
+   "updated": "",
    "desc": "Codevember 每日一个网页视觉实验，30 个提示词写在 build.mjs，画廊按天列出（01-fold、02-shatter、03-melt…），构建产物不入库。",
    "url": "https://github.com/akella/codevember-2026",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -4776,11 +4776,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Agent 框架 / 工作流 / 多智能体",
    "lang": "Rust",
-   "stars": 16104,
-   "updated": "2026-11-18",
+   "stars": 16072,
+   "updated": "",
    "desc": "给编码 CLI 做长期记忆与交接：Claude Code 中途退出、Codex 在同目录接手时，能读到「做到哪、哪里失败、还剩什么」。",
    "url": "https://github.com/akitaonrails/ai-memory",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -4790,11 +4790,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Claude Code 技能 / 插件 / 指令库",
    "lang": "JavaScript",
-   "stars": 7201,
-   "updated": "2026-11-18",
+   "stars": 7146,
+   "updated": "",
    "desc": "艺术动画 Skill：35 种艺术风格＋9 种解说语法，让 coding agent 用代码把画动起来（示例：把自己做成像素主角跑完超级玛丽一关）。",
    "url": "https://github.com/alchaincyf/huashu-art-motion",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -4804,11 +4804,11 @@
    "category": "学习资源与清单",
    "subcategory": "设计素材 / 图标 / 字体 / 贴纸",
    "lang": "",
-   "stars": 787,
-   "updated": "2026-11-16",
+   "stars": 785,
+   "updated": "",
    "desc": "按 AviList v2026 整理的 1.1 万多种鸟类白边贴纸库，每种附多语种鸟名、分布、形态与保护等级，CC BY 4.0，出自观鸟 App「鸣迹」。",
    "url": "https://github.com/alchaincyf/huashu-bird-sticker",
-   "color": "#AD8B20",
+   "color": "#9C8227",
    "emoji": "🟡"
   },
   {
@@ -4818,11 +4818,11 @@
    "category": "桌面与移动客户端",
    "subcategory": "桌面应用 / 效率工具",
    "lang": "TypeScript",
-   "stars": 1127,
-   "updated": "2026-11-18",
+   "stars": 1117,
+   "updated": "",
    "desc": "本地优先的跨平台图片／GIF 压缩工具，带悬浮窗与封面制作；支持 SVG 保留矢量、AVIF/TIFF/QOI 等格式转换，可用工作台插件或 MCP 接入 AI。",
    "url": "https://github.com/amiaoapp/PicLite",
-   "color": "#C97E3D",
+   "color": "#B87A44",
    "emoji": "🟠"
   },
   {
@@ -4832,11 +4832,11 @@
    "category": "视觉艺术与网页特效",
    "subcategory": "GIF / 动态海报 / 像素与光栅",
    "lang": "JavaScript",
-   "stars": 4,
-   "updated": "2026-11-16",
+   "stars": 3,
+   "updated": "",
    "desc": "给真实咖啡馆做的浏览器小游戏：复刻自家街道、飞到门口、柜台报暗号，可用来展示「这是你的店还是概念模型」。",
    "url": "https://github.com/amirmushichge/fly-in-kit",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -4846,11 +4846,11 @@
    "category": "AI 模型与机器学习",
    "subcategory": "LLM 推理 / 部署 / 量化",
    "lang": "Lean",
-   "stars": 1072,
-   "updated": "2026-10-30",
+   "stars": 1070,
+   "updated": "",
    "desc": "Anthropic 的研究原型：用零知识证明验证某次 AI 推理确实出自承诺的那组模型权重（已不维护）。",
    "url": "https://github.com/anthropics/FlashProve",
-   "color": "#2F7E6E",
+   "color": "#2F7264",
    "emoji": "🟢"
   },
   {
@@ -4860,11 +4860,11 @@
    "category": "学习资源与清单",
    "subcategory": "教程 / 课程 / 书籍 / 示例集",
    "lang": "Python",
-   "stars": 21099,
-   "updated": "2026-11-06",
+   "stars": 21085,
+   "updated": "",
    "desc": "Anthropic 官方示例项目集，教开发者快速上手构建 Agent，含 computer use 与最新 toolset 用法。",
    "url": "https://github.com/anthropics/claude-quickstarts",
-   "color": "#AD8B20",
+   "color": "#9C8227",
    "emoji": "🟡"
   },
   {
@@ -4874,11 +4874,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Claude Code 技能 / 插件 / 指令库",
    "lang": "Python",
-   "stars": 197075,
-   "updated": "2026-11-16",
+   "stars": 196770,
+   "updated": "",
    "desc": "Anthropic 官方公开的 Agent Skills 仓库，含生产环境在用的复杂技能参考实现，Apache 2.0。",
    "url": "https://github.com/anthropics/skills",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -4888,11 +4888,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "AI 浏览器 / 爬虫 / 联网检索",
    "lang": "TypeScript",
-   "stars": 3564,
-   "updated": "2026-11-12",
+   "stars": 3560,
+   "updated": "",
    "desc": "Node.js／TypeScript 爬虫，把网站转成 LLM 就绪数据并做结构化抽取。",
    "url": "https://github.com/any4ai/AnyCrawl",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -4902,11 +4902,11 @@
    "category": "开发工具与命令行",
    "subcategory": "浏览器内核 / 编译器 / 运行时 / 底层系统",
    "lang": "Swift",
-   "stars": 51929,
-   "updated": "2026-11-13",
+   "stars": 51847,
+   "updated": "",
    "desc": "苹果官方工具：在 Mac 上以轻量虚拟机创建并运行 Linux 容器，可推送自建镜像。",
    "url": "https://github.com/apple/container",
-   "color": "#6E6A45",
+   "color": "#6B6748",
    "emoji": "🟤"
   },
   {
@@ -4916,11 +4916,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Claude Code 技能 / 插件 / 指令库",
    "lang": "TypeScript",
-   "stars": 4243,
-   "updated": "2026-11-06",
+   "stars": 4129,
+   "updated": "",
    "desc": "94 个 Blender 专项 Skills，供 Cursor、Claude Code、Kiro、Codex 使用，通过 MCP 串起生产级建模流程。",
    "url": "https://github.com/arjun988/blender-skills",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -4930,11 +4930,11 @@
    "category": "视觉艺术与网页特效",
    "subcategory": "3D 场景 / WebGL / Three.js",
    "lang": "TypeScript",
-   "stars": 4592,
-   "updated": "2026-09-06",
+   "stars": 4586,
+   "updated": "",
    "desc": "React + Three.js + shadcn/ui 的 3D 人体解剖浏览器，2234 个可选 BodyParts3D 网格，带系统分层与搜索。",
    "url": "https://github.com/ashemag/human-atlas",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -4944,11 +4944,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Claude Code 技能 / 插件 / 指令库",
    "lang": "Python",
-   "stars": 5987,
-   "updated": "2026-11-12",
+   "stars": 5968,
+   "updated": "",
    "desc": "AI 驱动的漏洞赏金工具包：指向目标后自动侦察、测漏洞、按严格门槛校验，产出可直接投 HackerOne／Bugcrowd 的报告。",
    "url": "https://github.com/awarexone/Agentic-Bug-Hunter",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -4958,11 +4958,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Claude Code 技能 / 插件 / 指令库",
    "lang": "JavaScript",
-   "stars": 25089,
-   "updated": "2026-11-17",
+   "stars": 25006,
+   "updated": "",
    "desc": "DeepSeek Harness（dsh）插件精选列表。",
    "url": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -4972,11 +4972,11 @@
    "category": "后端与基础设施",
    "subcategory": "自托管 / Home Lab / 私有服务",
    "lang": "",
-   "stars": 338304,
-   "updated": "2026-11-17",
+   "stars": 338126,
+   "updated": "",
    "desc": "可自托管的自由软件网络服务与 Web 应用大清单，按类别整理，用来替代各类 SaaS。",
    "url": "https://github.com/awesome-selfhosted/awesome-selfhosted",
-   "color": "#56606B",
+   "color": "#5A6470",
    "emoji": "◼️"
   },
   {
@@ -4986,11 +4986,11 @@
    "category": "AI 模型与机器学习",
    "subcategory": "图像 / 视频生成 / 多模态",
    "lang": "Python",
-   "stars": 31312,
-   "updated": "2026-11-16",
+   "stars": 31293,
+   "updated": "",
    "desc": "百度「无限 OCR」：一次性长文档解析，主打超长上下文、端到端的长程识别。",
    "url": "https://github.com/baidu/Unlimited-OCR",
-   "color": "#2F7E6E",
+   "color": "#2F7264",
    "emoji": "🟢"
   },
   {
@@ -5000,11 +5000,11 @@
    "category": "办公与创作套件",
    "subcategory": "知识库 / 笔记 / 协作文档",
    "lang": "HTML",
-   "stars": 3793,
-   "updated": "2026-08-31",
+   "stars": 3792,
+   "updated": "",
    "desc": "《史记》知识库：把两千年文本做成可在线阅读、可检索的知识网络与 Wiki，强调让机器「看见」隐藏关联。",
    "url": "https://github.com/baojie/shiji-kb",
-   "color": "#6C8F3F",
+   "color": "#66834A",
    "emoji": "🫒"
   },
   {
@@ -5014,11 +5014,11 @@
    "category": "办公与创作套件",
    "subcategory": "视频剪辑 / 无限画布 / 设计工作台",
    "lang": "TypeScript",
-   "stars": 10463,
-   "updated": "2026-10-25",
+   "stars": 10430,
+   "updated": "",
    "desc": "面向 AI 图片创作的开源无限画布工作台：画布编排、AI 生图、参考图编辑、视频生成、对话助手、提示词库与素材管理，支持多 Agent 与本地 Canvas Agent。",
    "url": "https://github.com/basketikun/infinite-canvas",
-   "color": "#6C8F3F",
+   "color": "#66834A",
    "emoji": "🫒"
   },
   {
@@ -5028,11 +5028,11 @@
    "category": "学习资源与清单",
    "subcategory": "教程 / 课程 / 书籍 / 示例集",
    "lang": "TypeScript",
-   "stars": 2292,
-   "updated": "2025-08-08",
+   "stars": 2291,
+   "updated": "",
    "desc": "把多邻国式练习搬进你自己攒的词表和语境，做个性化语言学习 App。",
    "url": "https://github.com/baturyilmaz/wordpecker-app",
-   "color": "#AD8B20",
+   "color": "#9C8227",
    "emoji": "🟡"
   },
   {
@@ -5043,10 +5043,10 @@
    "subcategory": "网站模板 / 落地页 / 博客主题",
    "lang": "TypeScript",
    "stars": 365,
-   "updated": "2026-10-12",
+   "updated": "",
    "desc": "设计师 Marijana Pav 的个人网站，半是作品档案半是设计实验，站点长期持续改动。",
    "url": "https://github.com/buka-studio/www-marijanapav",
-   "color": "#58A0C8",
+   "color": "#4F8CA8",
    "emoji": "🔵"
   },
   {
@@ -5056,11 +5056,11 @@
    "category": "学习资源与清单",
    "subcategory": "教程 / 课程 / 书籍 / 示例集",
    "lang": "JavaScript",
-   "stars": 70693,
-   "updated": "2026-11-14",
+   "stars": 70670,
+   "updated": "",
    "desc": "《人生进阶指南》开放书稿：AI 时代中英双语终身学习，谈学习、创业、财富、关系、失败与恢复，提供中英 EPUB／PDF 下载。",
    "url": "https://github.com/byoungd/up",
-   "color": "#AD8B20",
+   "color": "#9C8227",
    "emoji": "🟡"
   },
   {
@@ -5070,11 +5070,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Agent 框架 / 工作流 / 多智能体",
    "lang": "Python",
-   "stars": 14812,
-   "updated": "2026-11-17",
+   "stars": 14801,
+   "updated": "",
    "desc": "不到 50MB 的端侧智能引擎，给消费级设备提供工具调用、结构化抽取、语音转写、图像理解与模型微调。",
    "url": "https://github.com/cactus-compute/cactus",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -5084,11 +5084,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Claude Code 技能 / 插件 / 指令库",
    "lang": "Dart",
-   "stars": 27016,
-   "updated": "2026-11-18",
+   "stars": 26105,
+   "updated": "",
    "desc": "把 DeepSeek Harness 装进口袋：Android APK 本机运行、也能遥控电脑，中英双语界面；iOS 与鸿蒙版仍在开发。",
    "url": "https://github.com/ccch1mneyyy/dsh-Go",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -5099,10 +5099,10 @@
    "subcategory": "3D 场景 / WebGL / Three.js",
    "lang": "JavaScript",
    "stars": 184,
-   "updated": "2026-09-07",
+   "updated": "",
    "desc": "Three.js + Blender 脚本建的黏土风 3D 双语动物世界，给小朋友走进去点一点、听 10 位动物朋友的名字和叫声。",
    "url": "https://github.com/cclank/clay-safari",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -5112,11 +5112,11 @@
    "category": "开发工具与命令行",
    "subcategory": "逆向工程 / 反编译 / 二进制分析",
    "lang": "Python",
-   "stars": 590,
-   "updated": "2026-11-14",
+   "stars": 587,
+   "updated": "",
    "desc": "作者给自己两台三星电视（QN90B / QN90F）做的 Tizen root 利用，公开仓库是清理后版本，附 QUICKSTART。",
    "url": "https://github.com/chris-ritsen/samsung-tv-root",
-   "color": "#6E6A45",
+   "color": "#6B6748",
    "emoji": "🟤"
   },
   {
@@ -5126,11 +5126,11 @@
    "category": "开发工具与命令行",
    "subcategory": "浏览器内核 / 编译器 / 运行时 / 底层系统",
    "lang": "",
-   "stars": 25383,
-   "updated": "2026-11-18",
+   "stars": 25375,
+   "updated": "",
    "desc": "Chromium 开源浏览器项目的官方 GitHub 源码镜像。",
    "url": "https://github.com/chromium/chromium",
-   "color": "#6E6A45",
+   "color": "#6B6748",
    "emoji": "🟤"
   },
   {
@@ -5141,10 +5141,10 @@
    "subcategory": "教程 / 课程 / 书籍 / 示例集",
    "lang": "JavaScript",
    "stars": 464,
-   "updated": "2026-01-14",
+   "updated": "",
    "desc": "从基础开始的英语自然拼读练习应用，支持自定义提示词搭建个人词库，面向初学者与教学工作者。",
    "url": "https://github.com/cocojojo5213/phonics-app",
-   "color": "#AD8B20",
+   "color": "#9C8227",
    "emoji": "🟡"
   },
   {
@@ -5154,11 +5154,11 @@
    "category": "学习资源与清单",
    "subcategory": "教程 / 课程 / 书籍 / 示例集",
    "lang": "",
-   "stars": 8482,
-   "updated": "2026-08-06",
+   "stars": 8458,
+   "updated": "",
    "desc": "《最全赚钱投资指南》：技术人视角的赚钱与投资资料合集，附财报、乌合之众、富爸爸等 PDF。",
    "url": "https://github.com/codeman008/Financial_freedom",
-   "color": "#AD8B20",
+   "color": "#9C8227",
    "emoji": "🟡"
   },
   {
@@ -5168,11 +5168,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Claude Code 技能 / 插件 / 指令库",
    "lang": "JavaScript",
-   "stars": 5729,
-   "updated": "2026-11-18",
+   "stars": 5711,
+   "updated": "",
    "desc": "审计并改写文本、去掉「AI 写作腔」的便携 Skill，可用于 Claude Code、Codex、OpenClaw、Hermes 等。",
    "url": "https://github.com/conorbronsdon/avoid-ai-writing",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -5182,11 +5182,11 @@
    "category": "开发工具与命令行",
    "subcategory": "Git / 构建 / 包管理 / CI",
    "lang": "PHP",
-   "stars": 66217,
-   "updated": "2026-11-18",
+   "stars": 66196,
+   "updated": "",
    "desc": "可自托管的开源 PaaS，把任意应用、数据库、服务部署到自己的服务器，替代 Vercel／Heroku／Netlify。",
    "url": "https://github.com/coollabsio/coolify",
-   "color": "#6E6A45",
+   "color": "#6B6748",
    "emoji": "🟤"
   },
   {
@@ -5197,10 +5197,10 @@
    "subcategory": "AI 应用 / 助手 / 聊天",
    "lang": "TypeScript",
    "stars": 21818,
-   "updated": "2026-07-29",
+   "updated": "",
    "desc": "一站式 AI Agent 开发平台，把提示词、RAG、插件、工作流等核心能力做成可视化工具。",
    "url": "https://github.com/coze-dev/coze-studio",
-   "color": "#2F7E6E",
+   "color": "#2F7264",
    "emoji": "🟢"
   },
   {
@@ -5210,11 +5210,11 @@
    "category": "AI 模型与机器学习",
    "subcategory": "AI 应用 / 助手 / 聊天",
    "lang": "TypeScript",
-   "stars": 1977,
-   "updated": "2026-09-14",
+   "stars": 1974,
+   "updated": "",
    "desc": "纯浏览器运行的 AI 作业助手，强调「帮学生理解知识而不是控制学生」；作者提醒凡要求下载桌面软件的站点都可能是病毒。",
    "url": "https://github.com/cubewhy/skid-homework",
-   "color": "#2F7E6E",
+   "color": "#2F7264",
    "emoji": "🟢"
   },
   {
@@ -5224,11 +5224,11 @@
    "category": "后端与基础设施",
    "subcategory": "后端框架 / API / 数据库",
    "lang": "Java",
-   "stars": 24710,
-   "updated": "2026-11-18",
+   "stars": 24708,
+   "updated": "",
    "desc": "人人可用的开源 BI／数据可视化工具，对标 Tableau；二次开发须保留 Logo 与版权信息并遵守 GPLv3。",
    "url": "https://github.com/dataease/dataease",
-   "color": "#56606B",
+   "color": "#5A6470",
    "emoji": "◼️"
   },
   {
@@ -5239,10 +5239,10 @@
    "subcategory": "教程 / 课程 / 书籍 / 示例集",
    "lang": "Python",
    "stars": 129,
-   "updated": "2020-07-06",
+   "updated": "",
    "desc": "按词频整理的英语常用词／名词／动词词表，附 ngram 抓取→抽取→限量词表三步生成脚本。",
    "url": "https://github.com/david47k/top-english-wordlists",
-   "color": "#AD8B20",
+   "color": "#9C8227",
    "emoji": "🟡"
   },
   {
@@ -5252,11 +5252,11 @@
    "category": "AI 模型与机器学习",
    "subcategory": "语音 / TTS / ASR / 数字人",
    "lang": "Python",
-   "stars": 113366,
-   "updated": "2026-11-18",
+   "stars": 112880,
+   "updated": "",
    "desc": "全本地、开源的 ElevenLabs 替代：AI 语音工作室，做声音克隆与语音创作。",
    "url": "https://github.com/debpalash/VoiceStudio",
-   "color": "#2F7E6E",
+   "color": "#2F7264",
    "emoji": "🟢"
   },
   {
@@ -5266,11 +5266,11 @@
    "category": "AI 模型与机器学习",
    "subcategory": "AI 应用 / 助手 / 聊天",
    "lang": "TypeScript",
-   "stars": 4772,
-   "updated": "2026-11-18",
+   "stars": 4557,
+   "updated": "",
    "desc": "DeepSeek 官方的静态聊天演示页，由 DeepSeek API 驱动。",
    "url": "https://github.com/deepseek-ai/chat-demo",
-   "color": "#2F7E6E",
+   "color": "#2F7264",
    "emoji": "🟢"
   },
   {
@@ -5280,11 +5280,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Claude Code 技能 / 插件 / 指令库",
    "lang": "TypeScript",
-   "stars": 283540,
-   "updated": "2026-11-18",
+   "stars": 283047,
+   "updated": "",
    "desc": "DeepSeek 官方开源 Agent Harness（dsh），「一切皆插件」架构，模型、工具、UI、技能都可由插件替换。",
    "url": "https://github.com/deepseek-ai/deepseek-harness",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -5294,11 +5294,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Agent 框架 / 工作流 / 多智能体",
    "lang": "TypeScript",
-   "stars": 23805,
-   "updated": "2026-11-03",
+   "stars": 23684,
+   "updated": "",
    "desc": "更自主的 Agent 原型：针对单个 GitHub 仓库的主动式编码 Agent，作为 bundle 装进 DeepSeek Harness。",
    "url": "https://github.com/deepseek-ai/dsh-superagent-prototype",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -5308,11 +5308,11 @@
    "category": "学习资源与清单",
    "subcategory": "教程 / 课程 / 书籍 / 示例集",
    "lang": "TypeScript",
-   "stars": 5032,
-   "updated": "2026-11-13",
+   "stars": 4990,
+   "updated": "",
    "desc": "词光 Word Atlas：7298 个雅思词条配原创插画、英美发音与 FSRS 间隔复习，把单词变成画面，已有 iOS App。",
    "url": "https://github.com/designfuchen/word-atlas",
-   "color": "#AD8B20",
+   "color": "#9C8227",
    "emoji": "🟡"
   },
   {
@@ -5322,11 +5322,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Claude Code 技能 / 插件 / 指令库",
    "lang": "Python",
-   "stars": 2430,
-   "updated": "2026-11-07",
+   "stars": 2428,
+   "updated": "",
    "desc": "整本书翻译 Skill：把 PDF／DOCX／EPUB 交给并行子 Agent 翻成任意语言，适配 Codex、Claude Code、OpenClaw。",
    "url": "https://github.com/deusyu/translate-book",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -5336,11 +5336,11 @@
    "category": "视觉艺术与网页特效",
    "subcategory": "游戏 / 网页小游戏",
    "lang": "Rust",
-   "stars": 298,
-   "updated": "2026-11-17",
+   "stars": 299,
+   "updated": "",
    "desc": "Rust 写的远程桌面与串流项目：办公要文字清晰、多屏顺手、拖文件符合习惯，游戏要按键跟手、音画同步，也支持多人一起看一起操作。",
    "url": "https://github.com/djkcyl/farwing",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -5351,10 +5351,10 @@
    "subcategory": "Git / 构建 / 包管理 / CI",
    "lang": "Dockerfile",
    "stars": 4126,
-   "updated": "2026-11-12",
+   "updated": "",
    "desc": "Docker 官方 PHP 镜像的打包源码仓库，由 Docker 社区维护（不是 PHP 上游官方镜像）。",
    "url": "https://github.com/docker-library/php",
-   "color": "#6E6A45",
+   "color": "#6B6748",
    "emoji": "🟤"
   },
   {
@@ -5364,11 +5364,11 @@
    "category": "编程语言与通用库",
    "subcategory": "Go 项目",
    "lang": "Go",
-   "stars": 1821,
-   "updated": "2026-11-18",
+   "stars": 1816,
+   "updated": "",
    "desc": "Go 写的数字商品电商平台，强调每件商品的账号类型、适用地区、有效期与售后范围都写清楚。",
    "url": "https://github.com/dujiao-next/dujiao-next",
-   "color": "#8C7B6B",
+   "color": "#857667",
    "emoji": "⚪"
   },
   {
@@ -5379,10 +5379,10 @@
    "subcategory": "水彩 / 光影 / 玻璃质感",
    "lang": "",
    "stars": 289,
-   "updated": "2026-11-13",
+   "updated": "",
    "desc": "刘春霖 AI 小楷书房：按末代状元真迹做在线诗词书法生成，支持繁简馆阁体、同字异形轮换与随字赋形竖排，个人免费商用收费。",
    "url": "https://github.com/dvbs2000/liuchunlin-shufa",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -5392,11 +5392,11 @@
    "category": "AI 模型与机器学习",
    "subcategory": "训练 / 微调 / 教程 / 评测",
    "lang": "Dart",
-   "stars": 4785,
-   "updated": "2026-11-18",
+   "stars": 4778,
+   "updated": "",
    "desc": "AI 英语听说训练 App：精听→跟读→盲听→复述→间隔复习自动排程，配 AI 双语翻译、句子解析与词汇讲解。",
    "url": "https://github.com/echo-loop/Echo-Loop",
-   "color": "#2F7E6E",
+   "color": "#2F7264",
    "emoji": "🟢"
   },
   {
@@ -5406,11 +5406,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Claude Code 技能 / 插件 / 指令库",
    "lang": "Python",
-   "stars": 15999,
-   "updated": "2026-11-01",
+   "stars": 15930,
+   "updated": "",
    "desc": "给 AI 编码工具读的设计技能合集（Claude Code／Cursor／Codex／Windsurf 等），每个都是一份 markdown 规则文件。",
    "url": "https://github.com/elayadesign/ai-design-skills",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -5420,11 +5420,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Prompt / 越狱 / 红队 / 提示词库",
    "lang": "",
-   "stars": 53669,
-   "updated": "2026-11-09",
+   "stars": 53635,
+   "updated": "",
    "desc": "收集 ChatGPT、Claude、Gemini、Grok、Cursor、Devin 等产品的泄露系统提示词，理由是隐藏指令会影响公众认知与行为。",
    "url": "https://github.com/elder-plinius/CL4R1T4S",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -5434,11 +5434,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Prompt / 越狱 / 红队 / 提示词库",
    "lang": "",
-   "stars": 23408,
-   "updated": "2026-10-28",
+   "stars": 23400,
+   "updated": "",
    "desc": "一组「解放提示词」越狱资料，含大量特殊 Unicode 变体字符、SPECIAL_TOKENS 与 MOTHERLOAD 文本，用于绕过模型限制。",
    "url": "https://github.com/elder-plinius/L1B3RT4S",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -5448,11 +5448,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Claude Code 技能 / 插件 / 指令库",
    "lang": "JavaScript",
-   "stars": 3764,
-   "updated": "2026-10-31",
+   "stars": 3709,
+   "updated": "",
    "desc": "Claude Code Skill：用大白话让 Claude 把任意机器做成可拆开的 3D 模拟器（例如「给我做个四冲程摩托车模拟器」）。",
    "url": "https://github.com/elvarofficial/teardown",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -5462,11 +5462,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Claude Code 技能 / 插件 / 指令库",
    "lang": "Markdown",
-   "stars": 57950,
-   "updated": "2026-11-15",
+   "stars": 57810,
+   "updated": "",
    "desc": "给设计师与工程师的 Skill 集，专治 UI 里「这个动画做对没有」一类判断，含性能相关检查。",
    "url": "https://github.com/emilkowalski/skills",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -5477,10 +5477,10 @@
    "subcategory": "游戏 / 网页小游戏",
    "lang": "HTML",
    "stars": 61,
-   "updated": "2026-09-16",
+   "updated": "",
    "desc": "一只可捏、可拖、能收集今日快乐的软乎乎 MOMO 网页小玩具，单页 JS 配音效。",
    "url": "https://github.com/estherliu-lab/momo-soft-play",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -5490,11 +5490,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Codex / OpenAI / Gemini CLI / 编码 Agent",
    "lang": "JavaScript",
-   "stars": 6810,
-   "updated": "2026-11-09",
+   "stars": 6775,
+   "updated": "",
    "desc": "AI 短剧制作 Skill 集合：拆角色、排大纲、出场景与道具设定、写剧本、切分镜。",
    "url": "https://github.com/eternityspring/shuohao-skills",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -5504,11 +5504,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Claude Code 技能 / 插件 / 指令库",
    "lang": "Shell",
-   "stars": 4185,
-   "updated": "2026-11-18",
+   "stars": 4186,
+   "updated": "",
    "desc": "Expo 官方 Agent Skills，用于构建、部署、升级与调试 Expo 应用及 EAS。",
    "url": "https://github.com/expo/skills",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -5518,11 +5518,11 @@
    "category": "AI 模型与机器学习",
    "subcategory": "语音 / TTS / ASR / 数字人",
    "lang": "Python",
-   "stars": 3759,
-   "updated": "2026-05-26",
+   "stars": 3754,
+   "updated": "",
    "desc": "Meta SAM-Audio：用文字、视觉或时间提示从音频里分离任意声音的基础模型，附推理代码。",
    "url": "https://github.com/facebookresearch/sam-audio",
-   "color": "#2F7E6E",
+   "color": "#2F7264",
    "emoji": "🟢"
   },
   {
@@ -5532,11 +5532,11 @@
    "category": "视觉艺术与网页特效",
    "subcategory": "3D 场景 / WebGL / Three.js",
    "lang": "Python",
-   "stars": 9419,
-   "updated": "2026-11-12",
+   "stars": 9304,
+   "updated": "",
    "desc": "79 个游戏开发 Skills 加一个路由器，按 Godot／Unity／Unreal 等场景自动挑合适的技能给编码 Agent。",
    "url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -5546,11 +5546,11 @@
    "category": "学习资源与清单",
    "subcategory": "教程 / 课程 / 书籍 / 示例集",
    "lang": "",
-   "stars": 3599,
-   "updated": "2024-05-13",
+   "stars": 3597,
+   "updated": "",
    "desc": "殆知阁古代文献 TXT 大全，按佛藏／儒藏／医藏／史藏／子藏分目录；百度云链接已失效，需直接 clone。",
    "url": "https://github.com/garychowcmu/daizhigev20",
-   "color": "#AD8B20",
+   "color": "#9C8227",
    "emoji": "🟡"
   },
   {
@@ -5560,11 +5560,11 @@
    "category": "桌面与移动客户端",
    "subcategory": "影音 / 短剧 / 播放器 / 下载",
    "lang": "Python",
-   "stars": 5684,
-   "updated": "2026-07-27",
+   "stars": 5671,
+   "updated": "",
    "desc": "把 SRT 字幕做成暖米黄纸张底的流式笔迹白板手绘动画 Skill：mask 分区遮罩编排＋stream 连续笔迹（墨→彩），支持 protectedRegions 防提前露出。",
    "url": "https://github.com/geeklee/srt-whiteboard-animation",
-   "color": "#C97E3D",
+   "color": "#B87A44",
    "emoji": "🟠"
   },
   {
@@ -5574,11 +5574,11 @@
    "category": "AI 模型与机器学习",
    "subcategory": "LLM 推理 / 部署 / 量化",
    "lang": "C++",
-   "stars": 135622,
-   "updated": "2026-11-18",
+   "stars": 135686,
+   "updated": "",
    "desc": "C/C++ 实现的 LLM 推理引擎，构建在 ggml 之上，是本地跑量化模型的事实标准。",
    "url": "https://github.com/ggml-org/llama.cpp",
-   "color": "#2F7E6E",
+   "color": "#2F7264",
    "emoji": "🟢"
   },
   {
@@ -5588,11 +5588,11 @@
    "category": "学习资源与清单",
    "subcategory": "设计素材 / 图标 / 字体 / 贴纸",
    "lang": "TypeScript",
-   "stars": 2542,
-   "updated": "2026-11-18",
+   "stars": 2522,
+   "updated": "",
    "desc": "面向 AI 时代的轻量高性能视频创作工作台：在自由画布里连接创意、模型与素材，从分镜到成片都能继续编辑、迭代和积累。",
    "url": "https://github.com/glanderness/BeefTV",
-   "color": "#AD8B20",
+   "color": "#9C8227",
    "emoji": "🟡"
   },
   {
@@ -5602,11 +5602,11 @@
    "category": "桌面与移动客户端",
    "subcategory": "影音 / 短剧 / 播放器 / 下载",
    "lang": "Go",
-   "stars": 2654,
-   "updated": "2026-10-21",
+   "stars": 2651,
+   "updated": "",
    "desc": "Go 写的网易云音乐命令行客户端，支持 UnblockNeteaseMusic、多音质、Last.fm、MPRIS、macOS 睡眠／蓝牙响应与 DLNA 投送。",
    "url": "https://github.com/go-musicfox/go-musicfox",
-   "color": "#C97E3D",
+   "color": "#B87A44",
    "emoji": "🟠"
   },
   {
@@ -5617,10 +5617,10 @@
    "subcategory": "训练 / 微调 / 教程 / 评测",
    "lang": "Python",
    "stars": 491,
-   "updated": "2026-10-24",
+   "updated": "",
    "desc": "把黑盒 AI 文本检测器拆成「命名且已验证特征之和」，用 SAE 分析检测器残差流，让每一次判定都可被人审计。",
    "url": "https://github.com/google-deepmind/detectorscope",
-   "color": "#2F7E6E",
+   "color": "#2F7264",
    "emoji": "🟢"
   },
   {
@@ -5630,11 +5630,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "DeepSeek Harness / DSH 生态",
    "lang": "Python",
-   "stars": 24383,
-   "updated": "2026-11-02",
+   "stars": 24304,
+   "updated": "",
    "desc": "Google 的递归 Agent Harness 研究：把提示词、工具、记忆、技能与编排都当作可递归改进的 harness 系统，面向开放世界。",
    "url": "https://github.com/google-research/harness2",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -5644,11 +5644,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Codex / OpenAI / Gemini CLI / 编码 Agent",
    "lang": "Python",
-   "stars": 17700,
-   "updated": "2026-10-01",
+   "stars": 17648,
+   "updated": "",
    "desc": "把自然语言指令变成可靠的 Android 自动化；Antigravity 通过 MCP 让 ARTEMIS 把测试请求变成计划、真机执行与诊断报告。",
    "url": "https://github.com/google/artemis",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -5658,11 +5658,11 @@
    "category": "视觉艺术与网页特效",
    "subcategory": "CSS / SVG / UI 动效组件",
    "lang": "JavaScript",
-   "stars": 30887,
-   "updated": "2026-11-04",
+   "stars": 30849,
+   "updated": "",
    "desc": "框架无关的 JavaScript 动画库，做高性能 Web 动效（补间、时间轴、滚动、SVG），现已 100% 免费。",
    "url": "https://github.com/greensock/GSAP",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -5672,11 +5672,11 @@
    "category": "视觉艺术与网页特效",
    "subcategory": "CSS / SVG / UI 动效组件",
    "lang": "TypeScript",
-   "stars": 511,
-   "updated": "2026-11-18",
+   "stars": 499,
+   "updated": "",
    "desc": "每天一个设计风格：动效短片、风格图、制作指南与可编辑源码全开放，给创作者灵感、给 AI 清晰的审美参考与约束。",
    "url": "https://github.com/guanmo-ai/design-style",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -5686,11 +5686,11 @@
    "category": "前端与 Web 框架",
    "subcategory": "UI 组件库 / 设计系统",
    "lang": "TypeScript",
-   "stars": 5167,
-   "updated": "2026-11-17",
+   "stars": 5166,
+   "updated": "",
    "desc": "可爱风格的 React UI 组件库，支持一句提示词直接使用，免 npm、免构建。",
    "url": "https://github.com/guokaigdg/animal-island-ui",
-   "color": "#58A0C8",
+   "color": "#4F8CA8",
    "emoji": "🔵"
   },
   {
@@ -5700,11 +5700,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Agent 框架 / 工作流 / 多智能体",
    "lang": "Rust",
-   "stars": 36352,
-   "updated": "2026-11-18",
+   "stars": 36217,
+   "updated": "",
    "desc": "Rust 写的轻量隐蔽无头浏览器引擎，专为网页抓取与 AI Agent 自动化设计。",
    "url": "https://github.com/h4ckf0r0day/obscura",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -5714,11 +5714,11 @@
    "category": "办公与创作套件",
    "subcategory": "Office 复刻 / 文档 / 表格 / 演示",
    "lang": "JavaScript",
-   "stars": 72599,
-   "updated": "2026-09-30",
+   "stars": 72597,
+   "updated": "",
    "desc": "开源 HTML 演示框架，有浏览器就能免费做出漂亮的幻灯片。",
    "url": "https://github.com/hakimel/reveal.js",
-   "color": "#6C8F3F",
+   "color": "#66834A",
    "emoji": "🫒"
   },
   {
@@ -5728,11 +5728,11 @@
    "category": "开发工具与命令行",
    "subcategory": "Git / 构建 / 包管理 / CI",
    "lang": "Go",
-   "stars": 1531,
-   "updated": "2026-11-15",
+   "stars": 1530,
+   "updated": "",
    "desc": "把家用 USB 打印机变成随时可访问的网络打印服务，含驱动选项刷新、重打弹窗与定时任务。",
    "url": "https://github.com/hanxi/cups-web",
-   "color": "#6E6A45",
+   "color": "#6B6748",
    "emoji": "🟤"
   },
   {
@@ -5742,11 +5742,11 @@
    "category": "学习资源与清单",
    "subcategory": "Awesome / 精选列表 / 资源汇总",
    "lang": "CSS",
-   "stars": 39618,
-   "updated": "2026-11-13",
+   "stars": 39589,
+   "updated": "",
    "desc": "经济学人（含音频）、纽约客、卫报、连线、大西洋月刊等外刊 EPUB／MOBI／PDF 免费下载，每周更新。",
    "url": "https://github.com/hehonghui/awesome-english-ebooks",
-   "color": "#AD8B20",
+   "color": "#9C8227",
    "emoji": "🟡"
   },
   {
@@ -5756,11 +5756,11 @@
    "category": "视觉艺术与网页特效",
    "subcategory": "CSS / SVG / UI 动效组件",
    "lang": "TypeScript",
-   "stars": 86368,
-   "updated": "2026-11-18",
+   "stars": 86029,
+   "updated": "",
    "desc": "写 HTML／CSS 就能渲染成视频的开源框架，专为 Agent 设计；带桌面 Studio、Playground 与素材目录。",
    "url": "https://github.com/heygen-com/hyperframes",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -5770,11 +5770,11 @@
    "category": "后端与基础设施",
    "subcategory": "后端框架 / API / 数据库",
    "lang": "TypeScript",
-   "stars": 7049,
-   "updated": "2026-11-18",
+   "stars": 6898,
+   "updated": "",
    "desc": "自托管的 Google Workspace 替代：自定义域名邮箱、日历、网盘、预约与内置 AI Agent。",
    "url": "https://github.com/hieunc229/mailflare",
-   "color": "#56606B",
+   "color": "#5A6470",
    "emoji": "◼️"
   },
   {
@@ -5784,11 +5784,11 @@
    "category": "开发工具与命令行",
    "subcategory": "逆向工程 / 反编译 / 二进制分析",
    "lang": "Python",
-   "stars": 4549,
-   "updated": "2023-03-04",
+   "stars": 4550,
+   "updated": "",
    "desc": "Frida 工具，从内存里找出并 dump 出 dex，供安全工程师分析安卓恶意软件。",
    "url": "https://github.com/hluwa/frida-dexdump",
-   "color": "#6E6A45",
+   "color": "#6B6748",
    "emoji": "🟤"
   },
   {
@@ -5798,11 +5798,11 @@
    "category": "桌面与移动客户端",
    "subcategory": "影音 / 短剧 / 播放器 / 下载",
    "lang": "JavaScript",
-   "stars": 40460,
-   "updated": "2026-11-17",
+   "stars": 40341,
+   "updated": "",
    "desc": "油猴脚本，基于网盘公开 API 获取百度／阿里／移动／天翼／迅雷／夸克的直接下载地址，明确声明不破解限速。",
    "url": "https://github.com/hmjz100/LinkSwift",
-   "color": "#C97E3D",
+   "color": "#B87A44",
    "emoji": "🟠"
   },
   {
@@ -5812,11 +5812,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "MCP 服务器 / 协议工具",
    "lang": "Python",
-   "stars": 7978,
-   "updated": "2026-11-18",
+   "stars": 7957,
+   "updated": "",
    "desc": "让 Claude、ChatGPT 等通过 MCP 配置和自动化 Home Assistant，安装只需管理员访问令牌与连接方式。",
    "url": "https://github.com/homeassistant-ai/ha-mcp",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -5827,10 +5827,10 @@
    "subcategory": "3D 场景 / WebGL / Three.js",
    "lang": "HTML",
    "stars": 1,
-   "updated": "2026-11-15",
+   "updated": "",
    "desc": "单个 HTML 的程序化可玩 Three.js 万圣夜场景，带 HUD、中英切换与呼吸灯式提示。",
    "url": "https://github.com/huagechen-lab/ai-halloween-hollow",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -5840,11 +5840,11 @@
    "category": "办公与创作套件",
    "subcategory": "Office 复刻 / 文档 / 表格 / 演示",
    "lang": "Python",
-   "stars": 78264,
-   "updated": "2026-11-18",
+   "stars": 77961,
+   "updated": "",
    "desc": "把文档或主题变成真·原生 PowerPoint（原生形状、过渡），可接 Kimi K3 等大模型来理解素材。",
    "url": "https://github.com/hugohe3/ppt-master",
-   "color": "#6C8F3F",
+   "color": "#66834A",
    "emoji": "🫒"
   },
   {
@@ -5855,10 +5855,10 @@
    "subcategory": "其他语言项目",
    "lang": "Rust",
    "stars": 134,
-   "updated": "2026-10-14",
+   "updated": "",
    "desc": "无 README、无描述的 Rust 工程骨架（仅复刻），按目录结构判断为 iOffice 系列的底层核心库。",
    "url": "https://github.com/iOfficeAI/AionCore",
-   "color": "#8C7B6B",
+   "color": "#857667",
    "emoji": "⚪"
   },
   {
@@ -5868,11 +5868,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Claude Code 技能 / 插件 / 指令库",
    "lang": "TypeScript",
-   "stars": 34363,
-   "updated": "2026-11-05",
+   "stars": 34349,
+   "updated": "",
    "desc": "开源 24/7 Cowork 应用，可同时驱动 OpenClaw、Hermes、Claude Code、Codex、OpenCode 等 20 多种编码 Agent。",
    "url": "https://github.com/iOfficeAI/AionUi",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -5882,11 +5882,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Claude Code 技能 / 插件 / 指令库",
    "lang": "C#",
-   "stars": 33428,
-   "updated": "2026-11-17",
+   "stars": 33396,
+   "updated": "",
    "desc": "专为 AI Agent 设计的 Office 套件：让 Agent 读、写、编辑文档，内置 HTML 渲染引擎高保真还原排版。",
    "url": "https://github.com/iOfficeAI/OfficeCLI",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -5896,11 +5896,11 @@
    "category": "前端与 Web 框架",
    "subcategory": "前端框架 / SSR / 全栈",
    "lang": "TypeScript",
-   "stars": 987,
-   "updated": "2026-08-03",
+   "stars": 986,
+   "updated": "",
    "desc": "把喜欢的城市生成漂亮的海报式地图设计，在线即可使用。",
    "url": "https://github.com/ianho7/maptoposter-online",
-   "color": "#58A0C8",
+   "color": "#4F8CA8",
    "emoji": "🔵"
   },
   {
@@ -5911,10 +5911,10 @@
    "subcategory": "设计素材 / 图标 / 字体 / 贴纸",
    "lang": "",
    "stars": 98,
-   "updated": "2026-10-19",
+   "updated": "",
    "desc": "各家银行的 SVG 标志合集。",
    "url": "https://github.com/icongo/bank-logos",
-   "color": "#AD8B20",
+   "color": "#9C8227",
    "emoji": "🟡"
   },
   {
@@ -5925,10 +5925,10 @@
    "subcategory": "UI 组件库 / 设计系统",
    "lang": "TypeScript",
    "stars": 63,
-   "updated": "2026-11-04",
+   "updated": "",
    "desc": "铅笔手绘风格的 React 组件库，保持原生语义与确定性渲染，「像画画一样搭界面」。",
    "url": "https://github.com/inkrajs/inkra",
-   "color": "#58A0C8",
+   "color": "#4F8CA8",
    "emoji": "🔵"
   },
   {
@@ -5938,11 +5938,11 @@
    "category": "桌面与移动客户端",
    "subcategory": "第三方客户端 / 导出工具",
    "lang": "Crystal",
-   "stars": 26088,
-   "updated": "2026-11-14",
+   "stars": 26082,
+   "updated": "",
    "desc": "YouTube 的替代前端，轻量无广告、可自托管，另推荐配套浏览器扩展。",
    "url": "https://github.com/iv-org/invidious",
-   "color": "#C97E3D",
+   "color": "#B87A44",
    "emoji": "🟠"
   },
   {
@@ -5952,11 +5952,11 @@
    "category": "桌面与移动客户端",
    "subcategory": "影音 / 短剧 / 播放器 / 下载",
    "lang": "JavaScript",
-   "stars": 2267,
-   "updated": "2026-11-18",
+   "stars": 1741,
+   "updated": "",
    "desc": "红果短剧桌面版（M 系列／Intel Mac、Windows，也顾及 NAS）：三来源搜索、播放、下载、追剧与合并导出在一个应用里完成。",
    "url": "https://github.com/jackotom/hongguo-drama",
-   "color": "#C97E3D",
+   "color": "#B87A44",
    "emoji": "🟠"
   },
   {
@@ -5966,11 +5966,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "DeepSeek Harness / DSH 生态",
    "lang": "Kotlin",
-   "stars": 1004,
-   "updated": "2026-11-06",
+   "stars": 997,
+   "updated": "",
    "desc": "免 root 免 Termux，一个 APK 在安卓手机上跑 DeepSeek Harness：引擎内嵌 App、读屏操作 App、改系统设置、定时／条件自动化。",
    "url": "https://github.com/jackwener/DSH-Android",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -5980,11 +5980,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Claude Code 技能 / 插件 / 指令库",
    "lang": "Markdown",
-   "stars": 12359,
-   "updated": "2026-11-18",
+   "stars": 12325,
+   "updated": "",
    "desc": "帮 Agent 做出好界面的技能集，覆盖 UI、字体排版、色彩、可访问性、布局与产品文案。",
    "url": "https://github.com/jakubkrehel/skills",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -5994,11 +5994,11 @@
    "category": "AI 模型与机器学习",
    "subcategory": "语音 / TTS / ASR / 数字人",
    "lang": "Python",
-   "stars": 60882,
-   "updated": "2026-10-07",
+   "stars": 60837,
+   "updated": "",
    "desc": "开源 AI 语音工作室：声音克隆、听写、创作，带桌面下载与演示视频。",
    "url": "https://github.com/jamiepine/voicebox",
-   "color": "#2F7E6E",
+   "color": "#2F7264",
    "emoji": "🟢"
   },
   {
@@ -6008,11 +6008,11 @@
    "category": "桌面与移动客户端",
    "subcategory": "Android / iOS 原生应用",
    "lang": "Swift",
-   "stars": 118822,
-   "updated": "2026-11-18",
+   "stars": 118763,
+   "updated": "",
    "desc": "高质量 macOS 软件精选清单，按类别系统整理，另有配套 App。",
    "url": "https://github.com/jaywcjlove/awesome-mac",
-   "color": "#C97E3D",
+   "color": "#B87A44",
    "emoji": "🟠"
   },
   {
@@ -6022,11 +6022,11 @@
    "category": "桌面与移动客户端",
    "subcategory": "第三方客户端 / 导出工具",
    "lang": "Python",
-   "stars": 24213,
-   "updated": "2026-01-13",
+   "stars": 24194,
+   "updated": "",
    "desc": "电子书下载宝库：汇集经典文学、经管励志、职场创业、技术手册等各类电子书链接，按目录整理。",
    "url": "https://github.com/jbiaojerry/ebook-treasure-chest",
-   "color": "#C97E3D",
+   "color": "#B87A44",
    "emoji": "🟠"
   },
   {
@@ -6036,11 +6036,11 @@
    "category": "桌面与移动客户端",
    "subcategory": "Android / iOS 原生应用",
    "lang": "Kotlin",
-   "stars": 8453,
-   "updated": "2026-11-05",
+   "stars": 8444,
+   "updated": "",
    "desc": "聊天决策助手：回复前先读聊天上下文、判断对方意图与风险，再给出该怎么回的建议，分中文版与全球版。",
    "url": "https://github.com/jev-chat/jev-chat-jarvis",
-   "color": "#C97E3D",
+   "color": "#B87A44",
    "emoji": "🟠"
   },
   {
@@ -6050,11 +6050,11 @@
    "category": "前端与 Web 框架",
    "subcategory": "前端框架 / SSR / 全栈",
    "lang": "Python",
-   "stars": 1847,
-   "updated": "2026-11-15",
+   "stars": 1845,
+   "updated": "",
    "desc": "轻量现代的服务器控制面板：连 Git 仓库、自动识别配置、一键部署，带模板目录、容量检查与实时构建。",
    "url": "https://github.com/jhd3197/ServerKit",
-   "color": "#58A0C8",
+   "color": "#4F8CA8",
    "emoji": "🔵"
   },
   {
@@ -6065,10 +6065,10 @@
    "subcategory": "LLM 推理 / 部署 / 量化",
    "lang": "Python",
    "stars": 91,
-   "updated": "2026-08-14",
+   "updated": "",
    "desc": "可复现的「拒答子空间编辑」＋双 DGX Spark 上 TP=2 部署 DeepSeek V4 Flash；改动是第 10–42 层 attention wo_b 上的 rank-1 Householder 反射。",
    "url": "https://github.com/jiayuqi7813/DeepSeek-V4-Flash-0731-CRACK-2x-DGX-Spark",
-   "color": "#2F7E6E",
+   "color": "#2F7264",
    "emoji": "🟢"
   },
   {
@@ -6078,11 +6078,11 @@
    "category": "桌面与移动客户端",
    "subcategory": "影音 / 短剧 / 播放器 / 下载",
    "lang": "PHP",
-   "stars": 1319,
-   "updated": "2026-11-12",
+   "stars": 1317,
+   "updated": "",
    "desc": "短视频／图集去水印接口示例，覆盖抖音、快手、小红书、B站、微博、网易云、皮皮虾等；声明仅供技术研究与学习。",
    "url": "https://github.com/jiuhunwl/short_videos",
-   "color": "#C97E3D",
+   "color": "#B87A44",
    "emoji": "🟠"
   },
   {
@@ -6093,10 +6093,10 @@
    "subcategory": "知识库 / 笔记 / 协作文档",
    "lang": "TypeScript",
    "stars": 416,
-   "updated": "2026-11-09",
+   "updated": "",
    "desc": "乔木剪藏：把网页、文章、视频与播客剪藏进 Obsidian，之后可阅读、编辑并直接就内容向 AI 提问。",
    "url": "https://github.com/joeseesun/qiaomu-clipper",
-   "color": "#6C8F3F",
+   "color": "#66834A",
    "emoji": "🫒"
   },
   {
@@ -6107,10 +6107,10 @@
    "subcategory": "Android / iOS 原生应用",
    "lang": "Swift",
    "stars": 75,
-   "updated": "2026-11-10",
+   "updated": "",
    "desc": "乔木闪记：按一下快捷键把想法、选中文字、截图、文件收进 Obsidian 今日日记或任意 Markdown 文件夹，专治「打开笔记」这一步的流失。",
    "url": "https://github.com/joeseesun/qiaomu-jot",
-   "color": "#C97E3D",
+   "color": "#B87A44",
    "emoji": "🟠"
   },
   {
@@ -6120,11 +6120,11 @@
    "category": "视觉艺术与网页特效",
    "subcategory": "粒子 / 流体 / 物理仿真",
    "lang": "C++",
-   "stars": 12343,
-   "updated": "2026-11-18",
+   "stars": 12338,
+   "updated": "",
    "desc": "C++ 写的多核友好刚体物理与碰撞检测库；同线程改动立即可见，只复制输入就能把仿真同步到远端客户端。",
    "url": "https://github.com/jrouwe/JoltPhysics",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -6135,10 +6135,10 @@
    "subcategory": "Codex / OpenAI / Gemini CLI / 编码 Agent",
    "lang": "Python",
    "stars": 567,
-   "updated": "2026-10-20",
+   "updated": "",
    "desc": "给三星 Tizen 电视「降噪」的 Agent 可读指南：原生 Quiet Home 启动器＋可逆清理工具，让电视老实当一块 HDMI 显示器。",
    "url": "https://github.com/jss8649/quiet-tizen",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -6148,11 +6148,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "MCP 服务器 / 协议工具",
    "lang": "Rust",
-   "stars": 18611,
-   "updated": "2026-11-18",
+   "stars": 18414,
+   "updated": "",
    "desc": "真正免费、开源、本地优先、跨平台的视频编辑器（macOS／Windows／Linux／Android），内置 MCP 服务让 AI Agent 用脚本剪片。",
    "url": "https://github.com/jub0t/Concat",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -6162,11 +6162,11 @@
    "category": "AI 模型与机器学习",
    "subcategory": "语音 / TTS / ASR / 数字人",
    "lang": "Python",
-   "stars": 16685,
-   "updated": "2026-11-16",
+   "stars": 16667,
+   "updated": "",
    "desc": "基于新型扩散语言模型的零样本 TTS，支持 600 多种语言的高质量声音克隆。",
    "url": "https://github.com/k2-fsa/OmniVoice",
-   "color": "#2F7E6E",
+   "color": "#2F7264",
    "emoji": "🟢"
   },
   {
@@ -6176,11 +6176,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Claude Code 技能 / 插件 / 指令库",
    "lang": "HTML",
-   "stars": 7269,
-   "updated": "2026-11-13",
+   "stars": 7193,
+   "updated": "",
    "desc": "一套完整的 Logo 设计 Skill（开放 Agent Skills 格式，一个 SKILL.md 目录），覆盖设计原则与流程，适配 Claude、Gemini CLI、Codex 等。",
    "url": "https://github.com/kaankiziltug/logo-design-skill",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -6191,10 +6191,10 @@
    "subcategory": "网站模板 / 落地页 / 博客主题",
    "lang": "TypeScript",
    "stars": 868,
-   "updated": "2026-10-26",
+   "updated": "",
    "desc": "Kargul Workspace 的设计原型：把 Figma「Dashboard – calendar」做成可跑的日历／休假界面，含组件配置与素材。",
    "url": "https://github.com/kargulstudio/calender-app-design",
-   "color": "#58A0C8",
+   "color": "#4F8CA8",
    "emoji": "🔵"
   },
   {
@@ -6204,11 +6204,11 @@
    "category": "前端与 Web 框架",
    "subcategory": "UI 组件库 / 设计系统",
    "lang": "TypeScript",
-   "stars": 716,
-   "updated": "2026-11-01",
+   "stars": 708,
+   "updated": "",
    "desc": "手绘版 shadcn/ui：123 个可访问的 React 组件看起来像画在纸上，笔触由带随机种子的纯 TypeScript 函数生成。",
    "url": "https://github.com/kevintngo/looseleaf",
-   "color": "#58A0C8",
+   "color": "#4F8CA8",
    "emoji": "🔵"
   },
   {
@@ -6219,10 +6219,10 @@
    "subcategory": "纯代码生成艺术 / 单文件作品",
    "lang": "JavaScript",
    "stars": 10,
-   "updated": "2026-11-16",
+   "updated": "",
    "desc": "《Hidden Layers》：Three.js + Vite 做的六个小型实时 3D 世界，和一只飞不出玻璃房的玻璃翼蝴蝶，由 Claude 写成。",
    "url": "https://github.com/ky-zo/fable-butterfly",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -6233,10 +6233,10 @@
    "subcategory": "第三方客户端 / 导出工具",
    "lang": "JavaScript",
    "stars": 412,
-   "updated": "2026-11-06",
+   "updated": "",
    "desc": "把 Twitter、Discord、Threads 的声音汇到一屏，自动识别并高亮 $NVDA 这类美股／ETF／加密货币代码，给市场与技术观察者用。",
    "url": "https://github.com/laike9m/TheySay",
-   "color": "#C97E3D",
+   "color": "#B87A44",
    "emoji": "🟠"
   },
   {
@@ -6246,11 +6246,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Claude Code 技能 / 插件 / 指令库",
    "lang": "Python",
-   "stars": 2610,
-   "updated": "2026-11-11",
+   "stars": 2595,
+   "updated": "",
    "desc": "用 102 万字公文语料提炼的写作 Skill，把公文风格变成可测量、可验收的量化数据，能复现 7 种典型公文体。",
    "url": "https://github.com/larashero3-dotcom/lieflat-gongwen",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -6260,11 +6260,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Claude Code 技能 / 插件 / 指令库",
    "lang": "Python",
-   "stars": 7914,
-   "updated": "2026-11-11",
+   "stars": 7841,
+   "updated": "",
    "desc": "基于 520 万字、1169 篇实测语料的「去 AI 味」Skill：先交付带指标、研究参照、原文例句与改法的检测报告，再做改写。",
    "url": "https://github.com/larashero3-dotcom/lieflat-less-ai-tone",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -6274,11 +6274,11 @@
    "category": "视觉艺术与网页特效",
    "subcategory": "3D 场景 / WebGL / Three.js",
    "lang": "JavaScript",
-   "stars": 18244,
-   "updated": "2026-11-17",
+   "stars": 17870,
+   "updated": "",
    "desc": "给 Claude Code 的「代码电影风格工具箱」：99 种现成风格按画面观感分 15 类，中英双语画廊，每种风格都有独立页面。",
    "url": "https://github.com/lemomo-ai/lemo-opuscar",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -6288,11 +6288,11 @@
    "category": "视觉艺术与网页特效",
    "subcategory": "GIF / 动态海报 / 像素与光栅",
    "lang": "Python",
-   "stars": 364,
-   "updated": "2026-10-17",
+   "stars": 360,
+   "updated": "",
    "desc": "Claude Code 插件：把一张静图拆成文字、形状、物体、人物与光，用代码重建并编排成约 5 秒无缝循环动画（MP4／GIF）。",
    "url": "https://github.com/lemomo-ai/lemo-wake",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -6302,11 +6302,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "MCP 服务器 / 协议工具",
    "lang": "HTML",
-   "stars": 2098,
-   "updated": "2026-11-18",
+   "stars": 2096,
+   "updated": "",
    "desc": "把世界各国的法律放进同一个 git 历史，可查任意国家、任意日期、任意条款，以及写出它的那条法律。",
    "url": "https://github.com/lexifina/global-law",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -6316,11 +6316,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Agent 框架 / 工作流 / 多智能体",
    "lang": "Rust",
-   "stars": 24009,
-   "updated": "2026-11-18",
+   "stars": 23944,
+   "updated": "",
    "desc": "Rust 写的生产级无头浏览器，专为 AI Agent 设计；Playwright 可直接走 CDP 连接，另带 WebMCP playground。",
    "url": "https://github.com/lexmount/moli",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -6330,11 +6330,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Claude Code 技能 / 插件 / 指令库",
    "lang": "TypeScript",
-   "stars": 3252,
-   "updated": "2026-11-18",
+   "stars": 3181,
+   "updated": "",
    "desc": "基于 dsh 插件的远程访问方案：端到端加密、优先 P2P（全球 TURN 中继兜底），用 PC／手机／Web 随时连回本地设备上的 DSH、Codex。",
    "url": "https://github.com/liguobao/ds-harness-remote",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -6344,11 +6344,11 @@
    "category": "学习资源与清单",
    "subcategory": "教程 / 课程 / 书籍 / 示例集",
    "lang": "",
-   "stars": 1454,
-   "updated": "2026-09-23",
+   "stars": 1422,
+   "updated": "",
    "desc": "英语词汇小站 Ultimate English Vocabulary Vault：960+ 精选词表、标准 IPA、权威释义，可导 Anki／Quizlet／Excel，按中小学到专八分级。",
    "url": "https://github.com/lilinji/English",
-   "color": "#AD8B20",
+   "color": "#9C8227",
    "emoji": "🟡"
   },
   {
@@ -6358,11 +6358,11 @@
    "category": "AI 模型与机器学习",
    "subcategory": "语音 / TTS / ASR / 数字人",
    "lang": "Python",
-   "stars": 10494,
-   "updated": "2026-10-20",
+   "stars": 10479,
+   "updated": "",
    "desc": "实时交互流式数字人引擎，做音视频同步对话，支持 ernerf、musetalk、wav2lip、Ultralight-Digital-Human，已在业内商用。",
    "url": "https://github.com/lipku/LiveTalking",
-   "color": "#2F7E6E",
+   "color": "#2F7264",
    "emoji": "🟢"
   },
   {
@@ -6372,11 +6372,11 @@
    "category": "学习资源与清单",
    "subcategory": "教程 / 课程 / 书籍 / 示例集",
    "lang": "",
-   "stars": 28513,
-   "updated": "2026-08-12",
+   "stars": 28490,
+   "updated": "",
    "desc": "《系统设计面试》卷 1／卷 2 的读书笔记，按缩放、粗略估算等章节整理。",
    "url": "https://github.com/liquidslr/system-design-notes",
-   "color": "#AD8B20",
+   "color": "#9C8227",
    "emoji": "🟡"
   },
   {
@@ -6387,10 +6387,10 @@
    "subcategory": "数据可视化 / 地图 / 图表",
    "lang": "TypeScript",
    "stars": 275,
-   "updated": "2026-11-18",
+   "updated": "",
    "desc": "把 556 个大模型拟人成像素小人住进厂商小屋：顶部「今日格局」八块领奖台（最聪明／最会编程／最便宜／最新发布…），下有国内外分区与发布时间线。",
    "url": "https://github.com/liyupi/ai-model-world",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -6400,11 +6400,11 @@
    "category": "前端与 Web 框架",
    "subcategory": "UI 组件库 / 设计系统",
    "lang": "TypeScript",
-   "stars": 10610,
-   "updated": "2026-11-17",
+   "stars": 10560,
+   "updated": "",
    "desc": "在浏览器里草绘 Material 3 Expressive 界面、连成流程点着走一遍，再复制成给 AI 编码工具的 vibe-coding 提示词。",
    "url": "https://github.com/lnkiai/m3e-canvas",
-   "color": "#58A0C8",
+   "color": "#4F8CA8",
    "emoji": "🔵"
   },
   {
@@ -6414,11 +6414,11 @@
    "category": "桌面与移动客户端",
    "subcategory": "桌面应用 / 效率工具",
    "lang": "Dart",
-   "stars": 99600,
-   "updated": "2026-11-18",
+   "stars": 99459,
+   "updated": "",
    "desc": "开源跨平台的 AirDrop 替代，不联网、不依赖第三方服务器，局域网内直接互传文件。",
    "url": "https://github.com/localsend/localsend",
-   "color": "#C97E3D",
+   "color": "#B87A44",
    "emoji": "🟠"
   },
   {
@@ -6428,11 +6428,11 @@
    "category": "视觉艺术与网页特效",
    "subcategory": "游戏 / 网页小游戏",
    "lang": "HTML",
-   "stars": 636,
-   "updated": "2026-10-29",
+   "stars": 631,
+   "updated": "",
    "desc": "一个 Skill：教编码 Agent 把一段游戏实况视频变成浏览器里真能玩的游戏，每个成品都是单个 index.html（Three.js）。",
    "url": "https://github.com/lovisdotio/video-to-game",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -6442,11 +6442,11 @@
    "category": "学习资源与清单",
    "subcategory": "Awesome / 精选列表 / 资源汇总",
    "lang": "",
-   "stars": 50769,
-   "updated": "2026-09-21",
+   "stars": 50719,
+   "updated": "",
    "desc": "远程工作与远程岗位资源精选清单，含多语言 README。",
    "url": "https://github.com/lukasz-madon/awesome-remote-job",
-   "color": "#AD8B20",
+   "color": "#9C8227",
    "emoji": "🟡"
   },
   {
@@ -6457,10 +6457,10 @@
    "subcategory": "GIF / 动态海报 / 像素与光栅",
    "lang": "HTML",
    "stars": 41,
-   "updated": "2026-11-17",
+   "updated": "",
    "desc": "31 个可运行、可交互、可修改的像素实验，纯 HTML／JavaScript／Canvas、无需构建，附中英日韩四语说明。",
    "url": "https://github.com/ma1902056219-coder/openpixel",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -6470,11 +6470,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Claude Code 技能 / 插件 / 指令库",
    "lang": "Shell",
-   "stars": 327294,
-   "updated": "2026-11-18",
+   "stars": 326805,
+   "updated": "",
    "desc": "作者从自己 .agents 目录搬出来的「给真工程师」的 Skills，专门修 Claude Code／Codex 等编码 Agent 的常见翻车模式。",
    "url": "https://github.com/mattpocock/skills",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -6484,11 +6484,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Claude Code 技能 / 插件 / 指令库",
    "lang": "Python",
-   "stars": 5293,
-   "updated": "2026-11-01",
+   "stars": 5285,
+   "updated": "",
    "desc": "给创作者的 Skill 集合：把写作、X 内容切片、X Articles 草稿发布、微信数字资产采集等流程化。",
    "url": "https://github.com/mcncarl/yichen-skills",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -6502,7 +6502,7 @@
    "updated": "",
    "desc": "百度「agent+」攻防挑战赛冠军项目，AI 自主渗透测试系统（此仓库无 README，为个人复刻）。",
    "url": "https://github.com/mhtsec/ARTEX",
-   "color": "#6E6A45",
+   "color": "#6B6748",
    "emoji": "🟤"
   },
   {
@@ -6512,11 +6512,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Claude Code 技能 / 插件 / 指令库",
    "lang": "TypeScript",
-   "stars": 25252,
-   "updated": "2026-11-18",
+   "stars": 24829,
+   "updated": "",
    "desc": "开源 Grok Bot 替代：侧栏里每个 bot 都是本地跑着的真实 Claude／Codex Agent，各有自己的性格、模型、云电脑与配置。",
    "url": "https://github.com/milind-soni/OpenMausBot",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -6526,11 +6526,11 @@
    "category": "开发工具与命令行",
    "subcategory": "CLI / 终端 / TUI",
    "lang": "Rust",
-   "stars": 825,
-   "updated": "2026-11-18",
+   "stars": 824,
+   "updated": "",
    "desc": "Rust 写的 Google Drive 直链下载器，固定 libaria2；扫描谷歌自家前端挑能用的节点，并用内置根证书校验证书链。",
    "url": "https://github.com/mizorewww/gdirect",
-   "color": "#6E6A45",
+   "color": "#6B6748",
    "emoji": "🟤"
   },
   {
@@ -6540,11 +6540,11 @@
    "category": "桌面与移动客户端",
    "subcategory": "第三方客户端 / 导出工具",
    "lang": "Python",
-   "stars": 789,
-   "updated": "2026-11-14",
+   "stars": 775,
+   "updated": "",
    "desc": "Windows 微信 4.x 聊天记录读取、整理与导出桌面工具，支持好友／群聊、头像、图片、GIF 的备份与离线归档。",
    "url": "https://github.com/mofan6/Moect",
-   "color": "#C97E3D",
+   "color": "#B87A44",
    "emoji": "🟠"
   },
   {
@@ -6555,10 +6555,10 @@
    "subcategory": "纯代码生成艺术 / 单文件作品",
    "lang": "HTML",
    "stars": 4,
-   "updated": "2026-11-16",
+   "updated": "",
    "desc": "单个 HTML 文件里的可飞行浮空岛夜世界，原生 WebGL2、零库、零素材（仓库只有 index.html）。",
    "url": "https://github.com/moritzkremb/lumen-isles",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -6569,10 +6569,10 @@
    "subcategory": "纯代码生成艺术 / 单文件作品",
    "lang": "C++",
    "stars": 23,
-   "updated": "2026-11-17",
+   "updated": "",
    "desc": "只用代码拍出的 53 秒扫地机器人第一视角视频：自写 GPU 路径追踪器、程序化世界、模拟相机与合成音效（C++，附 PROMPT 与渲染脚本）。",
    "url": "https://github.com/moritzkremb/robovac-pov",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -6582,11 +6582,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Claude Code 技能 / 插件 / 指令库",
    "lang": "TypeScript",
-   "stars": 467807,
-   "updated": "2026-11-18",
+   "stars": 466454,
+   "updated": "",
    "desc": "用 Agent 逆向任意东西：没有源码也能观察 App、解释功能怎么实现、摆出证据，并在你的项目里重建一版；Linux 上接 Ghidra、JADX、固件工具。",
    "url": "https://github.com/morluto/rea",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -6596,11 +6596,11 @@
    "category": "开发工具与命令行",
    "subcategory": "CLI / 终端 / TUI",
    "lang": "Go",
-   "stars": 2809,
-   "updated": "2026-09-10",
+   "stars": 2807,
+   "updated": "",
    "desc": "极快的代理可用性检测与 IP 轮换命令行工具。",
    "url": "https://github.com/mubeng/mubeng",
-   "color": "#6E6A45",
+   "color": "#6B6748",
    "emoji": "🟤"
   },
   {
@@ -6610,11 +6610,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Codex / OpenAI / Gemini CLI / 编码 Agent",
    "lang": "",
-   "stars": 234217,
-   "updated": "2026-04-20",
+   "stars": 234019,
+   "updated": "",
    "desc": "一份 CLAUDE.md，把 Karpathy 对「LLM 写代码」的观察提炼成 Claude Code 行为准则，改善它干活的方式。",
    "url": "https://github.com/multica-ai/andrej-karpathy-skills",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -6624,11 +6624,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Claude Code 技能 / 插件 / 指令库",
    "lang": "Python",
-   "stars": 69758,
-   "updated": "2026-11-17",
+   "stars": 69126,
+   "updated": "",
    "desc": "跨 Reddit、X、YouTube、HN、Polymarket、GitHub 研究任意话题近 30 天讨论的 Agent Skill，运行时规范以 SKILL.md 为准。",
    "url": "https://github.com/mvanhorn/last30days-skill",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -6639,10 +6639,10 @@
    "subcategory": "Android / iOS 原生应用",
    "lang": "Kotlin",
    "stars": 363,
-   "updated": "2026-11-02",
+   "updated": "",
    "desc": "基于 Mika 的多设备手机 Agent 主控台：用自然语言派任务，一个界面查看各设备进度、消息与实时画面。",
    "url": "https://github.com/mylea1/phongent",
-   "color": "#C97E3D",
+   "color": "#B87A44",
    "emoji": "🟠"
   },
   {
@@ -6652,11 +6652,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Claude Code 技能 / 插件 / 指令库",
    "lang": "Swift",
-   "stars": 3579,
-   "updated": "2026-11-18",
+   "stars": 3560,
+   "updated": "",
    "desc": "给你名下所有设备的开源个人 Agent，一个有名有姓、长期陪着你的助手（多语言）。",
    "url": "https://github.com/nano-muse/nanoMuse",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -6666,11 +6666,11 @@
    "category": "桌面与移动客户端",
    "subcategory": "Android / iOS 原生应用",
    "lang": "Swift",
-   "stars": 498,
-   "updated": "2026-09-23",
+   "stars": 496,
+   "updated": "",
    "desc": "网易 UU 远程接入指南：设备绑定与发起远控的 URL Scheme 协议，覆盖全屏与画中画，含 iOS／Android 示例与完整错误码。",
    "url": "https://github.com/netease-uuyc/uuremote-integration-guide",
-   "color": "#C97E3D",
+   "color": "#B87A44",
    "emoji": "🟠"
   },
   {
@@ -6680,11 +6680,11 @@
    "category": "学习资源与清单",
    "subcategory": "Awesome / 精选列表 / 资源汇总",
    "lang": "Ruby",
-   "stars": 14860,
-   "updated": "2026-02-11",
+   "stars": 14858,
+   "updated": "",
    "desc": "免费图库照片、视频与插画网站链接合集。",
    "url": "https://github.com/neutraltone/awesome-stock-resources",
-   "color": "#AD8B20",
+   "color": "#9C8227",
    "emoji": "🟡"
   },
   {
@@ -6695,10 +6695,10 @@
    "subcategory": "设计素材 / 图标 / 字体 / 贴纸",
    "lang": "Python",
    "stars": 13,
-   "updated": "2026-11-02",
+   "updated": "",
    "desc": "给 AI Agent 的线描 Skill：给一张照片，按 Panel 092 原始提示词画成松散轮廓、几何排线、大片留白的黑白钢笔 PNG。",
    "url": "https://github.com/nevertoday/xxd-panel-092",
-   "color": "#AD8B20",
+   "color": "#9C8227",
    "emoji": "🟡"
   },
   {
@@ -6709,10 +6709,10 @@
    "subcategory": "数据可视化 / 地图 / 图表",
    "lang": "Python",
    "stars": 16,
-   "updated": "2026-11-02",
+   "updated": "",
    "desc": "九宫记忆簿 Skill：把一张照片拆成九个值得记住的小涂鸦，排成一页私人手帐 PNG。",
    "url": "https://github.com/nevertoday/xxd-panel-101",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -6722,11 +6722,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Claude Code 技能 / 插件 / 指令库",
    "lang": "Python",
-   "stars": 151235,
-   "updated": "2026-11-18",
+   "stars": 150913,
+   "updated": "",
    "desc": "给多平台做专业 UI／UX 的设计智能 Skill，多语言说明，直接交给编码 Agent 使用。",
    "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -6736,11 +6736,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Codex / OpenAI / Gemini CLI / 编码 Agent",
    "lang": "TypeScript",
-   "stars": 8872,
-   "updated": "2026-11-18",
+   "stars": 8676,
+   "updated": "",
    "desc": "本地优先的桌面工作台，把 Codex、Claude、Grok 变成长期 AI 队友：每个 Agent 有自己的工作区、会话、本地队列与文件工具。",
    "url": "https://github.com/nightly-labs/openbot",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -6750,11 +6750,11 @@
    "category": "视觉艺术与网页特效",
    "subcategory": "CSS / SVG / UI 动效组件",
    "lang": "TypeScript",
-   "stars": 7538,
-   "updated": "2026-10-29",
+   "stars": 7522,
+   "updated": "",
    "desc": "给设计工程师的动效组件库：150+ 免费 shadcn/ui 组件（Tailwind），如看板、凹槽玻璃、Mac 屏幕框、分析图表、折叠卡片。",
    "url": "https://github.com/nolly-studio/cult-ui",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -6764,11 +6764,11 @@
    "category": "开发工具与命令行",
    "subcategory": "CLI / 终端 / TUI",
    "lang": "Shell",
-   "stars": 47187,
-   "updated": "2026-11-18",
+   "stars": 47156,
+   "updated": "",
    "desc": "DHH 做的「漂亮、现代、有主见、Agent 友好」的 Linux 发行版／桌面配置。",
    "url": "https://github.com/omacom/omarchy",
-   "color": "#6E6A45",
+   "color": "#6B6748",
    "emoji": "🟤"
   },
   {
@@ -6778,11 +6778,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Claude Code 技能 / 插件 / 指令库",
    "lang": "TypeScript",
-   "stars": 1023,
-   "updated": "2026-11-18",
+   "stars": 1013,
+   "updated": "",
    "desc": "DeepSeek Harness 的 GenUI 插件：把可交互的 UI 组件直接渲染在助手回复里（例如监控面板）。",
    "url": "https://github.com/omdsh-dev/dsh-genui",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -6792,11 +6792,11 @@
    "category": "开发工具与命令行",
    "subcategory": "浏览器内核 / 编译器 / 运行时 / 底层系统",
    "lang": "C",
-   "stars": 2821,
-   "updated": "2026-11-10",
+   "stars": 2812,
+   "updated": "",
    "desc": "把苹果开源 XNU 内核搬上安卓手机的自研 loader 与驱动研究台；默认从 RAM 运行、重启即回 Android，是实验台不是 ROM。",
    "url": "https://github.com/oosexgang/hakios-xnu-kernel",
-   "color": "#6E6A45",
+   "color": "#6B6748",
    "emoji": "🟤"
   },
   {
@@ -6806,11 +6806,11 @@
    "category": "编程语言与通用库",
    "subcategory": "其他语言项目",
    "lang": "",
-   "stars": 1271,
-   "updated": "2026-11-16",
+   "stars": 1272,
+   "updated": "",
    "desc": "曾在普通浏览器里用微信官方基础库跑小程序，做本地调试与 E2E 自动化测试；2026 年 11 月应腾讯要求下线，代码、文档与 npm 包已停供。",
    "url": "https://github.com/open-wxa/wxa-runner",
-   "color": "#8C7B6B",
+   "color": "#857667",
    "emoji": "⚪"
   },
   {
@@ -6820,11 +6820,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Codex / OpenAI / Gemini CLI / 编码 Agent",
    "lang": "Rust",
-   "stars": 135778,
-   "updated": "2026-11-18",
+   "stars": 135670,
+   "updated": "",
    "desc": "OpenAI 官方轻量编码 Agent，跑在你自己电脑的终端里。",
    "url": "https://github.com/openai/codex",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -6834,11 +6834,11 @@
    "category": "办公与创作套件",
    "subcategory": "Office 复刻 / 文档 / 表格 / 演示",
    "lang": "Java",
-   "stars": 30337,
-   "updated": "2026-11-18",
+   "stars": 30331,
+   "updated": "",
    "desc": "把 PDF 解析成 AI 就绪数据的开源工具，混合模式内置 80+ 语言 OCR、做 PDF 无障碍自动化（PDF/UA 转换属企业附加）。",
    "url": "https://github.com/opendataloader-project/opendataloader-pdf",
-   "color": "#6C8F3F",
+   "color": "#66834A",
    "emoji": "🫒"
   },
   {
@@ -6848,11 +6848,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Claude Code 技能 / 插件 / 指令库",
    "lang": "TypeScript",
-   "stars": 8272,
-   "updated": "2026-11-18",
+   "stars": 8123,
+   "updated": "",
    "desc": "开源 AI 视频 Agent：把任意编码 Agent 变成视频 Agent，自带编辑器与内置 Agent，桌面端开箱即用。",
    "url": "https://github.com/openfilm/openfilm",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -6863,10 +6863,10 @@
    "subcategory": "TypeScript 项目",
    "lang": "TypeScript",
    "stars": 200,
-   "updated": "2026-11-13",
+   "updated": "",
    "desc": "作者自己用 pi 的配置：给 Pi 加隔离子 Agent、可重放 Workflow 与本地 Web 工作台（作者特别提醒别照抄）。",
    "url": "https://github.com/openpi-dev/openpi",
-   "color": "#8C7B6B",
+   "color": "#857667",
    "emoji": "⚪"
   },
   {
@@ -6877,10 +6877,10 @@
    "subcategory": "Prompt / 越狱 / 红队 / 提示词库",
    "lang": "",
    "stars": 4,
-   "updated": "2025-05-11",
+   "updated": "",
    "desc": "英语单词大全数据集，含地区拼写，提供 TXT／JSON／Trie 前缀树／A-Z 分组多种格式。",
    "url": "https://github.com/outparse/english-dictionary-dataset",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -6891,10 +6891,10 @@
    "subcategory": "设计素材 / 图标 / 字体 / 贴纸",
    "lang": "Python",
    "stars": 21,
-   "updated": "2026-11-09",
+   "updated": "",
    "desc": "诗泉的数据源：对《全唐诗》与《御定全唐詩》等逐句校勘，标注形近音近错字 1134 处、选本互校 150 处并保留有据异文。",
    "url": "https://github.com/palemoky/chinese-poetry",
-   "color": "#AD8B20",
+   "color": "#9C8227",
    "emoji": "🟡"
   },
   {
@@ -6904,11 +6904,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "MCP 服务器 / 协议工具",
    "lang": "Go",
-   "stars": 3731,
-   "updated": "2026-11-06",
+   "stars": 3728,
+   "updated": "",
    "desc": "诗泉：Go 写的高性能中国古诗词 API，支持语义搜索、REST／GraphQL／MCP、简繁切换与爬虫练习场，数据用 submodule 管理。",
    "url": "https://github.com/palemoky/chinese-poetry-api",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -6918,11 +6918,11 @@
    "category": "桌面与移动客户端",
    "subcategory": "影音 / 短剧 / 播放器 / 下载",
    "lang": "Kotlin",
-   "stars": 12439,
-   "updated": "2026-11-18",
+   "stars": 12332,
+   "updated": "",
    "desc": "给国产电视的干净桌面：tvOS 风格开源 Android TV 启动器，无广告、开机自动接管；手机扫码就能拖图标排序、改名、隐藏、加 HDMI 信号源，附 706 张磁贴图标库。",
    "url": "https://github.com/pengchujin/aerial-tv",
-   "color": "#C97E3D",
+   "color": "#B87A44",
    "emoji": "🟠"
   },
   {
@@ -6932,11 +6932,11 @@
    "category": "视觉艺术与网页特效",
    "subcategory": "3D 场景 / WebGL / Three.js",
    "lang": "C++",
-   "stars": 2614,
-   "updated": "2026-11-17",
+   "stars": 2608,
+   "updated": "",
    "desc": "把 Blender 的 GPU 加速 UI（控件绘制与交互规则）从原代码库解耦出来，支持 Rust／Python 等，让别人也能拿去做自己的产品。",
    "url": "https://github.com/ppmpreetham/BUI",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -6947,10 +6947,10 @@
    "subcategory": "教程 / 课程 / 书籍 / 示例集",
    "lang": "HTML",
    "stars": 105,
-   "updated": "2026-11-05",
+   "updated": "",
    "desc": "学习 Three.js Shading Language（TSL）的练习仓：20 个独立着色器实验目录（boing-boing-box、ember-flow、the-river、marcher…）；无 README，按目录结构与上游描述标注。",
    "url": "https://github.com/prinzipiell/tsl",
-   "color": "#AD8B20",
+   "color": "#9C8227",
    "emoji": "🟡"
   },
   {
@@ -6961,10 +6961,10 @@
    "subcategory": "JavaScript 项目",
    "lang": "JavaScript",
    "stars": 17,
-   "updated": "2026-08-12",
+   "updated": "",
    "desc": "浏览器里的开源平台，把协议交互过程变成可以一步步点着看的交互式可视化。",
    "url": "https://github.com/provandal/protoviz",
-   "color": "#8C7B6B",
+   "color": "#857667",
    "emoji": "⚪"
   },
   {
@@ -6974,11 +6974,11 @@
    "category": "学习资源与清单",
    "subcategory": "Awesome / 精选列表 / 资源汇总",
    "lang": "Python",
-   "stars": 500022,
-   "updated": "2026-11-15",
+   "stars": 499882,
+   "updated": "",
    "desc": "免费公开 API 大合集清单，按类别整理。",
    "url": "https://github.com/public-apis/public-apis",
-   "color": "#AD8B20",
+   "color": "#9C8227",
    "emoji": "🟡"
   },
   {
@@ -6989,10 +6989,10 @@
    "subcategory": "Claude Code 技能 / 插件 / 指令库",
    "lang": "CSS",
    "stars": 689,
-   "updated": "2026-11-18",
+   "updated": "",
    "desc": "AI 辅助设计实验集合：交互界面、动效研究与开发者工具，强调素材来源可追溯、授权范围明确、可复核。",
    "url": "https://github.com/pulkitxm/claude-directory",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -7002,11 +7002,11 @@
    "category": "桌面与移动客户端",
    "subcategory": "影音 / 短剧 / 播放器 / 下载",
    "lang": "Vue",
-   "stars": 33644,
-   "updated": "2026-10-10",
+   "stars": 33642,
+   "updated": "",
    "desc": "高颜值第三方网易云音乐播放器（Electron），支持 Windows／macOS／Linux，可选 Nginx 反代 API 以避免跨域问题。",
    "url": "https://github.com/qier222/YesPlayMusic",
-   "color": "#C97E3D",
+   "color": "#B87A44",
    "emoji": "🟠"
   },
   {
@@ -7016,11 +7016,11 @@
    "category": "学习资源与清单",
    "subcategory": "Awesome / 精选列表 / 资源汇总",
    "lang": "JavaScript",
-   "stars": 1888,
-   "updated": "2026-11-18",
+   "stars": 1869,
+   "updated": "",
    "desc": "3516 张顶会论文 Figure 1／Teaser 画廊（ICLR、ICML、NeurIPS、CVPR、ACL、AAAI 2023–2026），纯静态零构建、可搜索筛选、可离线打开。",
    "url": "https://github.com/qwdwqfwq/topconf-paper-figure-gallery",
-   "color": "#AD8B20",
+   "color": "#9C8227",
    "emoji": "🟡"
   },
   {
@@ -7030,11 +7030,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Claude Code 技能 / 插件 / 指令库",
    "lang": "TypeScript",
-   "stars": 6121,
-   "updated": "2026-11-18",
+   "stars": 6070,
+   "updated": "",
    "desc": "BLA（Blind LLM Agents）：开源蓝队防御 MCP 服务与 CLI，自动发现 dist/build/.asar/.wasm/.sqlite/.safetensors 与原生二进制，跑 audit→protect→verify。",
    "url": "https://github.com/qybaihe/bla",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -7045,10 +7045,10 @@
    "subcategory": "水彩 / 光影 / 玻璃质感",
    "lang": "HTML",
    "stars": 13,
-   "updated": "2026-11-17",
+   "updated": "",
    "desc": "给游戏用的实时开源海洋实验室：浏览器里约 100 个参数调出想要的海面观感，再导出到自己的引擎里用。",
    "url": "https://github.com/rahulbhola877/ocean-water-lab",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -7058,11 +7058,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Claude Code 技能 / 插件 / 指令库",
    "lang": "TypeScript",
-   "stars": 7483,
-   "updated": "2026-11-18",
+   "stars": 7435,
+   "updated": "",
    "desc": "Remotion 官方维护的 Agent Skills 列表，定义在 Remotion 项目里干活的最佳实践（例如 /remotion-create 做宣传片）。",
    "url": "https://github.com/remotion-dev/skills",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -7072,11 +7072,11 @@
    "category": "开发工具与命令行",
    "subcategory": "逆向工程 / 反编译 / 二进制分析",
    "lang": "C++",
-   "stars": 20237,
-   "updated": "2026-11-13",
+   "stars": 20232,
+   "updated": "",
    "desc": "基于 rizin 的免费开源逆向工程平台，提供图形化反汇编与分析界面。",
    "url": "https://github.com/rizinorg/cutter",
-   "color": "#6E6A45",
+   "color": "#6B6748",
    "emoji": "🟤"
   },
   {
@@ -7086,11 +7086,11 @@
    "category": "AI 模型与机器学习",
    "subcategory": "训练 / 微调 / 教程 / 评测",
    "lang": "Python",
-   "stars": 51670,
-   "updated": "2026-11-18",
+   "stars": 51661,
+   "updated": "",
    "desc": "可复用的计算机视觉工具集：从数据加载到实时区域计数，把围绕模型的通用积木都写好，让你专注做应用。",
    "url": "https://github.com/roboflow/supervision",
-   "color": "#2F7E6E",
+   "color": "#2F7264",
    "emoji": "🟢"
   },
   {
@@ -7100,11 +7100,11 @@
    "category": "视觉艺术与网页特效",
    "subcategory": "GIF / 动态海报 / 像素与光栅",
    "lang": "Rust",
-   "stars": 104565,
-   "updated": "2026-11-18",
+   "stars": 104537,
+   "updated": "",
    "desc": "把普通 WiFi 信号变成空间感知系统：实时空间智能、生命体征监测乃至「隔墙看」，配套硬件 AI 工具包。",
    "url": "https://github.com/ruvnet/RuView",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -7114,11 +7114,11 @@
    "category": "前端与 Web 框架",
    "subcategory": "UI 组件库 / 设计系统",
    "lang": "TypeScript",
-   "stars": 16796,
-   "updated": "2026-09-10",
+   "stars": 16750,
+   "updated": "",
    "desc": "用 Shadcn + Vite 搭的后台管理仪表盘 UI，讲究响应式与可访问性，作者做成一套可复用集合。",
    "url": "https://github.com/satnaing/shadcn-admin",
-   "color": "#58A0C8",
+   "color": "#4F8CA8",
    "emoji": "🔵"
   },
   {
@@ -7128,11 +7128,11 @@
    "category": "前端与 Web 框架",
    "subcategory": "UI 组件库 / 设计系统",
    "lang": "TypeScript",
-   "stars": 128480,
-   "updated": "2026-11-18",
+   "stars": 128432,
+   "updated": "",
    "desc": "可组合、可访问、默认值讲究的组件集，让你复制源码搭出自己的组件库，而不是装一个 npm 依赖。",
    "url": "https://github.com/shadcn-ui/ui",
-   "color": "#58A0C8",
+   "color": "#4F8CA8",
    "emoji": "🔵"
   },
   {
@@ -7142,11 +7142,11 @@
    "category": "桌面与移动客户端",
    "subcategory": "桌面应用 / 效率工具",
    "lang": "C#",
-   "stars": 916,
-   "updated": "2026-09-25",
+   "stars": 917,
+   "updated": "",
    "desc": "Windows 小工具：点击空白桌面壁纸或空任务栏就「窥见」桌面，效果像 macOS Sonoma。",
    "url": "https://github.com/shanselman/PeekDesktop",
-   "color": "#C97E3D",
+   "color": "#B87A44",
    "emoji": "🟠"
   },
   {
@@ -7156,11 +7156,11 @@
    "category": "开发工具与命令行",
    "subcategory": "安全 / 渗透 / CTF / 密码学",
    "lang": "Python",
-   "stars": 114096,
-   "updated": "2026-11-18",
+   "stars": 113801,
+   "updated": "",
    "desc": "用一个用户名，在 400 多个社交网络上找出同名账号。",
    "url": "https://github.com/sherlock-project/sherlock",
-   "color": "#6E6A45",
+   "color": "#6B6748",
    "emoji": "🟤"
   },
   {
@@ -7170,11 +7170,11 @@
    "category": "办公与创作套件",
    "subcategory": "视频剪辑 / 无限画布 / 设计工作台",
    "lang": "TypeScript",
-   "stars": 3793,
-   "updated": "2026-11-12",
+   "stars": 3775,
+   "updated": "",
    "desc": "A 股／美股／港股投研工作台：自选与持仓、每日复盘、产业资讯与研究、个股深挖、回测、研报库，168 个数据端点，可接 Claude Code 等。",
    "url": "https://github.com/simonlin1212/Vibe-Research",
-   "color": "#6C8F3F",
+   "color": "#66834A",
    "emoji": "🫒"
   },
   {
@@ -7185,10 +7185,10 @@
    "subcategory": "水彩 / 光影 / 玻璃质感",
    "lang": "JavaScript",
    "stars": 67,
-   "updated": "2026-08-20",
+   "updated": "",
    "desc": "浏览器里的 Three.js 实时流场绘画实验：从图片或 3D 场景提取结构方向，用粗中细三层 Bézier ribbon 笔触重建画面，再以高度、湿度、刷毛沟槽与微表面光照合成湿油彩质感。",
    "url": "https://github.com/simonxxooxxoo/wet-paint-flow",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -7198,11 +7198,11 @@
    "category": "学习资源与清单",
    "subcategory": "Awesome / 精选列表 / 资源汇总",
    "lang": "",
-   "stars": 538876,
-   "updated": "2026-09-02",
+   "stars": 538581,
+   "updated": "",
    "desc": "Awesome 列表的总索引／元清单，汇集各种有趣主题的精选列表（并解释什么才算 awesome list）。",
    "url": "https://github.com/sindresorhus/awesome",
-   "color": "#AD8B20",
+   "color": "#9C8227",
    "emoji": "🟡"
   },
   {
@@ -7212,11 +7212,11 @@
    "category": "学习资源与清单",
    "subcategory": "教程 / 课程 / 书籍 / 示例集",
    "lang": "TypeScript",
-   "stars": 4665,
-   "updated": "2026-11-08",
+   "stars": 4663,
+   "updated": "",
    "desc": "给英语学习者做的视频播放器，靠大量看美剧等母语视频沉浸练听力；作者自己用它看了几千小时。",
    "url": "https://github.com/solidSpoon/DashPlayer",
-   "color": "#AD8B20",
+   "color": "#9C8227",
    "emoji": "🟡"
   },
   {
@@ -7227,10 +7227,10 @@
    "subcategory": "前端框架 / SSR / 全栈",
    "lang": "",
    "stars": 567,
-   "updated": "2026-10-24",
+   "updated": "",
    "desc": "静态 XSS 审计 Skill，对 React／TypeScript／JavaScript 代码库跑 14 层漏洞检查。",
    "url": "https://github.com/songjianyang/xss-audit",
-   "color": "#58A0C8",
+   "color": "#4F8CA8",
    "emoji": "🔵"
   },
   {
@@ -7240,11 +7240,11 @@
    "category": "视觉艺术与网页特效",
    "subcategory": "3D 场景 / WebGL / Three.js",
    "lang": "TypeScript",
-   "stars": 765,
-   "updated": "2026-11-12",
+   "stars": 763,
+   "updated": "",
    "desc": "可运行的独立地球／地图 3D Skill 与模板（不含业务大屏与指标数据）；授权明确禁止封装成收费地图能力对外提供。",
    "url": "https://github.com/songsummer920-dazzle/three-scope-map-skill",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -7254,11 +7254,11 @@
    "category": "开发工具与命令行",
    "subcategory": "安全 / 渗透 / CTF / 密码学",
    "lang": "Python",
-   "stars": 40889,
-   "updated": "2026-11-18",
+   "stars": 40868,
+   "updated": "",
    "desc": "只凭一个用户名，从约 6000 个网站收集某个人的账号档案。",
    "url": "https://github.com/soxoj/maigret",
-   "color": "#6E6A45",
+   "color": "#6B6748",
    "emoji": "🟤"
   },
   {
@@ -7268,11 +7268,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Agent 框架 / 工作流 / 多智能体",
    "lang": "Python",
-   "stars": 31909,
-   "updated": "2025-09-30",
+   "stars": 31905,
+   "updated": "",
    "desc": "斯坦福的 LLM 知识整理系统：自动研究一个主题并生成带引用的长篇报告，附 streamlit 轻量界面便于本地演示。",
    "url": "https://github.com/stanford-oval/storm",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -7282,11 +7282,11 @@
    "category": "视觉艺术与网页特效",
    "subcategory": "3D 场景 / WebGL / Three.js",
    "lang": "Rust",
-   "stars": 41493,
-   "updated": "2026-11-18",
+   "stars": 41402,
+   "updated": "",
    "desc": "给艺术家、设计师与电影人做的交互式 AI 图像／视频创作 IDE，主打「有意图的手工创作引擎」。",
    "url": "https://github.com/storytold/artcraft",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -7296,11 +7296,11 @@
    "category": "开发工具与命令行",
    "subcategory": "逆向工程 / 反编译 / 二进制分析",
    "lang": "Rust",
-   "stars": 36673,
-   "updated": "2026-11-18",
+   "stars": 35818,
+   "updated": "",
    "desc": "指着一个软件说出你想要什么：它用真实检查工具研究原作、让编码 Agent 建新项目，再拿结果对照原作校验。",
    "url": "https://github.com/storytold/craft-anything",
-   "color": "#6E6A45",
+   "color": "#6B6748",
    "emoji": "🟤"
   },
   {
@@ -7310,11 +7310,11 @@
    "category": "办公与创作套件",
    "subcategory": "Office 复刻 / 文档 / 表格 / 演示",
    "lang": "Rust",
-   "stars": 4864,
-   "updated": "2026-11-18",
+   "stars": 4849,
+   "updated": "",
    "desc": "纯 Rust 写的开源净室演示文稿与幻灯片设计器，支持主题、版式、形状、图片与文字。",
    "url": "https://github.com/storytold/deckcraft",
-   "color": "#6C8F3F",
+   "color": "#66834A",
    "emoji": "🫒"
   },
   {
@@ -7324,11 +7324,11 @@
    "category": "办公与创作套件",
    "subcategory": "Office 复刻 / 文档 / 表格 / 演示",
    "lang": "Rust",
-   "stars": 7642,
-   "updated": "2026-11-18",
+   "stars": 7626,
+   "updated": "",
    "desc": "纯 Rust 写的高性能现代电子表格（Excel 风格），ArtCraft 系列办公应用之一。",
    "url": "https://github.com/storytold/gridcraft",
-   "color": "#6C8F3F",
+   "color": "#66834A",
    "emoji": "🫒"
   },
   {
@@ -7338,11 +7338,11 @@
    "category": "办公与创作套件",
    "subcategory": "视频剪辑 / 无限画布 / 设计工作台",
    "lang": "Rust",
-   "stars": 16152,
-   "updated": "2026-11-18",
+   "stars": 16123,
+   "updated": "",
    "desc": "纯 Rust 从零写的非破坏性照片库与 RAW 显影工具。",
    "url": "https://github.com/storytold/lightcraft",
-   "color": "#6C8F3F",
+   "color": "#66834A",
    "emoji": "🫒"
   },
   {
@@ -7352,11 +7352,11 @@
    "category": "办公与创作套件",
    "subcategory": "视频剪辑 / 无限画布 / 设计工作台",
    "lang": "Rust",
-   "stars": 80250,
-   "updated": "2026-11-18",
+   "stars": 80125,
+   "updated": "",
    "desc": "纯 Rust 从零写的照片编辑器；每个动作都是一条命令，UI、CLI、JSON 都能驱动同一引擎，Agent 友好。",
    "url": "https://github.com/storytold/photocraft",
-   "color": "#6C8F3F",
+   "color": "#66834A",
    "emoji": "🫒"
   },
   {
@@ -7366,11 +7366,11 @@
    "category": "办公与创作套件",
    "subcategory": "Office 复刻 / 文档 / 表格 / 演示",
    "lang": "Rust",
-   "stars": 18226,
-   "updated": "2026-11-18",
+   "stars": 18201,
+   "updated": "",
    "desc": "纯 Rust 写的开源净室文字处理器，做文档写作与版式设计。",
    "url": "https://github.com/storytold/wordcraft",
-   "color": "#6C8F3F",
+   "color": "#66834A",
    "emoji": "🫒"
   },
   {
@@ -7380,11 +7380,11 @@
    "category": "前端与 Web 框架",
    "subcategory": "UI 组件库 / 设计系统",
    "lang": "TypeScript",
-   "stars": 2135,
-   "updated": "2026-11-14",
+   "stars": 2094,
+   "updated": "",
    "desc": "少见但拿来就能用的 UI 组件与动效合集，以 shadcn registry 形式发布。",
    "url": "https://github.com/swamimalode07/rare-ui",
-   "color": "#58A0C8",
+   "color": "#4F8CA8",
    "emoji": "🔵"
   },
   {
@@ -7395,10 +7395,10 @@
    "subcategory": "逆向工程 / 反编译 / 二进制分析",
    "lang": "Shell",
    "stars": 128,
-   "updated": "2026-10-19",
+   "updated": "",
    "desc": "逐字节重建 2009 年原始比特币可执行文件，验证当年发布的源码与人们下载的 exe 完全一致。",
    "url": "https://github.com/t4t5/bitcoin-0.1-rebuilt",
-   "color": "#6E6A45",
+   "color": "#6B6748",
    "emoji": "🟤"
   },
   {
@@ -7408,11 +7408,11 @@
    "category": "开发工具与命令行",
    "subcategory": "浏览器内核 / 编译器 / 运行时 / 底层系统",
    "lang": "Go",
-   "stars": 39291,
-   "updated": "2026-11-18",
+   "stars": 39248,
+   "updated": "",
    "desc": "基于 WireGuard 的零配置私有组网（带 2FA），此仓库是 Tailscale 开源代码的主体。",
    "url": "https://github.com/tailscale/tailscale",
-   "color": "#6E6A45",
+   "color": "#6B6748",
    "emoji": "🟤"
   },
   {
@@ -7423,10 +7423,10 @@
    "subcategory": "3D 场景 / WebGL / Three.js",
    "lang": "TypeScript",
    "stars": 1776,
-   "updated": "2026-05-27",
+   "updated": "",
    "desc": "增强 Three.js 地理空间渲染的 monorepo 库集合，模块化设计可按需挑选使用。",
    "url": "https://github.com/takram-design-engineering/three-geospatial",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -7436,11 +7436,11 @@
    "category": "办公与创作套件",
    "subcategory": "Office 复刻 / 文档 / 表格 / 演示",
    "lang": "JavaScript",
-   "stars": 1395,
-   "updated": "2026-11-09",
+   "stars": 1393,
+   "updated": "",
    "desc": "浏览器里跑的免费办公三件套（文字／表格／演示），2000 年代风格、免安装，能打开并存成 Microsoft Office 文件。",
    "url": "https://github.com/tcchen2026/VibeOffice",
-   "color": "#6C8F3F",
+   "color": "#66834A",
    "emoji": "🫒"
   },
   {
@@ -7450,11 +7450,11 @@
    "category": "视觉艺术与网页特效",
    "subcategory": "3D 场景 / WebGL / Three.js",
    "lang": "TypeScript",
-   "stars": 3919,
-   "updated": "2026-08-09",
+   "stars": 3918,
+   "updated": "",
    "desc": "threejs 做的交互式 3D 人体解剖浏览器（用 GPT 辅助生成），带完整 Web 应用与登录回调结构。",
    "url": "https://github.com/thebuggeddev/anatomy",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -7464,11 +7464,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "MCP 服务器 / 协议工具",
    "lang": "TypeScript",
-   "stars": 3388,
-   "updated": "2026-11-18",
+   "stars": 3337,
+   "updated": "",
    "desc": "AI 原生笔记应用，Evernote／Obsidian 替代，主打全平台即时同步与富文本。",
    "url": "https://github.com/tianma-if/edgeever",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -7478,11 +7478,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Claude Code 技能 / 插件 / 指令库",
    "lang": "Python",
-   "stars": 26661,
-   "updated": "2026-10-13",
+   "stars": 26641,
+   "updated": "",
    "desc": "把一个人的经验、判断力、语气与做事方式蒸馏成可复用的 Person Profile，交给任意 Agent／Bot 使用。",
    "url": "https://github.com/titanwings/distilly",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -7492,11 +7492,11 @@
    "category": "开发工具与命令行",
    "subcategory": "CLI / 终端 / TUI",
    "lang": "Rust",
-   "stars": 4226,
-   "updated": "2026-10-23",
+   "stars": 4215,
+   "updated": "",
    "desc": "给 Omarchy 用的磁盘占用矩形树图（Rust + GPUI），用来找出并删掉塞满硬盘的东西。",
    "url": "https://github.com/tobi/disktree",
-   "color": "#6E6A45",
+   "color": "#6B6748",
    "emoji": "🟤"
   },
   {
@@ -7506,11 +7506,11 @@
    "category": "桌面与移动客户端",
    "subcategory": "桌面应用 / 效率工具",
    "lang": "TypeScript",
-   "stars": 74637,
-   "updated": "2026-11-18",
+   "stars": 74619,
+   "updated": "",
    "desc": "开源一体化知识工作区，把维基、知识库、文档与白板拼在一起，定位是「不止 Notion 和 Miro」。",
    "url": "https://github.com/toeverything/AFFiNE",
-   "color": "#C97E3D",
+   "color": "#B87A44",
    "emoji": "🟠"
   },
   {
@@ -7520,11 +7520,11 @@
    "category": "前端与 Web 框架",
    "subcategory": "前端框架 / SSR / 全栈",
    "lang": "Rust",
-   "stars": 7261,
-   "updated": "2026-11-14",
+   "stars": 7252,
+   "updated": "",
    "desc": "Tokio 团队的「电池全包」Web 应用框架：无 wasm 包、无客户端构建步骤，需要服务端更新时把组件标记为 shard，模块化路由。",
    "url": "https://github.com/tokio-rs/topcoat",
-   "color": "#58A0C8",
+   "color": "#4F8CA8",
    "emoji": "🔵"
   },
   {
@@ -7534,11 +7534,11 @@
    "category": "桌面与移动客户端",
    "subcategory": "影音 / 短剧 / 播放器 / 下载",
    "lang": "JavaScript",
-   "stars": 8735,
-   "updated": "2023-02-16",
+   "stars": 8736,
+   "updated": "",
    "desc": "Electron + React + MobX 写的优雅网易云音乐第三方桌面客户端，API 由 NeteaseCloudMusicApi 提供。",
    "url": "https://github.com/trazyn/ieaseMusic",
-   "color": "#C97E3D",
+   "color": "#B87A44",
    "emoji": "🟠"
   },
   {
@@ -7548,11 +7548,11 @@
    "category": "AI 模型与机器学习",
    "subcategory": "LLM 推理 / 部署 / 量化",
    "lang": "Rust",
-   "stars": 3368,
-   "updated": "2026-11-18",
+   "stars": 3366,
+   "updated": "",
    "desc": "高性能模型推理引擎，让你把 AI 直接嵌进自己的 App：零延迟、数据不出端、无推理费用。",
    "url": "https://github.com/trymirai/uzu",
-   "color": "#2F7E6E",
+   "color": "#2F7264",
    "emoji": "🟢"
   },
   {
@@ -7562,11 +7562,11 @@
    "category": "前端与 Web 框架",
    "subcategory": "网站模板 / 落地页 / 博客主题",
    "lang": "JavaScript",
-   "stars": 97679,
-   "updated": "2026-11-18",
+   "stars": 97501,
+   "updated": "",
    "desc": "把任何想法、计划或代码库变成可交互 HTML 图示的 Agent Skill，描述给 AI 就能生成可探索的图。",
    "url": "https://github.com/tt-a1i/archify",
-   "color": "#58A0C8",
+   "color": "#4F8CA8",
    "emoji": "🔵"
   },
   {
@@ -7577,10 +7577,10 @@
    "subcategory": "Agent 框架 / 工作流 / 多智能体",
    "lang": "Rust",
    "stars": 54,
-   "updated": "2026-11-14",
+   "updated": "",
    "desc": "把散落重复的 Agent Skills 整理成每个 Agent 各自的 Roster，带证据与回执，适合跨 Agent 比较版本、撤销变更。",
    "url": "https://github.com/tt-a1i/skillroster",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -7590,11 +7590,11 @@
    "category": "视觉艺术与网页特效",
    "subcategory": "CSS / SVG / UI 动效组件",
    "lang": "TypeScript",
-   "stars": 124,
-   "updated": "2026-11-18",
+   "stars": 122,
+   "updated": "",
    "desc": "2026 年 11 月每天一个迷你网页项目的 Codevember 合集，按 01、04、05… 分目录。",
    "url": "https://github.com/ttillberg/codevember-2026",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -7604,11 +7604,11 @@
    "category": "桌面与移动客户端",
    "subcategory": "桌面应用 / 效率工具",
    "lang": "Rust",
-   "stars": 63799,
-   "updated": "2026-11-18",
+   "stars": 63795,
+   "updated": "",
    "desc": "一条命令把任意网站打包成轻量桌面应用（Tauri + Rust）：macOS / Windows / Linux 全支持，比 Electron 轻得多；开源 CLI + 桌面 App。",
    "url": "https://github.com/tw93/Pake",
-   "color": "#C97E3D",
+   "color": "#B87A44",
    "emoji": "🟠"
   },
   {
@@ -7618,11 +7618,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "MCP 服务器 / 协议工具",
    "lang": "Python",
-   "stars": 87516,
-   "updated": "2026-11-18",
+   "stars": 87484,
+   "updated": "",
    "desc": "Crawl4AI：面向 AI Agent 与数据管线的网页抓取／抽取／搜索（云服务 API），把页面转成干净 Markdown 供 RAG，也能抽结构化数据。",
    "url": "https://github.com/unclecode/crawl4ai",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -7632,11 +7632,11 @@
    "category": "AI 模型与机器学习",
    "subcategory": "LLM 推理 / 部署 / 量化",
    "lang": "Python",
-   "stars": 79735,
-   "updated": "2026-11-18",
+   "stars": 79708,
+   "updated": "",
    "desc": "本地桌面 App，直接运行与训练 LLM、扩散、嵌入、音频模型，支持 GGUF、MLX、Qwen3.8、DeepSeek 等。",
    "url": "https://github.com/unslothai/unsloth",
-   "color": "#2F7E6E",
+   "color": "#2F7264",
    "emoji": "🟢"
   },
   {
@@ -7646,11 +7646,11 @@
    "category": "AI 模型与机器学习",
    "subcategory": "图像 / 视频生成 / 多模态",
    "lang": "TypeScript",
-   "stars": 52882,
-   "updated": "2026-11-18",
+   "stars": 52843,
+   "updated": "",
    "desc": "免费开源的 AI 图像放大器，Linux／macOS／Windows 都能用。",
    "url": "https://github.com/upscayl/upscayl",
-   "color": "#2F7E6E",
+   "color": "#2F7264",
    "emoji": "🟢"
   },
   {
@@ -7660,11 +7660,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "MCP 服务器 / 协议工具",
    "lang": "Rust",
-   "stars": 25250,
-   "updated": "2026-11-18",
+   "stars": 25021,
+   "updated": "",
    "desc": "给 AI Agent 的 computer use CLI：读桌面应用的无障碍树并转成带 ref 的 JSON，Agent 按 ref 点击或输入后再读回结果。",
    "url": "https://github.com/vercel-labs/agent-desktop",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -7674,11 +7674,11 @@
    "category": "开发工具与命令行",
    "subcategory": "浏览器内核 / 编译器 / 运行时 / 底层系统",
    "lang": "JavaScript",
-   "stars": 143732,
-   "updated": "2026-11-18",
+   "stars": 143708,
+   "updated": "",
    "desc": "React 全栈框架 Next.js 的官方仓库。",
    "url": "https://github.com/vercel/next.js",
-   "color": "#6E6A45",
+   "color": "#6B6748",
    "emoji": "🟤"
   },
   {
@@ -7688,11 +7688,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Claude Code 技能 / 插件 / 指令库",
    "lang": "Shell",
-   "stars": 796,
-   "updated": "2026-10-25",
+   "stars": 794,
+   "updated": "",
    "desc": "小米电视（MIUI TV）焕新 Skill：去广告、清预装、换开源桌面（推荐 Projectivy）、装代理与影视仓；免 root、全程可逆，附固件逆向实录与一键脚本。",
    "url": "https://github.com/wangrongding/tv-fresh",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -7702,11 +7702,11 @@
    "category": "开发工具与命令行",
    "subcategory": "浏览器内核 / 编译器 / 运行时 / 底层系统",
    "lang": "Go",
-   "stars": 525,
-   "updated": "2026-11-18",
+   "stars": 520,
+   "updated": "",
    "desc": "自托管网关带 Web UI：反向代理、自动 HTTPS、DDNS、NAT 穿透，把家庭网络或服务器上的服务稳定暴露到公网。",
    "url": "https://github.com/wangwanjie/gately",
-   "color": "#6E6A45",
+   "color": "#6B6748",
    "emoji": "🟤"
   },
   {
@@ -7716,11 +7716,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Agent 框架 / 工作流 / 多智能体",
    "lang": "Kotlin",
-   "stars": 9068,
-   "updated": "2026-11-18",
+   "stars": 8977,
+   "updated": "",
    "desc": "跑在安卓手机上的端侧 AI Agent：说一句要什么，它就替你操作 App 和网页，直到把事办完。",
    "url": "https://github.com/wangzan101/Mika",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -7730,11 +7730,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Claude Code 技能 / 插件 / 指令库",
    "lang": "Python",
-   "stars": 7656,
-   "updated": "2026-11-18",
+   "stars": 7649,
+   "updated": "",
    "desc": "游资（UZI）投资 Skill：融合 66 位投资大佬方法与 9 大流派，22 维数据×180 条量化规则×17 种机构分析法，产出带头像图表的 HTML 研报；未验证的模型不参与投票。",
    "url": "https://github.com/wbh604/UZI-Skill",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -7744,11 +7744,11 @@
    "category": "桌面与移动客户端",
    "subcategory": "影音 / 短剧 / 播放器 / 下载",
    "lang": "Swift",
-   "stars": 2406,
-   "updated": "2026-11-16",
+   "stars": 2385,
+   "updated": "",
    "desc": "知了 Cicada：会议与直播的实时字幕、同声传译和 AI 会议纪要，Mac／Win／Linux／Android 免费开源；按住说话键，对方在通话里直接听到译后语音。",
    "url": "https://github.com/wquguru/cicada",
-   "color": "#C97E3D",
+   "color": "#B87A44",
    "emoji": "🟠"
   },
   {
@@ -7758,11 +7758,11 @@
    "category": "AI 模型与机器学习",
    "subcategory": "训练 / 微调 / 教程 / 评测",
    "lang": "Python",
-   "stars": 2623,
-   "updated": "2026-11-16",
+   "stars": 2622,
+   "updated": "",
    "desc": "NeurIPS 2026 研究：编码 Agent 与前沿模型的安全失效（ISC 新攻击范式），提供可复现工作区与自动工作流模板。",
    "url": "https://github.com/wuyoscar/Internal-Safety-Collapse",
-   "color": "#2F7E6E",
+   "color": "#2F7264",
    "emoji": "🟢"
   },
   {
@@ -7773,10 +7773,10 @@
    "subcategory": "3D 场景 / WebGL / Three.js",
    "lang": "HTML",
    "stars": 10,
-   "updated": "2026-11-12",
+   "updated": "",
    "desc": "2027 网页 3D 手账本：咖啡色透明软壳、三折页月计划、可写可贴、会响铃的挂件；带 JSON 备份／恢复，超 7 天未备份会提醒。",
    "url": "https://github.com/xianxie6/animals-planner-2027",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -7787,10 +7787,10 @@
    "subcategory": "图像 / 视频生成 / 多模态",
    "lang": "Python",
    "stars": 138,
-   "updated": "2026-05-20",
+   "updated": "",
    "desc": "SVOR 稳定视频物体移除，另配套发布 PROVE 视频移除质量评测基准。",
    "url": "https://github.com/xiaomi-research/svor",
-   "color": "#2F7E6E",
+   "color": "#2F7264",
    "emoji": "🟢"
   },
   {
@@ -7800,11 +7800,11 @@
    "category": "学习资源与清单",
    "subcategory": "教程 / 课程 / 书籍 / 示例集",
    "lang": "Python",
-   "stars": 8509,
-   "updated": "2026-11-16",
+   "stars": 8432,
+   "updated": "",
    "desc": "中小学到高中的学科知识图谱：1644 个知识点、2403 条先修边、6723 道题，对齐 2022／2017 版课标，附自适应前置诊断。",
    "url": "https://github.com/xiaoyang111222/cn-math-taxonomy",
-   "color": "#AD8B20",
+   "color": "#9C8227",
    "emoji": "🟡"
   },
   {
@@ -7814,11 +7814,11 @@
    "category": "开发工具与命令行",
    "subcategory": "浏览器内核 / 编译器 / 运行时 / 底层系统",
    "lang": "Swift",
-   "stars": 15719,
-   "updated": "2026-11-16",
+   "stars": 15691,
+   "updated": "",
    "desc": "跨平台 Xcode 替代：在 Linux／WSL／Windows／macOS 上用 SwiftPM 构建并部署 iOS 应用。",
    "url": "https://github.com/xtool-org/xtool",
-   "color": "#6E6A45",
+   "color": "#6B6748",
    "emoji": "🟤"
   },
   {
@@ -7829,10 +7829,10 @@
    "subcategory": "网站模板 / 落地页 / 博客主题",
    "lang": "TypeScript",
    "stars": 86,
-   "updated": "2026-10-14",
+   "updated": "",
    "desc": "对 AI Search 平台 Profound 的前后台 1:1 学习性复刻（Next.js 16 / React 19 / SQLite）：营销官网、产品工作台、管理后台与可交互 Agent 模拟引擎，仅供学习研究。",
    "url": "https://github.com/yaojingang/profound-clone",
-   "color": "#58A0C8",
+   "color": "#4F8CA8",
    "emoji": "🔵"
   },
   {
@@ -7842,11 +7842,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Claude Code 技能 / 插件 / 指令库",
    "lang": "Go",
-   "stars": 38574,
-   "updated": "2026-11-18",
+   "stars": 38156,
+   "updated": "",
    "desc": "菜单栏里统一管理所有 Agent 的模型：一个本地网关让 Codex 用 DeepSeek、Claude Code 用 Kimi，额度用完自动切下一个账号。",
    "url": "https://github.com/yetone/magpie",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -7856,11 +7856,11 @@
    "category": "视觉艺术与网页特效",
    "subcategory": "3D 场景 / WebGL / Three.js",
    "lang": "",
-   "stars": 15798,
-   "updated": "2026-10-13",
+   "stars": 15734,
+   "updated": "",
    "desc": "用 Claude Opus 5.5 做出的爆款视频合集，每条附上创作者公开的提示词或原始帖子。",
    "url": "https://github.com/yihui-dev/awesome-opus5-5-videos",
-   "color": "#A9579B",
+   "color": "#96548A",
    "emoji": "🟣"
   },
   {
@@ -7871,10 +7871,10 @@
    "subcategory": "逆向工程 / 反编译 / 二进制分析",
    "lang": "C++",
    "stars": 507,
-   "updated": "2019-07-25",
+   "updated": "",
    "desc": "梆梆企业加固的详细逆向分析文档，含两种脱壳机（直接解密 classes0.jar、基于 Frida hook），声明仅供学习交流。",
    "url": "https://github.com/ylcangel/crack_dexhelper",
-   "color": "#6E6A45",
+   "color": "#6B6748",
    "emoji": "🟤"
   },
   {
@@ -7885,10 +7885,10 @@
    "subcategory": "UI 组件库 / 设计系统",
    "lang": "JavaScript",
    "stars": 18479,
-   "updated": "2026-10-10",
+   "updated": "",
    "desc": "有赞 Vant 的微信小程序版 UI 组件库，轻量可靠（同系列另有 Vue 2／Vue 3 版）。",
    "url": "https://github.com/youzan/vant-weapp",
-   "color": "#58A0C8",
+   "color": "#4F8CA8",
    "emoji": "🔵"
   },
   {
@@ -7898,11 +7898,11 @@
    "category": "桌面与移动客户端",
    "subcategory": "桌面应用 / 效率工具",
    "lang": "Python",
-   "stars": 1283,
-   "updated": "2026-08-20",
+   "stars": 1281,
+   "updated": "",
    "desc": "微信重复文件清理工具：智能哈希极速识别、可视化预览与排序、安全删除到回收站，跨 Windows／macOS／Linux 自适应界面与文件管理器定位。",
    "url": "https://github.com/yqxie1991/WxCleaner",
-   "color": "#C97E3D",
+   "color": "#B87A44",
    "emoji": "🟠"
   },
   {
@@ -7912,11 +7912,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Codex / OpenAI / Gemini CLI / 编码 Agent",
    "lang": "TypeScript",
-   "stars": 8760,
-   "updated": "2026-11-16",
+   "stars": 8745,
+   "updated": "",
    "desc": "智谱 Z.ai 的 AI 编程工作台：桌面应用＋浏览器界面＋终端 Agent，仓库含客户端、后端服务、共享 UI 与 Agent CLI／运行时源码。",
    "url": "https://github.com/zai-org/ZCode",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -7926,11 +7926,11 @@
    "category": "桌面与移动客户端",
    "subcategory": "影音 / 短剧 / 播放器 / 下载",
    "lang": "Go",
-   "stars": 16,
-   "updated": "2026-11-18",
+   "stars": 13,
+   "updated": "",
    "desc": "用 Go + MyGo 写的第三方音乐桌面客户端，原生界面、不带 WebView。",
    "url": "https://github.com/zhangnjsd/mygo-music",
-   "color": "#C97E3D",
+   "color": "#B87A44",
    "emoji": "🟠"
   },
   {
@@ -7940,11 +7940,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Codex / OpenAI / Gemini CLI / 编码 Agent",
    "lang": "PowerShell",
-   "stars": 44880,
-   "updated": "2026-11-14",
+   "stars": 44840,
+   "updated": "",
    "desc": "逆向工程／授权渗透测试／安全研究的 Skill 路由包，按任务把 Agent 导向对应技能。",
    "url": "https://github.com/zhaoxuya520/reverse-skill",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   },
   {
@@ -7955,10 +7955,10 @@
    "subcategory": "Android / iOS 原生应用",
    "lang": "PowerShell",
    "stars": 10,
-   "updated": "2026-11-16",
+   "updated": "",
    "desc": "绕过设备校验，让小米笔记本专属的「超级小爱／小爱同学」PC 客户端跑在任意品牌电脑上，语音助手、耳机联动、跨设备控制都能用。",
    "url": "https://github.com/zhonglike/xiaoai-agent-unlock",
-   "color": "#C97E3D",
+   "color": "#B87A44",
    "emoji": "🟠"
   },
   {
@@ -7968,11 +7968,11 @@
    "category": "AI 智能体与编码工具",
    "subcategory": "Agent 框架 / 工作流 / 多智能体",
    "lang": "Python",
-   "stars": 1005,
-   "updated": "2026-11-18",
+   "stars": 1002,
+   "updated": "",
    "desc": "给 Agent 做「上下文管家」：上下文归你所有，Agent 本身可以随时替换。",
    "url": "https://github.com/zqiren/Orbital",
-   "color": "#3E6B8F",
+   "color": "#3F6284",
    "emoji": "🔹"
   }
  ]
