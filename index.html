@@ -206,7 +206,7 @@
   <footer><a id="go" href="#" target="_blank" rel="noopener">📖 去仓库看原文 ↗</a></footer>
 </aside>
 
-<div id="hint">拖拽转视角 · 滚轮推近 · 点击书脊看详情 · Esc 关闭</div>
+<div id="hint">拖拽转视角 · 滚轮推近 · 点击书脊：抽书翻开直达仓库 · Esc 放回</div>
 <div id="toast"></div>
 
 <div id="overlay">
@@ -286,7 +286,9 @@ addEventListener('resize', () => {
 
 /* 调试 / 导览钩子 */
 window.__lib = { camera, controls, renderer, THREE, scene,
-  get labels(){ return labelMeshes; }, get books(){ return BOOKS_ALL; }, get pages(){ return pages; },
+  get labels(){ return labelMeshes; }, get books(){ return BOOKS_ALL; }, get pages(){ return pages; }, get hover(){ return hoverIdx; }, get bookMesh(){ return bookMesh; },
+  open: i => openPanel(i), close: () => closePanel(),
+  get pres(){ return { book: presBook, t0: presT0, visible: present.visible }; },
   flyTo(px, py, pz, tx = 0, ty = 1.3, tz = 0) {
     camera.position.set(px, py, pz);
     controls.target.set(tx, ty, tz);
@@ -545,6 +547,29 @@ ladder.position.set(5.55, 1.45, 3.35);
 ladder.rotation.set(.32, -.5, 0);
 room.add(ladder);
 
+/* ══ 翻开展示书：点击书籍后悬浮翻开的那一本 ══ */
+const present = new THREE.Group();
+const presCoverMat = new THREE.MeshPhysicalMaterial({ color: '#8A4B42', roughness: .48, clearcoat: .35, clearcoatRoughness: .4, side: THREE.DoubleSide });
+const presPageMat  = new THREE.MeshStandardMaterial({ color: '#F3EAD4', roughness: .93, side: THREE.DoubleSide });
+const presSpineMat = new THREE.MeshPhysicalMaterial({ color: '#5E3F24', roughness: .5, clearcoat: .3 });
+const coverGeoP = new RoundedBoxGeometry(.58, .82, .028, 2, .012);
+const pageGeoP  = new THREE.BoxGeometry(.54, .77, .02);
+const leftPivot = new THREE.Group();  leftPivot.position.set(-.035, 0, -.01);
+const rightPivot = new THREE.Group(); rightPivot.position.set(.035, 0, .01);
+const leftCover = new THREE.Mesh(coverGeoP, presCoverMat);  leftCover.position.x = -.29;  leftCover.castShadow = !MOBILE;
+const rightCover = new THREE.Mesh(coverGeoP, presCoverMat); rightCover.position.x = .29;   rightCover.castShadow = !MOBILE;
+const leftPagesP = new THREE.Group();  leftPagesP.position.set(-.035, 0, 0);
+const rightPagesP = new THREE.Group(); rightPagesP.position.set(.035, 0, 0);
+const leftPages = new THREE.Mesh(pageGeoP, presPageMat);  leftPages.position.x = -.28;
+const rightPages = new THREE.Mesh(pageGeoP, presPageMat); rightPages.position.x = .28;
+leftPivot.add(leftCover); rightPivot.add(rightCover);
+leftPagesP.add(leftPages); rightPagesP.add(rightPages);
+const presSpine = new THREE.Mesh(new RoundedBoxGeometry(.075, .87, .075, 2, .02), presSpineMat);
+present.add(leftPivot, rightPivot, leftPagesP, rightPagesP, presSpine);
+present.visible = false;
+scene.add(present);
+let presBaseY = 1.45;
+
 /* 灰尘微光（圆形精灵） */
 let dust = null;
 if (!REDUCED) {
@@ -601,6 +626,7 @@ let BOOKS_ALL = [], visible = [], bookMesh = null, pageMesh = null;
 let labelMeshes = [], pages = [];
 const dummy = new THREE.Object3D();
 const _qy = new THREE.Quaternion(), _qz = new THREE.Quaternion(), _v = new THREE.Vector3();
+function faceVec(ry) { return new THREE.Vector3(Math.sin(ry), 0, Math.cos(ry)); }
 
 function buildAtlases(list) {
   const { CW, CH, AW, AH, COLS, ROWS, PER } = AT;
@@ -723,6 +749,28 @@ function writeLabel(i) {
 }
 
 let tweenK = 1, waveT = 0;
+let presBook = null, presT0 = 0;
+function restoreBook() {
+  if (!presBook) return;
+  const b = presBook;
+  if (b._shelfTgt) { b.tgt.p.copy(b._shelfTgt.p); b.tgt.ry = b._shelfTgt.ry; b.tgt.s = b._shelfTgt.s; }
+  presBook = null; presT0 = 0;
+  present.visible = false;
+}
+function updatePresent(now) {
+  if (!present.visible) return;
+  const t = now - presT0;
+  const k = Math.max(0, Math.min(1, (t - 320) / 700));
+  const e = REDUCED ? 1 : 1 - Math.pow(1 - k, 3);
+  const ang = 1.02 * e * (REDUCED ? 1 : (k < 1 ? 1 + Math.sin(k * Math.PI) * .1 : 1));
+  leftPivot.rotation.y = -ang;  rightPivot.rotation.y = ang;
+  leftPagesP.rotation.y = -ang * .76; rightPagesP.rotation.y = ang * .76;
+  present.scale.setScalar(.25 + .75 * Math.min(1, t / 450));
+  present.position.y = presBaseY + (REDUCED ? 0 : Math.sin(now * .0016) * .02);
+  present.rotation.y = Math.atan2(camera.position.x - present.position.x, camera.position.z - present.position.z)
+                     + (REDUCED ? 0 : Math.sin(now * .0009) * .05);
+  if (presBook && t > 380 && presBook.tgt.s > .01) presBook.tgt.s = .0001;   // 原书收走，由展示书接棒
+}
 function writeBook(i) {
   const bk = BOOKS_ALL[i], cur = bk.cur, tgt = bk.tgt;
   cur.p.lerp(tgt.p, tweenK);
@@ -805,18 +853,21 @@ async function buildLibrary(data) {
 let state = { cat: null, kind: null, q: '', sort: 'shelf' };
 function reShelve() {
   const slots = shelfLayoutFor(visible);
+  const snap = document.hidden || REDUCED;   // 后台标签 / 减少动态：直接落架，避免 rAF 暂停时空馆
   visible.forEach((b, i) => {
     const w = slotWorld(slots[i]);
     b.tgt.p.set(w.x, w.y + b.h / 2, w.z);
     b.tgt.ry = UNITS[slots[i].u].ry;
     b.tgt.s = 1;
     b._tilt = slots[i].tilt || 0;
+    if (snap) { b.cur.p.copy(b.tgt.p); b.cur.s = 1; b.cur.ry = b.tgt.ry; }
   });
   const visSet = new Set(visible);
-  BOOKS_ALL.forEach(b => { if (!visSet.has(b)) b.tgt.s = .0001; });
+  BOOKS_ALL.forEach(b => { if (!visSet.has(b)) { b.tgt.s = .0001; if (snap) b.cur.s = .0001; } });
 }
 
 function applyFilters() {
+  if (selectIdx >= 0) closePanel();
   let list = BOOKS_ALL;
   if (state.cat) list = list.filter(b => b.category === state.cat);
   if (state.kind) list = list.filter(b => b.kind === state.kind);
@@ -896,9 +947,14 @@ renderer.domElement.addEventListener('pointerup', e => {
   if (!downXY) return;
   dragMoved = Math.hypot(e.clientX - downXY[0], e.clientY - downXY[1]) > 6;
   downXY = null;
+  const hitIdx = hoverIdx;
   tip.style.display = 'none'; hoverIdx = -1;
   if (dragMoved) return;
-  if (hoverIdx >= 0) openPanel(hoverIdx); else closePanel();
+  if (hitIdx >= 0) {
+    const b = BOOKS_ALL[hitIdx];
+    try { window.open(b.url, '_blank', 'noopener'); } catch (e) { /* 拦截时侧卡里仍有链接 */ }
+    openPanel(hitIdx);
+  } else closePanel();
 });
 
 function doRaycast() {
@@ -924,7 +980,7 @@ function doRaycast() {
 
 function openPanel(i) {
   const b = BOOKS_ALL[i];
-  if (selectIdx >= 0 && selectIdx !== i) setColor(selectIdx, BOOKS_ALL[selectIdx].base);
+  if (selectIdx >= 0 && selectIdx !== i) { setColor(selectIdx, BOOKS_ALL[selectIdx].base); restoreBook(); }
   selectIdx = i; setColor(i, BRASS);
   $('#spine-bar').style.background = b.color;
   $('#p-title').textContent = b.title;
@@ -938,9 +994,23 @@ function openPanel(i) {
   $('#p-desc').textContent = b.desc || '（该仓库暂无简介，欢迎去仓库探索。）';
   $('#go').href = b.url;
   panel.classList.add('open'); panel.setAttribute('aria-hidden', 'false');
+  /* 抽出这本书，展示书接棒翻开 */
+  const f = faceVec(b.tgt.ry);
+  b._shelfTgt = { p: b.tgt.p.clone(), ry: b.tgt.ry, s: b.tgt.s };
+  const pulled = b.tgt.p.clone().addScaledVector(f, .55);
+  b.tgt.p.copy(pulled); b.tgt.s = 1.22;
+  presBook = b; presT0 = performance.now();
+  present.position.copy(pulled).addScaledVector(f, .8);
+  present.position.y = presBaseY = 1.45;
+  presCoverMat.color.copy(b.base);
+  presSpineMat.color.copy(b.base).multiplyScalar(.6);
+  leftPivot.rotation.y = rightPivot.rotation.y = 0;
+  leftPagesP.rotation.y = rightPagesP.rotation.y = 0;
+  present.visible = true;
 }
 function closePanel() {
   if (selectIdx >= 0) { setColor(selectIdx, BOOKS_ALL[selectIdx].base); selectIdx = -1; }
+  restoreBook();
   panel.classList.remove('open'); panel.setAttribute('aria-hidden', 'true');
 }
 $('#close').onclick = closePanel;
@@ -970,7 +1040,7 @@ renderer.domElement.addEventListener('click', e => {
 
 /* ══════════ 主循环 ══════════ */
 let lastAct = performance.now();
-['pointerdown', 'wheel', 'keydown'].forEach(ev =>
+['pointerdown', 'pointermove', 'wheel', 'keydown'].forEach(ev =>
   addEventListener(ev, () => { lastAct = performance.now(); }, { passive: true }));
 
 const clock = new THREE.Clock();
@@ -1007,6 +1077,7 @@ function animate() {
     pos.needsUpdate = true;
   }
 
+  updatePresent(performance.now());
   if (!REDUCED) controls.autoRotate = performance.now() - lastAct > 14000 && !panel.classList.contains('open');
   controls.update();
   doRaycast();
