@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>🏛️ bear20252026 的数字图书馆 · Digital Library</title>
+<meta name="description" content="一座由 catalog.json 数据驱动的 3D 数字图书馆：220 个仓库 + 347 件馆藏立在书架上，可搜索、筛选、点击看书详情。">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏛️</text></svg>">
+<style>
+  :root{
+    --cream:#F6EFE2; --cream-2:#EFE5D2; --paper:#FBF7EC;
+    --ink:#241B12; --ink-soft:#5A4C3C;
+    --wood:#8B5E3C; --wood-2:#6E4A2F;
+    --green:#1F3D2B; --green-2:#2C5540;
+    --brass:#C9A227; --brass-2:#A8841C;
+    --line:rgba(120,96,60,.28);
+    --radius:14px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%}
+  body{
+    font-family:"Avenir Next","PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,"Segoe UI",sans-serif;
+    background:var(--cream); color:var(--ink); overflow:hidden;
+  }
+  canvas#stage{position:fixed;inset:0;display:block;touch-action:none;outline:none}
+  #vig{position:fixed;inset:0;pointer-events:none;z-index:5;
+    background:radial-gradient(ellipse at 50% 42%, transparent 58%, rgba(58,42,20,.16) 100%)}
+  /* ── 顶部工具栏 ── */
+  #topbar{
+    position:fixed;top:0;left:0;right:0;z-index:20;
+    display:flex;flex-wrap:wrap;align-items:center;gap:10px;
+    padding:10px 16px;
+    background:linear-gradient(to bottom, rgba(246,239,226,.94), rgba(246,239,226,.80));
+    backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  #brand{display:flex;align-items:baseline;gap:8px;margin-right:4px;white-space:nowrap}
+  #brand b{font-size:17px;letter-spacing:.5px}
+  #brand span{font-size:12px;color:var(--ink-soft)}
+  #search{
+    flex:1 1 190px;max-width:340px;min-width:150px;
+    border:1px solid var(--line);border-radius:999px;
+    padding:8px 14px 8px 34px;font-size:14px;color:var(--ink);
+    background:var(--paper) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%235A4C3C' stroke-width='2.4'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cpath d='M20 20l-3.5-3.5'/%3E%3C/svg%3E") 12px center no-repeat;
+    outline:none;transition:box-shadow .18s,border-color .18s;
+  }
+  #search:focus{border-color:var(--brass-2);box-shadow:0 0 0 3px rgba(201,162,39,.25)}
+  #sort{
+    border:1px solid var(--line);border-radius:999px;padding:8px 12px;
+    font-size:13px;color:var(--ink);background:var(--paper);outline:none;cursor:pointer;
+  }
+  #sort:focus{border-color:var(--brass-2);box-shadow:0 0 0 3px rgba(201,162,39,.25)}
+  #chips{display:flex;gap:6px;overflow-x:auto;flex:1 1 100%;padding-bottom:2px;scrollbar-width:thin}
+  .chip{
+    flex:0 0 auto;border:1px solid var(--line);border-radius:999px;
+    padding:5px 12px;font-size:12.5px;line-height:1.4;cursor:pointer;
+    background:var(--paper);color:var(--ink);white-space:nowrap;
+    display:inline-flex;align-items:center;gap:5px;
+    transition:all .16s ease;user-select:none;font-family:inherit;
+  }
+  .chip .dot{width:9px;height:9px;border-radius:3px;display:inline-block}
+  .chip:hover{border-color:var(--brass-2);transform:translateY(-1px)}
+  .chip:focus-visible,.chip.active:focus-visible{outline:2px solid var(--brass-2);outline-offset:2px}
+  .chip.active{background:var(--green);color:#F6EFE2;border-color:var(--green)}
+  .chip.active .dot{outline:1px solid rgba(246,239,226,.5)}
+  #count{font-size:12.5px;color:var(--ink-soft);white-space:nowrap}
+  /* ── 悬浮提示 ── */
+  #tip{
+    position:fixed;z-index:30;pointer-events:none;display:none;
+    max-width:260px;padding:8px 12px;border-radius:10px;
+    background:rgba(36,27,18,.92);color:#F6EFE2;font-size:12.5px;line-height:1.5;
+    box-shadow:0 6px 18px rgba(0,0,0,.25);transform:translate(-50%,-130%);
+  }
+  #tip .t{font-weight:600}
+  #tip .c{opacity:.75;font-size:11.5px;margin-top:2px}
+  /* ── 详情侧卡 ── */
+  #panel{
+    position:fixed;top:0;right:0;bottom:0;z-index:40;width:min(400px,92vw);
+    background:var(--paper);border-left:1px solid var(--line);
+    box-shadow:-18px 0 50px rgba(60,44,20,.18);
+    transform:translateX(105%);transition:transform .34s cubic-bezier(.22,.9,.3,1);
+    display:flex;flex-direction:column;
+  }
+  #panel.open{transform:translateX(0)}
+  #panel .spine-bar{height:6px;flex:none}
+  #panel header{display:flex;align-items:flex-start;gap:10px;padding:18px 18px 10px}
+  #panel h2{font-size:20px;line-height:1.35;flex:1;word-break:break-all}
+  #close{
+    flex:none;width:32px;height:32px;border-radius:50%;border:1px solid var(--line);
+    background:var(--cream);color:var(--ink);font-size:16px;cursor:pointer;line-height:1;
+  }
+  #close:hover{background:var(--cream-2)}
+  #close:focus-visible{outline:2px solid var(--brass-2)}
+  #panel .meta{display:flex;flex-wrap:wrap;gap:6px;padding:0 18px 12px}
+  .tag{font-size:11.5px;border:1px solid var(--line);border-radius:999px;padding:3px 10px;color:var(--ink-soft);background:var(--cream)}
+  .tag.kind{background:var(--green);border-color:var(--green);color:#F6EFE2}
+  #panel .desc{flex:1;overflow:auto;padding:4px 18px 14px;font-size:14px;line-height:1.85;color:#3A2F22}
+  #panel footer{padding:14px 18px 18px;border-top:1px solid var(--line)}
+  #go{
+    display:block;text-align:center;text-decoration:none;
+    background:var(--green);color:#F6EFE2;font-size:14.5px;font-weight:600;
+    padding:11px 0;border-radius:12px;letter-spacing:.5px;
+    transition:background .16s,transform .16s;
+  }
+  #go:hover{background:var(--green-2);transform:translateY(-1px)}
+  #go:focus-visible{outline:2px solid var(--brass-2);outline-offset:3px}
+  /* ── 其他 UI ── */
+  #hint{
+    position:fixed;left:16px;bottom:14px;z-index:15;font-size:12px;color:var(--ink-soft);
+    background:rgba(246,239,226,.85);border:1px solid var(--line);border-radius:999px;
+    padding:6px 13px;backdrop-filter:blur(6px);user-select:none;
+  }
+  #overlay{
+    position:fixed;inset:0;z-index:60;display:flex;align-items:center;justify-content:center;
+    background:var(--cream);transition:opacity .5s;
+  }
+  #overlay.hide{opacity:0;pointer-events:none}
+  #overlay .card{max-width:400px;text-align:center;padding:20px}
+  #overlay .logo{font-size:44px;margin-bottom:14px}
+  #overlay h1{font-size:18px;margin-bottom:10px;letter-spacing:1px}
+  #overlay p{font-size:13px;color:var(--ink-soft);line-height:1.8}
+  #overlay code{background:var(--cream-2);padding:1px 6px;border-radius:6px;font-size:12px}
+  #overlay .bar{width:220px;height:4px;border-radius:99px;background:var(--cream-2);margin:16px auto 8px;overflow:hidden}
+  #overlay .bar i{display:block;height:100%;width:0%;border-radius:99px;background:var(--brass);transition:width .3s}
+  #overlay button{
+    margin-top:14px;padding:9px 22px;border-radius:10px;border:none;cursor:pointer;
+    background:var(--green);color:#F6EFE2;font-size:14px;font-family:inherit;
+  }
+  #toast{
+    position:fixed;left:50%;bottom:26px;transform:translate(-50%,20px);z-index:50;
+    background:rgba(36,27,18,.92);color:#F6EFE2;font-size:13px;padding:9px 18px;
+    border-radius:999px;opacity:0;transition:all .3s;pointer-events:none;
+  }
+  #toast.show{opacity:1;transform:translate(-50%,0)}
+  /* 夜读模式 */
+  body.night{--cream:#141824;--cream-2:#1B2130;--paper:#1A1F2E;--ink:#E9E0CC;--ink-soft:#9C937D;--line:rgba(180,160,110,.22)}
+  body.night #topbar{background:linear-gradient(to bottom, rgba(20,24,36,.94), rgba(20,24,36,.82))}
+  body.night #panel{background:#1A1F2E;box-shadow:-18px 0 50px rgba(0,0,0,.5)}
+  body.night #panel .desc{color:#CDBFA4}
+  body.night #hint,body.night .tag{background:rgba(26,31,46,.85)}
+  body.night #overlay{background:#141824}
+  body.night #vig{background:radial-gradient(ellipse at 50% 42%, transparent 55%, rgba(0,0,5,.5) 100%)}
+  @media (max-width:760px){
+    #brand span{display:none}
+    #topbar{padding:8px 10px;gap:8px}
+    #panel{width:100vw;border-left:none}
+    #hint{display:none}
+  }
+  @media (prefers-reduced-motion: reduce){
+    #panel,#toast,#overlay{transition:none}
+  }
+</style>
+</head>
+<body>
+<canvas id="stage" aria-label="3D 图书馆场景"></canvas>
+<div id="vig"></div>
+
+<div id="topbar">
+  <div id="brand"><b>🏛️ 数字图书馆</b><span>bear20252026 · 220 仓库 + 347 馆藏</span></div>
+  <input id="search" type="search" placeholder="搜索书名 / 简介…" aria-label="搜索书籍">
+  <select id="sort" aria-label="排序方式">
+    <option value="shelf">排序：馆内排架</option>
+    <option value="name">书名 A→Z</option>
+    <option value="updated">最近更新</option>
+    <option value="stars">星数最多</option>
+  </select>
+  <span id="count">…</span>
+  <div id="chips" aria-label="分类筛选"></div>
+</div>
+
+<div id="tip"></div>
+
+<aside id="panel" aria-label="书籍详情" aria-hidden="true">
+  <div class="spine-bar" id="spine-bar"></div>
+  <header>
+    <h2 id="p-title">—</h2>
+    <button id="close" aria-label="关闭详情（Esc）">✕</button>
+  </header>
+  <div class="meta" id="p-meta"></div>
+  <div class="desc" id="p-desc">—</div>
+  <footer><a id="go" href="#" target="_blank" rel="noopener">📖 去仓库看原文 ↗</a></footer>
+</aside>
+
+<div id="hint">🖱️ 拖拽转视角 · 滚轮推近 · 点击书脊看详情 · Esc 关闭</div>
+<div id="toast"></div>
+
+<div id="overlay">
+  <div class="card" id="ov-card">
+    <div class="logo">🏛️</div>
+    <h1>bear20252026 的数字图书馆</h1>
+    <p id="ov-msg">正在布置书架…</p>
+    <div class="bar"><i id="ov-bar"></i></div>
+  </div>
+</div>
+
+<noscript><div style="position:fixed;inset:0;background:#F6EFE2;color:#241B12;display:flex;align-items:center;justify-content:center;z-index:99">需要启用 JavaScript 才能参观这座 3D 图书馆。</div></noscript>
+
+<script>window.__errs = [];addEventListener('error', e => window.__errs.push(e.message + ' @' + (e.filename||'') + ':' + e.lineno));addEventListener('unhandledrejection', e => window.__errs.push('rejection: ' + e.reason));</script>
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/"
+  }
+}
+</script>
+
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+
+/* ══════════ 环境 ══════════ */
+const REDUCED = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const MOBILE  = matchMedia('(pointer: coarse)').matches || innerWidth < 760;
+const $ = s => document.querySelector(s);
+const tip = $('#tip'), panel = $('#panel'), toast = $('#toast');
+
+let renderer;
+try {
+  renderer = new THREE.WebGLRenderer({ canvas: $('#stage'), antialias: true });
+} catch (e) {
+  $('#ov-msg').textContent = '这台设备不支持 WebGL，无法开门迎客。';
+  $('#ov-bar').style.width = '100%'; $('#ov-bar').style.background = '#A64B4B';
+  throw e;
+}
+renderer.setPixelRatio(Math.min(devicePixelRatio, MOBILE ? 1.6 : 2));
+renderer.setSize(innerWidth, innerHeight);
+renderer.outputColorSpace = THREE.SRGBColorSpace;
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+renderer.toneMappingExposure = 1.06;
+renderer.shadowMap.enabled = !MOBILE;
+renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+
+const scene = new THREE.Scene();
+const DAY_BG = new THREE.Color('#EFE3CC'), NIGHT_BG = new THREE.Color('#10141E');
+scene.background = DAY_BG.clone();
+scene.fog = new THREE.Fog(DAY_BG.clone(), 17, 38);
+
+const camera = new THREE.PerspectiveCamera(46, innerWidth / innerHeight, .1, 90);
+camera.position.set(5.9, 3.3, 4.7);
+
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.target.set(0, 1.3, 0);
+controls.enableDamping = true; controls.dampingFactor = .07;
+controls.minDistance = 1.8; controls.maxDistance = 6.8;
+controls.maxPolarAngle = Math.PI / 2 - .04;
+controls.enablePan = true; controls.screenSpacePanning = true;
+controls.autoRotateSpeed = .35;
+
+/* 调试 / 导览钩子：window.__lib.flyTo(相机位置, 目标点) */
+window.__lib = { camera, controls, renderer, THREE, scene, get labels(){ return labelMeshes; }, get books(){ return BOOKS_ALL; }, get pages(){ return pages; },
+  flyTo(px, py, pz, tx = 0, ty = 1.3, tz = 0) {
+    camera.position.set(px, py, pz);
+    controls.target.set(tx, ty, tz);
+    controls.update();
+  } };
+
+addEventListener('resize', () => {
+  camera.aspect = innerWidth / innerHeight; camera.updateProjectionMatrix();
+  renderer.setSize(innerWidth, innerHeight);
+});
+
+/* ══════════ 灯光 ══════════ */
+const hemi = new THREE.HemisphereLight('#FFF6E0', '#8A7350', .8);
+scene.add(hemi);
+const sun = new THREE.DirectionalLight('#FFE9BE', 2.2);
+sun.position.set(-10.5, 7.8, 2.4);
+sun.castShadow = !MOBILE;
+if (!MOBILE) {
+  sun.shadow.mapSize.set(2048, 2048);
+  sun.shadow.camera.left = -10; sun.shadow.camera.right = 10;
+  sun.shadow.camera.top = 10;  sun.shadow.camera.bottom = -10;
+  sun.shadow.camera.far = 40; sun.shadow.bias = -.0004; sun.shadow.normalBias = .02;
+}
+scene.add(sun, sun.target);
+const fill = new THREE.DirectionalLight('#DCE6F2', .3);
+fill.position.set(8, 6, 9); scene.add(fill);
+
+/* ══════════ 程序化材质 ══════════ */
+function canvasTex(size, draw, repeat = [1, 1]) {
+  const c = document.createElement('canvas'); c.width = c.height = size;
+  draw(c.getContext('2d'), size);
+  const t = new THREE.CanvasTexture(c);
+  t.colorSpace = THREE.SRGBColorSpace;
+  t.wrapS = t.wrapT = THREE.RepeatWrapping; t.repeat.set(...repeat);
+  t.anisotropy = 8;
+  return t;
+}
+const floorTex = canvasTex(512, (g, s) => {
+  g.fillStyle = '#9A6B44'; g.fillRect(0, 0, s, s);
+  for (let y = 0; y < 8; y++) {
+    const h = s / 8, off = (y % 2) * 60;
+    g.fillStyle = ['#9A6B44', '#93653F', '#A07048', '#8E5F3B'][y % 4];
+    g.fillRect(0, y * h, s, h - 2);
+    g.strokeStyle = 'rgba(74,50,30,.5)'; g.lineWidth = 2;
+    g.strokeRect(-2, y * h, s + 4, h - 2);
+    for (let i = 0; i < 22; i++) {
+      g.strokeStyle = `rgba(${70 + Math.random() * 30 | 0},${46 + Math.random() * 20 | 0},26,.16)`;
+      g.lineWidth = 1; g.beginPath();
+      const x = (Math.random() * s + off) % s;
+      g.moveTo(x, y * h + 3); g.bezierCurveTo(x + 8, y * h + h * .4, x - 8, y * h + h * .7, x + 4, y * h + h - 3);
+      g.stroke();
+    }
+  }
+}, [7, 7]);
+const grainTex = canvasTex(256, (g, s) => {
+  g.fillStyle = '#7A5230'; g.fillRect(0, 0, s, s);
+  for (let i = 0; i < 40; i++) {
+    g.strokeStyle = `rgba(58,38,20,${.12 + Math.random() * .12})`;
+    g.lineWidth = 1 + Math.random() * 2; g.beginPath();
+    const y = Math.random() * s;
+    g.moveTo(0, y); g.bezierCurveTo(s * .3, y + 6, s * .6, y - 6, s, y + 2); g.stroke();
+  }
+}, [2, 1]);
+const rugTex = canvasTex(256, (g, s) => {
+  const r = g.createRadialGradient(s/2, s/2, 10, s/2, s/2, s/2);
+  r.addColorStop(0, '#EFE5CF'); r.addColorStop(.8, '#E3D5B8'); r.addColorStop(1, '#2C5540');
+  g.fillStyle = r; g.beginPath(); g.arc(s/2, s/2, s/2, 0, 7); g.fill();
+});
+
+const M = {
+  floor:  new THREE.MeshStandardMaterial({ map: floorTex, color: '#FFFFFF', roughness: .82, metalness: .04 }),
+  wood:   new THREE.MeshStandardMaterial({ map: grainTex, color: '#B08A5F', roughness: .74 }),
+  woodDk: new THREE.MeshStandardMaterial({ color: '#5F4026', roughness: .8 }),
+  wall:   new THREE.MeshStandardMaterial({ color: '#F1E7D2', roughness: .96 }),
+  wains:  new THREE.MeshStandardMaterial({ color: '#1F3D2B', roughness: .85 }),
+  beam:   new THREE.MeshStandardMaterial({ color: '#6E4A2F', roughness: .8 }),
+  brass:  new THREE.MeshStandardMaterial({ color: '#C9A227', roughness: .3, metalness: .85 }),
+  pane:   new THREE.MeshStandardMaterial({ color: '#FFF3D8', emissive: '#FFD98A', emissiveIntensity: .9, roughness: .4, transparent: true, opacity: .55 }),
+  rug:    new THREE.MeshStandardMaterial({ map: rugTex, roughness: .95, transparent: true }),
+};
+const WALL_DAY = new THREE.Color('#F1E7D2'), WALL_NIGHT = new THREE.Color('#2A3142');
+const FLOOR_DAY = new THREE.Color('#FFFFFF'), FLOOR_NIGHT = new THREE.Color('#3A3F55');
+
+/* ══════════ 房间 ══════════ */
+const room = new THREE.Group(); scene.add(room);
+function box(w, h, d, mat, x, y, z, ry = 0, cast = false, recv = true) {
+  const m = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), mat);
+  m.position.set(x, y, z); m.rotation.y = ry;
+  m.castShadow = cast && !MOBILE; m.receiveShadow = recv && !MOBILE;
+  room.add(m); return m;
+}
+box(15.2, .12, 13.2, M.floor, 0, 0, 0).receiveShadow = true;
+box(15.2, 3.7, .18, M.wall, 0, 1.85, -6.9);
+box(15.2, 3.7, .18, M.wall, 0, 1.85, 6.9);
+box(.18, 3.7, 13.2, M.wall, 6.9, 1.85, 0);
+/* 西墙 = 带真实窗洞的拼块（光会从窗口照进来） */
+for (const [z0, z1] of [[-6.6, -5.1], [-2.7, -1.2], [1.2, 2.7], [5.1, 6.6]]) {
+  const len = z1 - z0, zc = (z0 + z1) / 2;
+  box(.18, 3.7, len, M.wall, -6.9, 1.85, zc, 0, true);
+}
+for (const zc of [-3.9, 0, 3.9]) {
+  box(.18, .75, 2.4, M.wall, -6.9, .375, zc, 0, true);     // 窗下墙
+  box(.18, .65, 2.4, M.wall, -6.9, 3.375, zc, 0, true);    // 窗上墙
+}
+box(15.2, .1, 13.2, M.wall, 0, 3.72, 0);
+for (const z of [-3.4, -1.1, 1.1, 3.4]) box(15.2, .18, .5, M.beam, 0, 3.5, z);
+for (const w of [-6.81, 6.81]) box(.1, 1.0, 13.2, M.wains, w, .5, 0);
+for (const z of [-6.81, 6.81]) box(15.2, 1.0, .1, M.wains, 0, .5, z);
+for (const w of [-6.85, 6.85]) box(.08, .06, 13.2, M.brass, w, 1.02, 0, 0, false, false);
+for (const z of [-6.85, 6.85]) box(15.2, .06, .08, M.brass, 0, 1.02, z, 0, false, false);
+
+/* 西墙三扇暖窗 */
+for (const z of [-3.9, 0, 3.9]) {
+  box(.06, 2.3, 2.4, M.pane, -6.9, 1.9, z, 0, false, false);
+  box(.16, 2.5, .12, M.woodDk, -6.88, 1.9, z - 1.28, 0, false, false);
+  box(.16, 2.5, .12, M.woodDk, -6.88, 1.9, z + 1.28, 0, false, false);
+  box(.16, .12, 2.72, M.woodDk, -6.88, .72, z, 0, false, false);
+  box(.16, .12, 2.72, M.woodDk, -6.88, 3.1, z, 0, false, false);
+  box(.12, 2.3, .1,  M.woodDk, -6.88, 1.9, z, 0, false, false);
+}
+if (!REDUCED) {
+  const shaftMat = new THREE.MeshBasicMaterial({ color: '#FFE9C4', transparent: true, opacity: .045, blending: THREE.AdditiveBlending, depthWrite: false, side: THREE.DoubleSide });
+  for (const z of [-3.9, 0, 3.9]) {
+    const p = new THREE.Mesh(new THREE.PlaneGeometry(2.2, 7.4), shaftMat);
+    p.position.set(-3.7, 2.0, z); p.rotation.z = -1.12; p.rotation.y = Math.PI / 2;
+    room.add(p);
+  }
+}
+
+/* 中央书桌 + 台灯 + 铜铃 + 地毯 */
+box(1.9, .09, 1.0, M.wood, .2, .86, .2, .12, true);
+for (const [dx, dz] of [[-.8, -.36], [.8, -.36], [-.8, .36], [.8, .36]])
+  box(.1, .84, .1, M.woodDk, .2 + dx, .42, .2 + dz, .12);
+const lampShade = new THREE.Mesh(new THREE.ConeGeometry(.22, .3, 24, 1, true),
+  new THREE.MeshStandardMaterial({ color: '#2C5540', roughness: .5, side: THREE.DoubleSide }));
+lampShade.position.set(-.25, 1.42, .05); lampShade.castShadow = !MOBILE; room.add(lampShade);
+box(.04, .5, .04, M.brass, -.25, 1.1, .05, 0, false, false);
+box(.2, .03, .2, M.brass, -.25, .92, .05, 0, false, false);
+const lampLight = new THREE.PointLight('#FFC978', 0, 6, 2);
+lampLight.position.set(-.25, 1.32, .05); room.add(lampLight);
+const bell = new THREE.Mesh(new THREE.SphereGeometry(.075, 20, 14), M.brass);
+bell.position.set(.75, .96, .35); bell.scale.y = .8; bell.castShadow = !MOBILE; room.add(bell);
+box(.16, .04, .16, M.brass, .75, .9, .35, 0, false, false);
+const rug = new THREE.Mesh(new THREE.CircleGeometry(2.5, 48), M.rug);
+rug.rotation.x = -Math.PI / 2; rug.position.y = .075; rug.receiveShadow = !MOBILE; room.add(rug);
+
+let dust = null;
+if (!REDUCED) {
+  const n = MOBILE ? 150 : 360, pos = new Float32Array(n * 3);
+  for (let i = 0; i < n; i++) {
+    pos[i*3] = -6 + Math.random() * 12; pos[i*3+1] = .4 + Math.random() * 2.8; pos[i*3+2] = -5 + Math.random() * 10;
+  }
+  const g = new THREE.BufferGeometry(); g.setAttribute('position', new THREE.BufferAttribute(pos, 3));
+  dust = new THREE.Points(g, new THREE.PointsMaterial({ color: '#E8D5A8', size: .022, transparent: true, opacity: .5, blending: THREE.AdditiveBlending, depthWrite: false }));
+  scene.add(dust);
+}
+
+/* ══════════ 书架单元 ══════════ */
+const UW = 3.6, UD = .42, UH = 3.2, BOARDS = 4;
+const boardY = i => .42 + i * .66;
+const UNITS = [
+  { x: -4.3, z: -4.7, ry: 0 },            { x: 0, z: -4.7, ry: 0 },            { x: 4.3, z: -4.7, ry: 0 },
+  { x: -4.3, z: 4.7, ry: Math.PI },       { x: 0, z: 4.7, ry: Math.PI },       { x: 4.3, z: 4.7, ry: Math.PI },
+  { x: 6.3, z: -2.3, ry: -Math.PI / 2 },  { x: 6.3, z: 2.3, ry: -Math.PI / 2 },
+];
+for (const u of UNITS) {
+  const ry = u.ry, c = Math.cos(ry), s = Math.sin(ry);
+  const local = (lx, ly, lz) => ({ x: u.x + lx * c + lz * s, y: ly, z: u.z - lx * s + lz * c });
+  for (const [lx, ly, lz, w, h, d] of [
+      [-UW/2 + .06, UH/2, 0, .12, UH, UD], [UW/2 - .06, UH/2, 0, .12, UH, UD],
+      [0, UH/2, UD/2 - .1, UW, UH, .08],
+      [0, UH - .06, 0, UW + .12, .1, UD + .1],
+      [0, .06, 0, UW, .12, UD + .08],
+  ]) { const p = local(lx, ly, lz); box(w, h, d, M.wood, p.x, p.y, p.z, ry, true); }
+  for (let b = 0; b < BOARDS; b++) {
+    const p = local(0, boardY(b), 0);
+    box(UW - .1, .05, UD - .04, M.woodDk, p.x, p.y, p.z, ry);
+  }
+  const pl = local(0, UH - .01, UD/2 + .012);
+  box(.5, .045, .02, M.brass, pl.x, pl.y, pl.z, ry, false, false);
+}
+
+/* ══════════ 书 + 书脊烫字 ══════════ */
+const BOOK_DEPTH = .22;
+const AT = { CW: 96, CH: 256, AW: 1024, AH: 4096, COLS: 10, ROWS: 16, PER: 160 };
+let BOOKS_ALL = [], visible = [], bookMesh = null;
+let labelMeshes = [], pages = [];
+const dummy = new THREE.Object3D();
+
+function faceVec(ry) { return new THREE.Vector3(Math.sin(ry), 0, Math.cos(ry)); }
+function tangentVec(ry) { return new THREE.Vector3(Math.cos(ry), 0, -Math.sin(ry)); }
+
+function buildAtlases(list) {
+  const { CW, CH, AW, AH, COLS, ROWS, PER } = AT;
+  const nPages = Math.ceil(list.length / PER);
+  const texs = [];
+  for (let p = 0; p < nPages; p++) {
+    const cv = document.createElement('canvas'); cv.width = AW; cv.height = AH;
+    const g = cv.getContext('2d');
+    for (let k = 0; k < PER && p * PER + k < list.length; k++) {
+      const bk = list[p * PER + k];
+      const col = k % COLS, row = (k / COLS) | 0;
+      const x0 = col * CW, y0 = row * CH;
+      g.strokeStyle = 'rgba(201,162,39,.9)'; g.lineWidth = 2;
+      g.beginPath(); g.moveTo(x0+10, y0+13); g.lineTo(x0+CW-10, y0+13); g.stroke();
+      g.beginPath(); g.moveTo(x0+10, y0+CH-15); g.lineTo(x0+CW-10, y0+CH-15); g.stroke();
+      const title = bk.title;
+      const hasCJK = /[\u4e00-\u9fff\u3400-\u4dbf]/.test(title);
+      g.fillStyle = 'rgba(36,27,18,.94)';
+      g.textAlign = 'center'; g.textBaseline = 'middle';
+      if (hasCJK) {
+        const chars = [...title], usable = CH - 58;
+        const fs = Math.max(9, Math.min(23, usable / chars.length / 1.12));
+        g.font = `600 ${fs}px "PingFang SC","Microsoft YaHei",serif`;
+        const total = chars.length * fs * 1.12;
+        let y = y0 + 20 + Math.max(0, (usable - total) / 2) + fs * .58;
+        for (const ch of chars) { g.fillText(ch, x0 + CW/2, y); y += fs * 1.12; }
+      } else {
+        const usable = CH - 58, est = title.length * 9.4;
+        const fs = Math.max(9.5, Math.min(19, usable / Math.max(est, 1) * 19));
+        g.font = `600 ${fs}px Georgia,"Times New Roman",serif`;
+        g.save(); g.translate(x0 + CW/2, y0 + CH/2); g.rotate(-Math.PI/2);
+        if (g.measureText(title).width > usable) {
+          let t = title;
+          while (t.length > 2 && g.measureText(t + '…').width > usable) t = t.slice(0, -1);
+          g.fillText(t + '…', 0, 0);
+        } else g.fillText(title, 0, 0);
+        g.restore();
+      }
+      bk._cell = { page: p, col, row };
+    }
+    const tex = new THREE.CanvasTexture(cv);
+    tex.colorSpace = THREE.SRGBColorSpace; tex.anisotropy = 8;
+    tex.flipY = false;
+    texs.push(tex);
+  }
+  return texs;
+}
+
+function makeLabelMeshes() {
+  const meshes = [];
+  for (let p = 0; p < pages.length; p++) {
+    const maxQ = AT.PER;
+    const g = new THREE.BufferGeometry();
+    g.setAttribute('position', new THREE.BufferAttribute(new Float32Array(maxQ * 4 * 3), 3));
+    g.setAttribute('uv', new THREE.BufferAttribute(new Float32Array(maxQ * 4 * 2), 2));
+    const idx = new Uint32Array(maxQ * 6);
+    for (let q = 0; q < maxQ; q++) {
+      /* 顶点顺序 TL(0) TR(1) BR(2) BL(3)；面向 f 时 (TL,BL,BR) 与 (TL,BR,TR) 为正面 */
+      idx.set([q*4, q*4+3, q*4+2,  q*4, q*4+2, q*4+1], q * 6);
+    }
+    g.setIndex(new THREE.BufferAttribute(idx, 1));
+    const mat = new THREE.MeshBasicMaterial({ map: pages[p], transparent: true, alphaTest: .08, side: THREE.FrontSide });
+    const mesh = new THREE.Mesh(g, mat);
+    mesh.frustumCulled = false;
+    scene.add(mesh);
+    meshes.push({ mesh, pos: g.attributes.position, uvAttr: g.attributes.uv });
+  }
+  return meshes;
+}
+
+function assignUVs(list) {
+  const { CW, CH, AW, AH, COLS } = AT;
+  list.forEach(bk => {
+    const { page, col, row } = bk._cell;
+    const u0 = (col * CW + 4) / AW, u1 = (col * CW + CW - 4) / AW;
+    const vT = (row * CH + 4) / AH, vB = ((row + 1) * CH - 4) / AH;   /* flipY=false：vT=格顶 */
+    const uv = labelMeshes[page].uvAttr.array, o = bk._quad * 8;
+    uv[o]=u0; uv[o+1]=vT;  uv[o+2]=u1; uv[o+3]=vT;
+    uv[o+4]=u1; uv[o+5]=vB; uv[o+6]=u0; uv[o+7]=vB;
+    labelMeshes[page].uvAttr.needsUpdate = true;
+  });
+}
+
+function slotWorld(sl) {
+  const u = UNITS[sl.u], c = Math.cos(u.ry), s = Math.sin(u.ry);
+  const lx = sl.x, lz = UD/2 - BOOK_DEPTH/2 - .02;
+  return { x: u.x + lx * c + lz * s, y: boardY(sl.b) + .025, z: u.z - lx * s + lz * c };
+}
+
+function shelfLayoutFor(list) {
+  const out = [];
+  let u = 0, b = 0, cursor = -1.52;
+  for (let i = 0; i < list.length; i++) {
+    const th = list[i].th;
+    if (cursor + th > 1.62) { cursor = -1.52; b++; }
+    if (b >= BOARDS) { b = 0; u++; cursor = -1.52; }
+    if (u >= UNITS.length) { u = UNITS.length - 1; b = Math.min(b, BOARDS - 1); }
+    out[i] = { u, b, x: cursor + th / 2 };
+    cursor += th + .022;
+    if (Math.random() < .05) cursor += .04;
+  }
+  return out;
+}
+
+function writeLabel(i) {
+  const bk = BOOKS_ALL[i], L = labelMeshes[bk._cell.page], cur = bk.cur;
+  const f = faceVec(cur.ry), t = tangentVec(cur.ry);
+  const hw = (cur.s * bk.th) / 2 + .008, hh = (cur.s * bk.h * .8) / 2;
+  const off = cur.s * BOOK_DEPTH / 2 + .006;   /* 书脊面在深度方向上，标签贴在其外 */
+  const cx = cur.p.x + f.x * off, cz = cur.p.z + f.z * off, cy = cur.p.y;
+  const P = L.pos.array, o = bk._quad * 12;
+  P[o]   = cx - t.x*hw; P[o+1]  = cy + hh; P[o+2]  = cz - t.z*hw;
+  P[o+3] = cx + t.x*hw; P[o+4]  = cy + hh; P[o+5]  = cz + t.z*hw;
+  P[o+6] = cx + t.x*hw; P[o+7]  = cy - hh; P[o+8]  = cz + t.z*hw;
+  P[o+9] = cx - t.x*hw; P[o+10] = cy - hh; P[o+11] = cz - t.z*hw;
+  L.pos.needsUpdate = true;
+}
+
+let tweenK = 1, waveT = 0;
+function writeBook(i) {
+  const bk = BOOKS_ALL[i], cur = bk.cur, tgt = bk.tgt;
+  cur.p.lerp(tgt.p, tweenK);
+  cur.s += (tgt.s - cur.s) * tweenK;
+  cur.ry += (tgt.ry - cur.ry) * tweenK;
+  let wob = 0;
+  if (waveT) {
+    const t = (performance.now() - waveT) / 1000;
+    if (t < 2.4) wob = Math.sin(i * .35 - t * 9) * Math.exp(-t * 1.9) * .085;
+    else waveT = 0;
+  }
+  dummy.position.set(cur.p.x, cur.p.y + Math.max(0, wob), cur.p.z);
+  dummy.rotation.set(0, cur.ry, 0);
+  dummy.scale.set(Math.max(.0001, cur.s * bk.th), Math.max(.0001, cur.s * bk.h), Math.max(.0001, cur.s * BOOK_DEPTH));
+  dummy.updateMatrix();
+  bookMesh.setMatrixAt(i, dummy.matrix);
+  writeLabel(i);
+}
+
+/* ══════════ 数据 → 场景 ══════════ */
+async function buildLibrary(data) {
+  const list = data.books;
+  list.forEach((b, i) => {
+    const st = Math.max(0, b.stars || 0);
+    b.th = .062 + .075 * Math.min(1, Math.log10(st + 1) / 4.3);
+    b.h  = .5 + ((i * 97) % 13) / 13 * .1;
+  });
+
+  const catOrder = Object.keys(data.palette);
+  const sorted = [...list].sort((a, b) => {
+    const ca = catOrder.indexOf(a.category) - catOrder.indexOf(b.category);
+    if (ca) return ca;
+    const sa = (a.subcategory || '').localeCompare(b.subcategory || '', 'zh');
+    if (sa) return sa;
+    return a.title.localeCompare(b.title, 'zh');
+  });
+  BOOKS_ALL = sorted;
+
+  const geo = new THREE.BoxGeometry(1, 1, 1);
+  const mat = new THREE.MeshStandardMaterial({ roughness: .62, metalness: .05 });
+  bookMesh = new THREE.InstancedMesh(geo, mat, sorted.length);
+  bookMesh.instanceMatrix.setUsage(THREE.DynamicDrawUsage);
+  bookMesh.castShadow = !MOBILE; bookMesh.receiveShadow = !MOBILE;
+  bookMesh.frustumCulled = false;
+  scene.add(bookMesh);
+
+  sorted.forEach((b, i) => {
+    b.idx = i;
+    const c = new THREE.Color(b.color);
+    c.offsetHSL(((i * 37) % 7 - 3) * .004, -.16, ((i * 53) % 9 - 4) * .012 + .02);
+    b.base = c;
+    bookMesh.setColorAt(i, c);
+    b.cur = { p: new THREE.Vector3(0, -3.2, 0), s: 1, ry: 0 };
+    b.tgt = { p: new THREE.Vector3(), s: 1, ry: 0 };
+  });
+  bookMesh.instanceColor.needsUpdate = true;
+
+  pages = buildAtlases(sorted);
+  labelMeshes = makeLabelMeshes();
+  let qc = pages.map(() => 0);
+  sorted.forEach(b => { b._quad = qc[b._cell.page]++; });
+  assignUVs(sorted);
+
+  applyFilters();          /* 排架 + 计数 */
+}
+
+/* 排架：visible 依次入槽，其余收走 */
+let state = { cat: null, kind: null, q: '', sort: 'shelf' };
+function reShelve() {
+  const slots = shelfLayoutFor(visible);
+  visible.forEach((b, i) => {
+    const w = slotWorld(slots[i]);
+    b.tgt.p.set(w.x, w.y + b.h / 2, w.z);
+    b.tgt.ry = UNITS[slots[i].u].ry;
+    b.tgt.s = 1;
+  });
+  const visSet = new Set(visible);
+  BOOKS_ALL.forEach(b => { if (!visSet.has(b)) b.tgt.s = .0001; });
+}
+
+function applyFilters() {
+  let list = BOOKS_ALL;
+  if (state.cat) list = list.filter(b => b.category === state.cat);
+  if (state.kind) list = list.filter(b => b.kind === state.kind);
+  if (state.q.trim()) {
+    const q = state.q.trim().toLowerCase();
+    list = list.filter(b =>
+      b.title.toLowerCase().includes(q) ||
+      (b.desc || '').toLowerCase().includes(q) ||
+      (b.category || '').toLowerCase().includes(q));
+  }
+  if (state.sort === 'name') list = [...list].sort((a, b) => a.title.localeCompare(b.title, 'zh'));
+  else if (state.sort === 'updated') list = [...list].sort((a, b) => (b.updated || '').localeCompare(a.updated || '') || a.title.localeCompare(b.title, 'zh'));
+  else if (state.sort === 'stars') list = [...list].sort((a, b) => (b.stars || 0) - (a.stars || 0));
+  visible = list;
+  reShelve();
+  $('#count').textContent = visible.length === BOOKS_ALL.length
+    ? `在架 ${BOOKS_ALL.length} 本`
+    : `在架 ${visible.length} / ${BOOKS_ALL.length} 本`;
+  syncChips();
+}
+
+/* ══════════ 筛选 UI ══════════ */
+const KIND_LABEL = { pinned: '置顶', original: '原创', fork: '复刻', library: '馆藏' };
+function buildChips() {
+  const box = $('#chips');
+  const mk = (label, dot, act) => {
+    const el = document.createElement('button');
+    el.className = 'chip'; el.type = 'button';
+    el.innerHTML = (dot ? `<i class="dot" style="background:${dot}"></i>` : '') + label;
+    el.onclick = act;
+    box.appendChild(el); return el;
+  };
+  mk('全部', null, () => { state.cat = null; state.kind = null; applyFilters(); });
+  for (const k of ['pinned', 'original', 'fork', 'library'])
+    mk((k === 'pinned' ? '📌 ' : '') + KIND_LABEL[k], null, () => { state.kind = state.kind === k ? null : k; state.cat = null; applyFilters(); });
+  for (const [name, p] of Object.entries(DATA_PALETTE)) {
+    if (name === '置顶仓') continue;
+    const n = BOOKS_ALL.filter(b => b.category === name).length;
+    mk(`${p.emoji} ${name} · ${n}`, p.color, () => { state.kind = null; state.cat = state.cat === name ? null : name; applyFilters(); });
+  }
+  const want = new URLSearchParams(location.search).get('cat');
+  if (want) {
+    const hit = [...box.children].find(c => c.textContent.includes(want));
+    if (hit) hit.click();
+  }
+}
+function syncChips() {
+  [...$('#chips').children].forEach(c => {
+    const t = c.textContent;
+    let on;
+    if (t === '全部') on = !state.cat && !state.kind;
+    else if (state.cat) on = t.includes(state.cat);
+    else if (state.kind) on = t.includes(KIND_LABEL[state.kind]);
+    else on = false;
+    c.classList.toggle('active', !!on);
+  });
+}
+
+$('#search').addEventListener('input', e => { state.q = e.target.value; clearTimeout(window._st); window._st = setTimeout(applyFilters, 140); });
+$('#sort').addEventListener('change', e => { state.sort = e.target.value; applyFilters(); });
+
+/* ══════════ 拾取 / 详情卡 ══════════ */
+const ray = new THREE.Raycaster();
+const mouse = new THREE.Vector2(-2, -2);
+let hoverIdx = -1, selectIdx = -1, mouseMoved = false, downXY = null, dragMoved = false;
+const BRASS = new THREE.Color('#C9A227');
+function setColor(i, c) { bookMesh.setColorAt(i, c); bookMesh.instanceColor.needsUpdate = true; }
+
+renderer.domElement.addEventListener('pointermove', e => {
+  mouse.x = (e.clientX / innerWidth) * 2 - 1;
+  mouse.y = -(e.clientY / innerHeight) * 2 + 1;
+  tip.style.left = e.clientX + 'px'; tip.style.top = e.clientY + 'px';
+  mouseMoved = true;
+});
+renderer.domElement.addEventListener('pointerdown', e => { downXY = [e.clientX, e.clientY]; dragMoved = false; });
+renderer.domElement.addEventListener('pointerup', e => {
+  if (!downXY) return;
+  dragMoved = Math.hypot(e.clientX - downXY[0], e.clientY - downXY[1]) > 6;
+  downXY = null;
+  tip.style.display = 'none'; hoverIdx = -1;
+  if (dragMoved) return;
+  if (hoverIdx >= 0) openPanel(hoverIdx); else closePanel();
+});
+
+function doRaycast() {
+  if (!mouseMoved || !bookMesh) return;
+  mouseMoved = false;
+  ray.setFromCamera(mouse, camera);
+  const hit = ray.intersectObject(bookMesh, false)[0];
+  const idx = hit ? hit.instanceId : -1;
+  if (idx === hoverIdx) return;
+  if (hoverIdx >= 0) setColor(hoverIdx, selectIdx === hoverIdx ? BRASS : BOOKS_ALL[hoverIdx].base);
+  hoverIdx = idx;
+  if (idx >= 0) {
+    const b = BOOKS_ALL[idx];
+    if (selectIdx !== idx) setColor(idx, b.base.clone().offsetHSL(0, .04, .13));
+    tip.style.display = 'block';
+    tip.innerHTML = `<div class="t">${b.title}</div><div class="c">${b.emoji} ${b.category}${b.subcategory ? ' · ' + b.subcategory : ''}</div>`;
+    renderer.domElement.style.cursor = 'pointer';
+  } else {
+    tip.style.display = 'none';
+    renderer.domElement.style.cursor = '';
+  }
+}
+
+function openPanel(i) {
+  const b = BOOKS_ALL[i];
+  if (selectIdx >= 0 && selectIdx !== i) setColor(selectIdx, BOOKS_ALL[selectIdx].base);
+  selectIdx = i; setColor(i, BRASS);
+  $('#spine-bar').style.background = b.color;
+  $('#p-title').textContent = b.title;
+  const kindName = { pinned: '📌 置顶', original: '🫖 原创', fork: '🍴 复刻', library: '⭐ 馆藏' }[b.kind] || b.kind;
+  $('#p-meta').innerHTML =
+    `<span class="tag kind">${kindName}</span>` +
+    `<span class="tag">${b.emoji} ${b.category}${b.subcategory ? ' · ' + b.subcategory : ''}</span>` +
+    (b.lang ? `<span class="tag">🛠 ${b.lang}</span>` : '') +
+    (b.stars ? `<span class="tag">⭐ ${Number(b.stars).toLocaleString()}</span>` : '') +
+    (b.updated ? `<span class="tag">🕘 ${b.updated}</span>` : '');
+  $('#p-desc').textContent = b.desc || '（该仓库暂无简介，欢迎去仓库探索。）';
+  $('#go').href = b.url;
+  panel.classList.add('open'); panel.setAttribute('aria-hidden', 'false');
+}
+function closePanel() {
+  if (selectIdx >= 0) { setColor(selectIdx, BOOKS_ALL[selectIdx].base); selectIdx = -1; }
+  panel.classList.remove('open'); panel.setAttribute('aria-hidden', 'true');
+}
+$('#close').onclick = closePanel;
+addEventListener('keydown', e => { if (e.key === 'Escape') closePanel(); });
+
+function showToast(msg) {
+  toast.textContent = msg; toast.classList.add('show');
+  clearTimeout(window._tt); window._tt = setTimeout(() => toast.classList.remove('show'), 2600);
+}
+
+/* 彩蛋：铜铃 = 书浪；台灯 = 夜读 */
+let night = false, lerpLight = 0;
+renderer.domElement.addEventListener('click', e => {
+  if (dragMoved) return;
+  ray.setFromCamera(new THREE.Vector2((e.clientX/innerWidth)*2-1, -(e.clientY/innerHeight)*2+1), camera);
+  const hit = ray.intersectObjects([bell, lampShade], false)[0];
+  if (!hit) return;
+  if (hit.object === bell) {
+    if (REDUCED) { showToast('🤫 已开启减少动态，书们礼貌地没有跳。'); return; }
+    waveT = performance.now(); showToast('🔔 叮 — 书浪穿过书架');
+  } else {
+    night = !night;
+    document.body.classList.toggle('night', night);
+    showToast(night ? '🌙 夜读模式' : '☀️ 晨读模式');
+  }
+});
+
+/* ══════════ 主循环 ══════════ */
+let lastAct = performance.now();
+['pointerdown', 'wheel', 'keydown'].forEach(ev =>
+  addEventListener(ev, () => { lastAct = performance.now(); }, { passive: true }));
+
+const clock = new THREE.Clock();
+function animate() {
+  requestAnimationFrame(animate);
+  const dt = Math.min(clock.getDelta(), .05);
+  tweenK = REDUCED ? 1 : 1 - Math.exp(-8.2 * dt);
+
+  if (bookMesh) {
+    for (let i = 0; i < BOOKS_ALL.length; i++) writeBook(i);
+    bookMesh.instanceMatrix.needsUpdate = true;
+  }
+
+  lerpLight += ((night ? 1 : 0) - lerpLight) * (REDUCED ? 1 : .045);
+  const L = lerpLight;
+  scene.background.lerpColors(DAY_BG, NIGHT_BG, L);
+  scene.fog.color.copy(scene.background);
+  sun.intensity = 2.2 * (1 - L) + .1;
+  hemi.intensity = .8 * (1 - L) + .12;
+  lampLight.intensity = 2.8 * L;
+  M.pane.emissiveIntensity = .9 * (1 - L) + .06;
+  M.wall.color.lerpColors(WALL_DAY, WALL_NIGHT, L);
+  M.floor.color.lerpColors(FLOOR_DAY, FLOOR_NIGHT, L);
+
+  if (dust) {
+    const pos = dust.geometry.attributes.position;
+    const t = performance.now() * .00022;
+    for (let i = 0; i < pos.count; i++) {
+      pos.array[i*3+1] += Math.sin(t + i) * .0006;
+      pos.array[i*3]   += Math.cos(t * .7 + i * 1.3) * .0004;
+    }
+    pos.needsUpdate = true;
+  }
+
+  if (!REDUCED) {
+    controls.autoRotate = performance.now() - lastAct > 12000 && !panel.classList.contains('open');
+  }
+  controls.update();
+  doRaycast();
+  renderer.render(scene, camera);
+}
+
+function entrance() {
+  if (REDUCED) { camera.position.set(4.5, 2.5, 3.6); return; }
+  const from = camera.position.clone(), to = new THREE.Vector3(4.5, 2.5, 3.6);
+  const t0 = performance.now(), D = 2100;
+  (function step() {
+    const k = Math.min(1, (performance.now() - t0) / D);
+    camera.position.lerpVectors(from, to, 1 - Math.pow(1 - k, 3));
+    if (k < 1) requestAnimationFrame(step);
+  })();
+}
+
+/* ══════════ 启动 ══════════ */
+let DATA_PALETTE = null;
+(async function init() {
+  const bar = $('#ov-bar'), msg = $('#ov-msg');
+  try {
+    msg.textContent = '正在取书单…'; bar.style.width = '12%';
+    const res = await fetch('data/books.json', { cache: 'no-cache' });
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const data = await res.json();
+    if (!data.books || !data.books.length) {
+      msg.innerHTML = '图书馆还没上架任何书。<br>先运行 <code>python scripts/build_books.py</code> 生成 data/books.json。';
+      bar.style.width = '100%';
+      return;
+    }
+    DATA_PALETTE = data.palette;
+    msg.textContent = `正在雕刻 ${data.books.length} 个书脊…`; bar.style.width = '45%';
+    await new Promise(r => setTimeout(r, 30));
+    await buildLibrary(data);
+    buildChips();
+    syncChips();
+    bar.style.width = '92%';
+    msg.textContent = '开门迎客…';
+    await new Promise(r => setTimeout(r, 150));
+    bar.style.width = '100%';
+    $('#overlay').classList.add('hide');
+    entrance();
+    showToast(`🏛️ 开馆 — 共 ${data.books.length} 本藏书`);
+  } catch (err) {
+    console.error(err);
+    msg.innerHTML = '书单加载失败：' + (err.message || '网络问题') +
+      '<br>请从服务器访问本页（如 GitHub Pages 或 <code>npx serve</code>），然后重试。';
+    bar.style.width = '100%'; bar.style.background = '#A64B4B';
+    const btn = document.createElement('button');
+    btn.textContent = '重试'; btn.onclick = () => location.reload();
+    $('#ov-card').appendChild(btn);
+  }
+})();
+animate();
+</script>
+</body>
+</html>
