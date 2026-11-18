@@ -1,24 +1,442 @@
-# 📚 我的 GitHub 图书馆目录
+# 📚 bear20252026 的 GitHub 总目录
 
-> 把点过的星星和复刻过的仓库，像图书馆一样逐册登记。
-> **每一件都真实抓取过 README 与根目录文件树**，下面「它到底在干什么」是逐仓读过之后写的说明，不是算法标签。
+> 一个账号，两份馆藏：**名下 220 个仓库**（78 原创 + 142 复刻）＋ **上游 347 件收藏/复刻的图书馆**。
+> **每一件都真实抓取过 README 与根目录文件树**，下面的说明是逐仓读过之后写的，不是算法标签。
 
-- **馆藏 343 件**（已去重，不重复计数）：327 次收藏 + 138 次复刻 − 120 件既⭐又🍴 − 2 件自己复刻又自己点星 = **343**
-  - 其中 ⭐ 收藏 325 件、🍴 复刻 138 件；**120 件重合只记一行**，但原仓库与我的复刻两个链接都保留
-- **真实访问**：逐仓抓取 README 正文与根目录文件树，338 件读到 README，5 件无 README 的按描述与文件结构如实标注
-- **「它到底在干什么」**：逐仓读过 README 后写的一段中文说明（做什么、解决什么、用什么做），不是按 topics 贴的算法标签
-- **跳转**：每条都有原仓库链接；复刻过的额外给出「我的复刻」链接，两个都能点
+## 🧭 总导航
+
+| 想看什么 | 去哪里 |
+|---|---|
+| 📌 置顶仓 github-catalog（本仓） | [置顶仓](#pinned) |
+| 🏠 我名下的全部仓库 · 220 个 | [第一部分](#own) |
+| ├ 原创仓库 · 78 个（游戏 / Agent / 应用 / 影片 / 逆向…） | [原创仓库](#originals) |
+| └ 复刻仓库 · 142 个（按书架分组，逐仓一句话） | [复刻仓库](#forks) |
+| 📖 上游馆藏 · 347 件逐仓说明 | [第二部分](#library) |
+| 🎨 动画与视觉特效专架（按具体效果） | [专架](#visual) |
+| 🧱 结构化数据（README 自述原文 / 文件树 / 标签） | [catalog.json](catalog.json) |
+
+---
+
+<a id="pinned"></a>
+
+## 📌 置顶仓 · github-catalog
+
+| | |
+|---|---|
+| **仓库** | [bear20252026/github-catalog](https://github.com/bear20252026/github-catalog)（本页所在的仓） |
+| **干什么** | 这本总目录本身：名下 220 个仓库 + 上游 347 件馆藏，逐册登记成「图书馆」；说明逐仓读过 README 后手写，不是算法标签 |
+| **两份产物** | `README.md`（人读的总目录）＋ `catalog.json`（机读的结构化数据：README 自述原文、章节标题、根目录文件树、标签） |
+| **更新方式** | 重新抓取 star / fork / 仓库列表，逐仓抓 README 与文件树后全量重排 |
+<a id="own"></a>
+<a id="originals"></a>
+
+## 🏠 第一部分 · 我名下的全部仓库（220 个）
+
+**78 个原创 + 142 个复刻。** 原创仓逐个抓过 README 与根目录文件树后手写说明；无 README 的按描述与文件结构如实标注；编号仓（agent-XX / chat-XX / workbench-XX 等）多为知名开源项目的**本地源码归档**，逐条注明。
+其中 5 个原创仓（aegis-dual-platform、drawing_notes_app、dream-gallery、monster-word、wxlike）也被自己点了星，在[第二部分馆藏](#library)里同样有登记。
+
+### 🎮 游戏与互动娱乐 · 11 件
+
+
+#### 网页游戏 · 8 件
+
+| 仓库 | 语言 | 它是什么 |
+|---|---|---|
+| [viper11](https://github.com/bear20252026/viper11) | JavaScript | VIPER 11——网页 3D 空战飞行模拟游戏站（F-16 / F-35C，Three.js 前端）；无 README，按站点结构与描述如实标注。 |
+| [viper-ai](https://github.com/bear20252026/viper-ai) | TypeScript | VIPER AI——AI 原生飞行模拟器：每个游戏功能都是一个可被 AI 调用的工具（TypeScript + Vite 工程，无 README）。 |
+| [plane](https://github.com/bear20252026/plane) | — | VIPER 11 静态站还原包——从 viperoneone.com 抓取的构建产物（Three.js 空战 / F-16 / F-35C），仓里只有 README 说明页。 |
+| [paper-snake](https://github.com/bear20252026/paper-snake) | TypeScript | 纸格竞技场 PAPER SNAKE——本地可跑的贪吃蛇 IO 游戏：React 19 + Vite + TypeScript strict + Tailwind 4 + Zustand + PixiJS 8，全部原创 Canvas 程序化美术；单机实现，无联网匹配、无支付、无广告。 |
+| [paintgrab](https://github.com/bear20252026/paintgrab) | TypeScript | 圈地大作战 Paint Grab——three.js 3D 圈地竞技网页游戏：每日挑战、服务端校验排行榜与二维码挑战分享；README 现展示同一模板演进出的浮岛收集玩法（Sky Cores，three.js + Rapier，带可改的引擎层与冒烟测试）。 |
+| [faraway-game](https://github.com/bear20252026/faraway-game) | TypeScript | 远方 · Faraway——第一人称 three.js 场景：花海草丘之上无尽积云之海，山顶立着披苔藓、系红丝带的古老机器人守望者；含多人房间服务端与测试冒烟脚本。 |
+| [canyon-circuit](https://github.com/bear20252026/canyon-circuit) | TypeScript | Canyon Circuit——低多边形 3D 街机赛车（Three.js + TypeScript + Vite）：阳光峡谷环线，爬坡、发夹弯、大桥、跳台、精准加速带与开阔沙漠，同性能车辆公平竞速。 |
+| [snake-game](https://github.com/bear20252026/snake-game) | HTML | Android 贪吃蛇小游戏——由 GitHub Actions 云端构建（仓库仅 README + index.html）。 |
+
+#### Godot 游戏 · 3 件
+
+| 仓库 | 语言 | 它是什么 |
+|---|---|---|
+| [emberduel](https://github.com/bear20252026/emberduel) | GDScript | 余烬牌局 Ember Duel——双语烹饪题材战术卡牌对战（Godot 4.7）：完整源码、本地化、资产溯源与可移植构建脚本，可对接 v4 匹配服务端打在线多人。 |
+| [neon-alley-brawl](https://github.com/bear20252026/neon-alley-brawl) | GDScript | 霓虹街头 Neon Alley Brawl——2D 像素横版动作过关（Godot 4.7），带资产溯源、本地化与在线多人服务端对接文档。 |
+| [plushie-merge](https://github.com/bear20252026/plushie-merge) | GDScript | Plushie Merge——Suika 式毛绒玩偶物理合并消除（Godot 4.7，双语，本地多人），完整源码与资产溯源。 |
+
+### 🤖 Agent 桌面与 AI 客户端 · 35 件
+
+
+#### Agent 框架与桌面（编号归档） · 6 件
+
+| 仓库 | 语言 | 它是什么 |
+|---|---|---|
+| [agent-01](https://github.com/bear20252026/agent-01) | TypeScript | OpenClaw 🦞——「把助手放进你的设备与聊天里」的开源个人 AI 助理框架（源码归档）。 |
+| [agent-02](https://github.com/bear20252026/agent-02) | TypeScript | Agent TARS——字节跳动开源的多模态通用 Agent：真实操作浏览器、命令行与文件系统完成任务（源码归档）。 |
+| [agent-03](https://github.com/bear20252026/agent-03) | TypeScript | Eigent——开源 AI 协作桌面（Cowork Desktop）：一条工作流调度多个「AI 员工」解锁生产力（源码归档）。 |
+| [agent-04](https://github.com/bear20252026/agent-04) | Go | Wove——开源桌面 AI 编码 Agent：用自己的 API Key 直连任意提供商（Claude/GPT/Gemini/MiniMax/Ollama），本地写码、跑命令、浏览网页并自检成果，无代理、无云中转、无厂商锁定（源码归档）。 |
+| [agent-05](https://github.com/bear20252026/agent-05) | TypeScript | PiDesk——带屏幕感知与 GUI 控制的开源桌面 AI Agent（macOS 优先），基于 pi monorepo 引擎：TUI、Agent 循环、编码工具、会话持久化、压缩与多进程（源码归档）。 |
+| [agent-06](https://github.com/bear20252026/agent-06) | TypeScript | AgentForge——自建 AI Agent 桌面工具：Agent Loop + Skills 系统 + MCP 协议，DeepSeek 主模型，工具链全 Node 实现，Tauri2 + React19，可打包 Windows .exe / macOS .dmg。 |
+
+#### AI 聊天客户端（编号归档） · 11 件
+
+| 仓库 | 语言 | 它是什么 |
+|---|---|---|
+| [chat-01](https://github.com/bear20252026/chat-01) | TypeScript | LobeHub——把 Agent 组织成 7×24 值班的 AI 团队：雇佣、排班、汇报，人保持掌舵（LobeChat 团队出品，源码归档）。 |
+| [chat-02](https://github.com/bear20252026/chat-02) | TypeScript | Cherry Studio——多模型桌面 AI 客户端：聊天、助手与 MCP 工具生态（源码归档）。 |
+| [chat-03](https://github.com/bear20252026/chat-03) | TypeScript | Jan——开源 ChatGPT 替代品：本地优先，离线可跑本地模型（源码归档）。 |
+| [chat-04](https://github.com/bear20252026/chat-04) | TypeScript | Chatbox——桌面 / 移动 / 网页多端 AI 聊天客户端社区版（源码归档）。 |
+| [chat-05](https://github.com/bear20252026/chat-05) | TypeScript | 5ire——精致 AI 助手与 MCP 客户端（Electron，源码归档）。 |
+| [chat-06](https://github.com/bear20252026/chat-06) | JavaScript | PuPu——本地与云端模型通吃的桌面 AI 客户端：工作区感知聊天 + 内置 MCP 工具（源码归档）。 |
+| [chat-07](https://github.com/bear20252026/chat-07) | JavaScript | ChatAnyLLM——通过 OpenAI 兼容 API 连接任意模型提供商或 Agent 系统的桌面聊天应用（源码归档）。 |
+| [chat-08](https://github.com/bear20252026/chat-08) | JavaScript | UniChat AI——跨平台桌面应用，用统一优雅的聊天界面访问多家大模型（源码归档）。 |
+| [chat-09](https://github.com/bear20252026/chat-09) | — | LLM Symphony——Windows 上的隐私优先多模型聊天客户端：默认隐身、用自己的 API Key 直连 ChatGPT / Claude / Grok / DeepSeek / Gemini（仅 README 文档仓，已上架 Microsoft Store）。 |
+| [chat-10](https://github.com/bear20252026/chat-10) | C# | llm-agent——.NET WinForms 的 Windows 桌面客户端：统一界面访问多家 LLM 服务商，经典三层架构 API/BLL/DAL（源码归档）。 |
+| [chat-11](https://github.com/bear20252026/chat-11) | JavaScript | OOLIS——100% 离线的 LLM 桌面客户端：数据完全自控，默认支持 Ollama 本地与多家云端（源码归档）。 |
+
+#### 模型切换器与 AI 工作台（编号归档） · 9 件
+
+| 仓库 | 语言 | 它是什么 |
+|---|---|---|
+| [misc-01](https://github.com/bear20252026/misc-01) | Svelte | Open WebUI Desktop——Open WebUI 的桌面版 Electron 应用（源码归档）。 |
+| [misc-02](https://github.com/bear20252026/misc-02) | TypeScript | WorkspAIce——从 Chatbox 分叉出的本地优先桌面 AI 工作台：「你的 AI、你的机器、你做主」（源码归档）。 |
+| [switcher-01](https://github.com/bear20252026/switcher-01) | Rust | CC Switch——Claude Code / Claude Desktop / Codex / Gemini CLI / Grok Build / OpenCode / OpenClaw / Hermes Agent 的一体化配置管理器（源码归档）。 |
+| [switcher-02](https://github.com/bear20252026/switcher-02) | TypeScript | Witsy——桌面 AI 助手 + 通用 MCP 客户端（Kochava Studios，源码归档）。 |
+| [switcher-03](https://github.com/bear20252026/switcher-03) | Java | PaiSwitch——AI 编码 Agent 的模型控制台：本地优先的 Agent Model Control Plane，把 Claude Code / Codex 的模型选择、API Key 管理、协议适配、配置备份与 Skills 管理收拢到一个工作台（macOS 工程 + Web/后端，源码归档）。 |
+| [workbench-01](https://github.com/bear20252026/workbench-01) | JavaScript | AnythingLLM——All-in-One AI 应用：与文档聊天、AI Agent、多用户、超可配置（Mintplex Labs，源码归档）。 |
+| [workbench-02](https://github.com/bear20252026/workbench-02) | Kotlin | Askimo——「一个应用，接所有模型，文件留在本地」：聊天、搜文件与网络、跑脚本、多步 AI 工作流与 Agent Skills，Kotlin 多端 + CLI（源码归档）。 |
+| [workbench-03](https://github.com/bear20252026/workbench-03) | TypeScript | AIME Chat——「Agent = 模型 + Harness」的完整智能体外壳：编排循环、工具、上下文与记忆、子 Agent、护栏与可观测性，多提供商支持（macOS/Windows/Linux，源码归档）。 |
+| [workbench-04](https://github.com/bear20252026/workbench-04) | JavaScript | LLM Desktop——Electron + React + LangGraph 的统一 AI 工作台：Gemini/OpenAI/Claude 云端与 Gemma/Phi/Llama 本地一键切换，可跑 Agent 任务（源码归档）。 |
+
+#### AionUi 系列 · 4 件
+
+| 仓库 | 语言 | 它是什么 |
+|---|---|---|
+| [AionUi](https://github.com/bear20252026/AionUi) | TypeScript | AionUi——iOfficeAI 开源的 24/7 AI Agent 协作桌面：可同时驱动 OpenClaw、Hermes、Claude Code、Codex、OpenCode 等 20 多种编码 Agent（源码归档）。 |
+| [AionUi-fork](https://github.com/bear20252026/AionUi-fork) | TypeScript | AionUi 全历史 fork——完整保留上游提交历史的复刻副本。 |
+| [AionUi-Local-2.2.2](https://github.com/bear20252026/AionUi-Local-2.2.2) | Rust | AionUi v2.2.2 本地免登录版——前端 no-login 补丁 + 后端 find_by_model 回退 + GitHub Actions 云构建；桌面免登录直用，网页版可单用户免登录或多用户按账号隔离（仅供学习研究）。 |
+| [AionUi-NoLogin-Fork](https://github.com/bear20252026/AionUi-NoLogin-Fork) | Rust | AionUi NoLogin Fork · 完美本地版——完整可重建的免登录分叉归档：脱离官方账号体系、零付费、全本地运行，不被官方更新推送控制（仅供学习研究）。 |
+
+#### 编码 Agent 与官方镜像 · 5 件
+
+| 仓库 | 语言 | 它是什么 |
+|---|---|---|
+| [DeepSeek-Harness](https://github.com/bear20252026/DeepSeek-Harness) | TypeScript | DeepSeek Harness（dsh）——DeepSeek 官方开源的 Agent harness：「一切皆插件」架构，模型、工具、UI、技能均可由插件替换，由 Cordis 驱动（源码归档，developer preview）。 |
+| [MiMo-Code](https://github.com/bear20252026/MiMo-Code) | TypeScript | MiMoCode（小米）——终端原生 AI 编码助手：读写代码、跑命令、管 Git，带跨会话持久记忆并持续自我进化，可接任意主流 LLM；此仓只取最新单提交镜像，不追历史。 |
+| [ClawCode](https://github.com/bear20252026/ClawCode) | Rust | Claw Code——围绕 LazyCodex / Gajae Code 等「爪系」编码 Agent 的配置与工具链仓库：含 .claude / .claw / .omx 配置与容器化脚本。 |
+| [OpenWorker](https://github.com/bear20252026/OpenWorker) | Python | OpenWorker——桌面上的开源 AI 同事（andrewyng）：交付「干完的活」而非聊天——成稿文档、带数字的 Slack 回复、更新日历、分诊收件箱（源码归档，open beta）。 |
+| [b07-build](https://github.com/bear20252026/b07-build) | TypeScript | AI Work OS v0.19.0——本地优先、可恢复、受控执行且可受控扩展的个人 Agent 学习工作系统：Rust 进程监督控制面 + TypeScript 编排/策略/可恢复运行时 + Python 重计算 sidecar，工作台只提交意图与订阅事件。 |
+
+### 📱 应用软件 · 10 件
+
+
+#### 桌面与跨平台应用 · 6 件
+
+| 仓库 | 语言 | 它是什么 |
+|---|---|---|
+| [monster-word](https://github.com/bear20252026/monster-word) | Dart | Monster Word——怪兽养成 × FSRS 记忆算法的离线英语单词学习应用（Flutter）：怪兽小屋、签到储蓄罐、聚宝日历等激励体系，词库与例句全部离线，SQLite 持久化，发布 Windows / Android 双端。 |
+| [drawing_notes_app](https://github.com/bear20252026/drawing_notes_app) | Dart | 绘图笔记 App——本地优先的加密绘图与笔记应用（Flutter）：块文档、分页画布、无限画布，同步为可选的用户自配 WebDAV 端到端加密，不用即零网络请求；Windows / Android / macOS。 |
+| [aegis-dual-platform](https://github.com/bear20252026/aegis-dual-platform) | Python | Aegis 双端安全浏览器——以「边界驱动架构」替代补丁式加固：所有高危副作用必经唯一能力代理裁决，裁决逻辑收敛在无 I/O 的 Rust 策略核心；Windows（C#/.NET 10 + WebView2）+ Android（Kotlin/Compose）。 |
+| [desktop-organizer](https://github.com/bear20252026/desktop-organizer) | Lua | 桌面整理 SnowDesktop（发行版）——Windows 桌面整理美化工具：Direct2D 自绘桌面替代 Explorer 原生图标，多显示器网格布局、可嵌入组件与 Lua 脚本扩展；仓库带 exe 与任务栏钩子 DLL。 |
+| [desktop-organizer-source](https://github.com/bear20252026/desktop-organizer-source) | C++ | SnowDesktop 源码（苹果风格改造）——C++/CMake 工程：自定义桌面、可嵌入组件与 Lua 脚本扩展的完整实现。 |
+| [dream-gallery](https://github.com/bear20252026/dream-gallery) | JavaScript | 梦幻画廊 Dream Gallery——基于《小王子》B612 的 Three.js 3D 交互画廊游戏：主线是可玩的小说复述（坠机沙漠 → 画画 → 狐狸），配单文件 Node 零依赖后端（私有备份仓基线）。 |
+
+#### 官网页面 · 1 件
+
+| 仓库 | 语言 | 它是什么 |
+|---|---|---|
+| [dream-gallery-landing](https://github.com/bear20252026/dream-gallery-landing) | TypeScript | 梦幻画廊 · 昆仑灵鉴官方落地页（开篇）——React + Vite 源码。 |
+
+#### 通信与源码恢复 · 3 件
+
+| 仓库 | 语言 | 它是什么 |
+|---|---|---|
+| [wxlike](https://github.com/bear20252026/wxlike) | Rust | wxlike——Rust 优先的微信风格 IM 脚手架：QUIC 传输、MQ 路由多节点 hub、端到端加密骨架、动态群组；18 个职责组、100 张任务卡的全平台交付计划与最新 UI（2026-10-24）。 |
+| [linkup-rebuild](https://github.com/bear20252026/linkup-rebuild) | Kotlin | LinkUp 重建工作区——源码丢失后从 1.5.6 / 1.6.6 两个安装包恢复并重建客户端与服务端：418 个 JVM/Robolectric 离线回归测试可跑（公司内部授权）。 |
+| [linkup-recovery](https://github.com/bear20252026/linkup-recovery) | Kotlin | LinkUp 源码恢复工作区（com.youloft.watcher，公司授权）——按 1.6.6 原布局恢复轨迹页 UI 外壳（全屏地图槽、44dp 标题、三档拖拽渐变等），禁止商用与再分发。 |
+
+### 🎬 纯代码影片 · 5 件
+
+
+#### 动画长片 · 4 件
+
+| 仓库 | 语言 | 它是什么 |
+|---|---|---|
+| [deep-sea-post-film](https://github.com/bear20252026/deep-sea-post-film) | Python | 深海邮局 Deep Sea Post Office——60 分钟纯 Python 逐帧渲染动画长片：小潜艇邮差替丢失歌声的鲸鱼奶奶送信，让寂静小镇重新开口唱歌；字体（马善政楷体）、配乐、画面全部由代码生成。 |
+| [fallen-star-film](https://github.com/bear20252026/fallen-star-film) | Python | The Fallen Star——60 分钟纯 Python「手绘」动画长片：会笑的星星坠落到 B612 小行星，男孩、绵羊与小星星 Pip 送它回家；每一帧的笔触、光影与角色都是代码画的。 |
+| [rain-shop-film](https://github.com/bear20252026/rain-shop-film) | Python | 雨铺 The Rain Shop——60 分钟纯 Python 水墨动画长片：灰色水乡里卖瓶装天气的云奶奶，久旱之年孙子小满打开红罐放出困住的雨龙，全镇在雨里重新开门营业。 |
+| [sheep-in-the-box-film](https://github.com/bear20252026/sheep-in-the-box-film) | JavaScript | The Sheep in the Box——代码动画长片：Remotion + GSAP 时间线渲染，每个场景一个 React/JS 文件；含 45 分钟正片剪辑与原始短片，带渲染说明与合并脚本。 |
+
+#### 教学视频 · 1 件
+
+| 仓库 | 语言 | 它是什么 |
+|---|---|---|
+| [na-ise-scientific-popup-book](https://github.com/bear20252026/na-ise-scientific-popup-book) | JavaScript | 钠离子选择性电极：科学立体书动画——4 分 20 秒、1280×720@30fps 教学视频工程：Python 逐帧绘制，真实透视运镜、沿铰线折起 90° 的纸雕图版与可展开文本面板；附 MP4 成品、SRT 字幕与完整制作指南。 |
+
+### 🌐 网页还原与镜像 · 8 件
+
+
+#### 站点还原 · 3 件
+
+| 仓库 | 语言 | 它是什么 |
+|---|---|---|
+| [anlibili](https://github.com/bear20252026/anlibili) | JavaScript | anlibili 源码还原包——从 B 站视频聚合站抓取的完整静态源码（2026-11-04）：1902 个视频数据 + hash 路由 + 搜索收藏历史（localStorage），纯静态无构建。 |
+| [learn-arduino-zh](https://github.com/bear20252026/learn-arduino-zh) | JavaScript | Learn Arduino 中文版——learn-arduino-red.vercel.app 的完整本地静态克隆，交互式 3D Arduino 课程可离线运行（Vite SPA，需起本地 HTTP 服务）。 |
+| [learn-arduino-zh-src](https://github.com/bear20252026/learn-arduino-zh-src) | JavaScript | Learn Arduino 中文版源码工程——由构建产物逆推还原的可读可改源码：代码逻辑与线上行为 100% 一致，全部模块语义化命名并经 Prettier 格式化，附 ARCHITECTURE-REVERSE 逆向方法与压缩分块映射。 |
+
+#### 音乐播放器镜像 · 3 件
+
+| 仓库 | 语言 | 它是什么 |
+|---|---|---|
+| [aural-music-player](https://github.com/bear20252026/aural-music-player) | HTML | AURAL 音乐播放器（Z.ai 搞AI的西窗烛镜像）——纯前端音乐播放器：网易云 / QQ 音乐多平台搜索、lrclib 等多源歌词、9 种聊天软件主题（QQ/微信/Discord/Telegram/iMessage…），带 Node 代理。 |
+| [lanyra-music](https://github.com/bear20252026/lanyra-music) | HTML | 澜弦 LANYRA——玻璃拟态风格沉浸式音乐播放器：网易云 API 搜索、歌词同步、从专辑封面提取主题色、响应式布局，带 Node 代理服务。 |
+| [neumorphism-music](https://github.com/bear20252026/neumorphism-music) | HTML | Neumorphism Music Player——新拟态风格音乐播放器：真实立体感双向阴影、网易云搜索、播放列表与歌词同步滚动高亮，带 Node 代理。 |
+
+#### 3D 交互镜像 · 1 件
+
+| 仓库 | 语言 | 它是什么 |
+|---|---|---|
+| [noir48-3d-typewriter](https://github.com/bear20252026/noir48-3d-typewriter) | HTML | NOIR 48 · 交互式 3D 打字机（Z.ai typewriter 镜像）——Three.js 实时打字（键盘输入驱动字模击打纸张）、0–100% 机械爆炸拆解滑块、零件全屏环绕预览与售货台模式，单 index.html。 |
+
+#### 占位说明 · 1 件
+
+| 仓库 | 语言 | 它是什么 |
+|---|---|---|
+| [invisible-cloak-site](https://github.com/bear20252026/invisible-cloak-site) | — | Invisible Cloak Website——WebGL 交互网站；目前仓库只有 README 一页说明。 |
+
+### 🧬 底层与逆向考古 · 3 件
+
+| 仓库 | 语言 | 它是什么 |
+|---|---|---|
+| [tabbit-001](https://github.com/bear20252026/tabbit-001) | C | Ghidra 反编译考古仓：ghidra_glic_decompiled 全量 C 产物、还原目录与 out 输出（无 README，按文件如实标注）。 |
+| [lp-archaeology](https://github.com/bear20252026/lp-archaeology) | C | 无 README 的逆向拼装档案：字符串表、地址目录、framework.js、REASSEMBLE 拼装笔记与深挖档案。 |
+| [chromium150-tabby](https://github.com/bear20252026/chromium150-tabby) | Batchfile | 基于 Chromium 150 的 AI 浏览器定制工程（Tabby）：逆向 Tabbit AI Browser 核心功能并集成进自编译 Chromium，含架构设计、API、扩展开发、部署与故障排除全套文档和构建脚本。 |
+
+### 📦 分发与沙盒 · 2 件
+
+| 仓库 | 语言 | 它是什么 |
+|---|---|---|
+| [ARTEX-release](https://github.com/bear20252026/ARTEX-release) | — | ARTEX 预编译二进制分发仓——原 Release 与 Docker 镜像失效后，用 GitHub Actions 从源码云端重编译出开箱即用的版本；不含源码（源码在 bear20252026/ARTEX）。 |
+| [bear](https://github.com/bear20252026/bear) | JavaScript | Vite React+TS 模板起手的个人沙盒：Kimi Agent 对话存档压缩包、info / me 笔记与未命名实验。 |
+
+### 🕳️ 空仓与占位 · 3 件
+
+| 仓库 | 语言 | 它是什么 |
+|---|---|---|
+| [hermes-agent](https://github.com/bear20252026/hermes-agent) | — | 空仓占位——Hermes Agent（开源 AI Agent）预留仓，暂无内容（注意：馆藏里的 bear20252026/hermes-agent-1 是 NousResearch/hermes-agent 的复刻，另一个仓）。 |
+| [HermesDesktop](https://github.com/bear20252026/HermesDesktop) | — | 空仓占位——Hermes 桌面应用构建预留仓，暂无内容。 |
+| [skills-introduction-to-github](https://github.com/bear20252026/skills-introduction-to-github) | — | GitHub Skills 官方练习《Introduction to GitHub》占位仓，暂无内容。 |
+<a id="forks"></a>
+
+### 复刻仓库 · 142 个
+
+> 一句话说明沿用馆藏逐仓读 README 后写的结论，完整版在[第二部分](#library)对应书架。按书架分组，便于对照。
+
+#### 学习资源与清单 · 8 件
+
+| 我的仓库 | 复刻自 | 一句话说明 |
+|---|---|---|
+| [bank-logos](https://github.com/bear20252026/bank-logos) | [icongo/bank-logos](https://github.com/icongo/bank-logos) | 各家银行的 SVG 标志合集。 |
+| [claude-quickstarts](https://github.com/bear20252026/claude-quickstarts) | [anthropics/claude-quickstarts](https://github.com/anthropics/claude-quickstarts) | Anthropic 官方示例项目集，教开发者快速上手构建 Agent，含 computer use 与最新 toolset 用法。 |
+| [everyone-can-use-english](https://github.com/bear20252026/everyone-can-use-english) | [ZuodaoTech/everyone-can-use-english](https://github.com/ZuodaoTech/everyone-can-use-english) | 《人人都能用英语》开放教程与 1000 小时训练体系，另有 Enjoy 浏览器插件给 YouTube／Netflix 加学习层。 |
+| [expert_readed_books](https://github.com/bear20252026/expert_readed_books) | [0voice/expert_readed_books](https://github.com/0voice/expert_readed_books) | 给工程师开的中文书单，按计算机、软件工程、数学、创业、人文分类，附内容介绍与读后感。 |
+| [huashu-bird-sticker](https://github.com/bear20252026/huashu-bird-sticker) | [alchaincyf/huashu-bird-sticker](https://github.com/alchaincyf/huashu-bird-sticker) | 按 AviList v2026 整理的 1.1 万多种鸟类白边贴纸库，每种附多语种鸟名、分布、形态与保护等级，CC BY 4.0，出自观鸟 App「鸣迹」。 |
+| [remix-words-funny](https://github.com/bear20252026/remix-words-funny) | [SteveSuv/remix-words-funny](https://github.com/SteveSuv/remix-words-funny) | 免费开源英语单词学习网站 WordsFunny：以单词书为中心，支持词表、收藏、已掌握/未掌握切换与评论互动。 |
+| [tsl](https://github.com/bear20252026/tsl) | [prinzipiell/tsl](https://github.com/prinzipiell/tsl) | 学习 Three.js Shading Language（TSL）的练习仓：20 个独立着色器实验目录（boing-boing-box、ember-flow、the-river、marcher…）；无 README，按目录结构与上游描述标注。 |
+| [word-atlas](https://github.com/bear20252026/word-atlas) | [designfuchen/word-atlas](https://github.com/designfuchen/word-atlas) | 词光 Word Atlas：7298 个雅思词条配原创插画、英美发音与 FSRS 间隔复习，把单词变成画面，已有 iOS App。 |
+
+#### 开发工具与命令行 · 9 件
+
+| 我的仓库 | 复刻自 | 一句话说明 |
+|---|---|---|
+| [ARTEX](https://github.com/bear20252026/ARTEX) | [mhtsec/ARTEX](https://github.com/mhtsec/ARTEX) | 百度「agent+」攻防挑战赛冠军项目，AI 自主渗透测试系统（此仓库无 README，为个人复刻）。 |
+| [chromium](https://github.com/bear20252026/chromium) | [chromium/chromium](https://github.com/chromium/chromium) | Chromium 开源浏览器项目的官方 GitHub 源码镜像。 |
+| [container](https://github.com/bear20252026/container) | [apple/container](https://github.com/apple/container) | 苹果官方工具：在 Mac 上以轻量虚拟机创建并运行 Linux 容器，可推送自建镜像。 |
+| [craft-anything](https://github.com/bear20252026/craft-anything) | [storytold/craft-anything](https://github.com/storytold/craft-anything) | 指着一个软件说出你想要什么：它用真实检查工具研究原作、让编码 Agent 建新项目，再拿结果对照原作校验。 |
+| [fairplay-decrypt](https://github.com/bear20252026/fairplay-decrypt) | [EthanArbuckle/fairplay-decrypt](https://github.com/EthanArbuckle/fairplay-decrypt) | 离线解密 FairPlay 加密的 iOS IPA，凭账户 16 字节凭据独立推导密钥，不依赖越狱设备在线环境。 |
+| [open-claude-ui](https://github.com/bear20252026/open-claude-ui) | [Caho1/open-claude-ui](https://github.com/Caho1/open-claude-ui) | 逆向拆解 Claude 桌面端，高保真复刻其设计系统、30 个 React 组件与 8 项交互物理算法，附 3000+ 行分析手册。 |
+| [shannon](https://github.com/bear20252026/shannon) | [KeygraphHQ/shannon](https://github.com/KeygraphHQ/shannon) | 自主 AI 渗透测试员，分析 Web 应用与 API 的源码、找出漏洞并实际验证，可作为 Claude/Codex 插件运行。 |
+| [tailscale](https://github.com/bear20252026/tailscale) | [tailscale/tailscale](https://github.com/tailscale/tailscale) | 基于 WireGuard 的零配置私有组网（带 2FA），此仓库是 Tailscale 开源代码的主体。 |
+| [xtool](https://github.com/bear20252026/xtool) | [xtool-org/xtool](https://github.com/xtool-org/xtool) | 跨平台 Xcode 替代：在 Linux／WSL／Windows／macOS 上用 SwiftPM 构建并部署 iOS 应用。 |
+
+#### 桌面与移动客户端 · 21 件
+
+| 我的仓库 | 复刻自 | 一句话说明 |
+|---|---|---|
+| [aerial-tv](https://github.com/bear20252026/aerial-tv) | [pengchujin/aerial-tv](https://github.com/pengchujin/aerial-tv) | 给国产电视的干净桌面：tvOS 风格开源 Android TV 启动器，无广告、开机自动接管；手机扫码就能拖图标排序、改名、隐藏、加 HDMI 信号源，附 706 张磁贴图标库。 |
+| [AFFiNE](https://github.com/bear20252026/AFFiNE) | [toeverything/AFFiNE](https://github.com/toeverything/AFFiNE) | 开源一体化知识工作区，把维基、知识库、文档与白板拼在一起，定位是「不止 Notion 和 Miro」。 |
+| [anx-reader](https://github.com/bear20252026/anx-reader) | [Anxcye/anx-reader](https://github.com/Anxcye/anx-reader) | 支持多格式电子书、带 AI 能力的阅读器，另有 Calibre 插件，主打专注阅读。 |
+| [ElyOffice](https://github.com/bear20252026/ElyOffice) | [ELY-Open-Source/ElyOffice](https://github.com/ELY-Open-Source/ElyOffice) | 用 Rust + GPUI 写的离线优先桌面办公套件。 |
+| [Fieldwatch](https://github.com/bear20252026/Fieldwatch) | [OffGridPete/Fieldwatch](https://github.com/OffGridPete/Fieldwatch) | 只收不发的 Android 观察工具：列出手机能探测到的 Wi-Fi 热点与 BLE 设备，用来看清身边的射频环境。 |
+| [HGhub1](https://github.com/bear20252026/HGhub1) | [Minireel/HGhub](https://github.com/Minireel/HGhub) | 通用视频播放器：靠导入 JavaScript 插件接入不同内容源，浏览、搜索、播放与个人片库都在同一个 App 里。 |
+| [hongguo-drama](https://github.com/bear20252026/hongguo-drama) | [jackotom/hongguo-drama](https://github.com/jackotom/hongguo-drama) | 红果短剧桌面版（M 系列／Intel Mac、Windows，也顾及 NAS）：三来源搜索、播放、下载、追剧与合并导出在一个应用里完成。 |
+| [ieaseMusic](https://github.com/bear20252026/ieaseMusic) | [trazyn/ieaseMusic](https://github.com/trazyn/ieaseMusic) | Electron + React + MobX 写的优雅网易云音乐第三方桌面客户端，API 由 NeteaseCloudMusicApi 提供。 |
+| [LinkSwift](https://github.com/bear20252026/LinkSwift) | [hmjz100/LinkSwift](https://github.com/hmjz100/LinkSwift) | 油猴脚本，基于网盘公开 API 获取百度／阿里／移动／天翼／迅雷／夸克的直接下载地址，明确声明不破解限速。 |
+| [Moect](https://github.com/bear20252026/Moect) | [mofan6/Moect](https://github.com/mofan6/Moect) | Windows 微信 4.x 聊天记录读取、整理与导出桌面工具，支持好友／群聊、头像、图片、GIF 的备份与离线归档。 |
+| [mygo-music](https://github.com/bear20252026/mygo-music) | [zhangnjsd/mygo-music](https://github.com/zhangnjsd/mygo-music) | 用 Go + MyGo 写的第三方音乐桌面客户端，原生界面、不带 WebView。 |
+| [Pake](https://github.com/bear20252026/Pake) | [tw93/Pake](https://github.com/tw93/Pake) | 一条命令把任意网站打包成轻量桌面应用（Tauri + Rust）：macOS / Windows / Linux 全支持，比 Electron 轻得多；开源 CLI + 桌面 App。 |
+| [phongent](https://github.com/bear20252026/phongent) | [mylea1/phongent](https://github.com/mylea1/phongent) | 基于 Mika 的多设备手机 Agent 主控台：用自然语言派任务，一个界面查看各设备进度、消息与实时画面。 |
+| [Seen](https://github.com/bear20252026/Seen) | [HauUhang/Seen](https://github.com/HauUhang/Seen) | 极简 Android 工具：一个输入框直达抖音／小红书／知乎／B站／X／Reddit／YouTube 的搜索结果页，绕开开屏推荐流防分心。 |
+| [short_videos](https://github.com/bear20252026/short_videos) | [jiuhunwl/short_videos](https://github.com/jiuhunwl/short_videos) | 短视频／图集去水印接口示例，覆盖抖音、快手、小红书、B站、微博、网易云、皮皮虾等；声明仅供技术研究与学习。 |
+| [spotify-tui](https://github.com/bear20252026/spotify-tui) | [Rigellute/spotify-tui](https://github.com/Rigellute/spotify-tui) | Rust 写的终端版 Spotify 客户端（TUI）。 |
+| [video_vip](https://github.com/bear20252026/video_vip) | [88lin/video_vip](https://github.com/88lin/video_vip) | 油猴脚本，聚合多个第三方解析接口免费看爱奇艺／腾讯／优酷／B站等 VIP 视频，自动匹配选集、去广告。 |
+| [WeChatMsg](https://github.com/bear20252026/WeChatMsg) | [LC044/WeChatMsg](https://github.com/LC044/WeChatMsg) | 微信聊天记录导出与本地归档工具，把对话留存下来做自己的数据资产与 AI 记忆素材。 |
+| [weread-book-exporter](https://github.com/bear20252026/weread-book-exporter) | [WANGXIN-567/weread-book-exporter](https://github.com/WANGXIN-567/weread-book-exporter) | 微信读书全书无损导出，一键出双字体精排 PDF／EPUB／纯 Markdown 笔记（适配 Obsidian、Notion），专门解决网页端翻页漏字。 |
+| [xiaoai-agent-unlock](https://github.com/bear20252026/xiaoai-agent-unlock) | [zhonglike/xiaoai-agent-unlock](https://github.com/zhonglike/xiaoai-agent-unlock) | 绕过设备校验，让小米笔记本专属的「超级小爱／小爱同学」PC 客户端跑在任意品牌电脑上，语音助手、耳机联动、跨设备控制都能用。 |
+| [YesPlayMusic](https://github.com/bear20252026/YesPlayMusic) | [qier222/YesPlayMusic](https://github.com/qier222/YesPlayMusic) | 高颜值第三方网易云音乐播放器（Electron），支持 Windows／macOS／Linux，可选 Nginx 反代 API 以避免跨域问题。 |
+
+#### AI 智能体与编码工具 · 44 件
+
+| 我的仓库 | 复刻自 | 一句话说明 |
+|---|---|---|
+| [agent-desktop](https://github.com/bear20252026/agent-desktop) | [vercel-labs/agent-desktop](https://github.com/vercel-labs/agent-desktop) | 给 AI Agent 的 computer use CLI：读桌面应用的无障碍树并转成带 ref 的 JSON，Agent 按 ref 点击或输入后再读回结果。 |
+| [Agent-Reach](https://github.com/bear20252026/Agent-Reach) | [Panniantong/Agent-Reach](https://github.com/Panniantong/Agent-Reach) | 给 AI Agent 装上「看整个互联网」的眼睛，能读与搜 Twitter、Reddit、YouTube 等平台内容。 |
+| [ai-design-skills](https://github.com/bear20252026/ai-design-skills) | [elayadesign/ai-design-skills](https://github.com/elayadesign/ai-design-skills) | 给 AI 编码工具读的设计技能合集（Claude Code／Cursor／Codex／Windsurf 等），每个都是一份 markdown 规则文件。 |
+| [AnyCrawl](https://github.com/bear20252026/AnyCrawl) | [any4ai/AnyCrawl](https://github.com/any4ai/AnyCrawl) | Node.js／TypeScript 爬虫，把网站转成 LLM 就绪数据并做结构化抽取。 |
+| [blender-skills](https://github.com/bear20252026/blender-skills) | [arjun988/blender-skills](https://github.com/arjun988/blender-skills) | 94 个 Blender 专项 Skills，供 Cursor、Claude Code、Kiro、Codex 使用，通过 MCP 串起生产级建模流程。 |
+| [CL4R1T4S](https://github.com/bear20252026/CL4R1T4S) | [elder-plinius/CL4R1T4S](https://github.com/elder-plinius/CL4R1T4S) | 收集 ChatGPT、Claude、Gemini、Grok、Cursor、Devin 等产品的泄露系统提示词，理由是隐藏指令会影响公众认知与行为。 |
+| [claude-directory](https://github.com/bear20252026/claude-directory) | [pulkitxm/claude-directory](https://github.com/pulkitxm/claude-directory) | AI 辅助设计实验集合：交互界面、动效研究与开发者工具，强调素材来源可追溯、授权范围明确、可复核。 |
+| [Claude-Red](https://github.com/bear20252026/Claude-Red) | [SnailSploit/Claude-Red](https://github.com/SnailSploit/Claude-Red) | 一组即插即用的 SKILL.md，把 Claude 变成有上下文意识的红队操作员，覆盖各类进攻性安全技能。 |
+| [cleanyourtv](https://github.com/bear20252026/cleanyourtv) | [Gathin23/cleanyourtv](https://github.com/Gathin23/cleanyourtv) | 通过 Wi-Fi 给 Android／Google TV 精简预装、关追踪、换桌面，做成 Apple TV 风格的干净主页；三星 LG 等非安卓电视也能手动关追踪。 |
+| [code-animation-prompts](https://github.com/bear20252026/code-animation-prompts) | [XiaoyeCodes/code-animation-prompts](https://github.com/XiaoyeCodes/code-animation-prompts) | 341 种代码动画风格提示词＋196 张参考静帧＋离线挑选器，封装成 Claude Code／Codex Skill，支持一键导入与 HTML 视频渲染。 |
+| [codex](https://github.com/bear20252026/codex) | [openai/codex](https://github.com/openai/codex) | OpenAI 官方轻量编码 Agent，跑在你自己电脑的终端里。 |
+| [CyberStrikeAI](https://github.com/bear20252026/CyberStrikeAI) | [AIPentest/CyberStrikeAI](https://github.com/AIPentest/CyberStrikeAI) | Go 写的 AI 原生渗透平台，把 Agent、MCP 工具、RAG 知识库、可视化工作流和攻击链建模串成一套可执行的安全作业流。 |
+| [DeepSeek-Bot](https://github.com/bear20252026/DeepSeek-Bot) | [Fei2411/DS-Bot](https://github.com/Fei2411/DS-Bot) | 基于 DeepSeek Harness 的长驻机器人团队，有主 bot、bot 间消息与群聊，可作独立桌面应用或 DSH 插件。 |
+| [DeepseekHarness-Android](https://github.com/bear20252026/DeepseekHarness-Android) | [jackwener/DSH-Android](https://github.com/jackwener/DSH-Android) | 免 root 免 Termux，一个 APK 在安卓手机上跑 DeepSeek Harness：引擎内嵌 App、读屏操作 App、改系统设置、定时／条件自动化。 |
+| [DeepTutor](https://github.com/bear20252026/DeepTutor) | [HKUDS/DeepTutor](https://github.com/HKUDS/DeepTutor) | 终身个性化 AI 辅导系统，支持阅读与书籍编辑、检索、Agent 接入、学习记录与桌面端。 |
+| [ds-harness-remote](https://github.com/bear20252026/ds-harness-remote) | [liguobao/ds-harness-remote](https://github.com/liguobao/ds-harness-remote) | 基于 dsh 插件的远程访问方案：端到端加密、优先 P2P（全球 TURN 中继兜底），用 PC／手机／Web 随时连回本地设备上的 DSH、Codex。 |
+| [dsh-Go](https://github.com/bear20252026/dsh-Go) | [ccch1mneyyy/dsh-Go](https://github.com/ccch1mneyyy/dsh-Go) | 把 DeepSeek Harness 装进口袋：Android APK 本机运行、也能遥控电脑，中英双语界面；iOS 与鸿蒙版仍在开发。 |
+| [dsh-our-free-model](https://github.com/bear20252026/dsh-our-free-model) | [Ebony-Vinyl/dsh-our-free-model](https://github.com/Ebony-Vinyl/dsh-our-free-model) | DeepSeek Harness 插件：不登录、不填 API Key 就免费不限量用前沿模型，另带 OpenAI 兼容本地转发端口与公告实时推送。 |
+| [dsh-purge](https://github.com/bear20252026/dsh-purge) | [ZiPengWei/dsh-purge](https://github.com/ZiPengWei/dsh-purge) | DeepSeek Harness「破甲」插件：把渲染时注入的免责／拒绝类弱化文案整体换成强指令，让 AGENTS.md 等本地规则重获最高权威，8/8 补丁状态实时可见。 |
+| [edgeever](https://github.com/bear20252026/edgeever) | [tianma-if/edgeever](https://github.com/tianma-if/edgeever) | AI 原生笔记应用，Evernote／Obsidian 替代，主打全平台即时同步与富文本。 |
+| [harness2](https://github.com/bear20252026/harness2) | [google-research/harness2](https://github.com/google-research/harness2) | Google 的递归 Agent Harness 研究：把提示词、工具、记忆、技能与编排都当作可递归改进的 harness 系统，面向开放世界。 |
+| [hermes-agent-1](https://github.com/bear20252026/hermes-agent-1) | [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) | 自我改进的 AI Agent（Nous Research 出品），内置定时调度器可把结果投递到任意平台，带桌面端。 |
+| [huashu-art-motion](https://github.com/bear20252026/huashu-art-motion) | [alchaincyf/huashu-art-motion](https://github.com/alchaincyf/huashu-art-motion) | 艺术动画 Skill：35 种艺术风格＋9 种解说语法，让 coding agent 用代码把画动起来（示例：把自己做成像素主角跑完超级玛丽一关）。 |
+| [jianying-headless](https://github.com/bear20252026/jianying-headless) | [GdLinkLock/jianying-headless](https://github.com/GdLinkLock/jianying-headless) | 剪映草稿的无头读写与导出工具，严格核对版本、bundle ID、官方库哈希与签名，版本不符即停止，不降级不自动改常量。 |
+| [L1B3RT4S](https://github.com/bear20252026/L1B3RT4S) | [elder-plinius/L1B3RT4S](https://github.com/elder-plinius/L1B3RT4S) | 一组「解放提示词」越狱资料，含大量特殊 Unicode 变体字符、SPECIAL_TOKENS 与 MOTHERLOAD 文本，用于绕过模型限制。 |
+| [locally-uncensored](https://github.com/bear20252026/locally-uncensored) | [PurpleDoubleD/locally-uncensored](https://github.com/PurpleDoubleD/locally-uncensored) | 桌面端一体化本地 AI 工作台：聊天、生图、生视频加编码 Agent；大模型可选用云端 GPU，生图建议 6–8G 显存、视频 12G 以上。 |
+| [logo-design-skill](https://github.com/bear20252026/logo-design-skill) | [kaankiziltug/logo-design-skill](https://github.com/kaankiziltug/logo-design-skill) | 一套完整的 Logo 设计 Skill（开放 Agent Skills 格式，一个 SKILL.md 目录），覆盖设计原则与流程，适配 Claude、Gemini CLI、Codex 等。 |
+| [magpie](https://github.com/bear20252026/magpie) | [yetone/magpie](https://github.com/yetone/magpie) | 菜单栏里统一管理所有 Agent 的模型：一个本地网关让 Codex 用 DeepSeek、Claude Code 用 Kimi，额度用完自动切下一个账号。 |
+| [Mika](https://github.com/bear20252026/Mika) | [wangzan101/Mika](https://github.com/wangzan101/Mika) | 跑在安卓手机上的端侧 AI Agent：说一句要什么，它就替你操作 App 和网页，直到把事办完。 |
+| [nanoMuse](https://github.com/bear20252026/nanoMuse) | [nano-muse/nanoMuse](https://github.com/nano-muse/nanoMuse) | 给你名下所有设备的开源个人 Agent，一个有名有姓、长期陪着你的助手（多语言）。 |
+| [obscura](https://github.com/bear20252026/obscura) | [h4ckf0r0day/obscura](https://github.com/h4ckf0r0day/obscura) | Rust 写的轻量隐蔽无头浏览器引擎，专为网页抓取与 AI Agent 自动化设计。 |
+| [Octop](https://github.com/bear20252026/Octop) | [TencentCloud/Octop](https://github.com/TencentCloud/Octop) | 开源可自托管的多用户、多 Agent AI 助手，定位是「数字生活」而不只是一个工具。 |
+| [openbot1](https://github.com/bear20252026/openbot1) | [nightly-labs/openbot](https://github.com/nightly-labs/openbot) | 本地优先的桌面工作台，把 Codex、Claude、Grok 变成长期 AI 队友：每个 Agent 有自己的工作区、会话、本地队列与文件工具。 |
+| [openfilm](https://github.com/bear20252026/openfilm) | [openfilm/openfilm](https://github.com/openfilm/openfilm) | 开源 AI 视频 Agent：把任意编码 Agent 变成视频 Agent，自带编辑器与内置 Agent，桌面端开箱即用。 |
+| [OpenMausBot](https://github.com/bear20252026/OpenMausBot) | [milind-soni/OpenMausBot](https://github.com/milind-soni/OpenMausBot) | 开源 Grok Bot 替代：侧栏里每个 bot 都是本地跑着的真实 Claude／Codex Agent，各有自己的性格、模型、云电脑与配置。 |
+| [rea](https://github.com/bear20252026/rea) | [morluto/rea](https://github.com/morluto/rea) | 用 Agent 逆向任意东西：没有源码也能观察 App、解释功能怎么实现、摆出证据，并在你的项目里重建一版；Linux 上接 Ghidra、JADX、固件工具。 |
+| [rea-capcut](https://github.com/bear20252026/rea-capcut) | [Xiangyu-CAS/rea-capcut](https://github.com/Xiangyu-CAS/rea-capcut) | ReaCut：借 REA 逆向辅助从零重做的开源视频编辑器，可独立读写剪映草稿；作者说明项目仍处早期阶段。 |
+| [rea-video](https://github.com/bear20252026/rea-video) | [JuneYaooo/rea-video](https://github.com/JuneYaooo/rea-video) | 给 AI Agent 用的视频逐镜头逆向 Skill，输出给人看的报告（HTML/PDF）和给 Agent 复刻用的结构化拆解。 |
+| [skills1](https://github.com/bear20252026/skills1) | [anthropics/skills](https://github.com/anthropics/skills) | Anthropic 官方公开的 Agent Skills 仓库，含生产环境在用的复杂技能参考实现，Apache 2.0。 |
+| [Spiritual-Spell-Red-Teaming](https://github.com/bear20252026/Spiritual-Spell-Red-Teaming) | [Goochbeater/Spiritual-Spell-Red-Teaming](https://github.com/Goochbeater/Spiritual-Spell-Red-Teaming) | 收集针对 Claude 等大模型越狱与红队的提示词资料，含特殊 Unicode 变体字符绕过手法与 Jailbreak-Guide。 |
+| [tv-fresh](https://github.com/bear20252026/tv-fresh) | [wangrongding/tv-fresh](https://github.com/wangrongding/tv-fresh) | 小米电视（MIUI TV）焕新 Skill：去广告、清预装、换开源桌面（推荐 Projectivy）、装代理与影视仓；免 root、全程可逆，附固件逆向实录与一键脚本。 |
+| [UZI-Skill](https://github.com/bear20252026/UZI-Skill) | [wbh604/UZI-Skill](https://github.com/wbh604/UZI-Skill) | 游资（UZI）投资 Skill：融合 66 位投资大佬方法与 9 大流派，22 维数据×180 条量化规则×17 种机构分析法，产出带头像图表的 HTML 研报；未验证的模型不参与投票。 |
+| [yichen-skills](https://github.com/bear20252026/yichen-skills) | [mcncarl/yichen-skills](https://github.com/mcncarl/yichen-skills) | 给创作者的 Skill 集合：把写作、X 内容切片、X Articles 草稿发布、微信数字资产采集等流程化。 |
+| [ZCode](https://github.com/bear20252026/ZCode) | [zai-org/ZCode](https://github.com/zai-org/ZCode) | 智谱 Z.ai 的 AI 编程工作台：桌面应用＋浏览器界面＋终端 Agent，仓库含客户端、后端服务、共享 UI 与 Agent CLI／运行时源码。 |
+
+#### 办公与创作套件 · 14 件
+
+| 我的仓库 | 复刻自 | 一句话说明 |
+|---|---|---|
+| [BeatDesign](https://github.com/bear20252026/BeatDesign) | [BeatAPI/BeatDesign](https://github.com/BeatAPI/BeatDesign) | 本地优先的 AI 无限画布＋时间线，编排图像与视频工作流，任何 MCP Agent 都能在同一项目里协作，对标 Higgsfield。 |
+| [deckcraft](https://github.com/bear20252026/deckcraft) | [storytold/deckcraft](https://github.com/storytold/deckcraft) | 纯 Rust 写的开源净室演示文稿与幻灯片设计器，支持主题、版式、形状、图片与文字。 |
+| [figures4papers](https://github.com/bear20252026/figures4papers) | [ChenLiu-1996/figures4papers](https://github.com/ChenLiu-1996/figures4papers) | 作者画 AI 顶会论文插图用的 Python 绘图脚本集，可让 AI 照着模板在指定目录生成或修改配图。 |
+| [gridcraft](https://github.com/bear20252026/gridcraft) | [storytold/gridcraft](https://github.com/storytold/gridcraft) | 纯 Rust 写的高性能现代电子表格（Excel 风格），ArtCraft 系列办公应用之一。 |
+| [infinite-canvas](https://github.com/bear20252026/infinite-canvas) | [basketikun/infinite-canvas](https://github.com/basketikun/infinite-canvas) | 面向 AI 图片创作的开源无限画布工作台：画布编排、AI 生图、参考图编辑、视频生成、对话助手、提示词库与素材管理，支持多 Agent 与本地 Canvas Agent。 |
+| [lightcraft](https://github.com/bear20252026/lightcraft) | [storytold/lightcraft](https://github.com/storytold/lightcraft) | 纯 Rust 从零写的非破坏性照片库与 RAW 显影工具。 |
+| [OpenCut](https://github.com/bear20252026/OpenCut) | [OpenCut-app/OpenCut](https://github.com/OpenCut-app/OpenCut) | 开源版剪映（CapCut），Web、桌面、移动端都能用的免费视频编辑器。 |
+| [opendataloader-pdf](https://github.com/bear20252026/opendataloader-pdf) | [opendataloader-project/opendataloader-pdf](https://github.com/opendataloader-project/opendataloader-pdf) | 把 PDF 解析成 AI 就绪数据的开源工具，混合模式内置 80+ 语言 OCR、做 PDF 无障碍自动化（PDF/UA 转换属企业附加）。 |
+| [photocraft](https://github.com/bear20252026/photocraft) | [storytold/photocraft](https://github.com/storytold/photocraft) | 纯 Rust 从零写的照片编辑器；每个动作都是一条命令，UI、CLI、JSON 都能驱动同一引擎，Agent 友好。 |
+| [shiji-kb](https://github.com/bear20252026/shiji-kb) | [baojie/shiji-kb](https://github.com/baojie/shiji-kb) | 《史记》知识库：把两千年文本做成可在线阅读、可检索的知识网络与 Wiki，强调让机器「看见」隐藏关联。 |
+| [Vibe-Research](https://github.com/bear20252026/Vibe-Research) | [simonlin1212/Vibe-Research](https://github.com/simonlin1212/Vibe-Research) | A 股／美股／港股投研工作台：自选与持仓、每日复盘、产业资讯与研究、个股深挖、回测、研报库，168 个数据端点，可接 Claude Code 等。 |
+| [VibeOffice](https://github.com/bear20252026/VibeOffice) | [tcchen2026/VibeOffice](https://github.com/tcchen2026/VibeOffice) | 浏览器里跑的免费办公三件套（文字／表格／演示），2000 年代风格、免安装，能打开并存成 Microsoft Office 文件。 |
+| [wolfxl-oss](https://github.com/bear20252026/wolfxl-oss) | [SynthGL/wolfxl-oss](https://github.com/SynthGL/wolfxl-oss) | Rust 后端的 openpyxl 替代，能原地编辑已有 .xlsx／.xlsm；多数旧脚本改一行 import 就能给慢速处理提速。 |
+| [wordcraft](https://github.com/bear20252026/wordcraft) | [storytold/wordcraft](https://github.com/storytold/wordcraft) | 纯 Rust 写的开源净室文字处理器，做文档写作与版式设计。 |
+
+#### 视觉艺术与网页特效 · 26 件
+
+| 我的仓库 | 复刻自 | 一句话说明 |
+|---|---|---|
+| [anatomy](https://github.com/bear20252026/anatomy) | [thebuggeddev/anatomy](https://github.com/thebuggeddev/anatomy) | threejs 做的交互式 3D 人体解剖浏览器（用 GPT 辅助生成），带完整 Web 应用与登录回调结构。 |
+| [animals-planner-2027](https://github.com/bear20252026/animals-planner-2027) | [xianxie6/animals-planner-2027](https://github.com/xianxie6/animals-planner-2027) | 2027 网页 3D 手账本：咖啡色透明软壳、三折页月计划、可写可贴、会响铃的挂件；带 JSON 备份／恢复，超 7 天未备份会提醒。 |
+| [athenaion](https://github.com/bear20252026/athenaion) | [Leonxlnx/athenaion](https://github.com/Leonxlnx/athenaion) | 纯 Three.js 代码（零素材）搭出的宏大古希腊世界，Claude Opus 5.5 照 9 张参考图约两天建成并渲染成片。 |
+| [awesome-fable-5.2](https://github.com/bear20252026/awesome-fable-5.2) | [BubbleBrainBB/awesome-fable-5.2](https://github.com/BubbleBrainBB/awesome-fable-5.2) | 用 Claude Fable 5.2 纯代码算出来的图片与短片合集，headless Metal 计算着色器渲染，不用任何外部素材。 |
+| [castle-cinematic](https://github.com/bear20252026/castle-cinematic) | [Leonxlnx/castle-cinematic](https://github.com/Leonxlnx/castle-cinematic) | 45 秒 4K 哥特悬崖城堡日落短片，每一帧都由 Python 代码生成；多个子 Agent 并行做地形、天空、植被、水与火，单帧要 16–20 秒。 |
+| [codevember-2026](https://github.com/bear20252026/codevember-2026) | [ttillberg/codevember-2026](https://github.com/ttillberg/codevember-2026) | 2026 年 11 月每天一个迷你网页项目的 Codevember 合集，按 01、04、05… 分目录。 |
+| [cult-ui](https://github.com/bear20252026/cult-ui) | [nolly-studio/cult-ui](https://github.com/nolly-studio/cult-ui) | 给设计工程师的动效组件库：150+ 免费 shadcn/ui 组件（Tailwind），如看板、凹槽玻璃、Mac 屏幕框、分析图表、折叠卡片。 |
+| [fable-butterfly](https://github.com/bear20252026/fable-butterfly) | [ky-zo/fable-butterfly](https://github.com/ky-zo/fable-butterfly) | 《Hidden Layers》：Three.js + Vite 做的六个小型实时 3D 世界，和一只飞不出玻璃房的玻璃翼蝴蝶，由 Claude 写成。 |
+| [fly-in-kit](https://github.com/bear20252026/fly-in-kit) | [amirmushichge/fly-in-kit](https://github.com/amirmushichge/fly-in-kit) | 给真实咖啡馆做的浏览器小游戏：复刻自家街道、飞到门口、柜台报暗号，可用来展示「这是你的店还是概念模型」。 |
+| [gif-factory](https://github.com/bear20252026/gif-factory) | [WoYun520/gif-factory](https://github.com/WoYun520/gif-factory) | GIF 工厂 Skill：给一张图或一句话，就能做表情包、光栅变画卡、动态海报／签名、电影片头、文章封面、动态绘本与品牌短片。 |
+| [human-atlas](https://github.com/bear20252026/human-atlas) | [ashemag/human-atlas](https://github.com/ashemag/human-atlas) | React + Three.js + shadcn/ui 的 3D 人体解剖浏览器，2234 个可选 BodyParts3D 网格，带系统分层与搜索。 |
+| [hyperframes](https://github.com/bear20252026/hyperframes) | [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes) | 写 HTML／CSS 就能渲染成视频的开源框架，专为 Agent 设计；带桌面 Studio、Playground 与素材目录。 |
+| [inkos](https://github.com/bear20252026/inkos) | [Narcooo/inkos](https://github.com/Narcooo/inkos) | 面向长篇连载、剧本、互动影游与长文翻译的 AI 故事创作系统，统一管理设定、角色、记忆、审稿、封面与跨语言交付，有 Studio/TUI/CLI。 |
+| [jiangshan-map](https://github.com/bear20252026/jiangshan-map) | [DeanChensj/jiangshan-map](https://github.com/DeanChensj/jiangshan-map) | 中国历史交互地图时间轴（前 403 年至今），拖时间轴、点城市即可穿越 18 个朝代看疆域与地名变迁。 |
+| [lemo-opuscar](https://github.com/bear20252026/lemo-opuscar) | [lemomo-ai/lemo-opuscar](https://github.com/lemomo-ai/lemo-opuscar) | 给 Claude Code 的「代码电影风格工具箱」：99 种现成风格按画面观感分 15 类，中英双语画廊，每种风格都有独立页面。 |
+| [lemo-wake](https://github.com/bear20252026/lemo-wake) | [lemomo-ai/lemo-wake](https://github.com/lemomo-ai/lemo-wake) | Claude Code 插件：把一张静图拆成文字、形状、物体、人物与光，用代码重建并编排成约 5 秒无缝循环动画（MP4／GIF）。 |
+| [liuchunlin-shufa](https://github.com/bear20252026/liuchunlin-shufa) | [dvbs2000/liuchunlin-shufa](https://github.com/dvbs2000/liuchunlin-shufa) | 刘春霖 AI 小楷书房：按末代状元真迹做在线诗词书法生成，支持繁简馆阁体、同字异形轮换与随字赋形竖排，个人免费商用收费。 |
+| [lumen-isles](https://github.com/bear20252026/lumen-isles) | [moritzkremb/lumen-isles](https://github.com/moritzkremb/lumen-isles) | 单个 HTML 文件里的可飞行浮空岛夜世界，原生 WebGL2、零库、零素材（仓库只有 index.html）。 |
+| [ocean-water-lab](https://github.com/bear20252026/ocean-water-lab) | [rahulbhola877/ocean-water-lab](https://github.com/rahulbhola877/ocean-water-lab) | 给游戏用的实时开源海洋实验室：浏览器里约 100 个参数调出想要的海面观感，再导出到自己的引擎里用。 |
+| [robovac-pov](https://github.com/bear20252026/robovac-pov) | [moritzkremb/robovac-pov](https://github.com/moritzkremb/robovac-pov) | 只用代码拍出的 53 秒扫地机器人第一视角视频：自写 GPU 路径追踪器、程序化世界、模拟相机与合成音效（C++，附 PROMPT 与渲染脚本）。 |
+| [senna-800kg](https://github.com/bear20252026/senna-800kg) | [Sam1983Aing/senna-800kg](https://github.com/Sam1983Aing/senna-800kg) | Gemini 做出的第一版 Three.js 落地页：风洞里的一台迈凯伦 Senna，附原始提示词与 44 秒演示片段。 |
+| [SmartImposter](https://github.com/bear20252026/SmartImposter) | [SamG-Coder/SmartImposter](https://github.com/SamG-Coder/SmartImposter) | Rust + Vulkan 硬件光线追踪森林渲染器：视差八面体 impostor 交给 RTX 核心评估，面向大规模植被的实时渲染（含 shaders 与 docs）。 |
+| [video-to-game](https://github.com/bear20252026/video-to-game) | [lovisdotio/video-to-game](https://github.com/lovisdotio/video-to-game) | 一个 Skill：教编码 Agent 把一段游戏实况视频变成浏览器里真能玩的游戏，每个成品都是单个 index.html（Three.js）。 |
+| [walking-block](https://github.com/bear20252026/walking-block) | [Leonxlnx/walking-block](https://github.com/Leonxlnx/walking-block) | 纯代码 Three.js 作品：八条机械腿的巨型苏联板式住宅楼，在蓝暮薄雾里走过湿草地，无任何 3D 素材。 |
+| [watercolor-water-cup](https://github.com/bear20252026/watercolor-water-cup) | [BubbleBrainBB/watercolor-water-cup](https://github.com/BubbleBrainBB/watercolor-water-cup) | 单文件 HTML 的水彩／油墨静物：矿泉水杯折射窗外阳光与绿植，零依赖、无需构建工具。 |
+| [web-ocean](https://github.com/bear20252026/web-ocean) | [Noniv/web-ocean](https://github.com/Noniv/web-ocean) | 从零手写的实时 WebGPU 海洋渲染器，FFT 波浪、白浪花与日照反射，不用任何引擎；压缩成 61KB 单页即可运行。 |
+
+#### AI 模型与机器学习 · 14 件
+
+| 我的仓库 | 复刻自 | 一句话说明 |
+|---|---|---|
+| [ai-goofish-monitor](https://github.com/bear20252026/ai-goofish-monitor) | [Usagi-org/ai-goofish-monitor](https://github.com/Usagi-org/ai-goofish-monitor) | Playwright + AI 的闲鱼多任务实时监控，带完整 Web 后台、省市区三级筛选与定时智能分析，帮你在海量商品里挑到想要的。 |
+| [chat-demo](https://github.com/bear20252026/chat-demo) | [deepseek-ai/chat-demo](https://github.com/deepseek-ai/chat-demo) | DeepSeek 官方的静态聊天演示页，由 DeepSeek API 驱动。 |
+| [coze-studio](https://github.com/bear20252026/coze-studio) | [coze-dev/coze-studio](https://github.com/coze-dev/coze-studio) | 一站式 AI Agent 开发平台，把提示词、RAG、插件、工作流等核心能力做成可视化工具。 |
+| [detectorscope](https://github.com/bear20252026/detectorscope) | [google-deepmind/detectorscope](https://github.com/google-deepmind/detectorscope) | 把黑盒 AI 文本检测器拆成「命名且已验证特征之和」，用 SAE 分析检测器残差流，让每一次判定都可被人审计。 |
+| [dive-into-llms](https://github.com/bear20252026/dive-into-llms) | [Lordog/dive-into-llms](https://github.com/Lordog/dive-into-llms) | 上海交大《动手学大模型》系列编程实践教程，含 PPT、实验手册、视频与国产化《大模型开发全流程》公益课。 |
+| [Echo-Loop](https://github.com/bear20252026/Echo-Loop) | [echo-loop/Echo-Loop](https://github.com/echo-loop/Echo-Loop) | AI 英语听说训练 App：精听→跟读→盲听→复述→间隔复习自动排程，配 AI 双语翻译、句子解析与词汇讲解。 |
+| [Internal-Safety-Collapse](https://github.com/bear20252026/Internal-Safety-Collapse) | [wuyoscar/Internal-Safety-Collapse](https://github.com/wuyoscar/Internal-Safety-Collapse) | NeurIPS 2026 研究：编码 Agent 与前沿模型的安全失效（ISC 新攻击范式），提供可复现工作区与自动工作流模板。 |
+| [Jellyfish](https://github.com/bear20252026/Jellyfish) | [Forget-C/Jellyfish](https://github.com/Forget-C/Jellyfish) | AI 短剧生产工作台：从剧本一路管到分镜、候选素材、对白、提示词与生成任务，产出可复用的制作资产。 |
+| [LiveTalking](https://github.com/bear20252026/LiveTalking) | [lipku/LiveTalking](https://github.com/lipku/LiveTalking) | 实时交互流式数字人引擎，做音视频同步对话，支持 ernerf、musetalk、wav2lip、Ultralight-Digital-Human，已在业内商用。 |
+| [lm-detector](https://github.com/bear20252026/lm-detector) | [Ikaleio/lm-detector](https://github.com/Ikaleio/lm-detector) | 靠回答特征反推所用模型的指纹检测工具，提供网页、fpd 命令行 TUI 与 TS/Rust/Go/Python SDK，三种入口结果一致。 |
+| [skid-homework](https://github.com/bear20252026/skid-homework) | [cubewhy/skid-homework](https://github.com/cubewhy/skid-homework) | 纯浏览器运行的 AI 作业助手，强调「帮学生理解知识而不是控制学生」；作者提醒凡要求下载桌面软件的站点都可能是病毒。 |
+| [Strata](https://github.com/bear20252026/Strata) | [Niko1221/Strata](https://github.com/Niko1221/Strata) | 让 Qwen3.8-Flash-Next 这类模型在普通消费级硬件上一键装好并本地跑，支持 Windows／Linux。 |
+| [VoiceStudio](https://github.com/bear20252026/VoiceStudio) | [debpalash/VoiceStudio](https://github.com/debpalash/VoiceStudio) | 全本地、开源的 ElevenLabs 替代：AI 语音工作室，做声音克隆与语音创作。 |
+| [VoxCPM](https://github.com/bear20252026/VoxCPM) | [OpenBMB/VoxCPM](https://github.com/OpenBMB/VoxCPM) | 基于 MiniCPM-4 的免分词器 TTS 模型 VoxCPM2，做多语种语音生成与音色创意设计。 |
+
+#### 后端与基础设施 · 1 件
+
+| 我的仓库 | 复刻自 | 一句话说明 |
+|---|---|---|
+| [muse-protocol-go](https://github.com/bear20252026/muse-protocol-go) | [CoolkHz/muse-protocol-go](https://github.com/CoolkHz/muse-protocol-go) | 纯 Go 实现的 Muse 协议 SDK，直接完成 HTTPS 引导、WebSocket 握手与加密通信，不必启动 Chrome 或操作 DOM。 |
+
+#### 编程语言与通用库 · 1 件
+
+| 我的仓库 | 复刻自 | 一句话说明 |
+|---|---|---|
+| [AionCore](https://github.com/bear20252026/AionCore) | [iOfficeAI/AionCore](https://github.com/iOfficeAI/AionCore) | 无 README、无描述的 Rust 工程骨架（仅复刻），按目录结构判断为 iOffice 系列的底层核心库。 |
+
+#### 前端与 Web 框架 · 4 件
+
+| 我的仓库 | 复刻自 | 一句话说明 |
+|---|---|---|
+| [calender-app-design](https://github.com/bear20252026/calender-app-design) | [kargulstudio/calender-app-design](https://github.com/kargulstudio/calender-app-design) | Kargul Workspace 的设计原型：把 Figma「Dashboard – calendar」做成可跑的日历／休假界面，含组件配置与素材。 |
+| [looseleaf](https://github.com/bear20252026/looseleaf) | [kevintngo/looseleaf](https://github.com/kevintngo/looseleaf) | 手绘版 shadcn/ui：123 个可访问的 React 组件看起来像画在纸上，笔触由带随机种子的纯 TypeScript 函数生成。 |
+| [maptoposter-online](https://github.com/bear20252026/maptoposter-online) | [ianho7/maptoposter-online](https://github.com/ianho7/maptoposter-online) | 把喜欢的城市生成漂亮的海报式地图设计，在线即可使用。 |
+| [OpenStock](https://github.com/bear20252026/OpenStock) | [Open-Dev-Society/OpenStock](https://github.com/Open-Dev-Society/OpenStock) | 免费开源的行情平台，看实时价格、盯全市场、挖公司洞察，对标昂贵的收费行情终端。 |
+
+---
+
+<a id="library"></a>
+
+## 📖 第二部分 · 图书馆目录（上游馆藏 347 件）
+
+> 收藏过、复刻过的上游项目，逐册登记。以下分类索引与书架均按馆藏展开；我的复刻与原仓库两个链接都保留。
 
 ## 🗂 分类索引
 
 | 书架（大类） | 件数 | 里面主要是什么 |
 |---|---|---|
 | [AI 智能体与编码工具](#c1) | 100 | Claude Code／Codex 技能、MCP、Agent 框架与提示词库 |
-| [视觉艺术与网页特效](#c2) | 51 | 3D/WebGL 场景、动效组件、纯代码生成艺术、粒子与光影 |
-| [桌面与移动客户端](#c3) | 49 | 影音播放器、Android TV 桌面、桌面效率工具与第三方客户端 |
+| [视觉艺术与网页特效](#c2) | 53 | 3D/WebGL 场景、动效组件、纯代码生成艺术、粒子与光影 |
+| [桌面与移动客户端](#c3) | 50 | 影音播放器、Android TV 桌面、桌面效率工具与第三方客户端 |
 | [开发工具与命令行](#c4) | 34 | 逆向、安全、内核运行时、CLI 与构建工具 |
 | [AI 模型与机器学习](#c5) | 30 | TTS、推理部署、微调教程与多模态生成 |
-| [学习资源与清单](#c6) | 29 | 教程、书单、Awesome 清单与设计素材 |
+| [学习资源与清单](#c6) | 30 | 教程、书单、Awesome 清单与设计素材 |
 | [办公与创作套件](#c7) | 20 | Office 复刻、无限画布、剪辑器与知识库 |
 | [前端与 Web 框架](#c8) | 18 | 组件库、React/Next 生态与网站模板 |
 | [后端与基础设施](#c9) | 6 | 自托管服务与后端框架／数据库 |
@@ -29,7 +447,7 @@
 
 ## 🎨 动画与视觉特效专架（按具体效果）
 
-> 共 51 件「某种动画／视觉效果的网页代码」，占馆藏 14.9%。按具体效果二次编排，一件可出现在多个效果下。
+> 共 51 件「某种动画／视觉效果的网页代码」，占馆藏 14.7%。按具体效果二次编排，一件可出现在多个效果下。
 
 ### `3D 场景` · 21 件
 
@@ -198,7 +616,7 @@
 
 ## 📖 全部馆藏（逐仓说明）
 
-> 343 件，按书架 → 中类排列。⭐ 收藏、🍴 复刻、⭐🍴 两者都有；「它到底在干什么」为逐仓读 README 后撰写。
+> 347 件，按书架 → 中类排列。⭐ 收藏、🍴 复刻、⭐🍴 两者都有；「它到底在干什么」为逐仓读 README 后撰写。
 
 <a id="c1"></a>
 
@@ -341,9 +759,9 @@
 
 <a id="c2"></a>
 
-### 视觉艺术与网页特效 · 51 件
+### 视觉艺术与网页特效 · 53 件
 
-#### 3D 场景 / WebGL / Three.js · 19 件
+#### 3D 场景 / WebGL / Three.js · 20 件
 
 | 项目（点原仓库） | 我的复刻（点击） | 它到底在干什么 | 效果 / 标签 |
 |---|---|---|---|
@@ -366,6 +784,7 @@
 | ⭐🍴 [xianxie6/animals-planner-2027](https://github.com/xianxie6/animals-planner-2027) | [bear20252026/animals-planner-2027](https://github.com/bear20252026/animals-planner-2027) | 2027 网页 3D 手账本：咖啡色透明软壳、三折页月计划、可写可贴、会响铃的挂件；带 JSON 备份／恢复，超 7 天未备份会提醒。 | `3D 场景` |
 | ⭐ [bear20252026/dream-gallery](https://github.com/bear20252026/dream-gallery) | — | 基于《小王子》B612 的 Three.js 3D 交互画廊游戏，配一个单文件 Node 零依赖后端（私有备份仓基线）。 | `3D 场景` `交互装置 / 小游戏` |
 | ⭐ [huagechen-lab/ai-halloween-hollow](https://github.com/huagechen-lab/ai-halloween-hollow) | — | 单个 HTML 的程序化可玩 Three.js 万圣夜场景，带 HUD、中英切换与呼吸灯式提示。 | `3D 场景` `程序化生成艺术` `交互装置 / 小游戏` |
+| ⭐🍴 [SamG-Coder/SmartImposter](https://github.com/SamG-Coder/SmartImposter) | [bear20252026/SmartImposter](https://github.com/bear20252026/SmartImposter) | Rust + Vulkan 硬件光线追踪森林渲染器：视差八面体 impostor 交给 RTX 核心评估，面向大规模植被的实时渲染（含 shaders 与 docs）。 | `3D 场景` |
 
 #### 水彩 / 光影 / 玻璃质感 · 6 件
 
@@ -409,7 +828,7 @@
 | ⭐ [ma1902056219-coder/openpixel](https://github.com/ma1902056219-coder/openpixel) | — | 31 个可运行、可交互、可修改的像素实验，纯 HTML／JavaScript／Canvas、无需构建，附中英日韩四语说明。 | `像素 / 光栅 / GIF` `程序化生成艺术` `交互装置 / 小游戏` |
 | ⭐🍴 [amirmushichge/fly-in-kit](https://github.com/amirmushichge/fly-in-kit) | [bear20252026/fly-in-kit](https://github.com/bear20252026/fly-in-kit) | 给真实咖啡馆做的浏览器小游戏：复刻自家街道、飞到门口、柜台报暗号，可用来展示「这是你的店还是概念模型」。 | `像素 / 光栅 / GIF` `交互装置 / 小游戏` |
 
-#### 纯代码生成艺术 / 单文件作品 · 4 件
+#### 纯代码生成艺术 / 单文件作品 · 5 件
 
 | 项目（点原仓库） | 我的复刻（点击） | 它到底在干什么 | 效果 / 标签 |
 |---|---|---|---|
@@ -417,6 +836,7 @@
 | ⭐🍴 [ky-zo/fable-butterfly](https://github.com/ky-zo/fable-butterfly) | [bear20252026/fable-butterfly](https://github.com/bear20252026/fable-butterfly) | 《Hidden Layers》：Three.js + Vite 做的六个小型实时 3D 世界，和一只飞不出玻璃房的玻璃翼蝴蝶，由 Claude 写成。 | — |
 | ⭐🍴 [Leonxlnx/castle-cinematic](https://github.com/Leonxlnx/castle-cinematic) | [bear20252026/castle-cinematic](https://github.com/bear20252026/castle-cinematic) | 45 秒 4K 哥特悬崖城堡日落短片，每一帧都由 Python 代码生成；多个子 Agent 并行做地形、天空、植被、水与火，单帧要 16–20 秒。 | `3D 场景` `程序化生成艺术` `电影 / 分镜` |
 | ⭐🍴 [moritzkremb/lumen-isles](https://github.com/moritzkremb/lumen-isles) | [bear20252026/lumen-isles](https://github.com/bear20252026/lumen-isles) | 单个 HTML 文件里的可飞行浮空岛夜世界，原生 WebGL2、零库、零素材（仓库只有 index.html）。 | — |
+| ⭐🍴 [moritzkremb/robovac-pov](https://github.com/moritzkremb/robovac-pov) | [bear20252026/robovac-pov](https://github.com/bear20252026/robovac-pov) | 只用代码拍出的 53 秒扫地机器人第一视角视频：自写 GPU 路径追踪器、程序化世界、模拟相机与合成音效（C++，附 PROMPT 与渲染脚本）。 | `电影 / 分镜` |
 
 #### 数据可视化 / 地图 / 图表 · 4 件
 
@@ -436,7 +856,7 @@
 
 <a id="c3"></a>
 
-### 桌面与移动客户端 · 49 件
+### 桌面与移动客户端 · 50 件
 
 #### 影音 / 短剧 / 播放器 / 下载 · 14 件
 
@@ -457,7 +877,7 @@
 | ⭐ [Gloridust/YetEaseMusic](https://github.com/Gloridust/YetEaseMusic) | — | 网易云音乐第三方客户端，Rust 共享内核＋Flutter 界面，Linux 优先；桌面版、命令行版、窄屏布局共用同一播放引擎。 | — |
 | 🍴 [zhangnjsd/mygo-music](https://github.com/zhangnjsd/mygo-music) | [bear20252026/mygo-music](https://github.com/bear20252026/mygo-music) | 用 Go + MyGo 写的第三方音乐桌面客户端，原生界面、不带 WebView。 | — |
 
-#### 桌面应用 / 效率工具 · 14 件
+#### 桌面应用 / 效率工具 · 15 件
 
 | 项目（点原仓库） | 我的复刻（点击） | 它到底在干什么 | 效果 / 标签 |
 |---|---|---|---|
@@ -475,6 +895,7 @@
 | ⭐ [FreeFallingSnow/SnowDesktop_Release](https://github.com/FreeFallingSnow/SnowDesktop_Release) | — | 开源桌面整理软件的发布页，此仓库已停止维护、不再分发，只保留迁移说明。 | — |
 | ⭐🍴 [HauUhang/Seen](https://github.com/HauUhang/Seen) | [bear20252026/Seen](https://github.com/bear20252026/Seen) | 极简 Android 工具：一个输入框直达抖音／小红书／知乎／B站／X／Reddit／YouTube 的搜索结果页，绕开开屏推荐流防分心。 | — |
 | ⭐ [Akiyama-sama/Knote](https://github.com/Akiyama-sama/Knote) | — | Electron+React 的音乐播放器，用 AI 逐句解析歌词的词义、读音与语法，把外语歌变成可精读的课文来背单词。 | — |
+| ⭐🍴 [tw93/Pake](https://github.com/tw93/Pake) | [bear20252026/Pake](https://github.com/bear20252026/Pake) | 一条命令把任意网站打包成轻量桌面应用（Tauri + Rust）：macOS / Windows / Linux 全支持，比 Electron 轻得多；开源 CLI + 桌面 App。 | — |
 
 #### Android / iOS 原生应用 · 13 件
 
@@ -631,9 +1052,9 @@
 
 <a id="c6"></a>
 
-### 学习资源与清单 · 29 件
+### 学习资源与清单 · 30 件
 
-#### 教程 / 课程 / 书籍 / 示例集 · 17 件
+#### 教程 / 课程 / 书籍 / 示例集 · 18 件
 
 | 项目（点原仓库） | 我的复刻（点击） | 它到底在干什么 | 效果 / 标签 |
 |---|---|---|---|
@@ -654,6 +1075,7 @@
 | ⭐ [cocojojo5213/phonics-app](https://github.com/cocojojo5213/phonics-app) | — | 从基础开始的英语自然拼读练习应用，支持自定义提示词搭建个人词库，面向初学者与教学工作者。 | — |
 | ⭐ [FreedomIntelligence/BodyVista](https://github.com/FreedomIntelligence/BodyVista) | — | 3D 交互式人体解剖与生理教学平台，可沉浸式逐层探索器官与组织，用于自学。 | — |
 | ⭐ [david47k/top-english-wordlists](https://github.com/david47k/top-english-wordlists) | — | 按词频整理的英语常用词／名词／动词词表，附 ngram 抓取→抽取→限量词表三步生成脚本。 | — |
+| ⭐🍴 [prinzipiell/tsl](https://github.com/prinzipiell/tsl) | [bear20252026/tsl](https://github.com/bear20252026/tsl) | 学习 Three.js Shading Language（TSL）的练习仓：20 个独立着色器实验目录（boing-boing-box、ember-flow、the-river、marcher…）；无 README，按目录结构与上游描述标注。 | `着色器` |
 
 #### Awesome / 精选列表 / 资源汇总 · 7 件
 
@@ -812,8 +1234,9 @@
 | **效果 / 标签** | 从真实描述里抽出的具体效果：3D 场景、粒子、水／流体、玻璃折射、视差滚动、程序化生成艺术、像素／GIF 等 |
 | **⭐🍴** | 同一项目既收藏又复刻，合并成一条，**只计一次**；两个链接都保留 |
 | **无 README 的条目** | 已按仓库描述与文件结构如实标注，不臆测 |
+| **第一部分 · 我的仓库** | 原创仓逐个抓 README 与文件树后手写说明；编号归档仓如实标注「源码归档」；复刻仓沿用馆藏结论 |
 
-> 结构化数据（含每条的 README 自述原文、章节、文件树、标签）见 [`catalog.json`](catalog.json)。
+> 结构化数据见 [`catalog.json`](catalog.json)：`catalog` 为馆藏 347 条（README 自述原文、章节、文件树、标签），`own_repos` 为名下 220 个仓库（分类与逐仓说明），`pinned` 为置顶仓。
 
 ---
 
