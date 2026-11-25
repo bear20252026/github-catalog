@@ -125,6 +125,17 @@ def main():
 
     books.extend(lib)
 
+    # Preserve the existing shelf order; new books append at the end.
+    prev_order = {}
+    out_path = os.path.join(ROOT, "data", "books.json")
+    if os.path.exists(out_path):
+        try:
+            prev = json.load(open(out_path, encoding="utf-8"))
+            prev_order = {b["id"]: i for i, b in enumerate(prev.get("books", []))}
+        except Exception:
+            prev_order = {}
+    books.sort(key=lambda b: (prev_order.get(b["id"], 10**9), b["id"]))
+
     for b in books:
         c = CATS.get(b["category"])
         assert c, "category missing palette: " + b["category"]

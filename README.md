@@ -694,8 +694,8 @@
 | 🟣 [**robovac-pov**](https://github.com/moritzkremb/robovac-pov) · [🍴 复刻](https://github.com/bear20252026/robovac-pov)<br>`纯代码生成艺术 / 单文件作品` · C++ · ⭐23 · `电影 / 分镜` | 只用代码拍出的 53 秒扫地机器人第一视角视频：自写 GPU 路径追踪器、程序化世界、模拟相机与合成音效（C++，附 PROMPT 与渲染脚本）。 |
 | 🟣 [**xxd-panel-101**](https://github.com/nevertoday/xxd-panel-101)<br>`数据可视化 / 地图 / 图表` · Python · ⭐16 | 九宫记忆簿 Skill：把一张照片拆成九个值得记住的小涂鸦，排成一页私人手帐 PNG。 |
 | 🟣 [**ocean-water-lab**](https://github.com/rahulbhola877/ocean-water-lab) · [🍴 复刻](https://github.com/bear20252026/ocean-water-lab)<br>`水彩 / 光影 / 玻璃质感` · HTML · ⭐13 · `水 / 流体` | 给游戏用的实时开源海洋实验室：浏览器里约 100 个参数调出想要的海面观感，再导出到自己的引擎里用。 |
-| 🟣 [**fable-butterfly**](https://github.com/ky-zo/fable-butterfly) · [🍴 复刻](https://github.com/bear20252026/fable-butterfly)<br>`纯代码生成艺术 / 单文件作品` · JavaScript · ⭐10 | 《Hidden Layers》：Three.js + Vite 做的六个小型实时 3D 世界，和一只飞不出玻璃房的玻璃翼蝴蝶，由 Claude 写成。 |
 | 🟣 [**senna-800kg**](https://github.com/Sam1983Aing/senna-800kg) · [🍴 复刻](https://github.com/bear20252026/senna-800kg)<br>`3D 场景 / WebGL / Three.js` · TypeScript · ⭐10 · `3D 场景` | Gemini 做出的第一版 Three.js 落地页：风洞里的一台迈凯伦 Senna，附原始提示词与 44 秒演示片段。 |
+| 🟣 [**fable-butterfly**](https://github.com/ky-zo/fable-butterfly) · [🍴 复刻](https://github.com/bear20252026/fable-butterfly)<br>`纯代码生成艺术 / 单文件作品` · JavaScript · ⭐10 | 《Hidden Layers》：Three.js + Vite 做的六个小型实时 3D 世界，和一只飞不出玻璃房的玻璃翼蝴蝶，由 Claude 写成。 |
 | 🟣 [**animals-planner-2027**](https://github.com/xianxie6/animals-planner-2027) · [🍴 复刻](https://github.com/bear20252026/animals-planner-2027)<br>`3D 场景 / WebGL / Three.js` · HTML · ⭐10 · `3D 场景` | 2027 网页 3D 手账本：咖啡色透明软壳、三折页月计划、可写可贴、会响铃的挂件；带 JSON 备份／恢复，超 7 天未备份会提醒。 |
 | 🟣 [**castle-cinematic**](https://github.com/Leonxlnx/castle-cinematic) · [🍴 复刻](https://github.com/bear20252026/castle-cinematic)<br>`纯代码生成艺术 / 单文件作品` · Python · ⭐8 · `3D 场景` `程序化生成艺术` `电影 / 分镜` | 45 秒 4K 哥特悬崖城堡日落短片，每一帧都由 Python 代码生成；多个子 Agent 并行做地形、天空、植被、水与火，单帧要 16–20 秒。 |
 | 🟣 [**codevember-2026**](https://github.com/akella/codevember-2026)<br>`CSS / SVG / UI 动效组件` · TypeScript · ⭐4 | Codevember 每日一个网页视觉实验，30 个提示词写在 build.mjs，画廊按天列出（01-fold、02-shatter、03-melt…），构建产物不入库。 |
@@ -1004,27 +1004,27 @@
 
 | 项目 | 它是什么 |
 |---|---|
-| 🔹 [**arjun988/blender-skills**](https://github.com/arjun988/blender-skills) · [🍴](https://github.com/bear20252026/blender-skills) | 94 个 Blender 专项 Skills，供 Cursor、Claude Code、Kiro、Codex 使用，通过 MCP 串起生产级建模流程。 |
-| 🟣 [**ashemag/human-atlas**](https://github.com/ashemag/human-atlas) · [🍴](https://github.com/bear20252026/human-atlas) | React + Three.js + shadcn/ui 的 3D 人体解剖浏览器，2234 个可选 BodyParts3D 网格，带系统分层与搜索。 |
-| 🟣 [**bear20252026/dream-gallery**](https://github.com/bear20252026/dream-gallery) | 基于《小王子》B612 的 Three.js 3D 交互画廊游戏，配一个单文件 Node 零依赖后端（私有备份仓基线）。 |
-| 🟣 [**cclank/clay-safari**](https://github.com/cclank/clay-safari) | Three.js + Blender 脚本建的黏土风 3D 双语动物世界，给小朋友走进去点一点、听 10 位动物朋友的名字和叫声。 |
-| 🟡 [**designfuchen/word-atlas**](https://github.com/designfuchen/word-atlas) · [🍴](https://github.com/bear20252026/word-atlas) | 词光 Word Atlas：7298 个雅思词条配原创插画、英美发音与 FSRS 间隔复习，把单词变成画面，已有 iOS App。 |
 | 🔹 [**EL4CTEO/blender-skills**](https://github.com/EL4CTEO/blender-skills) | 把专业 Blender 5.3 工作流封装成 Agent Skills，供 Claude Code、Codex、Gemini CLI、Cursor 等直接调用。 |
-| 🔹 [**elvarofficial/teardown**](https://github.com/elvarofficial/teardown) | Claude Code Skill：用大白话让 Claude 把任意机器做成可拆开的 3D 模拟器（例如「给我做个四冲程摩托车模拟器」）。 |
 | 🟣 [**EverettFish/holo-card-studio**](https://github.com/EverettFish/holo-card-studio) | 一个 Codex Skill：说一句话生成会随视角流光的 3D 全息闪卡，浏览器里能拖着转、翻背面、拉滑块，附可改的 Blender 工程。 |
-| 🟣 [**gamedev-skills/awesome-gamedev-agent-skills**](https://github.com/gamedev-skills/awesome-gamedev-agent-skills) | 79 个游戏开发 Skills 加一个路由器，按 Godot／Unity／Unreal 等场景自动挑合适的技能给编码 Agent。 |
-| 🟣 [**huagechen-lab/ai-halloween-hollow**](https://github.com/huagechen-lab/ai-halloween-hollow) | 单个 HTML 的程序化可玩 Three.js 万圣夜场景，带 HUD、中英切换与呼吸灯式提示。 |
-| 🟣 [**lemomo-ai/lemo-opuscar**](https://github.com/lemomo-ai/lemo-opuscar) · [🍴](https://github.com/bear20252026/lemo-opuscar) | 给 Claude Code 的「代码电影风格工具箱」：99 种现成风格按画面观感分 15 类，中英双语画廊，每种风格都有独立页面。 |
 | 🟣 [**Leonxlnx/athenaion**](https://github.com/Leonxlnx/athenaion) · [🍴](https://github.com/bear20252026/athenaion) | 纯 Three.js 代码（零素材）搭出的宏大古希腊世界，Claude Opus 5.5 照 9 张参考图约两天建成并渲染成片。 |
 | 🟣 [**Leonxlnx/castle-cinematic**](https://github.com/Leonxlnx/castle-cinematic) · [🍴](https://github.com/bear20252026/castle-cinematic) | 45 秒 4K 哥特悬崖城堡日落短片，每一帧都由 Python 代码生成；多个子 Agent 并行做地形、天空、植被、水与火，单帧要 16–20 秒。 |
 | 🟣 [**Leonxlnx/walking-block**](https://github.com/Leonxlnx/walking-block) · [🍴](https://github.com/bear20252026/walking-block) | 纯代码 Three.js 作品：八条机械腿的巨型苏联板式住宅楼，在蓝暮薄雾里走过湿草地，无任何 3D 素材。 |
 | 🟣 [**Noniv/abyssal-garden**](https://github.com/Noniv/abyssal-garden) | 单个 HTML 的梦幻水下世界，可在浏览器里游过摇曳海藻林与阳光光束；触屏按住前进、双指加速。 |
 | 🟣 [**Noniv/web-ocean**](https://github.com/Noniv/web-ocean) · [🍴](https://github.com/bear20252026/web-ocean) | 从零手写的实时 WebGPU 海洋渲染器，FFT 波浪、白浪花与日照反射，不用任何引擎；压缩成 61KB 单页即可运行。 |
-| 🔹 [**omdsh-dev/dsh-genui**](https://github.com/omdsh-dev/dsh-genui) | DeepSeek Harness 的 GenUI 插件：把可交互的 UI 组件直接渲染在助手回复里（例如监控面板）。 |
-| 🔹 [**pulkitxm/claude-directory**](https://github.com/pulkitxm/claude-directory) · [🍴](https://github.com/bear20252026/claude-directory) | AI 辅助设计实验集合：交互界面、动效研究与开发者工具，强调素材来源可追溯、授权范围明确、可复核。 |
 | 🟣 [**Sam1983Aing/senna-800kg**](https://github.com/Sam1983Aing/senna-800kg) · [🍴](https://github.com/bear20252026/senna-800kg) | Gemini 做出的第一版 Three.js 落地页：风洞里的一台迈凯伦 Senna，附原始提示词与 44 秒演示片段。 |
 | 🟣 [**SamG-Coder/SmartImposter**](https://github.com/SamG-Coder/SmartImposter) · [🍴](https://github.com/bear20252026/SmartImposter) | Rust + Vulkan 硬件光线追踪森林渲染器：视差八面体 impostor 交给 RTX 核心评估，面向大规模植被的实时渲染（含 shaders 与 docs）。 |
 | 🟣 [**Sandflow-ai/sand3d**](https://github.com/Sandflow-ai/sand3d) | 专为 LLM 设计的 Python 3D 建模库，把物体写成短程序：轮廓、实体、编辑、框架、关节与装配。 |
+| 🔹 [**arjun988/blender-skills**](https://github.com/arjun988/blender-skills) · [🍴](https://github.com/bear20252026/blender-skills) | 94 个 Blender 专项 Skills，供 Cursor、Claude Code、Kiro、Codex 使用，通过 MCP 串起生产级建模流程。 |
+| 🟣 [**ashemag/human-atlas**](https://github.com/ashemag/human-atlas) · [🍴](https://github.com/bear20252026/human-atlas) | React + Three.js + shadcn/ui 的 3D 人体解剖浏览器，2234 个可选 BodyParts3D 网格，带系统分层与搜索。 |
+| 🟣 [**bear20252026/dream-gallery**](https://github.com/bear20252026/dream-gallery) | 基于《小王子》B612 的 Three.js 3D 交互画廊游戏，配一个单文件 Node 零依赖后端（私有备份仓基线）。 |
+| 🟣 [**cclank/clay-safari**](https://github.com/cclank/clay-safari) | Three.js + Blender 脚本建的黏土风 3D 双语动物世界，给小朋友走进去点一点、听 10 位动物朋友的名字和叫声。 |
+| 🟡 [**designfuchen/word-atlas**](https://github.com/designfuchen/word-atlas) · [🍴](https://github.com/bear20252026/word-atlas) | 词光 Word Atlas：7298 个雅思词条配原创插画、英美发音与 FSRS 间隔复习，把单词变成画面，已有 iOS App。 |
+| 🔹 [**elvarofficial/teardown**](https://github.com/elvarofficial/teardown) | Claude Code Skill：用大白话让 Claude 把任意机器做成可拆开的 3D 模拟器（例如「给我做个四冲程摩托车模拟器」）。 |
+| 🟣 [**gamedev-skills/awesome-gamedev-agent-skills**](https://github.com/gamedev-skills/awesome-gamedev-agent-skills) | 79 个游戏开发 Skills 加一个路由器，按 Godot／Unity／Unreal 等场景自动挑合适的技能给编码 Agent。 |
+| 🟣 [**huagechen-lab/ai-halloween-hollow**](https://github.com/huagechen-lab/ai-halloween-hollow) | 单个 HTML 的程序化可玩 Three.js 万圣夜场景，带 HUD、中英切换与呼吸灯式提示。 |
+| 🟣 [**lemomo-ai/lemo-opuscar**](https://github.com/lemomo-ai/lemo-opuscar) · [🍴](https://github.com/bear20252026/lemo-opuscar) | 给 Claude Code 的「代码电影风格工具箱」：99 种现成风格按画面观感分 15 类，中英双语画廊，每种风格都有独立页面。 |
+| 🔹 [**omdsh-dev/dsh-genui**](https://github.com/omdsh-dev/dsh-genui) | DeepSeek Harness 的 GenUI 插件：把可交互的 UI 组件直接渲染在助手回复里（例如监控面板）。 |
+| 🔹 [**pulkitxm/claude-directory**](https://github.com/pulkitxm/claude-directory) · [🍴](https://github.com/bear20252026/claude-directory) | AI 辅助设计实验集合：交互界面、动效研究与开发者工具，强调素材来源可追溯、授权范围明确、可复核。 |
 | 🟣 [**simonxxooxxoo/wet-paint-flow**](https://github.com/simonxxooxxoo/wet-paint-flow) | 浏览器里的 Three.js 实时流场绘画实验：从图片或 3D 场景提取结构方向，用粗中细三层 Bézier ribbon 笔触重建画面，再以高度、湿度、刷毛沟槽与微表面光照合成湿油彩质感。 |
 | 🟣 [**songsummer920-dazzle/three-scope-map-skill**](https://github.com/songsummer920-dazzle/three-scope-map-skill) | 可运行的独立地球／地图 3D Skill 与模板（不含业务大屏与指标数据）；授权明确禁止封装成收费地图能力对外提供。 |
 | 🟣 [**storytold/artcraft**](https://github.com/storytold/artcraft) | 给艺术家、设计师与电影人做的交互式 AI 图像／视频创作 IDE，主打「有意图的手工创作引擎」。 |
@@ -1043,22 +1043,22 @@
 
 | 项目 | 它是什么 |
 |---|---|
-| 🔹 [**alchaincyf/huashu-art-motion**](https://github.com/alchaincyf/huashu-art-motion) · [🍴](https://github.com/bear20252026/huashu-art-motion) | 艺术动画 Skill：35 种艺术风格＋9 种解说语法，让 coding agent 用代码把画动起来（示例：把自己做成像素主角跑完超级玛丽一关）。 |
 | 🫒 [**BeatAPI/BeatDesign**](https://github.com/BeatAPI/BeatDesign) · [🍴](https://github.com/bear20252026/BeatDesign) | 本地优先的 AI 无限画布＋时间线，编排图像与视频工作流，任何 MCP Agent 都能在同一项目里协作，对标 Higgsfield。 |
 | 🟣 [**BubbleBrainBB/awesome-fable-5.2**](https://github.com/BubbleBrainBB/awesome-fable-5.2) · [🍴](https://github.com/bear20252026/awesome-fable-5.2) | 用 Claude Fable 5.2 纯代码算出来的图片与短片合集，headless Metal 计算着色器渲染，不用任何外部素材。 |
 | 🟣 [**BubbleBrainBB/watercolor-water-cup**](https://github.com/BubbleBrainBB/watercolor-water-cup) · [🍴](https://github.com/bear20252026/watercolor-water-cup) | 单文件 HTML 的水彩／油墨静物：矿泉水杯折射窗外阳光与绿植，零依赖、无需构建工具。 |
-| 🟢 [**coze-dev/coze-studio**](https://github.com/coze-dev/coze-studio) · [🍴](https://github.com/bear20252026/coze-studio) | 一站式 AI Agent 开发平台，把提示词、RAG、插件、工作流等核心能力做成可视化工具。 |
 | 🫒 [**HBAI-Ltd/Toonflow-app**](https://github.com/HBAI-Ltd/Toonflow-app) | 开源 AI 短剧／漫剧创作平台，集成剧本、智能分镜、角色场景资产、图像与视频生成，融合无限画布与可视化工作流。 |
-| 🟣 [**huagechen-lab/ai-halloween-hollow**](https://github.com/huagechen-lab/ai-halloween-hollow) | 单个 HTML 的程序化可玩 Three.js 万圣夜场景，带 HUD、中英切换与呼吸灯式提示。 |
 | 🟣 [**Leonxlnx/athenaion**](https://github.com/Leonxlnx/athenaion) · [🍴](https://github.com/bear20252026/athenaion) | 纯 Three.js 代码（零素材）搭出的宏大古希腊世界，Claude Opus 5.5 照 9 张参考图约两天建成并渲染成片。 |
 | 🟣 [**Leonxlnx/castle-cinematic**](https://github.com/Leonxlnx/castle-cinematic) · [🍴](https://github.com/bear20252026/castle-cinematic) | 45 秒 4K 哥特悬崖城堡日落短片，每一帧都由 Python 代码生成；多个子 Agent 并行做地形、天空、植被、水与火，单帧要 16–20 秒。 |
 | 🟣 [**Leonxlnx/walking-block**](https://github.com/Leonxlnx/walking-block) · [🍴](https://github.com/bear20252026/walking-block) | 纯代码 Three.js 作品：八条机械腿的巨型苏联板式住宅楼，在蓝暮薄雾里走过湿草地，无任何 3D 素材。 |
-| 🟣 [**ma1902056219-coder/openpixel**](https://github.com/ma1902056219-coder/openpixel) | 31 个可运行、可交互、可修改的像素实验，纯 HTML／JavaScript／Canvas、无需构建，附中英日韩四语说明。 |
 | 🟣 [**Narcooo/inkos**](https://github.com/Narcooo/inkos) · [🍴](https://github.com/bear20252026/inkos) | 面向长篇连载、剧本、互动影游与长文翻译的 AI 故事创作系统，统一管理设定、角色、记忆、审稿、封面与跨语言交付，有 Studio/TUI/CLI。 |
-| 🔹 [**pulkitxm/claude-directory**](https://github.com/pulkitxm/claude-directory) · [🍴](https://github.com/bear20252026/claude-directory) | AI 辅助设计实验集合：交互界面、动效研究与开发者工具，强调素材来源可追溯、授权范围明确、可复核。 |
 | 🟣 [**Sandflow-ai/sand3d**](https://github.com/Sandflow-ai/sand3d) | 专为 LLM 设计的 Python 3D 建模库，把物体写成短程序：轮廓、实体、编辑、框架、关节与装配。 |
-| 🔵 [**shadcn-ui/ui**](https://github.com/shadcn-ui/ui) | 可组合、可访问、默认值讲究的组件集，让你复制源码搭出自己的组件库，而不是装一个 npm 依赖。 |
 | 🔹 [**SourceWeft/SourceWeft**](https://github.com/SourceWeft/SourceWeft) | 可自托管的 ChatGPT／NotebookLM 开源替代，带 Agent、Skills 与 MCP，支持跨设备续接工作、给整组团队部署共享工作台。 |
+| 🔹 [**alchaincyf/huashu-art-motion**](https://github.com/alchaincyf/huashu-art-motion) · [🍴](https://github.com/bear20252026/huashu-art-motion) | 艺术动画 Skill：35 种艺术风格＋9 种解说语法，让 coding agent 用代码把画动起来（示例：把自己做成像素主角跑完超级玛丽一关）。 |
+| 🟢 [**coze-dev/coze-studio**](https://github.com/coze-dev/coze-studio) · [🍴](https://github.com/bear20252026/coze-studio) | 一站式 AI Agent 开发平台，把提示词、RAG、插件、工作流等核心能力做成可视化工具。 |
+| 🟣 [**huagechen-lab/ai-halloween-hollow**](https://github.com/huagechen-lab/ai-halloween-hollow) | 单个 HTML 的程序化可玩 Three.js 万圣夜场景，带 HUD、中英切换与呼吸灯式提示。 |
+| 🟣 [**ma1902056219-coder/openpixel**](https://github.com/ma1902056219-coder/openpixel) | 31 个可运行、可交互、可修改的像素实验，纯 HTML／JavaScript／Canvas、无需构建，附中英日韩四语说明。 |
+| 🔹 [**pulkitxm/claude-directory**](https://github.com/pulkitxm/claude-directory) · [🍴](https://github.com/bear20252026/claude-directory) | AI 辅助设计实验集合：交互界面、动效研究与开发者工具，强调素材来源可追溯、授权范围明确、可复核。 |
+| 🔵 [**shadcn-ui/ui**](https://github.com/shadcn-ui/ui) | 可组合、可访问、默认值讲究的组件集，让你复制源码搭出自己的组件库，而不是装一个 npm 依赖。 |
 
 [▲ 回到顶部](#top)
 
@@ -1070,19 +1070,19 @@
 
 | 项目 | 它是什么 |
 |---|---|
-| 🟣 [**amirmushichge/fly-in-kit**](https://github.com/amirmushichge/fly-in-kit) · [🍴](https://github.com/bear20252026/fly-in-kit) | 给真实咖啡馆做的浏览器小游戏：复刻自家街道、飞到门口、柜台报暗号，可用来展示「这是你的店还是概念模型」。 |
-| 🟡 [**baturyilmaz/wordpecker-app**](https://github.com/baturyilmaz/wordpecker-app) | 把多邻国式练习搬进你自己攒的词表和语境，做个性化语言学习 App。 |
-| 🟣 [**bear20252026/dream-gallery**](https://github.com/bear20252026/dream-gallery) | 基于《小王子》B612 的 Three.js 3D 交互画廊游戏，配一个单文件 Node 零依赖后端（私有备份仓基线）。 |
 | 🟤 [**Caho1/open-claude-ui**](https://github.com/Caho1/open-claude-ui) · [🍴](https://github.com/bear20252026/open-claude-ui) | 逆向拆解 Claude 桌面端，高保真复刻其设计系统、30 个 React 组件与 8 项交互物理算法，附 3000+ 行分析手册。 |
 | 🟣 [**DeanChensj/jiangshan-map**](https://github.com/DeanChensj/jiangshan-map) · [🍴](https://github.com/bear20252026/jiangshan-map) | 中国历史交互地图时间轴（前 403 年至今），拖时间轴、点城市即可穿越 18 个朝代看疆域与地名变迁。 |
 | 🟣 [**EverettFish/holo-card-studio**](https://github.com/EverettFish/holo-card-studio) | 一个 Codex Skill：说一句话生成会随视角流光的 3D 全息闪卡，浏览器里能拖着转、翻背面、拉滑块，附可改的 Blender 工程。 |
 | 🫒 [**Fincept-Corporation/FinceptTerminal**](https://github.com/Fincept-Corporation/FinceptTerminal) | 开源金融终端，做市场分析、投研与投资组合研究，定位是付费封闭金融终端的免费替代。 |
-| 🟠 [**go-musicfox/go-musicfox**](https://github.com/go-musicfox/go-musicfox) | Go 写的网易云音乐命令行客户端，支持 UnblockNeteaseMusic、多音质、Last.fm、MPRIS、macOS 睡眠／蓝牙响应与 DLNA 投送。 |
 | 🔹 [**HKUDS/DeepTutor**](https://github.com/HKUDS/DeepTutor) · [🍴](https://github.com/bear20252026/DeepTutor) | 终身个性化 AI 辅导系统，支持阅读与书籍编辑、检索、Agent 接入、学习记录与桌面端。 |
+| 🟣 [**Narcooo/inkos**](https://github.com/Narcooo/inkos) · [🍴](https://github.com/bear20252026/inkos) | 面向长篇连载、剧本、互动影游与长文翻译的 AI 故事创作系统，统一管理设定、角色、记忆、审稿、封面与跨语言交付，有 Studio/TUI/CLI。 |
+| 🟣 [**amirmushichge/fly-in-kit**](https://github.com/amirmushichge/fly-in-kit) · [🍴](https://github.com/bear20252026/fly-in-kit) | 给真实咖啡馆做的浏览器小游戏：复刻自家街道、飞到门口、柜台报暗号，可用来展示「这是你的店还是概念模型」。 |
+| 🟡 [**baturyilmaz/wordpecker-app**](https://github.com/baturyilmaz/wordpecker-app) | 把多邻国式练习搬进你自己攒的词表和语境，做个性化语言学习 App。 |
+| 🟣 [**bear20252026/dream-gallery**](https://github.com/bear20252026/dream-gallery) | 基于《小王子》B612 的 Three.js 3D 交互画廊游戏，配一个单文件 Node 零依赖后端（私有备份仓基线）。 |
+| 🟠 [**go-musicfox/go-musicfox**](https://github.com/go-musicfox/go-musicfox) | Go 写的网易云音乐命令行客户端，支持 UnblockNeteaseMusic、多音质、Last.fm、MPRIS、macOS 睡眠／蓝牙响应与 DLNA 投送。 |
 | 🟣 [**huagechen-lab/ai-halloween-hollow**](https://github.com/huagechen-lab/ai-halloween-hollow) | 单个 HTML 的程序化可玩 Three.js 万圣夜场景，带 HUD、中英切换与呼吸灯式提示。 |
 | 🟢 [**lipku/LiveTalking**](https://github.com/lipku/LiveTalking) · [🍴](https://github.com/bear20252026/LiveTalking) | 实时交互流式数字人引擎，做音视频同步对话，支持 ernerf、musetalk、wav2lip、Ultralight-Digital-Human，已在业内商用。 |
 | 🟣 [**ma1902056219-coder/openpixel**](https://github.com/ma1902056219-coder/openpixel) | 31 个可运行、可交互、可修改的像素实验，纯 HTML／JavaScript／Canvas、无需构建，附中英日韩四语说明。 |
-| 🟣 [**Narcooo/inkos**](https://github.com/Narcooo/inkos) · [🍴](https://github.com/bear20252026/inkos) | 面向长篇连载、剧本、互动影游与长文翻译的 AI 故事创作系统，统一管理设定、角色、记忆、审稿、封面与跨语言交付，有 Studio/TUI/CLI。 |
 | 🔹 [**omdsh-dev/dsh-genui**](https://github.com/omdsh-dev/dsh-genui) | DeepSeek Harness 的 GenUI 插件：把可交互的 UI 组件直接渲染在助手回复里（例如监控面板）。 |
 | 🟣 [**thebuggeddev/anatomy**](https://github.com/thebuggeddev/anatomy) · [🍴](https://github.com/bear20252026/anatomy) | threejs 做的交互式 3D 人体解剖浏览器（用 GPT 辅助生成），带完整 Web 应用与登录回调结构。 |
 | 🔵 [**tt-a1i/archify**](https://github.com/tt-a1i/archify) | 把任何想法、计划或代码库变成可交互 HTML 图示的 Agent Skill，描述给 AI 就能生成可探索的图。 |
@@ -1097,19 +1097,19 @@
 
 | 项目 | 它是什么 |
 |---|---|
-| 🔹 [**addyosmani/agent-skills**](https://github.com/addyosmani/agent-skills) | 面向生产环境的编码 Agent 工程技能集，含 /review、/build（自动生成计划并逐项实现）等，支持命名空间调用避免与内置命令冲突。 |
 | 🔹 [**Appllama/appllama-skills**](https://github.com/Appllama/appllama-skills) | 把畅销 App 的真实界面、流程与 UI 模式整理成设计库，再封装成 Agent Skills，让 AI 照着做出原生级移动应用。 |
-| 🔹 [**arjun988/blender-skills**](https://github.com/arjun988/blender-skills) · [🍴](https://github.com/bear20252026/blender-skills) | 94 个 Blender 专项 Skills，供 Cursor、Claude Code、Kiro、Codex 使用，通过 MCP 串起生产级建模流程。 |
 | 🟢 [**DragonKingIO/Cadenza-voice**](https://github.com/DragonKingIO/Cadenza-voice) | macOS 本地优先语音输入「随言」，按住快捷键说话，识别结果直接打到当前光标处。 |
 | 🔹 [**EL4CTEO/blender-skills**](https://github.com/EL4CTEO/blender-skills) | 把专业 Blender 5.3 工作流封装成 Agent Skills，供 Claude Code、Codex、Gemini CLI、Cursor 等直接调用。 |
+| 🔹 [**Panniantong/Agent-Reach**](https://github.com/Panniantong/Agent-Reach) · [🍴](https://github.com/bear20252026/Agent-Reach) | 给 AI Agent 装上「看整个互联网」的眼睛，能读与搜 Twitter、Reddit、YouTube 等平台内容。 |
+| 🔹 [**Tencent/LoopForge**](https://github.com/Tencent/LoopForge) | 自托管的编码 Agent 交付工作台，编排 CodeBuddy、Codex、Claude Code；把跑通的做法存成团队 SOP 反复复用。 |
+| 🔹 [**addyosmani/agent-skills**](https://github.com/addyosmani/agent-skills) | 面向生产环境的编码 Agent 工程技能集，含 /review、/build（自动生成计划并逐项实现）等，支持命名空间调用避免与内置命令冲突。 |
+| 🔹 [**arjun988/blender-skills**](https://github.com/arjun988/blender-skills) · [🍴](https://github.com/bear20252026/blender-skills) | 94 个 Blender 专项 Skills，供 Cursor、Claude Code、Kiro、Codex 使用，通过 MCP 串起生产级建模流程。 |
 | 🔹 [**elder-plinius/CL4R1T4S**](https://github.com/elder-plinius/CL4R1T4S) · [🍴](https://github.com/bear20252026/CL4R1T4S) | 收集 ChatGPT、Claude、Gemini、Grok、Cursor、Devin 等产品的泄露系统提示词，理由是隐藏指令会影响公众认知与行为。 |
 | 🔹 [**emilkowalski/skills**](https://github.com/emilkowalski/skills) | 给设计师与工程师的 Skill 集，专治 UI 里「这个动画做对没有」一类判断，含性能相关检查。 |
 | 🟣 [**gamedev-skills/awesome-gamedev-agent-skills**](https://github.com/gamedev-skills/awesome-gamedev-agent-skills) | 79 个游戏开发 Skills 加一个路由器，按 Godot／Unity／Unreal 等场景自动挑合适的技能给编码 Agent。 |
 | 🔹 [**liguobao/ds-harness-remote**](https://github.com/liguobao/ds-harness-remote) · [🍴](https://github.com/bear20252026/ds-harness-remote) | 基于 dsh 插件的远程访问方案：端到端加密、优先 P2P（全球 TURN 中继兜底），用 PC／手机／Web 随时连回本地设备上的 DSH、Codex。 |
 | 🔹 [**nextlevelbuilder/ui-ux-pro-max-skill**](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) | 给多平台做专业 UI／UX 的设计智能 Skill，多语言说明，直接交给编码 Agent 使用。 |
-| 🔹 [**Panniantong/Agent-Reach**](https://github.com/Panniantong/Agent-Reach) · [🍴](https://github.com/bear20252026/Agent-Reach) | 给 AI Agent 装上「看整个互联网」的眼睛，能读与搜 Twitter、Reddit、YouTube 等平台内容。 |
 | 🔹 [**qybaihe/bla**](https://github.com/qybaihe/bla) | BLA（Blind LLM Agents）：开源蓝队防御 MCP 服务与 CLI，自动发现 dist/build/.asar/.wasm/.sqlite/.safetensors 与原生二进制，跑 audit→protect→verify。 |
-| 🔹 [**Tencent/LoopForge**](https://github.com/Tencent/LoopForge) | 自托管的编码 Agent 交付工作台，编排 CodeBuddy、Codex、Claude Code；把跑通的做法存成团队 SOP 反复复用。 |
 | 🔹 [**zhaoxuya520/reverse-skill**](https://github.com/zhaoxuya520/reverse-skill) | 逆向工程／授权渗透测试／安全研究的 Skill 路由包，按任务把 Agent 导向对应技能。 |
 
 [▲ 回到顶部](#top)
@@ -1122,17 +1122,17 @@
 
 | 项目 | 它是什么 |
 |---|---|
-| 🟢 [**baidu/Unlimited-OCR**](https://github.com/baidu/Unlimited-OCR) | 百度「无限 OCR」：一次性长文档解析，主打超长上下文、端到端的长程识别。 |
 | 🟣 [**BubbleBrainBB/awesome-fable-5.2**](https://github.com/BubbleBrainBB/awesome-fable-5.2) · [🍴](https://github.com/bear20252026/awesome-fable-5.2) | 用 Claude Fable 5.2 纯代码算出来的图片与短片合集，headless Metal 计算着色器渲染，不用任何外部素材。 |
-| 🔹 [**eternityspring/shuohao-skills**](https://github.com/eternityspring/shuohao-skills) | AI 短剧制作 Skill 集合：拆角色、排大纲、出场景与道具设定、写剧本、切分镜。 |
 | 🟢 [**Forget-C/Jellyfish**](https://github.com/Forget-C/Jellyfish) · [🍴](https://github.com/bear20252026/Jellyfish) | AI 短剧生产工作台：从剧本一路管到分镜、候选素材、对白、提示词与生成任务，产出可复用的制作资产。 |
 | 🫒 [**HBAI-Ltd/Toonflow-app**](https://github.com/HBAI-Ltd/Toonflow-app) | 开源 AI 短剧／漫剧创作平台，集成剧本、智能分镜、角色场景资产、图像与视频生成，融合无限画布与可视化工作流。 |
 | 🔹 [**JuneYaooo/rea-video**](https://github.com/JuneYaooo/rea-video) · [🍴](https://github.com/bear20252026/rea-video) | 给 AI Agent 用的视频逐镜头逆向 Skill，输出给人看的报告（HTML/PDF）和给 Agent 复刻用的结构化拆解。 |
-| 🟣 [**lemomo-ai/lemo-opuscar**](https://github.com/lemomo-ai/lemo-opuscar) · [🍴](https://github.com/bear20252026/lemo-opuscar) | 给 Claude Code 的「代码电影风格工具箱」：99 种现成风格按画面观感分 15 类，中英双语画廊，每种风格都有独立页面。 |
 | 🟣 [**Leonxlnx/castle-cinematic**](https://github.com/Leonxlnx/castle-cinematic) · [🍴](https://github.com/bear20252026/castle-cinematic) | 45 秒 4K 哥特悬崖城堡日落短片，每一帧都由 Python 代码生成；多个子 Agent 并行做地形、天空、植被、水与火，单帧要 16–20 秒。 |
 | 🟣 [**Leonxlnx/walking-block**](https://github.com/Leonxlnx/walking-block) · [🍴](https://github.com/bear20252026/walking-block) | 纯代码 Three.js 作品：八条机械腿的巨型苏联板式住宅楼，在蓝暮薄雾里走过湿草地，无任何 3D 素材。 |
-| 🟣 [**moritzkremb/robovac-pov**](https://github.com/moritzkremb/robovac-pov) · [🍴](https://github.com/bear20252026/robovac-pov) | 只用代码拍出的 53 秒扫地机器人第一视角视频：自写 GPU 路径追踪器、程序化世界、模拟相机与合成音效（C++，附 PROMPT 与渲染脚本）。 |
 | 🟣 [**Narcooo/inkos**](https://github.com/Narcooo/inkos) · [🍴](https://github.com/bear20252026/inkos) | 面向长篇连载、剧本、互动影游与长文翻译的 AI 故事创作系统，统一管理设定、角色、记忆、审稿、封面与跨语言交付，有 Studio/TUI/CLI。 |
+| 🟢 [**baidu/Unlimited-OCR**](https://github.com/baidu/Unlimited-OCR) | 百度「无限 OCR」：一次性长文档解析，主打超长上下文、端到端的长程识别。 |
+| 🔹 [**eternityspring/shuohao-skills**](https://github.com/eternityspring/shuohao-skills) | AI 短剧制作 Skill 集合：拆角色、排大纲、出场景与道具设定、写剧本、切分镜。 |
+| 🟣 [**lemomo-ai/lemo-opuscar**](https://github.com/lemomo-ai/lemo-opuscar) · [🍴](https://github.com/bear20252026/lemo-opuscar) | 给 Claude Code 的「代码电影风格工具箱」：99 种现成风格按画面观感分 15 类，中英双语画廊，每种风格都有独立页面。 |
+| 🟣 [**moritzkremb/robovac-pov**](https://github.com/moritzkremb/robovac-pov) · [🍴](https://github.com/bear20252026/robovac-pov) | 只用代码拍出的 53 秒扫地机器人第一视角视频：自写 GPU 路径追踪器、程序化世界、模拟相机与合成音效（C++，附 PROMPT 与渲染脚本）。 |
 
 [▲ 回到顶部](#top)
 
@@ -1144,13 +1144,13 @@
 
 | 项目 | 它是什么 |
 |---|---|
+| 🫒 [**HBAI-Ltd/Toonflow-app**](https://github.com/HBAI-Ltd/Toonflow-app) | 开源 AI 短剧／漫剧创作平台，集成剧本、智能分镜、角色场景资产、图像与视频生成，融合无限画布与可视化工作流。 |
+| 🟣 [**TokisanGames/Terrain3D**](https://github.com/TokisanGames/Terrain3D) | Godot 4 的高性能可编辑地形系统。 |
 | 🫒 [**basketikun/infinite-canvas**](https://github.com/basketikun/infinite-canvas) · [🍴](https://github.com/bear20252026/infinite-canvas) | 面向 AI 图片创作的开源无限画布工作台：画布编排、AI 生图、参考图编辑、视频生成、对话助手、提示词库与素材管理，支持多 Agent 与本地 Canvas Agent。 |
 | ◼️ [**dataease/dataease**](https://github.com/dataease/dataease) | 人人可用的开源 BI／数据可视化工具，对标 Tableau；二次开发须保留 Logo 与版权信息并遵守 GPLv3。 |
-| 🫒 [**HBAI-Ltd/Toonflow-app**](https://github.com/HBAI-Ltd/Toonflow-app) | 开源 AI 短剧／漫剧创作平台，集成剧本、智能分镜、角色场景资产、图像与视频生成，融合无限画布与可视化工作流。 |
 | 🟣 [**liyupi/ai-model-world**](https://github.com/liyupi/ai-model-world) | 把 556 个大模型拟人成像素小人住进厂商小屋：顶部「今日格局」八块领奖台（最聪明／最会编程／最便宜／最新发布…），下有国内外分区与发布时间线。 |
 | 🔵 [**satnaing/shadcn-admin**](https://github.com/satnaing/shadcn-admin) | 用 Shadcn + Vite 搭的后台管理仪表盘 UI，讲究响应式与可访问性，作者做成一套可复用集合。 |
 | 🫒 [**simonlin1212/Vibe-Research**](https://github.com/simonlin1212/Vibe-Research) · [🍴](https://github.com/bear20252026/Vibe-Research) | A 股／美股／港股投研工作台：自选与持仓、每日复盘、产业资讯与研究、个股深挖、回测、研报库，168 个数据端点，可接 Claude Code 等。 |
-| 🟣 [**TokisanGames/Terrain3D**](https://github.com/TokisanGames/Terrain3D) | Godot 4 的高性能可编辑地形系统。 |
 | 🔵 [**tt-a1i/archify**](https://github.com/tt-a1i/archify) | 把任何想法、计划或代码库变成可交互 HTML 图示的 Agent Skill，描述给 AI 就能生成可探索的图。 |
 | 🔵 [**yaojingang/profound-clone**](https://github.com/yaojingang/profound-clone) | 对 AI Search 平台 Profound 的前后台 1:1 学习性复刻（Next.js 16 / React 19 / SQLite）：营销官网、产品工作台、管理后台与可交互 Agent 模拟引擎，仅供学习研究。 |
 | 🟠 [**yqxie1991/WxCleaner**](https://github.com/yqxie1991/WxCleaner) | 微信重复文件清理工具：智能哈希极速识别、可视化预览与排序、安全删除到回收站，跨 Windows／macOS／Linux 自适应界面与文件管理器定位。 |
@@ -1165,6 +1165,7 @@
 
 | 项目 | 它是什么 |
 |---|---|
+| 🟣 [**WoYun520/gif-factory**](https://github.com/WoYun520/gif-factory) · [🍴](https://github.com/bear20252026/gif-factory) | GIF 工厂 Skill：给一张图或一句话，就能做表情包、光栅变画卡、动态海报／签名、电影片头、文章封面、动态绘本与品牌短片。 |
 | 🟡 [**alchaincyf/huashu-bird-sticker**](https://github.com/alchaincyf/huashu-bird-sticker) · [🍴](https://github.com/bear20252026/huashu-bird-sticker) | 按 AviList v2026 整理的 1.1 万多种鸟类白边贴纸库，每种附多语种鸟名、分布、形态与保护等级，CC BY 4.0，出自观鸟 App「鸣迹」。 |
 | 🟠 [**amiaoapp/PicLite**](https://github.com/amiaoapp/PicLite) | 本地优先的跨平台图片／GIF 压缩工具，带悬浮窗与封面制作；支持 SVG 保留矢量、AVIF/TIFF/QOI 等格式转换，可用工作台插件或 MCP 接入 AI。 |
 | 🟣 [**amirmushichge/fly-in-kit**](https://github.com/amirmushichge/fly-in-kit) · [🍴](https://github.com/bear20252026/fly-in-kit) | 给真实咖啡馆做的浏览器小游戏：复刻自家街道、飞到门口、柜台报暗号，可用来展示「这是你的店还是概念模型」。 |
@@ -1173,7 +1174,6 @@
 | 🟣 [**ma1902056219-coder/openpixel**](https://github.com/ma1902056219-coder/openpixel) | 31 个可运行、可交互、可修改的像素实验，纯 HTML／JavaScript／Canvas、无需构建，附中英日韩四语说明。 |
 | 🟠 [**mofan6/Moect**](https://github.com/mofan6/Moect) · [🍴](https://github.com/bear20252026/Moect) | Windows 微信 4.x 聊天记录读取、整理与导出桌面工具，支持好友／群聊、头像、图片、GIF 的备份与离线归档。 |
 | 🟣 [**ruvnet/RuView**](https://github.com/ruvnet/RuView) | 把普通 WiFi 信号变成空间感知系统：实时空间智能、生命体征监测乃至「隔墙看」，配套硬件 AI 工具包。 |
-| 🟣 [**WoYun520/gif-factory**](https://github.com/WoYun520/gif-factory) · [🍴](https://github.com/bear20252026/gif-factory) | GIF 工厂 Skill：给一张图或一句话，就能做表情包、光栅变画卡、动态海报／签名、电影片头、文章封面、动态绘本与品牌短片。 |
 
 [▲ 回到顶部](#top)
 
@@ -1187,9 +1187,9 @@
 |---|---|
 | 🟣 [**BubbleBrainBB/awesome-fable-5.2**](https://github.com/BubbleBrainBB/awesome-fable-5.2) · [🍴](https://github.com/bear20252026/awesome-fable-5.2) | 用 Claude Fable 5.2 纯代码算出来的图片与短片合集，headless Metal 计算着色器渲染，不用任何外部素材。 |
 | 🟣 [**BubbleBrainBB/watercolor-water-cup**](https://github.com/BubbleBrainBB/watercolor-water-cup) · [🍴](https://github.com/bear20252026/watercolor-water-cup) | 单文件 HTML 的水彩／油墨静物：矿泉水杯折射窗外阳光与绿植，零依赖、无需构建工具。 |
-| 🟠 [**jiuhunwl/short_videos**](https://github.com/jiuhunwl/short_videos) · [🍴](https://github.com/bear20252026/short_videos) | 短视频／图集去水印接口示例，覆盖抖音、快手、小红书、B站、微博、网易云、皮皮虾等；声明仅供技术研究与学习。 |
 | 🟣 [**Noniv/abyssal-garden**](https://github.com/Noniv/abyssal-garden) | 单个 HTML 的梦幻水下世界，可在浏览器里游过摇曳海藻林与阳光光束；触屏按住前进、双指加速。 |
 | 🟣 [**Noniv/web-ocean**](https://github.com/Noniv/web-ocean) · [🍴](https://github.com/bear20252026/web-ocean) | 从零手写的实时 WebGPU 海洋渲染器，FFT 波浪、白浪花与日照反射，不用任何引擎；压缩成 61KB 单页即可运行。 |
+| 🟠 [**jiuhunwl/short_videos**](https://github.com/jiuhunwl/short_videos) · [🍴](https://github.com/bear20252026/short_videos) | 短视频／图集去水印接口示例，覆盖抖音、快手、小红书、B站、微博、网易云、皮皮虾等；声明仅供技术研究与学习。 |
 | 🟣 [**rahulbhola877/ocean-water-lab**](https://github.com/rahulbhola877/ocean-water-lab) · [🍴](https://github.com/bear20252026/ocean-water-lab) | 给游戏用的实时开源海洋实验室：浏览器里约 100 个参数调出想要的海面观感，再导出到自己的引擎里用。 |
 | 🟡 [**solidSpoon/DashPlayer**](https://github.com/solidSpoon/DashPlayer) | 给英语学习者做的视频播放器，靠大量看美剧等母语视频沉浸练听力；作者自己用它看了几千小时。 |
 
@@ -1205,9 +1205,9 @@
 |---|---|
 | 🫒 [**BeatAPI/BeatDesign**](https://github.com/BeatAPI/BeatDesign) · [🍴](https://github.com/bear20252026/BeatDesign) | 本地优先的 AI 无限画布＋时间线，编排图像与视频工作流，任何 MCP Agent 都能在同一项目里协作，对标 Higgsfield。 |
 | 🟣 [**DeanChensj/jiangshan-map**](https://github.com/DeanChensj/jiangshan-map) · [🍴](https://github.com/bear20252026/jiangshan-map) | 中国历史交互地图时间轴（前 403 年至今），拖时间轴、点城市即可穿越 18 个朝代看疆域与地名变迁。 |
+| 🟣 [**TokisanGames/Terrain3D**](https://github.com/TokisanGames/Terrain3D) | Godot 4 的高性能可编辑地形系统。 |
 | 🟣 [**songsummer920-dazzle/three-scope-map-skill**](https://github.com/songsummer920-dazzle/three-scope-map-skill) | 可运行的独立地球／地图 3D Skill 与模板（不含业务大屏与指标数据）；授权明确禁止封装成收费地图能力对外提供。 |
 | 🟣 [**takram-design-engineering/three-geospatial**](https://github.com/takram-design-engineering/three-geospatial) | 增强 Three.js 地理空间渲染的 monorepo 库集合，模块化设计可按需挑选使用。 |
-| 🟣 [**TokisanGames/Terrain3D**](https://github.com/TokisanGames/Terrain3D) | Godot 4 的高性能可编辑地形系统。 |
 
 [▲ 回到顶部](#top)
 
@@ -1261,9 +1261,9 @@
 
 | 项目 | 它是什么 |
 |---|---|
-| ⚪ [**mjurczyk/openvdb**](https://github.com/mjurczyk/openvdb) · [🍴](https://github.com/bear20252026/openvdb) | OpenVDB 的 Web 实现上游：JavaScript / Node 读写 VDB，附 three-openvdb 渲染器与 wvdb 转换 CLI，支持 Houdini、Blender、EmberGen 导出；不是游戏，是 3D 体数据基础设施。 |
-| 🟣 [**spite/codevember-2026**](https://github.com/spite/codevember-2026) | Codevember 2026：每天一件实时 three.js 视觉实验，当前 25 天（Day 25 进行中）；PBR、软阴影、AO、HDR 与 AgX，画面可随机种子并写回 URL。Day 24《Nest》是无限嵌套的现代俄罗斯套娃，可拖拽、滚轮、点击打开下一层。整体不是游戏，Day 13 / Day 22 才含可玩迷宫。在线 Day 24：https://spite.github.io/codevember-2026/24/ |
 | 🟣 [**ttillberg/codevember-2026**](https://github.com/ttillberg/codevember-2026) · [🍴](https://github.com/bear20252026/codevember-2026) | Codevember 2026：Theo Tillberg 的每日 Three.js / React 迷你项目，30 天日历中已完成 16 天（01–02、04–09、12、14、16、18–20、22、24）；每天独立 Vite 工程，用 three 0.187 与 @react-three/fiber 做实时 3D 小场景。 |
+| 🟣 [**spite/codevember-2026**](https://github.com/spite/codevember-2026) | Codevember 2026：每天一件实时 three.js 视觉实验，当前 25 天（Day 25 进行中）；PBR、软阴影、AO、HDR 与 AgX，画面可随机种子并写回 URL。Day 24《Nest》是无限嵌套的现代俄罗斯套娃，可拖拽、滚轮、点击打开下一层。整体不是游戏，Day 13 / Day 22 才含可玩迷宫。在线 Day 24：https://spite.github.io/codevember-2026/24/ |
+| ⚪ [**mjurczyk/openvdb**](https://github.com/mjurczyk/openvdb) · [🍴](https://github.com/bear20252026/openvdb) | OpenVDB 的 Web 实现上游：JavaScript / Node 读写 VDB，附 three-openvdb 渲染器与 wvdb 转换 CLI，支持 Houdini、Blender、EmberGen 导出；不是游戏，是 3D 体数据基础设施。 |
 
 [▲ 回到顶部](#top)
 
@@ -1301,8 +1301,8 @@
 
 | 项目 | 它是什么 |
 |---|---|
-| 🟣 [**spite/codevember-2026**](https://github.com/spite/codevember-2026) | Codevember 2026：每天一件实时 three.js 视觉实验，当前 25 天（Day 25 进行中）；PBR、软阴影、AO、HDR 与 AgX，画面可随机种子并写回 URL。Day 24《Nest》是无限嵌套的现代俄罗斯套娃，可拖拽、滚轮、点击打开下一层。整体不是游戏，Day 13 / Day 22 才含可玩迷宫。在线 Day 24：https://spite.github.io/codevember-2026/24/ |
 | 🟣 [**ttillberg/codevember-2026**](https://github.com/ttillberg/codevember-2026) · [🍴](https://github.com/bear20252026/codevember-2026) | Codevember 2026：Theo Tillberg 的每日 Three.js / React 迷你项目，30 天日历中已完成 16 天（01–02、04–09、12、14、16、18–20、22、24）；每天独立 Vite 工程，用 three 0.187 与 @react-three/fiber 做实时 3D 小场景。 |
+| 🟣 [**spite/codevember-2026**](https://github.com/spite/codevember-2026) | Codevember 2026：每天一件实时 three.js 视觉实验，当前 25 天（Day 25 进行中）；PBR、软阴影、AO、HDR 与 AgX，画面可随机种子并写回 URL。Day 24《Nest》是无限嵌套的现代俄罗斯套娃，可拖拽、滚轮、点击打开下一层。整体不是游戏，Day 13 / Day 22 才含可玩迷宫。在线 Day 24：https://spite.github.io/codevember-2026/24/ |
 
 [▲ 回到顶部](#top)
 
@@ -1320,42 +1320,6 @@
 
 </details>
 
-### ✨ 3D 塔防 · 1 件
-
-<details>
-
-| 项目 | 它是什么 |
-|---|---|
-| 🟩 [**kevintngo/cinderwatch**](https://github.com/kevintngo/cinderwatch) · [🍴](https://github.com/bear20252026/cinderwatch) | Cinderwatch 上游：单文件 3D 等距塔防；四座塔各三级、20 种怪物、五张地图、每五波一个 Boss，AI 指挥官自动打，也能随时接管；模型、贴图与音效全部由代码生成。 |
-
-[▲ 回到顶部](#top)
-
-</details>
-
-### ✨ 单文件 · 1 件
-
-<details>
-
-| 项目 | 它是什么 |
-|---|---|
-| 🟩 [**kevintngo/cinderwatch**](https://github.com/kevintngo/cinderwatch) · [🍴](https://github.com/bear20252026/cinderwatch) | Cinderwatch 上游：单文件 3D 等距塔防；四座塔各三级、20 种怪物、五张地图、每五波一个 Boss，AI 指挥官自动打，也能随时接管；模型、贴图与音效全部由代码生成。 |
-
-[▲ 回到顶部](#top)
-
-</details>
-
-### ✨ 程序化资产 · 1 件
-
-<details>
-
-| 项目 | 它是什么 |
-|---|---|
-| 🟩 [**kevintngo/cinderwatch**](https://github.com/kevintngo/cinderwatch) · [🍴](https://github.com/bear20252026/cinderwatch) | Cinderwatch 上游：单文件 3D 等距塔防；四座塔各三级、20 种怪物、五张地图、每五波一个 Boss，AI 指挥官自动打，也能随时接管；模型、贴图与音效全部由代码生成。 |
-
-[▲ 回到顶部](#top)
-
-</details>
-
 ### ✨ 视差 / 滚动 · 1 件
 
 <details>
@@ -1368,25 +1332,61 @@
 
 </details>
 
-### ✨ WebVDB · 1 件
+### ✨ React Three Fiber · 1 件
 
 <details>
 
 | 项目 | 它是什么 |
 |---|---|
-| ⚪ [**mjurczyk/openvdb**](https://github.com/mjurczyk/openvdb) · [🍴](https://github.com/bear20252026/openvdb) | OpenVDB 的 Web 实现上游：JavaScript / Node 读写 VDB，附 three-openvdb 渲染器与 wvdb 转换 CLI，支持 Houdini、Blender、EmberGen 导出；不是游戏，是 3D 体数据基础设施。 |
+| 🟣 [**ttillberg/codevember-2026**](https://github.com/ttillberg/codevember-2026) · [🍴](https://github.com/bear20252026/codevember-2026) | Codevember 2026：Theo Tillberg 的每日 Three.js / React 迷你项目，30 天日历中已完成 16 天（01–02、04–09、12、14、16、18–20、22、24）；每天独立 Vite 工程，用 three 0.187 与 @react-three/fiber 做实时 3D 小场景。 |
 
 [▲ 回到顶部](#top)
 
 </details>
 
-### ✨ 体渲染 · 1 件
+### ✨ PBR 材质 · 1 件
 
 <details>
 
 | 项目 | 它是什么 |
 |---|---|
-| ⚪ [**mjurczyk/openvdb**](https://github.com/mjurczyk/openvdb) · [🍴](https://github.com/bear20252026/openvdb) | OpenVDB 的 Web 实现上游：JavaScript / Node 读写 VDB，附 three-openvdb 渲染器与 wvdb 转换 CLI，支持 Houdini、Blender、EmberGen 导出；不是游戏，是 3D 体数据基础设施。 |
+| 🟣 [**spite/codevember-2026**](https://github.com/spite/codevember-2026) | Codevember 2026：每天一件实时 three.js 视觉实验，当前 25 天（Day 25 进行中）；PBR、软阴影、AO、HDR 与 AgX，画面可随机种子并写回 URL。Day 24《Nest》是无限嵌套的现代俄罗斯套娃，可拖拽、滚轮、点击打开下一层。整体不是游戏，Day 13 / Day 22 才含可玩迷宫。在线 Day 24：https://spite.github.io/codevember-2026/24/ |
+
+[▲ 回到顶部](#top)
+
+</details>
+
+### ✨ Geometry Nodes · 1 件
+
+<details>
+
+| 项目 | 它是什么 |
+|---|---|
+| 🟣 [**yapitw/nodevember**](https://github.com/yapitw/nodevember) | Nodevember 2026：用 Blender 5.2 / 5.3 Geometry Nodes 每天做一件程序化作品，无贴图、无手工建模；Day 1–8 附 .blend 与 Python 构建脚本，Day 9 起附逐节点教程与成品渲染。仓库本身是作品集与教程，不是网页游戏。 |
+
+[▲ 回到顶部](#top)
+
+</details>
+
+### ✨ 程序化 · 1 件
+
+<details>
+
+| 项目 | 它是什么 |
+|---|---|
+| 🟣 [**yapitw/nodevember**](https://github.com/yapitw/nodevember) | Nodevember 2026：用 Blender 5.2 / 5.3 Geometry Nodes 每天做一件程序化作品，无贴图、无手工建模；Day 1–8 附 .blend 与 Python 构建脚本，Day 9 起附逐节点教程与成品渲染。仓库本身是作品集与教程，不是网页游戏。 |
+
+[▲ 回到顶部](#top)
+
+</details>
+
+### ✨ Blender · 1 件
+
+<details>
+
+| 项目 | 它是什么 |
+|---|---|
+| 🟣 [**yapitw/nodevember**](https://github.com/yapitw/nodevember) | Nodevember 2026：用 Blender 5.2 / 5.3 Geometry Nodes 每天做一件程序化作品，无贴图、无手工建模；Day 1–8 附 .blend 与 Python 构建脚本，Day 9 起附逐节点教程与成品渲染。仓库本身是作品集与教程，不是网页游戏。 |
 
 [▲ 回到顶部](#top)
 
@@ -1428,61 +1428,61 @@
 
 </details>
 
-### ✨ PBR 材质 · 1 件
+### ✨ WebVDB · 1 件
 
 <details>
 
 | 项目 | 它是什么 |
 |---|---|
-| 🟣 [**spite/codevember-2026**](https://github.com/spite/codevember-2026) | Codevember 2026：每天一件实时 three.js 视觉实验，当前 25 天（Day 25 进行中）；PBR、软阴影、AO、HDR 与 AgX，画面可随机种子并写回 URL。Day 24《Nest》是无限嵌套的现代俄罗斯套娃，可拖拽、滚轮、点击打开下一层。整体不是游戏，Day 13 / Day 22 才含可玩迷宫。在线 Day 24：https://spite.github.io/codevember-2026/24/ |
+| ⚪ [**mjurczyk/openvdb**](https://github.com/mjurczyk/openvdb) · [🍴](https://github.com/bear20252026/openvdb) | OpenVDB 的 Web 实现上游：JavaScript / Node 读写 VDB，附 three-openvdb 渲染器与 wvdb 转换 CLI，支持 Houdini、Blender、EmberGen 导出；不是游戏，是 3D 体数据基础设施。 |
 
 [▲ 回到顶部](#top)
 
 </details>
 
-### ✨ React Three Fiber · 1 件
+### ✨ 体渲染 · 1 件
 
 <details>
 
 | 项目 | 它是什么 |
 |---|---|
-| 🟣 [**ttillberg/codevember-2026**](https://github.com/ttillberg/codevember-2026) · [🍴](https://github.com/bear20252026/codevember-2026) | Codevember 2026：Theo Tillberg 的每日 Three.js / React 迷你项目，30 天日历中已完成 16 天（01–02、04–09、12、14、16、18–20、22、24）；每天独立 Vite 工程，用 three 0.187 与 @react-three/fiber 做实时 3D 小场景。 |
+| ⚪ [**mjurczyk/openvdb**](https://github.com/mjurczyk/openvdb) · [🍴](https://github.com/bear20252026/openvdb) | OpenVDB 的 Web 实现上游：JavaScript / Node 读写 VDB，附 three-openvdb 渲染器与 wvdb 转换 CLI，支持 Houdini、Blender、EmberGen 导出；不是游戏，是 3D 体数据基础设施。 |
 
 [▲ 回到顶部](#top)
 
 </details>
 
-### ✨ Geometry Nodes · 1 件
+### ✨ 3D 塔防 · 1 件
 
 <details>
 
 | 项目 | 它是什么 |
 |---|---|
-| 🟣 [**yapitw/nodevember**](https://github.com/yapitw/nodevember) | Nodevember 2026：用 Blender 5.2 / 5.3 Geometry Nodes 每天做一件程序化作品，无贴图、无手工建模；Day 1–8 附 .blend 与 Python 构建脚本，Day 9 起附逐节点教程与成品渲染。仓库本身是作品集与教程，不是网页游戏。 |
+| 🟩 [**kevintngo/cinderwatch**](https://github.com/kevintngo/cinderwatch) · [🍴](https://github.com/bear20252026/cinderwatch) | Cinderwatch 上游：单文件 3D 等距塔防；四座塔各三级、20 种怪物、五张地图、每五波一个 Boss，AI 指挥官自动打，也能随时接管；模型、贴图与音效全部由代码生成。 |
 
 [▲ 回到顶部](#top)
 
 </details>
 
-### ✨ 程序化 · 1 件
+### ✨ 单文件 · 1 件
 
 <details>
 
 | 项目 | 它是什么 |
 |---|---|
-| 🟣 [**yapitw/nodevember**](https://github.com/yapitw/nodevember) | Nodevember 2026：用 Blender 5.2 / 5.3 Geometry Nodes 每天做一件程序化作品，无贴图、无手工建模；Day 1–8 附 .blend 与 Python 构建脚本，Day 9 起附逐节点教程与成品渲染。仓库本身是作品集与教程，不是网页游戏。 |
+| 🟩 [**kevintngo/cinderwatch**](https://github.com/kevintngo/cinderwatch) · [🍴](https://github.com/bear20252026/cinderwatch) | Cinderwatch 上游：单文件 3D 等距塔防；四座塔各三级、20 种怪物、五张地图、每五波一个 Boss，AI 指挥官自动打，也能随时接管；模型、贴图与音效全部由代码生成。 |
 
 [▲ 回到顶部](#top)
 
 </details>
 
-### ✨ Blender · 1 件
+### ✨ 程序化资产 · 1 件
 
 <details>
 
 | 项目 | 它是什么 |
 |---|---|
-| 🟣 [**yapitw/nodevember**](https://github.com/yapitw/nodevember) | Nodevember 2026：用 Blender 5.2 / 5.3 Geometry Nodes 每天做一件程序化作品，无贴图、无手工建模；Day 1–8 附 .blend 与 Python 构建脚本，Day 9 起附逐节点教程与成品渲染。仓库本身是作品集与教程，不是网页游戏。 |
+| 🟩 [**kevintngo/cinderwatch**](https://github.com/kevintngo/cinderwatch) · [🍴](https://github.com/bear20252026/cinderwatch) | Cinderwatch 上游：单文件 3D 等距塔防；四座塔各三级、20 种怪物、五张地图、每五波一个 Boss，AI 指挥官自动打，也能随时接管；模型、贴图与音效全部由代码生成。 |
 
 [▲ 回到顶部](#top)
 
