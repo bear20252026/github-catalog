@@ -1,16 +1,16 @@
 {
  "owner": "bear20252026",
- "updated": "2026-11-18",
+ "updated": "2026-11-25",
  "pinned": {
   "name": "github-catalog",
   "full_name": "bear20252026/github-catalog",
   "url": "https://github.com/bear20252026/github-catalog",
   "title": "置顶仓 · 总目录本体",
-  "what": "本目录仓库：把名下 220 个仓库与上游 347 件馆藏逐册登记成「图书馆」——README 逐仓读过手写说明，catalog.json 存结构化数据（README 自述原文、章节标题、根目录文件树与标签）。"
+  "what": "本目录仓库：把名下 221 个仓库与上游 347 件馆藏逐册登记成「图书馆」——README 逐仓读过手写说明，catalog.json 存结构化数据（README 自述原文、章节标题、根目录文件树与标签）。"
  },
  "stats": {
-  "total_repos": 220,
-  "original": 78,
+  "total_repos": 221,
+  "original": 79,
   "fork": 142,
   "library_entries": 347,
   "library_starred": 329,
@@ -657,6 +657,22 @@
    "category": "游戏与互动娱乐",
    "subcategory": "网页游戏",
    "what": "远方 · Faraway——第一人称 three.js 场景：花海草丘之上无尽积云之海，山顶立着披苔藓、系红丝带的古老机器人守望者；含多人房间服务端与测试冒烟脚本。"
+  },
+  {
+   "name": "frontier-shelf-07",
+   "full_name": "bear20252026/frontier-shelf-07",
+   "url": "https://github.com/bear20252026/frontier-shelf-07",
+   "kind": "original",
+   "language": "HTML",
+   "stars": 0,
+   "description": "Frontier VII — 22 个 Kimi / FC 部署站点的本地可运行合集；水母同时保留线上 WebGL 产物与 Aurelia 上游 WebGPU 源码。",
+   "created_at": "2026-11-25",
+   "pushed_at": "2026-11-25",
+   "fork_of": null,
+   "fork_upstream_url": null,
+   "category": "网页还原与镜像",
+   "subcategory": "站点合集",
+   "what": "Frontier VII——数字图书馆第七分卷：22 个 Kimi / FC 部署站点全部收进一个仓库，逐页补齐图片、模型、字体与三方模块后仍可从子目录直接运行；22/22 HTTP 200，22 张实机截图；水母（jellyfish）同时保留线上 WebGL 压缩产物与 holtsetio/aurelia 的上游 WebGPU/TSL 源码（MIT）。"
   },
   {
    "name": "github-catalog",

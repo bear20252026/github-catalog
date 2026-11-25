@@ -2,7 +2,7 @@
 
 # 🏛️ bear20252026 的数字图书馆
 
-**![仓库](https://img.shields.io/badge/名下仓库-220-1F3D2B) ![馆藏](https://img.shields.io/badge/上游馆藏-347-A8841C) ![藏书](https://img.shields.io/badge/藏书总数-562-2C5540) ![数据](https://img.shields.io/badge/数据驱动-catalog.json-C9A227)**
+**![仓库](https://img.shields.io/badge/名下仓库-221-1F3D2B) ![馆藏](https://img.shields.io/badge/上游馆藏-347-A8841C) ![藏书](https://img.shields.io/badge/藏书总数-563-2C5540) ![数据](https://img.shields.io/badge/数据驱动-catalog.json-C9A227)**
 
 > 奶油白 · 暖木 · 墨绿与黄铜 —— 一座好逛的数字图书馆。
 > 每一本「书」都是真实抓取过 README 与文件树后写的说明，不是算法标签。
@@ -17,7 +17,7 @@
 | 想看什么 | 去哪里 |
 |---|---|
 | 📌 置顶仓 · 本馆说明书 | [置顶仓](#pinned) |
-| 🫖 原创仓库 · 78 本 | [原创书架](#originals) |
+| 🫖 原创仓库 · 79 本 | [原创书架](#originals) |
 | 🍴 复刻仓库 · 142 本 | [复刻书架](#forks) |
 | ⭐ 上游馆藏 · 347 本 | [馆藏书架](#library) |
 | 🎨 动画与视觉特效专架 | [特效专架](#visual) |
@@ -40,7 +40,7 @@
 | | |
 |---|---|
 | **仓库** | 🟨 [**github-catalog**](https://github.com/bear20252026/github-catalog)（本页所在仓） |
-| **它是什么** | 本目录仓库：把名下 220 个仓库与上游 347 件馆藏逐册登记成「图书馆」——README 逐仓读过手写说明，catalog.json 存结构化数据（README 自述原文、章节标题、根目录文件树与标签）。 |
+| **它是什么** | 本目录仓库：把名下 221 个仓库与上游 347 件馆藏逐册登记成「图书馆」——README 逐仓读过手写说明，catalog.json 存结构化数据（README 自述原文、章节标题、根目录文件树与标签）。 |
 | **两份产物** | `README.md`（人读目录）＋ `catalog.json`（机读结构化数据） |
 | **在线版** | [3D 数字图书馆](https://bear20252026.github.io/github-catalog/) |
 
@@ -49,9 +49,9 @@
 ---
 <a id="originals"></a>
 
-## 🫖 原创书架 · 78 本
+## 🫖 原创书架 · 79 本
 
-> 名下 78 个原创仓（含本馆），逐仓抓 README/文件树后手写说明；编号仓（agent-XX / chat-XX 等）如实标注「源码归档」。按书架分组，点开即读。
+> 名下 79 个原创仓（含本馆），逐仓抓 README/文件树后手写说明；编号仓（agent-XX / chat-XX 等）如实标注「源码归档」。按书架分组，点开即读。
 
 ### 🟨 置顶仓 · 1 本
 
@@ -59,7 +59,7 @@
 
 | 书 | 它是什么 |
 |---|---|
-| 🟨 [**github-catalog**](https://github.com/bear20252026/github-catalog)<br>`置顶仓` · — `2026-11-18` | 本目录仓库：把名下 220 个仓库与上游 347 件馆藏逐册登记成「图书馆」——README 逐仓读过手写说明，catalog.json 存结构化数据（README 自述原文、章节标题、根目录文件树与标签）。 |
+| 🟨 [**github-catalog**](https://github.com/bear20252026/github-catalog)<br>`置顶仓` · — `2026-11-18` | 本目录仓库：把名下 221 个仓库与上游 347 件馆藏逐册登记成「图书馆」——README 逐仓读过手写说明，catalog.json 存结构化数据（README 自述原文、章节标题、根目录文件树与标签）。 |
 
 [▲ 回到顶部](#top)
 
@@ -170,13 +170,14 @@
 
 </details>
 
-### 🟪 网页还原与镜像 · 8 本
+### 🟪 网页还原与镜像 · 9 本
 
 <details >
 
 | 书 | 它是什么 |
 |---|---|
 | 🟪 [**anlibili**](https://github.com/bear20252026/anlibili)<br>`站点还原` · JavaScript `2026-11-04` | anlibili 源码还原包——从 B 站视频聚合站抓取的完整静态源码（2026-11-04）：1902 个视频数据 + hash 路由 + 搜索收藏历史（localStorage），纯静态无构建。 |
+| 🟪 [**frontier-shelf-07**](https://github.com/bear20252026/frontier-shelf-07)<br>`站点合集` · HTML `2026-11-25` | Frontier VII——22 个 Kimi / FC 部署站点的本地可运行合集：22/22 HTTP 200，22 张实机截图；水母同时保留线上 WebGL 产物与 Aurelia 上游 WebGPU 源码。 |
 | 🟪 [**aural-music-player**](https://github.com/bear20252026/aural-music-player)<br>`音乐播放器镜像` · HTML `2026-08-28` | AURAL 音乐播放器（Z.ai 搞AI的西窗烛镜像）——纯前端音乐播放器：网易云 / QQ 音乐多平台搜索、lrclib 等多源歌词、9 种聊天软件主题（QQ/微信/Discord/Telegram/iMessage…），带 Node 代理。 |
 | 🟪 [**invisible-cloak-site**](https://github.com/bear20252026/invisible-cloak-site)<br>`占位说明` · — `2026-08-13` | Invisible Cloak Website——WebGL 交互网站；目前仓库只有 README 一页说明。 |
 | 🟪 [**lanyra-music**](https://github.com/bear20252026/lanyra-music)<br>`音乐播放器镜像` · HTML `2026-08-28` | 澜弦 LANYRA——玻璃拟态风格沉浸式音乐播放器：网易云 API 搜索、歌词同步、从专辑封面提取主题色、响应式布局，带 Node 代理服务。 |
@@ -1270,8 +1271,8 @@
 
 | 文件 | 作用 |
 |---|---|
-| `catalog.json` | 总数据源：`pinned` 置顶仓 + `own_repos` 名下 220 仓（分类与逐仓说明）+ `catalog` 馆藏 347 条（README 自述原文 / 章节 / 文件树 / 标签） |
-| `data/books.json` | 由 catalog.json 派生的「书」视图（562 本，含书脊配色 palette），3D 图书馆与 README 共用 |
+| `catalog.json` | 总数据源：`pinned` 置顶仓 + `own_repos` 名下 221 仓（分类与逐仓说明）+ `catalog` 馆藏 347 条（README 自述原文 / 章节 / 文件树 / 标签） |
+| `data/books.json` | 由 catalog.json 派生的「书」视图（563 本，含书脊配色 palette），3D 图书馆与 README 共用 |
 | `index.html` | 单文件 Three.js 3D 数字图书馆，零构建，可直接部署 GitHub Pages |
 | `scripts/build_books.py` | `python scripts/build_books.py --live` → 重新生成 data/books.json（`--live` 会用 gh api 刷新 stars / 更新时间） |
 | `scripts/build_readme.py` | `python scripts/build_readme.py` → 重新生成本 README |
