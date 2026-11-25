@@ -102,7 +102,7 @@ def main():
             "kind": "library", "category": e["category"],
             "subcategory": e.get("subcategory", ""),
             "lang": e.get("language", ""), "stars": e.get("stars", 0),
-            "updated": "",
+            "updated": e.get("updated", ""),
             "desc": e.get("what", ""), "url": e["url"],
         })
 
@@ -141,7 +141,9 @@ def main():
         "library": sum(1 for b in books if b["kind"] == "library"),
         "categories": len({b["category"] for b in books}),
     }
-    assert counts["total"] == 562, counts
+    assert counts["total"] == len(doc["own_repos"]) + len(lib), counts
+    assert counts["pinned"] + counts["original"] + counts["fork"] == len(doc["own_repos"]), counts
+    assert counts["library"] == len(lib), counts
 
     payload = {
         "generated": datetime.datetime.now().isoformat(timespec="seconds"),

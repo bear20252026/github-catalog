@@ -49,9 +49,12 @@ for e in doc["catalog"]:
         eff_index.setdefault(f, []).append(e)
 eff_index = OrderedDict(sorted(eff_index.items(), key=lambda kv: -len(kv[1])))
 
-n_lib = len(doc["catalog"])
-total_books = 1 + len(originals) - 1 + len(forks) + len(lib)   # 置顶 + 原创(除本仓) + 复刻 + 馆藏
-assert total_books == 562, total_books
+n_lib = len(lib)
+n_own = len(own)
+n_orig = len(originals) - 1
+n_forks = len(forks)
+total_books = 1 + n_orig + n_forks + n_lib   # 置顶 + 原创(除本仓) + 复刻 + 馆藏
+assert total_books == n_own + n_lib, (total_books, n_own, n_lib)
 
 B = []  # README 行
 
@@ -60,7 +63,7 @@ B.append(f"""<a id="top"></a>
 
 # 🏛️ bear20252026 的数字图书馆
 
-**![仓库](https://img.shields.io/badge/名下仓库-220-1F3D2B) ![馆藏](https://img.shields.io/badge/上游馆藏-347-A8841C) ![藏书](https://img.shields.io/badge/藏书总数-562-2C5540) ![数据](https://img.shields.io/badge/数据驱动-catalog.json-C9A227)**
+**![仓库](https://img.shields.io/badge/名下仓库-{n_own}-1F3D2B) ![馆藏](https://img.shields.io/badge/上游馆藏-{n_lib}-A8841C) ![藏书](https://img.shields.io/badge/藏书总数-{total_books}-2C5540) ![数据](https://img.shields.io/badge/数据驱动-catalog.json-C9A227)**
 
 > 奶油白 · 暖木 · 墨绿与黄铜 —— 一座好逛的数字图书馆。
 > 每一本「书」都是真实抓取过 README 与文件树后写的说明，不是算法标签。
@@ -75,9 +78,9 @@ B.append(f"""<a id="top"></a>
 | 想看什么 | 去哪里 |
 |---|---|
 | 📌 置顶仓 · 本馆说明书 | [置顶仓](#pinned) |
-| 🫖 原创仓库 · 78 本 | [原创书架](#originals) |
-| 🍴 复刻仓库 · 142 本 | [复刻书架](#forks) |
-| ⭐ 上游馆藏 · 347 本 | [馆藏书架](#library) |
+| 🫖 原创仓库 · {n_orig} 本 | [原创书架](#originals) |
+| 🍴 复刻仓库 · {n_forks} 本 | [复刻书架](#forks) |
+| ⭐ 上游馆藏 · {n_lib} 本 | [馆藏书架](#library) |
 | 🎨 动画与视觉特效专架 | [特效专架](#visual) |
 | 🧱 数据与再生成脚本 | [数据与脚本](#meta) |
 
@@ -125,11 +128,11 @@ def table(header, rows):
     return "\n".join([header, "|---|---|"] + rows)
 
 # ── 原创书架 ──────────────────────────────────────────────
-B.append("""<a id="originals"></a>
+B.append(f"""<a id="originals"></a>
 
-## 🫖 原创书架 · 78 本
+## 🫖 原创书架 · {n_orig} 本
 
-> 名下 78 个原创仓（含本馆），逐仓抓 README/文件树后手写说明；编号仓（agent-XX / chat-XX 等）如实标注「源码归档」。按书架分组，点开即读。
+> 名下 {len(originals)} 个原创仓（含本馆），逐仓抓 README/文件树后手写说明；编号仓（agent-XX / chat-XX 等）如实标注「源码归档」。按书架分组，点开即读。
 """)
 ORIG_ORDER = ["置顶仓", "游戏与互动娱乐", "Agent 桌面与 AI 客户端", "应用软件", "纯代码影片",
               "网页还原与镜像", "底层与逆向考古", "分发与沙盒", "空仓与占位"]
@@ -150,11 +153,11 @@ for i, cat in enumerate(ORIG_ORDER):
 """)
 
 # ── 复刻书架 ──────────────────────────────────────────────
-B.append("""<a id="forks"></a>
+B.append(f"""<a id="forks"></a>
 
-## 🍴 复刻书架 · 142 本
+## 🍴 复刻书架 · {n_forks} 本
 
-> 我名下的 142 个复刻仓，按馆藏书架分组；一句话说明沿用馆藏逐仓结论，完整版见下方[馆藏书架](#library)。
+> 我名下的 {n_forks} 个复刻仓，按馆藏书架分组；一句话说明沿用馆藏逐仓结论，完整版见下方[馆藏书架](#library)。
 """)
 for cat, items in fork_index.items():
     if not items:
@@ -177,7 +180,7 @@ B.append(f"""<a id="library"></a>
 
 ## ⭐ 馆藏书架 · {n_lib} 本
 
-> 收藏 / 复刻的上游项目，逐册登记（347 = 329 ⭐ + 142 🍴 − 124 重合）。
+> 收藏 / 复刻的上游项目，逐册登记（{n_lib} 本；catalog.json 的 {len(doc["catalog"])} 条馆藏索引里另有 5 条自有仓库，已与原创 / 复刻书架去重）。
 """)
 for cat, items in lib_index.items():
     if not items:
@@ -222,8 +225,8 @@ B.append(f"""<a id="meta"></a>
 
 | 文件 | 作用 |
 |---|---|
-| `catalog.json` | 总数据源：`pinned` 置顶仓 + `own_repos` 名下 220 仓（分类与逐仓说明）+ `catalog` 馆藏 347 条（README 自述原文 / 章节 / 文件树 / 标签） |
-| `data/books.json` | 由 catalog.json 派生的「书」视图（562 本，含书脊配色 palette），3D 图书馆与 README 共用 |
+| `catalog.json` | 总数据源：`pinned` 置顶仓 + `own_repos` 名下 {n_own} 仓（分类与逐仓说明）+ `catalog` 馆藏 {len(doc["catalog"])} 条（README 自述原文 / 章节 / 文件树 / 标签） |
+| `data/books.json` | 由 catalog.json 派生的「书」视图（{total_books} 本，含书脊配色 palette），3D 图书馆与 README 共用 |
 | `index.html` | 单文件 Three.js 3D 数字图书馆，零构建，可直接部署 GitHub Pages |
 | `scripts/build_books.py` | `python scripts/build_books.py --live` → 重新生成 data/books.json（`--live` 会用 gh api 刷新 stars / 更新时间） |
 | `scripts/build_readme.py` | `python scripts/build_readme.py` → 重新生成本 README |

@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>🏛️ bear20252026 的数字图书馆 · Digital Library</title>
-<meta name="description" content="一座由 catalog.json 数据驱动的 3D 数字图书馆：221 个仓库 + 347 件馆藏立在书架上，可搜索、筛选、点击看书详情。">
+<meta name="description" content="一座由 catalog.json 数据驱动的 3D 数字图书馆：223 个仓库 + 347 件馆藏立在书架上，可搜索、筛选、点击看书详情。">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏛️</text></svg>">
 <style>
   :root{
@@ -181,7 +181,7 @@
 <div id="vig"></div><div id="grain"></div>
 
 <div id="topbar">
-  <div id="brand"><b>数字图书馆</b><span>bear20252026 · 221 仓库 + 347 馆藏</span></div>
+  <div id="brand"><b>数字图书馆</b><span>bear20252026 · 223 仓库 + 347 馆藏</span></div>
   <input id="search" type="search" placeholder="搜索书名 / 简介…" aria-label="搜索书籍">
   <select id="sort" aria-label="排序方式">
     <option value="shelf">馆内排架</option>
@@ -1112,6 +1112,12 @@ let DATA_PALETTE = null;
       return;
     }
     DATA_PALETTE = data.palette;
+    if (data.counts) {
+      const ownCount = data.counts.pinned + data.counts.original + data.counts.fork;
+      const libCount = data.counts.library;
+      const brand = $('#brand span');
+      if (brand) brand.textContent = `bear20252026 · ${ownCount} 仓库 + ${libCount} 馆藏`;
+    }
     msg.textContent = `正在雕刻 ${data.books.length} 个书脊…`; bar.style.width = '45%';
     await new Promise(r => setTimeout(r, 30));
     await buildLibrary(data);
