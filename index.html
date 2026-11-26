@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>🏛️ bear20252026 的数字图书馆 · Digital Library</title>
-<meta name="description" content="一座由 catalog.json 数据驱动的 3D 数字图书馆：223 个仓库 + 347 件馆藏立在书架上，可搜索、筛选、点击看书详情。">
+<title>🏛️ 六架数字图书馆 · bear20252026</title>
+<meta name="description" content="一座由六架分类驱动的 3D 数字图书馆：296 个项目仓库 + 347 件上游参考馆藏立在书架上，可搜索、筛选、点击看书详情。">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏛️</text></svg>">
 <style>
   :root{
@@ -58,7 +58,7 @@
   }
   #sort:focus{border-color:var(--brass-2);box-shadow:0 0 0 3px rgba(185,154,46,.18)}
   #count{font-size:12px;color:var(--ink-faint);white-space:nowrap;font-variant-numeric:tabular-nums}
-  #chips{display:flex;gap:6px;overflow-x:auto;flex:1 1 100%;padding:2px 2px 3px;scrollbar-width:thin}
+  #chips{display:flex;flex-wrap:wrap;gap:6px;flex:1 1 100%;padding:2px 2px 3px}
   .chip{
     flex:0 0 auto;border:1px solid var(--line);border-radius:8px;
     padding:4px 11px;font-size:12px;line-height:1.5;cursor:pointer;
@@ -167,6 +167,8 @@
   @media (max-width:760px){
     #brand span{display:none}
     #topbar{padding:8px 12px;gap:8px}
+    #chips{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}
+    #chips::-webkit-scrollbar{display:none}
     #panel{width:100vw;border-left:none}
     #hint{display:none}
   }
@@ -181,8 +183,8 @@
 <div id="vig"></div><div id="grain"></div>
 
 <div id="topbar">
-  <div id="brand"><b>数字图书馆</b><span>bear20252026 · 223 仓库 + 347 馆藏</span></div>
-  <input id="search" type="search" placeholder="搜索书名 / 简介…" aria-label="搜索书籍">
+  <div id="brand"><b>六架·数字图书馆</b><span>bear20252026 · 296 仓库 + 347 参考</span></div>
+  <input id="search" type="search" placeholder="搜索仓库 / 简介 / 分类…" aria-label="搜索书籍">
   <select id="sort" aria-label="排序方式">
     <option value="shelf">馆内排架</option>
     <option value="name">书名 A→Z</option>
@@ -212,8 +214,8 @@
 <div id="overlay">
   <div class="card" id="ov-card">
     <div class="ring"></div>
-    <h1>数字图书馆</h1>
-    <div class="sub">THE DIGITAL LIBRARY · BEAR20252026</div>
+    <h1>六架 · 数字图书馆</h1>
+    <div class="sub">SIX SHELVES · BEAR20252026</div>
     <p id="ov-msg">正在布置书架…</p>
     <div class="bar"><i id="ov-bar"></i></div>
   </div>
@@ -890,37 +892,38 @@ function applyFilters() {
 }
 
 /* ══════════ 筛选 UI ══════════ */
-const KIND_LABEL = { pinned: '置顶', original: '原创', fork: '复刻', library: '馆藏' };
+const KIND_LABEL = { shelf: '📚 在架', workshop: '🛠 工作台', offline: '📦 下线', reference: '📎 参考' };
 function buildChips() {
   const box = $('#chips');
-  const mk = (label, dot, act) => {
+  const mk = (label, dot, act, data) => {
     const el = document.createElement('button');
     el.className = 'chip'; el.type = 'button';
     el.innerHTML = (dot ? `<i class="dot" style="background:${dot}"></i>` : '') + label;
+    Object.assign(el.dataset, data || {});
     el.onclick = act;
     box.appendChild(el); return el;
   };
-  mk('全部', null, () => { state.cat = null; state.kind = null; applyFilters(); });
-  for (const k of ['pinned', 'original', 'fork', 'library'])
-    mk((k === 'pinned' ? '📌 ' : '') + KIND_LABEL[k], null, () => { state.kind = state.kind === k ? null : k; state.cat = null; applyFilters(); });
+  mk(`全部 · ${BOOKS_ALL.length}`, null, () => { state.cat = null; state.kind = null; applyFilters(); }, { all: '1' });
+  for (const k of ['shelf', 'workshop', 'offline', 'reference']) {
+    const n = BOOKS_ALL.filter(b => b.kind === k).length;
+    mk(`${KIND_LABEL[k]} · ${n}`, null, () => { state.kind = state.kind === k ? null : k; state.cat = null; applyFilters(); }, { kind: k });
+  }
   for (const [name, p] of Object.entries(DATA_PALETTE)) {
-    if (name === '置顶仓') continue;
     const n = BOOKS_ALL.filter(b => b.category === name).length;
-    mk(`${p.emoji} ${name} · ${n}`, p.color, () => { state.kind = null; state.cat = state.cat === name ? null : name; applyFilters(); });
+    mk(`${p.emoji} ${name} · ${n}`, p.color, () => { state.kind = null; state.cat = state.cat === name ? null : name; applyFilters(); }, { cat: name });
   }
   const want = new URLSearchParams(location.search).get('cat');
   if (want) {
-    const hit = [...box.children].find(c => c.textContent.includes(want));
+    const hit = [...box.children].find(c => c.dataset.cat === want || c.textContent.includes(want));
     if (hit) hit.click();
   }
 }
 function syncChips() {
   [...$('#chips').children].forEach(c => {
-    const t = c.textContent;
     let on;
-    if (t === '全部') on = !state.cat && !state.kind;
-    else if (state.cat) on = t.includes(state.cat);
-    else if (state.kind) on = t.includes(KIND_LABEL[state.kind]);
+    if (c.dataset.all) on = !state.cat && !state.kind;
+    else if (state.cat) on = c.dataset.cat === state.cat;
+    else if (state.kind) on = c.dataset.kind === state.kind;
     else on = false;
     c.classList.toggle('active', !!on);
   });
@@ -984,7 +987,7 @@ function openPanel(i) {
   selectIdx = i; setColor(i, BRASS);
   $('#spine-bar').style.background = b.color;
   $('#p-title').textContent = b.title;
-  const kindName = { pinned: '📌 置顶', original: '🫖 原创', fork: '🍴 复刻', library: '⭐ 馆藏' }[b.kind] || b.kind;
+  const kindName = { shelf: '📚 在架', workshop: '🛠 工作台', offline: '📦 下线', reference: '📎 参考' }[b.kind] || b.kind;
   $('#p-meta').innerHTML =
     `<span class="tag kind">${kindName}</span>` +
     `<span class="tag">${b.emoji} ${b.category}${b.subcategory ? ' · ' + b.subcategory : ''}</span>` +
@@ -1113,10 +1116,10 @@ let DATA_PALETTE = null;
     }
     DATA_PALETTE = data.palette;
     if (data.counts) {
-      const ownCount = data.counts.pinned + data.counts.original + data.counts.fork;
-      const libCount = data.counts.library;
+      const ownCount = data.counts.own ?? (data.counts.pinned + data.counts.original + data.counts.fork);
+      const refCount = data.counts.references ?? data.counts.library ?? 0;
       const brand = $('#brand span');
-      if (brand) brand.textContent = `bear20252026 · ${ownCount} 仓库 + ${libCount} 馆藏`;
+      if (brand) brand.textContent = `bear20252026 · ${ownCount} 仓库 + ${refCount} 参考馆藏`;
     }
     msg.textContent = `正在雕刻 ${data.books.length} 个书脊…`; bar.style.width = '45%';
     await new Promise(r => setTimeout(r, 30));
